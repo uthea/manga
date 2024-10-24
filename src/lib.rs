@@ -4,8 +4,6 @@ pub mod core;
 pub mod db;
 #[cfg(feature = "ssr")]
 pub mod job;
-#[cfg(feature = "ssr")]
-pub mod scheduler;
 pub mod server;
 #[cfg(feature = "ssr")]
 pub mod state;
