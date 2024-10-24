@@ -17,7 +17,7 @@ use crate::{core::types::MangaSource, server::add_manga};
 
 pub fn shell(options: LeptosOptions) -> impl IntoView {
     view! {
-        <!DOCTYPE html>
+        <!DOCTYPE html> 
         <html lang="en">
             <head>
                 <meta charset="utf-8" />
@@ -139,7 +139,7 @@ fn AddMangaPage() -> impl IntoView {
                 </Combobox>
             </Field>
 
-            <Button appearance=ButtonAppearance::Primary on_click=on_add>
+            <Button appearance=ButtonAppearance::Primary on_click=on_add disabled=is_submitting>
                 {move || is_submitting.get().then(|| view! { <Spinner size=SpinnerSize::Tiny /> })}
                 "Add"
             </Button>
