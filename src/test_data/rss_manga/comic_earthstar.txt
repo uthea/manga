@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:giga="https://gigaviewer.com">
+    <channel>
+        <title>コミック アース・スター｜毎週木曜・最新話更新！無料で漫画が読めるWEBコミック誌（願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～）</title>
+        <pubDate>Thu, 29 Aug 2024 09:00:00 +0000</pubDate>
+        <link>https://comic-earthstar.com/episode/14079602755509006153</link>
+        <description>傭兵ギルドに属するテオ・アスペルは、弱すぎるゆえに、 色々なパーティに入ったり追い出されたりを繰り返していた。 強くなろうと思い、なんでも願いを叶えてくれるという悪魔を召喚することに成功。 その容姿を見た瞬間、『強くなる』願いは消し飛んでしまう……。 そして、久しぶりに召喚された悪魔はこう告げる。 「願いを叶えてやろう、しかしその代わりにお前の大事なものを――」 「僕と、け、結婚してください！」と答えるテオ。 「……はっ?」と戸惑う悪魔だが、その願いを叶え、二人は夫婦になるのだった……。 ――これは草食系な男子と、肉食系な悪魔が結婚し、 周りを騒ぎ立てながらも幸せに暮らしていくちょっとエッチな（？）物語。</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <item>
+            <title>STORY 043 宣戦布告!?</title>
+            <link>https://comic-earthstar.com/episode/2550689798883280808</link>
+            <guid isPermalink="false">earthstar:episode:2550689798883280808</guid>
+            <pubDate>Thu, 29 Aug 2024 09:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Thu, 29 Aug 2024 09:00:00 +0000</giga:freeTermStartDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/2550689798883280808-f409ba5b27aeb0f1e313f13bdcdcc8c1?1724896498" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 042 お姉ちゃん!?</title>
+            <link>https://comic-earthstar.com/episode/2550689798762777312</link>
+            <guid isPermalink="false">earthstar:episode:2550689798762777312</guid>
+            <pubDate>Thu, 25 Jul 2024 09:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Thu, 25 Jul 2024 09:00:00 +0000</giga:freeTermStartDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/2550689798762777312-1ea24281d9ae89c192651d2c7e3bbfba?1721879967" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 041 キュンときた</title>
+            <link>https://comic-earthstar.com/episode/2550689798470041665</link>
+            <guid isPermalink="false">earthstar:episode:2550689798470041665</guid>
+            <pubDate>Thu, 27 Jun 2024 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/2550689798470041665-0d37bcc188656e6b5db320be24116528?1719464763" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 040 可愛い女の子</title>
+            <link>https://comic-earthstar.com/episode/2550689798354937423</link>
+            <guid isPermalink="false">earthstar:episode:2550689798354937423</guid>
+            <pubDate>Thu, 25 Apr 2024 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/2550689798354937423-8622835fc611c0063c81854fc4e44e8f?1717060003" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 039 一生一緒にいたい</title>
+            <link>https://comic-earthstar.com/episode/2550689798270455396</link>
+            <guid isPermalink="false">earthstar:episode:2550689798270455396</guid>
+            <pubDate>Thu, 28 Mar 2024 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/2550689798270455396-f828b97161dff941ad162c739a576e33?1711595238" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 038 子供かな？</title>
+            <link>https://comic-earthstar.com/episode/11341664176549942711</link>
+            <guid isPermalink="false">earthstar:episode:11341664176549942711</guid>
+            <pubDate>Thu, 29 Feb 2024 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/11341664176549942711-0bfa477b656e353d19b611df0ccdc77b?1709177242" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 037　狙いは私だ</title>
+            <link>https://comic-earthstar.com/episode/14079602755609795494</link>
+            <guid isPermalink="false">earthstar:episode:14079602755609795494</guid>
+            <pubDate>Thu, 25 Jan 2024 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755609795494-6ae0b559df0a87bc9ef246f615d554ae?1717060310" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 036 頑張ります!!</title>
+            <link>https://comic-earthstar.com/episode/14079602755592613390</link>
+            <guid isPermalink="false">earthstar:episode:14079602755592613390</guid>
+            <pubDate>Thu, 28 Dec 2023 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755592613390-802da51f2f22f4d6bfd320f31b7d105f?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 035 姉</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006532</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006532</guid>
+            <pubDate>Thu, 26 Oct 2023 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006532-fb9b29e7ec0ada73a8f590b689107eb1?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 034 ずっとしていたいんです</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006520</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006520</guid>
+            <pubDate>Thu, 28 Sep 2023 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006520-e819f25f6804a61a2c29ae90fe145d26?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 033 才能</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006508</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006508</guid>
+            <pubDate>Thu, 31 Aug 2023 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006508-9d83ed1450a0e9a23130c8e2e89b8b26?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 032　強くなりたい</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006499</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006499</guid>
+            <pubDate>Thu, 27 Jul 2023 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006499-c585922b2e45fd7307230141bab27db8?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 031 へルヴィ・アスペル</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006486</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006486</guid>
+            <pubDate>Thu, 22 Jun 2023 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006486-260cc7a816e803dda14b062dd08c5e02?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 030 テオも男の子</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006479</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006479</guid>
+            <pubDate>Thu, 20 Apr 2023 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006479-ec309dbfea5f71333d44a783cbb0ca8c?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 029　王の器</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006466</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006466</guid>
+            <pubDate>Thu, 16 Mar 2023 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006466-fa82e589ea4c7131756313d22c50ac77?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 028　逃げられると思うな</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006456</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006456</guid>
+            <pubDate>Thu, 16 Feb 2023 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006456-79a884fb0fc62a01ab955fd79575d25f?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 027　殴り合おうぜ</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006448</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006448</guid>
+            <pubDate>Thu, 19 Jan 2023 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006448-a7990dcc11cb739a5164ccc8949e28df?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 026　力の頂点</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006441</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006441</guid>
+            <pubDate>Thu, 22 Dec 2022 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006441-d4e020e8bbab1cadefbe6c0fdb6f1c28?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY025　特異生物</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006430</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006430</guid>
+            <pubDate>Thu, 27 Oct 2022 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006430-97bed15033cc2c715945b863ca6f2a29?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 024　罠</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006423</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006423</guid>
+            <pubDate>Thu, 29 Sep 2022 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006423-feeb49559e3335d6601e6f60365ac9cd?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 023　耐えられない!!</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006410</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006410</guid>
+            <pubDate>Thu, 25 Aug 2022 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006410-75fa45252a46535cc0aa62db08591a2d?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 022　いいから覗け！</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006403</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006403</guid>
+            <pubDate>Thu, 28 Jul 2022 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006403-8803da32d11b3120b0bd28a984e3782b?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 021　強者たち</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006387</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006387</guid>
+            <pubDate>Thu, 30 Jun 2022 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006387-1c0c3c3722e286d2fbf89d73b38ce730?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 020　究極の二択</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006376</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006376</guid>
+            <pubDate>Thu, 28 Apr 2022 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006376-878a546b8848e38ce9088e63e23ade32?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 019　一緒に乗りますか？</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006365</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006365</guid>
+            <pubDate>Thu, 24 Mar 2022 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006365-f7258e459e43315acf90cb33d7f8a33c?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 018　私たちの家</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006347</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006347</guid>
+            <pubDate>Thu, 24 Feb 2022 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006347-ce871171ff92ba9b28835b0e92c643c3?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 017　ゆうべはお楽しみでしたね!?</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006332</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006332</guid>
+            <pubDate>Thu, 20 Jan 2022 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006332-c33aaf7f210eaf10eba7bcd09856c04c?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 016　突然の大食いバトル!?</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006315</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006315</guid>
+            <pubDate>Thu, 16 Dec 2021 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006315-2bdff95a16e03fe78b5aa59fc07b5a17?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 015　セリア vs ヘルヴィ</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006305</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006305</guid>
+            <pubDate>Thu, 21 Oct 2021 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006305-09384ca08a378fee2015890334f56336?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 014　ジーナ vs ヘルヴィ</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006295</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006295</guid>
+            <pubDate>Thu, 16 Sep 2021 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006295-4220809aa69911ba6b895273f3e5836e?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 013　再会</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006283</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006283</guid>
+            <pubDate>Thu, 19 Aug 2021 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006283-27f75d4875584cf8452e147154117eee?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 012　二人の薬草採取</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006268</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006268</guid>
+            <pubDate>Thu, 15 Jul 2021 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006268-57ad34a4d83de728964c59e384da7d5d?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 011　キスの要望</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006252</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006252</guid>
+            <pubDate>Thu, 17 Jun 2021 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006252-cec5d18d8b4b26b97c8844995bcca53a?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 010　テオのテオ</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006243</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006243</guid>
+            <pubDate>Thu, 15 Apr 2021 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006243-53e836abd8078fd853f753ca11860b04?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 009　子供の作り方</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006233</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006233</guid>
+            <pubDate>Thu, 18 Mar 2021 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006233-62374d63669c5c9ca257f4126f938687?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 008　一緒に食べよう</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006223</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006223</guid>
+            <pubDate>Thu, 18 Feb 2021 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006223-a7274a09d16095d806e994b55b3ef01c?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 007　ゴミ掃除</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006210</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006210</guid>
+            <pubDate>Thu, 21 Jan 2021 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006210-1c70f1a55bff1cd8a644996584038d1b?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 006　そこにテオがいるから</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006203</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006203</guid>
+            <pubDate>Thu, 10 Dec 2020 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006203-862c45305dbe9030f63788f581a8709a?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 005　僕のお味はどうですか…?</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006192</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006192</guid>
+            <pubDate>Thu, 15 Oct 2020 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006192-5123240dc984758fe9517619b6c86966?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 004　ある一人の悪魔</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006181</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006181</guid>
+            <pubDate>Thu, 17 Sep 2020 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006181-4169ad1745c945660850a5dda510cb6b?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 003　誰にも渡しません!</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006170</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006170</guid>
+            <pubDate>Thu, 06 Aug 2020 09:00:00 +0000</pubDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006170-77214e73a075baa265ca5602af3e4dab?1710316968" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 002　名前で呼んでほしいです</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006161</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006161</guid>
+            <pubDate>Thu, 09 Jul 2020 09:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Thu, 09 Jul 2020 09:00:00 +0000</giga:freeTermStartDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006161-31c90c3a7fdbe7c673dc94a8ceb511f1?1701190630" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+        <item>
+            <title>STORY 001　悪魔に願いを</title>
+            <link>https://comic-earthstar.com/episode/14079602755509006153</link>
+            <guid isPermalink="false">earthstar:episode:14079602755509006153</guid>
+            <pubDate>Thu, 11 Jun 2020 09:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Thu, 11 Jun 2020 09:00:00 +0000</giga:freeTermStartDate>
+            <description>願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～</description>
+            <enclosure url="https://cdn-img.comic-earthstar.com/public/episode-thumbnail/14079602755509006153-0f15f2b38f281d7374f6acb90eec4722?1701190630" length="0" type="image/jpeg"/>
+            <author>漫画：となりける/原作：shiryu</author>
+        </item>
+    </channel>
+</rss>

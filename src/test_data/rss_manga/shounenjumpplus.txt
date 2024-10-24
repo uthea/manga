@@ -1,0 +1,1378 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:giga="https://gigaviewer.com">
+    <channel>
+        <title>少年ジャンプ＋（魔都精兵のスレイブ）</title>
+        <pubDate>Fri, 23 Aug 2024 15:00:00 +0000</pubDate>
+        <link>https://shonenjumpplus.com/episode/10834108156641784254</link>
+        <description>&lt;隔週土曜更新&gt;TVアニメ２期製作決定！　累計2億7千万閲覧＆コミックス300万部突破！少年ジャンプ＋土曜日の大ヒット作品！日本各所に異空間「魔都」への扉が出現！化け物から人々を守る“痛快＆可愛い”ヒロインたちのバトル＆ご褒美ファンタジー!! [JC16巻発売中]</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <item>
+            <title>[138話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/17106371892806261346</link>
+            <guid isPermalink="false">jump_plus:episode:17106371892806261346</guid>
+            <pubDate>Fri, 23 Aug 2024 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 23 Aug 2024 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/17106371892806261346-42d404fb502d3c40b39f165b60ae62f6?1724216533" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[137話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/17106371892606497689</link>
+            <guid isPermalink="false">jump_plus:episode:17106371892606497689</guid>
+            <pubDate>Fri, 09 Aug 2024 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 09 Aug 2024 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/17106371892606497689-741baa581aa8b2161aa8eed0a62c2c82?1723006182" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[特別イラスト4]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/17106371892389129607</link>
+            <guid isPermalink="false">jump_plus:episode:17106371892389129607</guid>
+            <pubDate>Fri, 26 Jul 2024 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 26 Jul 2024 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/17106371892389129607-9486167d266a766bb77f3c5bc8ed799a?1722415906" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[136話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/17106371891889387118</link>
+            <guid isPermalink="false">jump_plus:episode:17106371891889387118</guid>
+            <pubDate>Fri, 12 Jul 2024 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 12 Jul 2024 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/17106371891889387118-50ae962feb4e3af7fb9605beff587042?1722415906" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[135話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/17106371883871956306</link>
+            <guid isPermalink="false">jump_plus:episode:17106371883871956306</guid>
+            <pubDate>Fri, 28 Jun 2024 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 28 Jun 2024 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/17106371883871956306-976296eb6e218d07ec70c543b821b11b?1722415902" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[134話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/17106371868952779971</link>
+            <guid isPermalink="false">jump_plus:episode:17106371868952779971</guid>
+            <pubDate>Fri, 14 Jun 2024 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 14 Jun 2024 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/17106371868952779971-6745102bf5296e0bda88c07932d18b16?1722415912" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[133話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/17106371864158234979</link>
+            <guid isPermalink="false">jump_plus:episode:17106371864158234979</guid>
+            <pubDate>Fri, 31 May 2024 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/17106371864158234979-2f35c33e301c0ab2a4a567696cc5963c?1723610202" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[132話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/17106371856917171702</link>
+            <guid isPermalink="false">jump_plus:episode:17106371856917171702</guid>
+            <pubDate>Fri, 17 May 2024 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/17106371856917171702-d5579ff827c8a32fcadbc3001842bf6d?1723610198" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[131話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/17106371853177786788</link>
+            <guid isPermalink="false">jump_plus:episode:17106371853177786788</guid>
+            <pubDate>Fri, 03 May 2024 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/17106371853177786788-0118b59be21340bd4534a337871c31f4?1723610191" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[130話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/17106371853064384787</link>
+            <guid isPermalink="false">jump_plus:episode:17106371853064384787</guid>
+            <pubDate>Fri, 19 Apr 2024 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/17106371853064384787-d0bfa5816186429dc7fd5b61c6f59f45?1723610180" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[129話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/17106371852949405768</link>
+            <guid isPermalink="false">jump_plus:episode:17106371852949405768</guid>
+            <pubDate>Fri, 05 Apr 2024 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/17106371852949405768-107012b072c0754032e278b03ec7c537?1723610169" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[128話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/9324103658562880061</link>
+            <guid isPermalink="false">jump_plus:episode:9324103658562880061</guid>
+            <pubDate>Fri, 22 Mar 2024 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/9324103658562880061-f97f8bc9325911eb1dd1a6577b0b9ae0?1723610157" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[127話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/9324103623764423734</link>
+            <guid isPermalink="false">jump_plus:episode:9324103623764423734</guid>
+            <pubDate>Fri, 08 Mar 2024 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/9324103623764423734-b2c4780b9ce8158bba858196665fbc76?1723610142" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[126話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/9324074615354958611</link>
+            <guid isPermalink="false">jump_plus:episode:9324074615354958611</guid>
+            <pubDate>Fri, 23 Feb 2024 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/9324074615354958611-6f1743983867b85c389b70ea10a17781?1723610127" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[125話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/8603475606562841764</link>
+            <guid isPermalink="false">jump_plus:episode:8603475606562841764</guid>
+            <pubDate>Fri, 09 Feb 2024 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/8603475606562841764-0b6bfdcf73e2f61ddfbb0d1ddf18af07?1723610116" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[イラスト＋第3回人気投票企画]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/11990162089564825418</link>
+            <guid isPermalink="false">jump_plus:episode:11990162089564825418</guid>
+            <pubDate>Fri, 26 Jan 2024 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 26 Jan 2024 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/11990162089564825418-ac382b3f826eb0cde11d4c2023dd0946?1722415898" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[124話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/16457717013869515195</link>
+            <guid isPermalink="false">jump_plus:episode:16457717013869515195</guid>
+            <pubDate>Fri, 12 Jan 2024 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/16457717013869515195-8ee725d5dea9515b83157655da19b8ac?1723610092" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[123話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/16457704570603142551</link>
+            <guid isPermalink="false">jump_plus:episode:16457704570603142551</guid>
+            <pubDate>Fri, 29 Dec 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/16457704570603142551-bbe230462441f0ec7191aef413920597?1723610085" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[122話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/14079602755559082616</link>
+            <guid isPermalink="false">jump_plus:episode:14079602755559082616</guid>
+            <pubDate>Fri, 15 Dec 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/14079602755559082616-b6ca79194f4c128275587dc7b61805ec?1723610078" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[121話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/14079602755510735634</link>
+            <guid isPermalink="false">jump_plus:episode:14079602755510735634</guid>
+            <pubDate>Fri, 01 Dec 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/14079602755510735634-52ede4162621efeda5f85832f4f392f8?1723610070" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[120話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/14079602755456159522</link>
+            <guid isPermalink="false">jump_plus:episode:14079602755456159522</guid>
+            <pubDate>Fri, 17 Nov 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/14079602755456159522-a4da83f0ad476cf1065b9797c0bbdc61?1723610066" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[119話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/14079602755396022415</link>
+            <guid isPermalink="false">jump_plus:episode:14079602755396022415</guid>
+            <pubDate>Fri, 03 Nov 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/14079602755396022415-531dbea19700c8e747512b8c61e585db?1723610059" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[118話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/14079602755345578361</link>
+            <guid isPermalink="false">jump_plus:episode:14079602755345578361</guid>
+            <pubDate>Fri, 20 Oct 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/14079602755345578361-9f0a08b3b4f9632106f44ec043dc3e0c?1723610055" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[117話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/14079602755278393528</link>
+            <guid isPermalink="false">jump_plus:episode:14079602755278393528</guid>
+            <pubDate>Fri, 06 Oct 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/14079602755278393528-a0dc99c55c007e8c272630fdd2c1e520?1723610051" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[116話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/14079602755227530112</link>
+            <guid isPermalink="false">jump_plus:episode:14079602755227530112</guid>
+            <pubDate>Fri, 22 Sep 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/14079602755227530112-8251c3098e48a63fb9471b3261f34143?1723610048" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[115話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/14079602755174126263</link>
+            <guid isPermalink="false">jump_plus:episode:14079602755174126263</guid>
+            <pubDate>Fri, 08 Sep 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/14079602755174126263-a9637700c4ad5f712a572bc44d580167?1723610044" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[114話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/14079602755125428383</link>
+            <guid isPermalink="false">jump_plus:episode:14079602755125428383</guid>
+            <pubDate>Fri, 25 Aug 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/14079602755125428383-7e377fcb02b55516c338e855eec3d658?1723610044" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[113話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/14079602755072900114</link>
+            <guid isPermalink="false">jump_plus:episode:14079602755072900114</guid>
+            <pubDate>Fri, 11 Aug 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/14079602755072900114-88a86b980abaf98b70df8275062ead0c?1723610041" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[112話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/4856001361557402182</link>
+            <guid isPermalink="false">jump_plus:episode:4856001361557402182</guid>
+            <pubDate>Fri, 28 Jul 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/4856001361557402182-f53619660bd912869561fe698f80b5ee?1723610037" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[111話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/4856001361510162519</link>
+            <guid isPermalink="false">jump_plus:episode:4856001361510162519</guid>
+            <pubDate>Fri, 14 Jul 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/4856001361510162519-93b16afb2f19e341ea900f36501873a6?1723610034" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[110話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/4856001361383591677</link>
+            <guid isPermalink="false">jump_plus:episode:4856001361383591677</guid>
+            <pubDate>Fri, 30 Jun 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/4856001361383591677-4e754d8638e652915fe6192ae088e7e5?1723610030" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[109話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/4856001361331145429</link>
+            <guid isPermalink="false">jump_plus:episode:4856001361331145429</guid>
+            <pubDate>Fri, 16 Jun 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/4856001361331145429-01ceaf4586f1fc9745c00da285c8814d?1723610030" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[108話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/4856001361289960436</link>
+            <guid isPermalink="false">jump_plus:episode:4856001361289960436</guid>
+            <pubDate>Fri, 02 Jun 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/4856001361289960436-29a56add29e90456bfb130aeab521fde?1723610026" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[107話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/4856001361242589926</link>
+            <guid isPermalink="false">jump_plus:episode:4856001361242589926</guid>
+            <pubDate>Fri, 19 May 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/4856001361242589926-d129bcda5d3c4ec8a7767264ea8d6783?1723610026" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[106話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/4856001361184034677</link>
+            <guid isPermalink="false">jump_plus:episode:4856001361184034677</guid>
+            <pubDate>Fri, 05 May 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/4856001361184034677-bf389ffa215598277ad892aab53dff8f?1723610026" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[105話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/4856001361154968694</link>
+            <guid isPermalink="false">jump_plus:episode:4856001361154968694</guid>
+            <pubDate>Fri, 21 Apr 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/4856001361154968694-5451e61293d440d7f3ce561a40ef0781?1723610022" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[104話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/4856001361117461533</link>
+            <guid isPermalink="false">jump_plus:episode:4856001361117461533</guid>
+            <pubDate>Fri, 07 Apr 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/4856001361117461533-0e6ff4f7552a0f882615d6b0740b5bfe?1723610022" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[103話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/4856001361024772558</link>
+            <guid isPermalink="false">jump_plus:episode:4856001361024772558</guid>
+            <pubDate>Fri, 10 Mar 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/4856001361024772558-461cf85021d2fa10b2b622dd1576acb3?1723610018" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[102話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/4855956445112219948</link>
+            <guid isPermalink="false">jump_plus:episode:4855956445112219948</guid>
+            <pubDate>Fri, 24 Feb 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/4855956445112219948-45aa2be4f5f8e554dfcaf155dd09f891?1723610015" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[101話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/4855956445068928599</link>
+            <guid isPermalink="false">jump_plus:episode:4855956445068928599</guid>
+            <pubDate>Fri, 10 Feb 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/4855956445068928599-f354b1c6cf0e27a9f28cd88d1309a6ba?1723610015" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[100話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/316190247132838440</link>
+            <guid isPermalink="false">jump_plus:episode:316190247132838440</guid>
+            <pubDate>Fri, 27 Jan 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/316190247132838440-fdf1072daf62133926a63c1d327e04e5?1723610011" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[99話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/316190247092568445</link>
+            <guid isPermalink="false">jump_plus:episode:316190247092568445</guid>
+            <pubDate>Fri, 13 Jan 2023 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/316190247092568445-4e3ee0f12f46422909412ee65a8e67dd?1723610011" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[98.5話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/316190247054743815</link>
+            <guid isPermalink="false">jump_plus:episode:316190247054743815</guid>
+            <pubDate>Fri, 30 Dec 2022 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 30 Dec 2022 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/316190247054743815-b0271a574c3b7c9f85f3b0e4e0769072?1723610007" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[98話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/316190247030932855</link>
+            <guid isPermalink="false">jump_plus:episode:316190247030932855</guid>
+            <pubDate>Fri, 16 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/316190247030932855-c9a6889f1bd82e6e6cd456a9c71fef60?1723610007" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[97話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/316190247005165456</link>
+            <guid isPermalink="false">jump_plus:episode:316190247005165456</guid>
+            <pubDate>Fri, 02 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/316190247005165456-a946719a7cb6d0fb3ba07050c7d4fb72?1723610007" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[96話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/316190246967931376</link>
+            <guid isPermalink="false">jump_plus:episode:316190246967931376</guid>
+            <pubDate>Fri, 18 Nov 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/316190246967931376-22fce2bd7da9d756638a191434e2c8a1?1723610004" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[95話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/316190246926676835</link>
+            <guid isPermalink="false">jump_plus:episode:316190246926676835</guid>
+            <pubDate>Fri, 04 Nov 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/316190246926676835-72dd9cacca314fce28a2864b6e53190d?1723610004" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[94話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/316112896946513103</link>
+            <guid isPermalink="false">jump_plus:episode:316112896946513103</guid>
+            <pubDate>Fri, 21 Oct 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/316112896946513103-bea996096c20250fde886c4a230cefe3?1723610004" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[93話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/316112896909352272</link>
+            <guid isPermalink="false">jump_plus:episode:316112896909352272</guid>
+            <pubDate>Fri, 07 Oct 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/316112896909352272-26bbfd18eff543e09c4792f516f09395?1723610004" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[92話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/316112896866549729</link>
+            <guid isPermalink="false">jump_plus:episode:316112896866549729</guid>
+            <pubDate>Fri, 23 Sep 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/316112896866549729-a86d509feee827d51a6e63fd5ee9fd29?1723610004" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[91話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/316112896822202668</link>
+            <guid isPermalink="false">jump_plus:episode:316112896822202668</guid>
+            <pubDate>Fri, 09 Sep 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/316112896822202668-5b8273be5e78716391c704ac5ab4e131?1723610001" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[90話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3270375685454388816</link>
+            <guid isPermalink="false">jump_plus:episode:3270375685454388816</guid>
+            <pubDate>Fri, 26 Aug 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3270375685454388816-8416ce7b4e90d5e7ae772d17885ee710?1723610001" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[89話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3270375685412227803</link>
+            <guid isPermalink="false">jump_plus:episode:3270375685412227803</guid>
+            <pubDate>Fri, 12 Aug 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3270375685412227803-76c18538d65e5926108c87f5d794d480?1723610001" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[88話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3270375685372372962</link>
+            <guid isPermalink="false">jump_plus:episode:3270375685372372962</guid>
+            <pubDate>Fri, 29 Jul 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3270375685372372962-fb045d4093c1f277427a4a05bdbf0f42?1723610001" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[87話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3270375685344689608</link>
+            <guid isPermalink="false">jump_plus:episode:3270375685344689608</guid>
+            <pubDate>Fri, 15 Jul 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3270375685344689608-ddec1811dc873e340a6864d4bc056f96?1723610001" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[86話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3270375685308045730</link>
+            <guid isPermalink="false">jump_plus:episode:3270375685308045730</guid>
+            <pubDate>Fri, 01 Jul 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3270375685308045730-0dfa9552db148d326f193ba1a692d643?1723609997" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[85話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3270296674382497396</link>
+            <guid isPermalink="false">jump_plus:episode:3270296674382497396</guid>
+            <pubDate>Fri, 03 Jun 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3270296674382497396-e2ea4cf13b4d67c4d59fc59e4834e99d?1723609997" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[84話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3270296674354578714</link>
+            <guid isPermalink="false">jump_plus:episode:3270296674354578714</guid>
+            <pubDate>Fri, 20 May 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3270296674354578714-56cdedc697937aa3f83ff4c81dc10058?1723609993" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[83.5話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496899786144</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496899786144</guid>
+            <pubDate>Fri, 06 May 2022 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 06 May 2022 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496899786144-66b8dfb536c1995c2980a5f7e0ee4c70?1723609993" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[83話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496885817842</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496885817842</guid>
+            <pubDate>Fri, 22 Apr 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496885817842-ebcfedd1fd4133dca53085e35cf45b19?1723609993" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[82話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496856614212</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496856614212</guid>
+            <pubDate>Fri, 08 Apr 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496856614212-fe807c657b0da71853c4b99688587593?1723609993" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[81話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496827253017</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496827253017</guid>
+            <pubDate>Fri, 25 Mar 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496827253017-f25ebe0297c49f49787197900757709d?1723609990" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[80話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496804173961</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496804173961</guid>
+            <pubDate>Fri, 11 Mar 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496804173961-42e6f045509177bf414edc3c3506a487?1723609990" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[79話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496773645407</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496773645407</guid>
+            <pubDate>Fri, 25 Feb 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496773645407-8e7be6cb4c058c6a839ac4463cdfb9ef?1723609990" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[78話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496747200826</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496747200826</guid>
+            <pubDate>Fri, 11 Feb 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496747200826-93d022f258f54942f755bd2e8bee90cb?1723609990" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[77話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496723411356</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496723411356</guid>
+            <pubDate>Fri, 28 Jan 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496723411356-897dafe917161956fbeb36cf04b21f81?1723609990" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[76話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496699441642</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496699441642</guid>
+            <pubDate>Fri, 14 Jan 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496699441642-23ed335c6ffd3d15f99cc55d3921d58d?1723609987" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[75話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496666461642</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496666461642</guid>
+            <pubDate>Fri, 31 Dec 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496666461642-c4beca0426d6c836d36cd9a78af194b9?1723609987" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[休載イラスト＋第2回人気投票企画]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496650057594</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496650057594</guid>
+            <pubDate>Fri, 17 Dec 2021 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 17 Dec 2021 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496650057594-712d3b4148d302a30ed2a07db094459e?1722415819" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[74話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496629953983</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496629953983</guid>
+            <pubDate>Fri, 03 Dec 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496629953983-d962ed4098a2bceadcc668fc5cc5fdec?1723609987" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[73話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496604078221</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496604078221</guid>
+            <pubDate>Fri, 19 Nov 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496604078221-2d5bb750e932886a94981458ddbcbb05?1723609987" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[72話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496580926060</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496580926060</guid>
+            <pubDate>Fri, 05 Nov 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496580926060-ad5aa19673bcc6af72476940099917a0?1723609987" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[71話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496558273737</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496558273737</guid>
+            <pubDate>Fri, 22 Oct 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496558273737-c35f29be91cf8327f41d6484d7a243e0?1723609982" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[70話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496535717620</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496535717620</guid>
+            <pubDate>Fri, 08 Oct 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496535717620-b2f7473c75579d1eebed549be82cb1c3?1723609982" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[69話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496512157465</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496512157465</guid>
+            <pubDate>Fri, 24 Sep 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496512157465-8d9bf9048ff1e7e354e425ae3b81af7a?1723609978" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[68話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496489172854</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496489172854</guid>
+            <pubDate>Fri, 10 Sep 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496489172854-ba00cec32eb1ab3611bf608b9cba2405?1723609978" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[67話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496463554629</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496463554629</guid>
+            <pubDate>Fri, 27 Aug 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496463554629-774539014aa8983368665657ae00028d?1723609975" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[66話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496442350533</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496442350533</guid>
+            <pubDate>Fri, 13 Aug 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496442350533-fb1c574215671d79d295cae794e8c03d?1723609975" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[65話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496421081017</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496421081017</guid>
+            <pubDate>Fri, 30 Jul 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496421081017-1cea80bd3b6f5d272e784fdec8a11456?1723609972" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[64話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496399716039</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496399716039</guid>
+            <pubDate>Fri, 16 Jul 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496399716039-c02ec70b40c9a5733356205c2171c57d?1723609972" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[63話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496381502043</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496381502043</guid>
+            <pubDate>Fri, 02 Jul 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496381502043-924d7a8b0bfb5ceecb90b8e8a88f70d8?1723609968" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[62話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496361846128</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496361846128</guid>
+            <pubDate>Fri, 18 Jun 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496361846128-9797cd1199d1fbbb55508102c53e1f1e?1723609968" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[61話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496340777972</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496340777972</guid>
+            <pubDate>Fri, 04 Jun 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496340777972-e8c6f845c0ca4be6bf18997b4000bcbc?1723609964" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[60話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496322828907</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496322828907</guid>
+            <pubDate>Fri, 21 May 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496322828907-dc2ac975f8655ed3184972b8c828614c?1723609964" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[59話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496306185415</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496306185415</guid>
+            <pubDate>Fri, 07 May 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496306185415-e650156f5c22e37029a35c107133a867?1723609964" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[58話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269754496288827835</link>
+            <guid isPermalink="false">jump_plus:episode:3269754496288827835</guid>
+            <pubDate>Fri, 23 Apr 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269754496288827835-09e5744418b347f3c6c71a273e2f8a81?1723609960" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[57話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269632237314506752</link>
+            <guid isPermalink="false">jump_plus:episode:3269632237314506752</guid>
+            <pubDate>Fri, 09 Apr 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269632237314506752-8fa527d5d549fe21e62d807041525497?1723609960" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[56話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269632237297691034</link>
+            <guid isPermalink="false">jump_plus:episode:3269632237297691034</guid>
+            <pubDate>Fri, 26 Mar 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269632237297691034-a916e18049e86880f5c82fe36dd9581b?1723609955" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[55話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269632237282530068</link>
+            <guid isPermalink="false">jump_plus:episode:3269632237282530068</guid>
+            <pubDate>Fri, 12 Mar 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269632237282530068-909f5e37281851a0b84b4e407ab12cf6?1723609955" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[54話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269632237267482646</link>
+            <guid isPermalink="false">jump_plus:episode:3269632237267482646</guid>
+            <pubDate>Fri, 26 Feb 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269632237267482646-61b25f61ad3e4715d97ed8d78faf8223?1723609951" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[53話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/3269632237253985003</link>
+            <guid isPermalink="false">jump_plus:episode:3269632237253985003</guid>
+            <pubDate>Fri, 12 Feb 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/3269632237253985003-a930516c1c1ce64b20ba2543a473471c?1723609951" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[52話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331807979665</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331807979665</guid>
+            <pubDate>Fri, 29 Jan 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331807979665-7c940f453902a9b7ef84161b1016d045?1723609949" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[WJ番外編再録]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331794373868</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331794373868</guid>
+            <pubDate>Fri, 15 Jan 2021 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 15 Jan 2021 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331794373868-6ed8ef6cbcbb438990dc7a9435be43f4?1723609949" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[51話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331776630282</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331776630282</guid>
+            <pubDate>Fri, 01 Jan 2021 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331776630282-6412e61dd6d44cd3dd23c088ecc867c8?1723609949" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[50話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331769363468</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331769363468</guid>
+            <pubDate>Fri, 18 Dec 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331769363468-3985249f28bf9d712d9382168623d99f?1723609946" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[49話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331756874544</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331756874544</guid>
+            <pubDate>Fri, 04 Dec 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331756874544-af31326479241b4404b11d9e701c777d?1723609943" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[48話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331743079021</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331743079021</guid>
+            <pubDate>Fri, 20 Nov 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331743079021-61661376a1c2651c447532523c06e496?1723609943" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[47話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331731636135</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331731636135</guid>
+            <pubDate>Fri, 06 Nov 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331731636135-117a5554f76b18b2ee63736299637d16?1723609943" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[46話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331725020071</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331725020071</guid>
+            <pubDate>Fri, 23 Oct 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331725020071-6729bc36cd7e5dc53a00c4883d27f30d?1723609940" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[45話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331719351972</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331719351972</guid>
+            <pubDate>Fri, 09 Oct 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331719351972-1c2d38a96819e759af354ea301a16a86?1723609940" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[44話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331713613469</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331713613469</guid>
+            <pubDate>Fri, 25 Sep 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331713613469-3a9221efffb3a7b3bcff777e3e0dce53?1723609936" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[特別読切]終末武装パンケーキ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331707133171</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331707133171</guid>
+            <pubDate>Fri, 11 Sep 2020 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 11 Sep 2020 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331707133171-e4ad2a206d136ab4b6b365f8a9875c03?1723609936" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[43話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331700660167</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331700660167</guid>
+            <pubDate>Fri, 28 Aug 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331700660167-44ef0fd069e010e430788da59db0de5a?1723609933" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[42話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331693667689</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331693667689</guid>
+            <pubDate>Fri, 14 Aug 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331693667689-0e309e1e4cc98a2bf848651f8e8776b6?1723609933" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[41話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331686867780</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331686867780</guid>
+            <pubDate>Fri, 31 Jul 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331686867780-7df794fdc5a4e9c4e52a2f4381f0bfd9?1723609933" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[40話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331680589769</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331680589769</guid>
+            <pubDate>Fri, 17 Jul 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331680589769-30fb29d5164ee0a4f949e859ce885b32?1723609930" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[39.5話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331674589930</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331674589930</guid>
+            <pubDate>Fri, 03 Jul 2020 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 03 Jul 2020 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331674589930-11dc5b4224281ff595e6e3f394426970?1723609930" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[39話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331666178084</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331666178084</guid>
+            <pubDate>Fri, 19 Jun 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331666178084-ba16ace13c86543109e0c2edb58256be?1723609927" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[38話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331658986862</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331658986862</guid>
+            <pubDate>Fri, 05 Jun 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331658986862-0067de2a0cef6a7ad9c77690072ae143?1723609927" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[37話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331650834293</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331650834293</guid>
+            <pubDate>Fri, 22 May 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331650834293-2e57d8ac900333815aa806ae160afbec?1723609924" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[36話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331641726999</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331641726999</guid>
+            <pubDate>Fri, 08 May 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331641726999-bc43a4a86139ab46c12842927803d698?1723609924" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[35話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331629033814</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331629033814</guid>
+            <pubDate>Fri, 24 Apr 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331629033814-993878ce97fc977d29232a988f848c67?1723609921" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[34話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331620751832</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331620751832</guid>
+            <pubDate>Fri, 10 Apr 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331620751832-99c6a189108ec4292db21a793ec9f41d?1723609921" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[33話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331613915431</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331613915431</guid>
+            <pubDate>Fri, 27 Mar 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331613915431-89211aed33f82199bf2ac9a06b99f726?1723609921" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[32話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/13933686331605666899</link>
+            <guid isPermalink="false">jump_plus:episode:13933686331605666899</guid>
+            <pubDate>Fri, 13 Mar 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/13933686331605666899-b21a099f3db08b579371238d4caec591?1723609917" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[31話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156766236302</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156766236302</guid>
+            <pubDate>Fri, 28 Feb 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156766236302-4c18fd1b91e69c13fd131d6b9701a789?1723609917" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[30話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156759061413</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156759061413</guid>
+            <pubDate>Fri, 14 Feb 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156759061413-d7505d9552be4b0f84cbeacea5210d82?1723609915" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[29話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156750894009</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156750894009</guid>
+            <pubDate>Fri, 31 Jan 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156750894009-2a03c1114e650ef7d1ee7dcc15dccf8d?1723609915" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[28話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156743327901</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156743327901</guid>
+            <pubDate>Fri, 17 Jan 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156743327901-55dfb0e88f87d4b3ed9675545384c15d?1723609912" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[27話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156731495849</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156731495849</guid>
+            <pubDate>Fri, 03 Jan 2020 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156731495849-4982997b42eb15702ef1f02a31c73d65?1723609912" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[26話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156727987562</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156727987562</guid>
+            <pubDate>Fri, 20 Dec 2019 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156727987562-c9e4078ee6d8e86686224e96b83aafe3?1723609912" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[25話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156720565616</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156720565616</guid>
+            <pubDate>Fri, 06 Dec 2019 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156720565616-249de379e094bfdcaf2d67ecb98329c0?1723609909" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[24.5話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156714304019</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156714304019</guid>
+            <pubDate>Fri, 22 Nov 2019 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 22 Nov 2019 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156714304019-0a6a4765fb7b0bd798063cb55f567eda?1723609909" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[特別イラスト3]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156708188893</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156708188893</guid>
+            <pubDate>Fri, 08 Nov 2019 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 08 Nov 2019 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156708188893-cda67f2b9ed2116e0fb8c3633c771370?1723609909" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[24話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156703277340</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156703277340</guid>
+            <pubDate>Fri, 25 Oct 2019 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156703277340-42322b95e5758e1d742bc56e3526d2b8?1723609905" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[23話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156697439853</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156697439853</guid>
+            <pubDate>Fri, 11 Oct 2019 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156697439853-5e2e1471719fbad0d172e7a2b8fa1278?1723609905" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[22話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156691936184</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156691936184</guid>
+            <pubDate>Fri, 30 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156691936184-2d00fed915c58a13268c99d77d499ff0?1723609905" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[21話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156686704558</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156686704558</guid>
+            <pubDate>Thu, 29 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156686704558-af3bce6293d226ff64ea6c0d41518beb?1723609902" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[20話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156682442632</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156682442632</guid>
+            <pubDate>Wed, 28 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156682442632-9bb59c612bc86b349c08a5ecb3058e32?1723609902" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[19話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156677815823</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156677815823</guid>
+            <pubDate>Tue, 27 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156677815823-68d5ffef97a3d5dff217a516a5aaf092?1723609902" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[18話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156673657021</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156673657021</guid>
+            <pubDate>Mon, 26 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156673657021-77c1f2a52db81714c29b99d239534e55?1723609902" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[17話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156670007776</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156670007776</guid>
+            <pubDate>Sun, 25 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156670007776-fe5a8a19b7ce04afd41cbf247cfa8746?1723609899" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[16話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156666169412</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156666169412</guid>
+            <pubDate>Sat, 24 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156666169412-1acd8fa37b8c4ad0ee6f4cc355952035?1723609899" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[15話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156662364101</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156662364101</guid>
+            <pubDate>Fri, 23 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156662364101-3ea3b86572caae1a88df0cdee452ac51?1723609896" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[14話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156660111008</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156660111008</guid>
+            <pubDate>Thu, 22 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156660111008-8078716b0581c515a7ec68ce03ab420c?1723609896" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[13話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156657159826</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156657159826</guid>
+            <pubDate>Wed, 21 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156657159826-52d921b31848583fa2888e892663497f?1723609896" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[12話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156654999975</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156654999975</guid>
+            <pubDate>Tue, 20 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156654999975-ca6d7a2e037aef2908a9135076f9eec5?1723609893" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[11話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156652679024</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156652679024</guid>
+            <pubDate>Mon, 19 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156652679024-d0bfab2ef596356f3dd921c17f6463ec?1723609893" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[10話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156650972562</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156650972562</guid>
+            <pubDate>Sun, 18 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156650972562-e5915415d6c71632e3a5fbfc3f149f7f?1723609893" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[9話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156648716789</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156648716789</guid>
+            <pubDate>Sat, 17 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156648716789-9774b62bb057fdea94a134daf7f09f9c?1723609890" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[8話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156647667517</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156647667517</guid>
+            <pubDate>Fri, 16 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156647667517-3ac27526fb9a18ef92e503a30b48bc10?1723609890" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[7話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156646208877</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156646208877</guid>
+            <pubDate>Fri, 16 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156646208877-226420e35a0b08a2ec4d2411cc2be92a?1723609890" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[特別イラスト2]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156645704911</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156645704911</guid>
+            <pubDate>Fri, 22 Feb 2019 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 22 Feb 2019 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156645704911-fde133677eef85d8d160fe6afec7738c?1723609887" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[6話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156645166334</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156645166334</guid>
+            <pubDate>Fri, 16 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156645166334-f4acf0ce6c0a4f1f4118707707316949?1723609887" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[特別イラスト]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156644426402</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156644426402</guid>
+            <pubDate>Fri, 08 Feb 2019 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 08 Feb 2019 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156644426402-4828d36ed451afe3e96b758beaedb881?1723609887" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[5話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156643849385</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156643849385</guid>
+            <pubDate>Fri, 16 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156643849385-f79afb6fa564a07f4fd8f618eb6ef159?1723609887" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[4話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156643543680</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156643543680</guid>
+            <pubDate>Fri, 16 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156643543680-0136d4e9f32dc560b8fb2fb90ecc4c26?1723609884" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[3話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156643013256</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156643013256</guid>
+            <pubDate>Fri, 16 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156643013256-33c0b004ac9f723ffaf61355852f94db?1723609884" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[2話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156642562505</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156642562505</guid>
+            <pubDate>Fri, 16 Dec 2022 15:00:00 +0000</pubDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156642562505-1748234e8c1ac96b92871c0029612e18?1723609884" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+        <item>
+            <title>[1話]魔都精兵のスレイブ</title>
+            <link>https://shonenjumpplus.com/episode/10834108156641784254</link>
+            <guid isPermalink="false">jump_plus:episode:10834108156641784254</guid>
+            <pubDate>Fri, 16 Dec 2022 15:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Fri, 04 Jan 2019 15:00:00 +0000</giga:freeTermStartDate>
+            <description>魔都精兵のスレイブ</description>
+            <enclosure url="https://cdn-ak-img.shonenjumpplus.com/public/episode-thumbnail/10834108156641784254-173f8cf66c5b8efd60fcf8fae2202c60?1723609884" length="0" type="image/jpeg"/>
+            <author>タカヒロ/竹村洋平</author>
+        </item>
+    </channel>
+</rss>

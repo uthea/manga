@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:giga="https://gigaviewer.com">
+    <channel>
+        <title>くらげバンチ（縛って見つめて）</title>
+        <pubDate>Tue, 13 Aug 2024 03:00:00 +0000</pubDate>
+        <link>https://kuragebunch.com/episode/2550689798270365714</link>
+        <description>食品スーパー本社の販促課で課長を務める沢田。上と下との板挟みになり、苦労が絶えない。残業後のある日、一杯飲もうと店を探していると「フェティッシュバー」と書かれた看板が目に入る。扉を開けると彼を迎えたのは、網タイツにボンデージ姿の女性⁉ そして体験プレイで彼を縛った女王様はなんと……。</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <item>
+            <title>第8話　甘いお仕置き</title>
+            <link>https://kuragebunch.com/episode/2550689798611487121</link>
+            <guid isPermalink="false">kuragebunch:episode:2550689798611487121</guid>
+            <pubDate>Tue, 13 Aug 2024 03:00:00 +0000</pubDate>
+            <description>縛って見つめて</description>
+            <enclosure url="https://cdn-img.kuragebunch.com/public/episode-thumbnail/2550689798611487121-7f9fd407fa4bd5cc6dbc6d1b204a6d41?1723190452" length="0" type="image/jpeg"/>
+            <author>多喜ざわゆき</author>
+        </item>
+        <item>
+            <title>第7話　本心</title>
+            <link>https://kuragebunch.com/episode/2550689798611487114</link>
+            <guid isPermalink="false">kuragebunch:episode:2550689798611487114</guid>
+            <pubDate>Tue, 16 Jul 2024 03:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Tue, 13 Aug 2024 03:00:00 +0000</giga:freeTermStartDate>
+            <description>縛って見つめて</description>
+            <enclosure url="https://cdn-img.kuragebunch.com/public/episode-thumbnail/2550689798611487114-7078aa2e760518179936eaf537be5bf8?1720667839" length="0" type="image/jpeg"/>
+            <author>多喜ざわゆき</author>
+        </item>
+        <item>
+            <title>第6話　噓つき</title>
+            <link>https://kuragebunch.com/episode/2550689798470989127</link>
+            <guid isPermalink="false">kuragebunch:episode:2550689798470989127</guid>
+            <pubDate>Tue, 28 May 2024 03:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Tue, 16 Jul 2024 03:00:00 +0000</giga:freeTermStartDate>
+            <description>縛って見つめて</description>
+            <enclosure url="https://cdn-img.kuragebunch.com/public/episode-thumbnail/2550689798470989127-409357ca73cb06f14dcc1a010ca48a7f?1716432307" length="0" type="image/jpeg"/>
+            <author>多喜ざわゆき</author>
+        </item>
+        <item>
+            <title>番外編　朝田まみの場合</title>
+            <link>https://kuragebunch.com/episode/2550689798611487110</link>
+            <guid isPermalink="false">kuragebunch:episode:2550689798611487110</guid>
+            <pubDate>Tue, 18 Jun 2024 03:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Tue, 18 Jun 2024 03:00:00 +0000</giga:freeTermStartDate>
+            <description>縛って見つめて</description>
+            <enclosure url="https://cdn-img.kuragebunch.com/public/episode-thumbnail/2550689798611487110-7f91f8861554ac5591d7d1e1e7d20833?1718595338" length="0" type="image/jpeg"/>
+            <author>多喜ざわゆき</author>
+        </item>
+        <item>
+            <title>第5話　意図せぬ再訪</title>
+            <link>https://kuragebunch.com/episode/2550689798311912657</link>
+            <guid isPermalink="false">kuragebunch:episode:2550689798311912657</guid>
+            <pubDate>Tue, 30 Apr 2024 03:00:00 +0000</pubDate>
+            <description>縛って見つめて</description>
+            <enclosure url="https://cdn-img.kuragebunch.com/public/episode-thumbnail/2550689798311912657-aa96d7826eecd044fcf35e27580c02e5?1720167556" length="0" type="image/jpeg"/>
+            <author>多喜ざわゆき</author>
+        </item>
+        <item>
+            <title>第4話　あなたのおかげで</title>
+            <link>https://kuragebunch.com/episode/2550689798311912651</link>
+            <guid isPermalink="false">kuragebunch:episode:2550689798311912651</guid>
+            <pubDate>Tue, 09 Apr 2024 03:00:00 +0000</pubDate>
+            <description>縛って見つめて</description>
+            <enclosure url="https://cdn-img.kuragebunch.com/public/episode-thumbnail/2550689798311912651-61ce7fb90c1192625aff6d9033c446aa?1712216103" length="0" type="image/jpeg"/>
+            <author>多喜ざわゆき</author>
+        </item>
+        <item>
+            <title>第3話　女王様の正体</title>
+            <link>https://kuragebunch.com/episode/2550689798270365726</link>
+            <guid isPermalink="false">kuragebunch:episode:2550689798270365726</guid>
+            <pubDate>Tue, 19 Mar 2024 03:00:00 +0000</pubDate>
+            <description>縛って見つめて</description>
+            <enclosure url="https://cdn-img.kuragebunch.com/public/episode-thumbnail/2550689798270365726-40a31952288ab809804762bb994b6f50?1710826009" length="0" type="image/jpeg"/>
+            <author>多喜ざわゆき</author>
+        </item>
+        <item>
+            <title>第2話　求めよ、さらば与えられん</title>
+            <link>https://kuragebunch.com/episode/2550689798270365720</link>
+            <guid isPermalink="false">kuragebunch:episode:2550689798270365720</guid>
+            <pubDate>Tue, 05 Mar 2024 03:00:00 +0000</pubDate>
+            <description>縛って見つめて</description>
+            <enclosure url="https://cdn-img.kuragebunch.com/public/episode-thumbnail/2550689798270365720-4cee749b1cb45334395d7f7dfd2bb6bc?1709527142" length="0" type="image/jpeg"/>
+            <author>多喜ざわゆき</author>
+        </item>
+        <item>
+            <title>第1話　天国への扉</title>
+            <link>https://kuragebunch.com/episode/2550689798270365714</link>
+            <guid isPermalink="false">kuragebunch:episode:2550689798270365714</guid>
+            <pubDate>Tue, 05 Mar 2024 03:00:00 +0000</pubDate>
+            <giga:freeTermStartDate>Tue, 05 Mar 2024 03:00:00 +0000</giga:freeTermStartDate>
+            <description>縛って見つめて</description>
+            <enclosure url="https://cdn-img.kuragebunch.com/public/episode-thumbnail/2550689798270365714-8f1e974bd689614357a032bb3a10a6a6?1712139536" length="0" type="image/jpeg"/>
+            <author>多喜ざわゆき</author>
+        </item>
+    </channel>
+</rss>
