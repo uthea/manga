@@ -2,6 +2,12 @@ use chrono::{NaiveDateTime, Weekday};
 
 use crate::core::types::MangaSource;
 
+#[derive(Debug)]
+pub struct Paginated<T> {
+    pub data: T,
+    pub total_page: i64,
+}
+
 #[derive(sqlx::FromRow, Debug)]
 pub struct MangaRow {
     pub source: MangaSource,
