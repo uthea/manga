@@ -7,6 +7,7 @@ use super::{
     types::MangaSource,
 };
 
+#[derive(Debug)]
 pub enum FetchError {
     ConvertError(ConvertError),
     ReqwestError(reqwest::Error),

@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 use super::parser::rss_manga::Channel;
 
-#[derive(Deserialize, Serialize, Clone)]
+#[derive(Deserialize, Serialize, Clone, Debug)]
 pub struct Manga {
     pub title: String,
     pub cover_url: String,
@@ -15,6 +15,7 @@ pub struct Manga {
     pub latest_chapter_publish_day: Weekday,
 }
 
+#[derive(Debug)]
 pub enum ConvertError {
     EmptyChapter,
 }
