@@ -1,9 +1,13 @@
+use std::{num::NonZeroU32, sync::Arc, time::Duration};
+
 use chrono::TimeZone;
 use chrono_tz::Japan;
+use governor::{DefaultKeyedRateLimiter, Jitter, Quota, RateLimiter};
+use serenity::all::{CreateEmbed, ExecuteWebhook, Http, Webhook};
 use sqlx::PgPool;
 
 use crate::{
-    core::{fetch::fetch_manga, manga::Manga},
+    core::{fetch::fetch_manga, manga::Manga, types::MangaSource},
     db::{
         inquiry::{get_manga_paginated, MangaQuery},
         model::MangaRow,
@@ -13,11 +17,11 @@ use crate::{
 #[derive(Debug)]
 pub enum DiffingResult {
     NoChange,
-    Upcoming(Manga),
-    Released(Manga),
+    Upcoming(MangaSource, Manga),
+    Released(MangaSource, Manga),
 }
 
-pub async fn update_books(pool: &PgPool) {
+pub async fn update_books(webhook_url: String, pool: &PgPool) {
     // retrieve series from db (paginated) based on the current day
     // for each series check for latest update
     let mut page_counter = 1;
@@ -49,25 +53,84 @@ pub async fn update_books(pool: &PgPool) {
     }
 
     // generate diff state
+    let lim: Arc<DefaultKeyedRateLimiter<MangaSource>> = Arc::new(RateLimiter::keyed(
+        Quota::per_second(NonZeroU32::new(2).unwrap()),
+    ));
     let mut tasks = vec![];
+    let mut task_output = vec![];
 
     for series in all_series {
-        tasks.push(tokio::spawn(diff_update(series)));
+        tasks.push(tokio::spawn(diff_update(series, lim.clone())));
     }
 
     for task in tasks {
-        let task_result = task.await.unwrap();
+        let task_result = task.await;
+
+        match task_result {
+            Ok(diff) => {
+                task_output.push(diff);
+            }
+            Err(e) => {
+                println!("Error : {}", e);
+            }
+        }
     }
 
     // broadcast diff change to webhook and update database
-    // TODO: add serenity crate for discord webhook
-    // TODO: create query for db update
+    broadcast_diff(&webhook_url, task_output).await;
 
-    todo!()
+    // TODO: create query for db update
 }
 
-// TODO: use rate limiter when fetching update using governor
-pub async fn diff_update(data: MangaRow) -> DiffingResult {
+pub async fn broadcast_diff(webhook_url: &str, diffs: Vec<DiffingResult>) {
+    let embeds = diffs.iter().filter_map(|d| match d {
+        DiffingResult::NoChange => None,
+        DiffingResult::Upcoming(source, manga) => Some(
+            CreateEmbed::new()
+                /*                 .url(&manga.latest_chapter_url) */
+                .title(format!("[UPCOMING] {}", &manga.latest_chapter_title))
+                .image(&manga.cover_url)
+                .field("series_name", &manga.title, false)
+                .field("source", source.to_string(), false)
+                .field("author", &manga.author, false),
+        ),
+        DiffingResult::Released(source, manga) => Some(
+            CreateEmbed::new()
+                .url(&manga.latest_chapter_url)
+                .title(format!("[RELEASED] {}", &manga.latest_chapter_title))
+                .image(&manga.cover_url)
+                .field("series_name", &manga.title, false)
+                .field("source", source.to_string(), false)
+                .field("author", &manga.author, false),
+        ),
+    });
+
+    let http = Http::new("");
+    let webhook = Webhook::from_url(&http, webhook_url)
+        .await
+        .expect("Invalid webhook url");
+
+    for embed in embeds {
+        webhook
+            .execute(&http, true, ExecuteWebhook::new().embed(embed))
+            .await
+            .expect("Error hitting webhook");
+
+        tokio::time::sleep(Duration::from_millis(500)).await;
+    }
+}
+
+pub async fn diff_update(
+    data: MangaRow,
+    limiter: Arc<DefaultKeyedRateLimiter<MangaSource>>,
+) -> DiffingResult {
+    limiter
+        .until_key_ready_with_jitter(
+            &data.source,
+            Jitter::new(Duration::from_secs(1), Duration::from_secs(1)),
+        )
+        .await;
+
     // for each mangarow retrieve latest update
     let latest_update = fetch_manga(&data.manga_id, &data.source)
         .await
@@ -88,13 +151,13 @@ pub async fn diff_update(data: MangaRow) -> DiffingResult {
         || !data.latest_chapter_released)
         && released
     {
-        DiffingResult::Released(latest_update)
+        DiffingResult::Released(data.source, latest_update)
     } else if data
         .latest_chapter_title
         .ne(&latest_update.latest_chapter_title)
         && !released
     {
-        DiffingResult::Upcoming(latest_update)
+        DiffingResult::Upcoming(data.source, latest_update)
     } else {
         DiffingResult::NoChange
     }

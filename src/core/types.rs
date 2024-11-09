@@ -1,6 +1,17 @@
 use strum_macros::{Display, EnumIter, EnumString};
 
-#[derive(EnumIter, serde::Deserialize, serde::Serialize, Clone, Debug, EnumString, Display)]
+#[derive(
+    EnumIter,
+    serde::Deserialize,
+    serde::Serialize,
+    Clone,
+    Debug,
+    EnumString,
+    Display,
+    Eq,
+    PartialEq,
+    Hash,
+)]
 #[cfg_attr(feature = "ssr", derive(sqlx::Type))]
 #[cfg_attr(feature = "ssr", sqlx(type_name = "MangaSource"))]
 pub enum MangaSource {
