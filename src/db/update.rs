@@ -34,7 +34,7 @@ pub async fn update_manga_batch(
         "#,
     );
 
-    query_builder.push_values(latest_data.into_iter(), |mut b, row| {
+    query_builder.push_values(latest_data, |mut b, row| {
         b.push_bind(row.source.clone())
             .push_bind(row.manga_id.clone())
             .push_bind(row.cover_url.clone())
@@ -47,8 +47,6 @@ pub async fn update_manga_batch(
     });
 
     query_builder.build().execute(&mut *trx).await?;
-
-    query_builder.reset();
 
     let mut query_builder = QueryBuilder::new(
         r#"
@@ -68,6 +66,10 @@ pub async fn update_manga_batch(
     );
 
     query_builder.build().execute(&mut *trx).await?;
+
+    sqlx::query(" DROP table update_table ")
+        .execute(&mut *trx)
+        .await?;
 
     trx.commit().await?;
 

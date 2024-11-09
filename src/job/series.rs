@@ -75,19 +75,24 @@ pub async fn update_books(webhook_url: String, pool: &PgPool) {
         }
     }
 
-    let rows = task_output.iter().filter_map(|d| match d {
-        DiffingResult::NoChange => None,
-        DiffingResult::Upcoming(manga_row) => Some(manga_row),
-        DiffingResult::Released(manga_row) => Some(manga_row),
-    });
+    let rows: Vec<_> = task_output
+        .iter()
+        .filter_map(|d| match d {
+            DiffingResult::NoChange => None,
+            DiffingResult::Upcoming(manga_row) => Some(manga_row),
+            DiffingResult::Released(manga_row) => Some(manga_row),
+        })
+        .collect();
 
     // update table
-    update_manga_batch(rows, pool)
-        .await
-        .expect("Error updating manga details");
+    if !rows.is_empty() {
+        update_manga_batch(rows.into_iter(), pool)
+            .await
+            .expect("Error updating manga details");
 
-    // broadcast diff change to webhook and update database
-    broadcast_diff(&webhook_url, task_output).await;
+        // broadcast diff change to webhook and update database
+        broadcast_diff(&webhook_url, task_output).await;
+    }
 
     println!("Update series job finished")
 }

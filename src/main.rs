@@ -5,7 +5,9 @@ use axum::{
 };
 use leptos::{context::provide_context, logging::log};
 use leptos_axum::handle_server_fns_with_context;
-use manga_tracker::{app::shell, state::AppState};
+use manga_tracker::{app::shell, job::series::update_books, state::AppState};
+use sqlx::migrate::Migrator;
+use underway::{Job, To};
 
 async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
     use std::env;
@@ -28,7 +30,54 @@ async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
         .connect_with(options)
         .await?;
 
+    let app_migrator = sqlx::migrate!("./migrations");
+
+    let combined_migrations: Vec<_> = app_migrator
+        .iter()
+        .chain(underway::MIGRATOR.iter())
+        .cloned()
+        .collect();
+
+    let combined_migrator = Migrator {
+        migrations: combined_migrations.into(), // semver-exempt (!)
+        ..Migrator::DEFAULT
+    };
+
+    combined_migrator.run(&pool).await?;
+
     Ok(pool)
+}
+
+async fn spawn_background_job(
+    webhook_url: String,
+    cron_expression: &str,
+    pool: sqlx::PgPool,
+) -> Result<(), Box<dyn std::error::Error>> {
+    let cloned_pool = pool.clone();
+
+    let job = Job::builder()
+        .step(move |_ctx, _input| {
+            let url = webhook_url.clone();
+            let cloned_pool = cloned_pool.clone();
+
+            async move {
+                update_books(url, &cloned_pool).await;
+                To::done()
+            }
+        })
+        .name("scheduled")
+        .pool(pool.clone())
+        .build()
+        .await?;
+
+    let cron = cron_expression.parse()?;
+    job.schedule(&cron, &()).await?;
+
+    tokio::spawn(async move {
+        job.run().await.expect("Error running job");
+    });
+
+    Ok(())
 }
 
 async fn server_fn_handler(
@@ -79,6 +128,8 @@ async fn main() {
     };
 
     let db_pool = load_db().await.expect("Fail loading db connection");
+    let webhook_url = env::var("WEBHOOK_URL").expect("WEBHOOK_URL is not set");
+    let cron_expression = env::var("CRON_EXPR").expect("CRON_EXPR is not set");
     let conf = get_configuration(None).unwrap();
     let addr = conf.leptos_options.site_addr;
     let leptos_options = conf.leptos_options;
@@ -103,6 +154,11 @@ async fn main() {
     // `axum::Server` is a re-export of `hyper::Server`
     log!("listening on http://{}", &addr);
     let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
+
+    spawn_background_job(webhook_url, &cron_expression, db_pool.clone())
+        .await
+        .expect("Fail at spawning background job");
+
     axum::serve(listener, app.into_make_service())
         .await
         .unwrap();
