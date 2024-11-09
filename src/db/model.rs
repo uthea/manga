@@ -1,6 +1,9 @@
 use chrono::{NaiveDateTime, Weekday};
 
-use crate::core::types::MangaSource;
+use chrono::TimeZone;
+use chrono_tz::Japan;
+
+use crate::core::{manga::Manga, types::MangaSource};
 
 #[derive(Debug)]
 pub struct Paginated<T> {
@@ -23,7 +26,30 @@ pub struct MangaRow {
     pub last_update: NaiveDateTime,
 }
 
-#[derive(sqlx::Type, Debug)]
+impl MangaRow {
+    pub fn from_manga(manga_id: String, source: MangaSource, info: Manga) -> Self {
+        let current_dt = chrono::offset::Local::now().naive_local();
+        let release_dt = info.latest_chapter_release_date.naive_local();
+        let wd: DbWeekday = info.latest_chapter_publish_day.into();
+
+        Self {
+            source,
+            manga_id,
+            cover_url: info.cover_url,
+            author: info.author,
+            title: info.title,
+            latest_chapter_title: info.latest_chapter_title,
+            latest_chapter_url: info.latest_chapter_url,
+            latest_chapter_release_date: release_dt,
+            latest_chapter_publish_day: wd,
+            latest_chapter_released: Japan.from_local_datetime(&current_dt).unwrap()
+                >= Japan.from_local_datetime(&release_dt).unwrap(),
+            last_update: current_dt,
+        }
+    }
+}
+
+#[derive(sqlx::Type, Debug, Copy, Clone)]
 #[sqlx(type_name = "Weekday")]
 pub enum DbWeekday {
     Mon = 0,

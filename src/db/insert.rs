@@ -1,10 +1,8 @@
-use chrono::TimeZone;
-use chrono_tz::Japan;
 use sqlx::PgPool;
 
 use crate::core::{manga::Manga, types::MangaSource};
 
-use super::model::DbWeekday;
+use super::model::MangaRow;
 
 pub async fn insert_manga(
     source: MangaSource,
@@ -12,9 +10,7 @@ pub async fn insert_manga(
     info: Manga,
     pool: &PgPool,
 ) -> Result<(), sqlx::Error> {
-    let current_dt = chrono::offset::Local::now().naive_local();
-    let release_dt = info.latest_chapter_release_date.naive_local();
-    let wd: DbWeekday = info.latest_chapter_publish_day.into();
+    let manga_row = MangaRow::from_manga(manga_id, source, info);
 
     sqlx::query(r#"
         INSERT INTO series
@@ -22,17 +18,17 @@ pub async fn insert_manga(
         latest_chapter_url, latest_chapter_release_date, latest_chapter_publish_day, latest_chapter_released, last_update)
         VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
     "#)
-        .bind(source)
-        .bind(manga_id)
-        .bind(info.title)
-        .bind(info.cover_url)
-        .bind(info.author)
-        .bind(info.latest_chapter_title)
-        .bind(info.latest_chapter_url)
-        .bind(release_dt)
-        .bind(wd)
-        .bind(Japan.from_local_datetime(&current_dt).unwrap() >= Japan.from_local_datetime(&release_dt).unwrap())
-        .bind(current_dt)
+        .bind(manga_row.source)
+        .bind(manga_row.manga_id)
+        .bind(manga_row.title)
+        .bind(manga_row.cover_url)
+        .bind(manga_row.author)
+        .bind(manga_row.latest_chapter_title)
+        .bind(manga_row.latest_chapter_url)
+        .bind(manga_row.latest_chapter_release_date)
+        .bind(manga_row.latest_chapter_publish_day)
+        .bind(manga_row.latest_chapter_released)
+        .bind(manga_row.last_update)
         .execute(pool)
         .await?;
 

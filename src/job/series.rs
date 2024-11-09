@@ -1,24 +1,23 @@
 use std::{num::NonZeroU32, sync::Arc, time::Duration};
 
-use chrono::TimeZone;
-use chrono_tz::Japan;
 use governor::{DefaultKeyedRateLimiter, Jitter, Quota, RateLimiter};
 use serenity::all::{CreateEmbed, ExecuteWebhook, Http, Webhook};
 use sqlx::PgPool;
 
 use crate::{
-    core::{fetch::fetch_manga, manga::Manga, types::MangaSource},
+    core::{fetch::fetch_manga, types::MangaSource},
     db::{
         inquiry::{get_manga_paginated, MangaQuery},
         model::MangaRow,
+        update::update_manga_batch,
     },
 };
 
 #[derive(Debug)]
 pub enum DiffingResult {
     NoChange,
-    Upcoming(MangaSource, Manga),
-    Released(MangaSource, Manga),
+    Upcoming(MangaRow),
+    Released(MangaRow),
 }
 
 pub async fn update_books(webhook_url: String, pool: &PgPool) {
@@ -76,31 +75,42 @@ pub async fn update_books(webhook_url: String, pool: &PgPool) {
         }
     }
 
+    let rows = task_output.iter().filter_map(|d| match d {
+        DiffingResult::NoChange => None,
+        DiffingResult::Upcoming(manga_row) => Some(manga_row),
+        DiffingResult::Released(manga_row) => Some(manga_row),
+    });
+
+    // update table
+    update_manga_batch(rows, pool)
+        .await
+        .expect("Error updating manga details");
+
     // broadcast diff change to webhook and update database
     broadcast_diff(&webhook_url, task_output).await;
 
-    // TODO: create query for db update
+    println!("Update series job finished")
 }
 
 pub async fn broadcast_diff(webhook_url: &str, diffs: Vec<DiffingResult>) {
     let embeds = diffs.iter().filter_map(|d| match d {
         DiffingResult::NoChange => None,
-        DiffingResult::Upcoming(source, manga) => Some(
+        DiffingResult::Upcoming(manga) => Some(
             CreateEmbed::new()
                 /*                 .url(&manga.latest_chapter_url) */
                 .title(format!("[UPCOMING] {}", &manga.latest_chapter_title))
                 .image(&manga.cover_url)
                 .field("series_name", &manga.title, false)
-                .field("source", source.to_string(), false)
+                .field("source", manga.source.to_string(), false)
                 .field("author", &manga.author, false),
         ),
-        DiffingResult::Released(source, manga) => Some(
+        DiffingResult::Released(manga) => Some(
             CreateEmbed::new()
                 .url(&manga.latest_chapter_url)
                 .title(format!("[RELEASED] {}", &manga.latest_chapter_title))
                 .image(&manga.cover_url)
                 .field("series_name", &manga.title, false)
-                .field("source", source.to_string(), false)
+                .field("source", manga.source.to_string(), false)
                 .field("author", &manga.author, false),
         ),
     });
@@ -140,24 +150,25 @@ pub async fn diff_update(
     // no change -> title and release status doesn't change
     // upcoming -> release status change from released to not released and title change
     // released -> release status change from not released to released
-    let current_dt = chrono::offset::Local::now().naive_local();
-    let update_dt = latest_update.latest_chapter_release_date.naive_local();
-    let released = Japan.from_local_datetime(&current_dt).unwrap()
-        >= Japan.from_local_datetime(&update_dt).unwrap();
+    // let current_dt = chrono::offset::Local::now().naive_local();
+    // let update_dt = latest_update.latest_chapter_release_date.naive_local();
+    // let released = Japan.from_local_datetime(&current_dt).unwrap()
+    //     >= Japan.from_local_datetime(&update_dt).unwrap();
+    let update_manga_row = MangaRow::from_manga(data.manga_id, data.source, latest_update);
 
     if (data
         .latest_chapter_title
-        .ne(&latest_update.latest_chapter_title)
+        .ne(&update_manga_row.latest_chapter_title)
         || !data.latest_chapter_released)
-        && released
+        && update_manga_row.latest_chapter_released
     {
-        DiffingResult::Released(data.source, latest_update)
+        DiffingResult::Released(update_manga_row)
     } else if data
         .latest_chapter_title
-        .ne(&latest_update.latest_chapter_title)
-        && !released
+        .ne(&update_manga_row.latest_chapter_title)
+        && !update_manga_row.latest_chapter_released
     {
-        DiffingResult::Upcoming(data.source, latest_update)
+        DiffingResult::Upcoming(update_manga_row)
     } else {
         DiffingResult::NoChange
     }
