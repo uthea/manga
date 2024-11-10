@@ -1,0 +1,126 @@
+on:
+  push:
+    # Pattern matched against refs/tags
+    tags:
+      - v*
+name: Deploy API
+
+env:
+  REGISTRY: ghcr.io
+jobs:
+  publish-docker:
+    name: Publish Docker image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v4
+        with:
+          images: ${{ env.REGISTRY }}/${{ github.repository }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          file: ./Dockerfile
+          target: runtime
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ github.repository }}:buildcache
+          cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ github.repository }}:buildcache,mode=max
+
+  deployment:
+    needs: publish-docker
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Find and Replace 1
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ db_password }"
+          replace: ${{ secrets.DB_PASSWORD }}
+          include: "**values.yaml"
+
+      - name: Find and Replace 2
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ db_username }"
+          replace: ${{ secrets.DB_USERNAME }}
+          include: "**values.yaml"
+
+      - name: Find and Replace 3
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ db_host }"
+          replace: ${{ secrets.DB_HOST }}
+          include: "**values.yaml"
+
+      - name: Find and Replace 4
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ db_name }"
+          replace: ${{ secrets.DB_NAME }}
+          include: "**values.yaml"
+
+      - name: Find and Replace 5
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ webhook_url }"
+          replace: ${{ secrets.WEBHOOK_URL }}
+          include: "**values.yaml"
+
+      - name: Find and Replace 6
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ cron }"
+          replace: ${{ secrets.CRON }}
+          include: "**values.yaml"
+
+      - name: Find and Replace 7
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ gh.REGISTRY }"
+          replace: ${{ env.REGISTRY }}
+          include: "**values.yaml"
+
+      - name: Find and Replace 8
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ gh.USERNAME }"
+          replace: ${{ github.actor }}
+          include: "**values.yaml"
+
+      - name: Find and Replace 9
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ gh.PASSWORD }"
+          replace: ${{ secrets.GITHUB_TOKEN }}
+          include: "**values.yaml"
+
+      - name: Authorize tailscale
+        uses: tailscale/github-action@v1
+        with:
+          authkey: ${{ secrets.TAILSCALE_AUTHKEY }}
+
+      - name: Deploy
+        uses: WyriHaximus/github-action-helm3@v3
+        with:
+          exec: helm upgrade manga-tracker ./helm-chart --install --wait --atomic --namespace=default -f ./helm-chart/values.yaml
+          kubeconfig: "${{ secrets.KUBECONFIG }}"
+          overrule_existing_kubeconfig: "true"
