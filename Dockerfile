@@ -16,7 +16,7 @@ RUN cargo chef prepare --recipe-path recipe.json
 FROM prereq as cacher
 WORKDIR /app
 COPY --from=planner /app/recipe.json recipe.json
-RUN cargo chef cook --release --bin=server --target-dir=target/    --recipe-path recipe.json
+RUN cargo chef cook --release --bin=manga-tracker --target-dir=target/    --recipe-path recipe.json
 RUN cargo chef cook --release --target-dir=target/front --target=wasm32-unknown-unknown    --recipe-path recipe.json
 
 FROM prereq as builder
@@ -34,7 +34,7 @@ FROM rustlang/rust:nightly as runner
 
 WORKDIR /app
 
-COPY --from=builder /app/target/release/server /app/
+COPY --from=builder /app/target/release/manga-tracker /app/
 COPY --from=builder /app/target/site /app/site
 COPY --from=builder /app/migrations /app/migrations
 
@@ -49,4 +49,4 @@ ENV APP_ENV "prod"
 EXPOSE 4000
 
 
-CMD ["./server"]
+CMD ["./manga-tracker"]
