@@ -51,6 +51,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: set chart appVersion
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ appVersion }"
+          replace: ${{ github.ref_name }}
+          include: "**Chart.yaml"
+
       - name: Find and Replace 1
         uses: jacobtomlinson/gha-find-replace@v3
         with:
