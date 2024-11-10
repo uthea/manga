@@ -18,7 +18,7 @@ imageCredentials:
   email: test@deploy.com
 
 image:
-  repository: ghcr.io/uthea/manga-tracker
+  repository: ghcr.io/uthea/manga/manga-tracker
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   #tag: ""

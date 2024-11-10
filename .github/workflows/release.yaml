@@ -7,6 +7,7 @@ name: Deploy API
 
 env:
   REGISTRY: ghcr.io
+  IMAGE_NAME: manga-tracker
 jobs:
   publish-docker:
     name: Publish Docker image
@@ -40,8 +41,8 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ github.repository }}:buildcache
-          cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ github.repository }}:buildcache,mode=max
+          cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ github.repository }}/${{ env.IMAGE_NAME }}:buildcache
+          cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ github.repository }}/${{ env.IMAGE_NAME }}:buildcache,mode=max
 
   deployment:
     needs: publish-docker
