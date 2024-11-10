@@ -1,7 +1,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "kobo-api.name" -}}
+{{- define "manga-tracker.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
@@ -10,7 +10,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "kobo-api.fullname" -}}
+{{- define "manga-tracker.fullname" -}}
 {{- if .Values.fullnameOverride }}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
 {{- else }}
@@ -26,16 +26,16 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "kobo-api.chart" -}}
+{{- define "manga-tracker.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Common labels
 */}}
-{{- define "kobo-api.labels" -}}
-helm.sh/chart: {{ include "kobo-api.chart" . }}
-{{ include "kobo-api.selectorLabels" . }}
+{{- define "manga-tracker.labels" -}}
+helm.sh/chart: {{ include "manga-tracker.chart" . }}
+{{ include "manga-tracker.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -45,17 +45,17 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "kobo-api.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "kobo-api.name" . }}
+{{- define "manga-tracker.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "manga-tracker.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "kobo-api.serviceAccountName" -}}
+{{- define "manga-tracker.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create }}
-{{- default (include "kobo-api.fullname" .) .Values.serviceAccount.name }}
+{{- default (include "manga-tracker.fullname" .) .Values.serviceAccount.name }}
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
