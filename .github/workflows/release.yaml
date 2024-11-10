@@ -3,7 +3,7 @@ on:
     # Pattern matched against refs/tags
     tags:
       - v*
-name: Deploy API
+name: Deploy manga-tracker website
 
 env:
   REGISTRY: ghcr.io
