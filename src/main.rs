@@ -111,6 +111,10 @@ pub async fn leptos_routes_handler(
     handler(request).await.into_response()
 }
 
+async fn health() -> &'static str {
+    "."
+}
+
 #[tokio::main]
 async fn main() {
     use std::env;
@@ -142,6 +146,7 @@ async fn main() {
     };
 
     let app = Router::new()
+        .route("/health", get(health))
         .route(
             "/api/*fn_name",
             get(server_fn_handler).post(server_fn_handler),
