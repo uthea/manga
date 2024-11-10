@@ -16,8 +16,8 @@ RUN cargo chef prepare --recipe-path recipe.json
 FROM prereq as cacher
 WORKDIR /app
 COPY --from=planner /app/recipe.json recipe.json
-RUN cargo chef cook --release --package=server --bin=server --target-dir=target/    --recipe-path recipe.json
-RUN cargo chef cook --release --package=client --target-dir=target/front --target=wasm32-unknown-unknown    --recipe-path recipe.json
+RUN cargo chef cook --release --bin=server --target-dir=target/    --recipe-path recipe.json
+RUN cargo chef cook --release --target-dir=target/front --target=wasm32-unknown-unknown    --recipe-path recipe.json
 
 FROM prereq as builder
 COPY . /app
