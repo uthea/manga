@@ -28,4 +28,7 @@ pub enum MangaSource {
 
     #[strum(to_string = "Comic Growl")]
     ComicGrowl,
+
+    #[strum(to_string = "Comic Days")]
+    ComicDays,
 }

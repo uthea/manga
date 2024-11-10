@@ -1,0 +1,578 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:giga="https://gigaviewer.com">
+    <channel>
+        <title>コミックDAYS（来世は他人がいい）</title>
+        <pubDate>Fri, 23 Feb 2024 15:00:00 +0000</pubDate>
+        <link>https://comic-days.com/episode/13932016480029553694</link>
+        <description>極道の家で生まれ育った女子高生、染井吉乃。家庭環境は特殊でも、おとなしく平穏に日々を過ごしてきた。婚約者の深山霧島（みやま・きりしま）と出会うまでは――！デビュー作『春の呪い』で「このマンガがすごい！2017」（オンナ編）2位にランクインした小西明日翔の最新作。はみ出し者たちが織りなす、スリルと笑いが融合した極道エンタメがここに誕生!!</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <item>
+            <title>番外編</title>
+            <link>https://comic-days.com/episode/2550668105999738794</link>
+            <guid isPermalink="false">comicdays:episode:2550668105999738794</guid>
+            <pubDate>Fri, 23 Feb 2024 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/2550668105999738794-173a3921dfbe9d44b66d1bcf1cfa8010?1708488264" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十八話　１８歳②</title>
+            <link>https://comic-days.com/episode/10044607041231571924</link>
+            <guid isPermalink="false">comicdays:episode:10044607041231571924</guid>
+            <pubDate>Wed, 24 Jan 2024 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10044607041231571924-f863317a76ac920117549e183f161a69?1705983571" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十八話　１８歳①</title>
+            <link>https://comic-days.com/episode/10044607041231571914</link>
+            <guid isPermalink="false">comicdays:episode:10044607041231571914</guid>
+            <pubDate>Wed, 24 Jan 2024 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10044607041231571914-0c1b0554fdc5031ff3880d97c9bb676c?1705983558" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十七話（後編）　君は人生④</title>
+            <link>https://comic-days.com/episode/14079602755589254183</link>
+            <guid isPermalink="false">comicdays:episode:14079602755589254183</guid>
+            <pubDate>Sun, 24 Dec 2023 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/14079602755589254183-4a99dcb1c569bcfa643115c5490a6ed7?1703218257" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十七話（前編）　君は人生④</title>
+            <link>https://comic-days.com/episode/14079602755350262703</link>
+            <guid isPermalink="false">comicdays:episode:14079602755350262703</guid>
+            <pubDate>Tue, 24 Oct 2023 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/14079602755350262703-894ae53322d45aa7905528bc3cdd90d8?1698040127" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十六話　君は人生③</title>
+            <link>https://comic-days.com/episode/14079602755228055593</link>
+            <guid isPermalink="false">comicdays:episode:14079602755228055593</guid>
+            <pubDate>Sun, 24 Sep 2023 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/14079602755228055593-73a0ae79725c67903ad840cecbcd8ec0?1697701837" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十五話（後編）　君は人生②</title>
+            <link>https://comic-days.com/episode/14079602755121009532</link>
+            <guid isPermalink="false">comicdays:episode:14079602755121009532</guid>
+            <pubDate>Wed, 23 Aug 2023 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/14079602755121009532-4c6424bdcc83e8b14d5b68c9c198b139?1692680886" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十五話（前編）　君は人生①</title>
+            <link>https://comic-days.com/episode/4856001361539438141</link>
+            <guid isPermalink="false">comicdays:episode:4856001361539438141</guid>
+            <pubDate>Mon, 24 Jul 2023 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/4856001361539438141-55539626d59745829ed48a956e5dd208?1689915836" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十四話　君の恋人、君の武器、君の身代わり④（２）</title>
+            <link>https://comic-days.com/episode/4856001361358252206</link>
+            <guid isPermalink="false">comicdays:episode:4856001361358252206</guid>
+            <pubDate>Thu, 22 Jun 2023 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/4856001361358252206-cc97c55d9dab66142bc97489c9aaffe2?1687324056" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十四話　君の恋人、君の武器、君の身代わり④（１）</title>
+            <link>https://comic-days.com/episode/4856001361358252198</link>
+            <guid isPermalink="false">comicdays:episode:4856001361358252198</guid>
+            <pubDate>Thu, 22 Jun 2023 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/4856001361358252198-c09f6f922f528b223e49aeeab2535f90?1687324046" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十三話　君の恋人、君の武器、君の身代わり③（２）</title>
+            <link>https://comic-days.com/episode/4856001361259614152</link>
+            <guid isPermalink="false">comicdays:episode:4856001361259614152</guid>
+            <pubDate>Wed, 24 May 2023 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/4856001361259614152-ac82461568891ff144049fdcad8e503d?1684892323" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十三話　君の恋人、君の武器、君の身代わり③（１）</title>
+            <link>https://comic-days.com/episode/4856001361259614141</link>
+            <guid isPermalink="false">comicdays:episode:4856001361259614141</guid>
+            <pubDate>Wed, 24 May 2023 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/4856001361259614141-fe3d21aa7a86ee4015d4d997fb0042b4?1684892303" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十二話（後編）　君の恋人、君の武器、君の身代わり②</title>
+            <link>https://comic-days.com/episode/4856001361071324223</link>
+            <guid isPermalink="false">comicdays:episode:4856001361071324223</guid>
+            <pubDate>Fri, 24 Mar 2023 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/4856001361071324223-df59fb32a16f7fa9bb77b8ae7b063e8d?1679535424" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十二話（前編）　君の恋人、君の武器、君の身代わり①</title>
+            <link>https://comic-days.com/episode/316190247118283911</link>
+            <guid isPermalink="false">comicdays:episode:316190247118283911</guid>
+            <pubDate>Tue, 24 Jan 2023 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/316190247118283911-76592d79bebb0e49746a9cfda3a6eff8?1674452827" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十一話　彼の親切は命より重い⑤（３）</title>
+            <link>https://comic-days.com/episode/316190247042279801</link>
+            <guid isPermalink="false">comicdays:episode:316190247042279801</guid>
+            <pubDate>Thu, 22 Dec 2022 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/316190247042279801-db352bb4f2b94d95d17a11def4f9c158?1671600819" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十一話　彼の親切は命より重い⑤（２）</title>
+            <link>https://comic-days.com/episode/316190247042279794</link>
+            <guid isPermalink="false">comicdays:episode:316190247042279794</guid>
+            <pubDate>Thu, 22 Dec 2022 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/316190247042279794-53a7804c986c518c4aa137b119956fe9?1671600807" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十一話　彼の親切は命より重い⑤（１）</title>
+            <link>https://comic-days.com/episode/316190247042279782</link>
+            <guid isPermalink="false">comicdays:episode:316190247042279782</guid>
+            <pubDate>Thu, 22 Dec 2022 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/316190247042279782-3d19f940aa1b2cca3dfa3bac31a10bd9?1671600793" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十話（後編）　彼の親切は命より重い④</title>
+            <link>https://comic-days.com/episode/316112896952050571</link>
+            <guid isPermalink="false">comicdays:episode:316112896952050571</guid>
+            <pubDate>Mon, 24 Oct 2022 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/316112896952050571-5d7db76eec88e841196ab22b4124d10b?1666574897" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第三十話（前編）　彼の親切は命より重い③</title>
+            <link>https://comic-days.com/episode/316112896863019907</link>
+            <guid isPermalink="false">comicdays:episode:316112896863019907</guid>
+            <pubDate>Fri, 23 Sep 2022 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/316112896863019907-09220cdedf9579943ec880c1003d7beb?1663732182" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十九話（後編）　彼の親切は命より重い②</title>
+            <link>https://comic-days.com/episode/3270375685439722449</link>
+            <guid isPermalink="false">comicdays:episode:3270375685439722449</guid>
+            <pubDate>Tue, 23 Aug 2022 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3270375685439722449-826ad19517c76a3dad8c0b592d31f568?1661134300" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十九話（前編）　彼の親切は命より重い①</title>
+            <link>https://comic-days.com/episode/3270375685361073128</link>
+            <guid isPermalink="false">comicdays:episode:3270375685361073128</guid>
+            <pubDate>Sun, 24 Jul 2022 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3270375685361073128-577381ba982c9c7027b641d18279ceac?1658374803" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十八話（後編）　虎の肉③</title>
+            <link>https://comic-days.com/episode/3270296674425333888</link>
+            <guid isPermalink="false">comicdays:episode:3270296674425333888</guid>
+            <pubDate>Thu, 23 Jun 2022 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3270296674425333888-26f414357a4bd9383265af339a655cae?1655947950" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十八話（中編）　虎の肉②</title>
+            <link>https://comic-days.com/episode/3269754496883832695</link>
+            <guid isPermalink="false">comicdays:episode:3269754496883832695</guid>
+            <pubDate>Sun, 24 Apr 2022 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496883832695-429fb72b48c960f5dfd1f983f6a41e23?1650520403" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十八話（前編）　虎の肉①</title>
+            <link>https://comic-days.com/episode/3269754496818824030</link>
+            <guid isPermalink="false">comicdays:episode:3269754496818824030</guid>
+            <pubDate>Wed, 23 Mar 2022 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496818824030-163ffd1d95434f1a6db5165c1c786681?1647911429" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十七話（後編）　抜き打ちで貴方の愛情試します①</title>
+            <link>https://comic-days.com/episode/3269754496770608211</link>
+            <guid isPermalink="false">comicdays:episode:3269754496770608211</guid>
+            <pubDate>Thu, 24 Feb 2022 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496770608211-7ed3ed3f8e07d1c0d1f7b74082c5b83d?1645494252" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十七話（前編）　抜き打ちで貴方の愛情試します①</title>
+            <link>https://comic-days.com/episode/3269754496711763309</link>
+            <guid isPermalink="false">comicdays:episode:3269754496711763309</guid>
+            <pubDate>Mon, 24 Jan 2022 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496711763309-edb68f4a55758f62aaf19a59b949c5a9?1642729324" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十六話　泥の底の住人たち</title>
+            <link>https://comic-days.com/episode/3269754496662918434</link>
+            <guid isPermalink="false">comicdays:episode:3269754496662918434</guid>
+            <pubDate>Fri, 24 Dec 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496662918434-93d65cde5253ff157dc75f3608236b02?1640231006" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>番外編</title>
+            <link>https://comic-days.com/episode/3269754496608520414</link>
+            <guid isPermalink="false">comicdays:episode:3269754496608520414</guid>
+            <pubDate>Wed, 24 Nov 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496608520414-da5b57fb4f1882c41ce4b561b7895a41?1637555100" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十五話（後編）　彼女が翳ると闇夜が降りて雨がふる②</title>
+            <link>https://comic-days.com/episode/3269754496558231088</link>
+            <guid isPermalink="false">comicdays:episode:3269754496558231088</guid>
+            <pubDate>Sun, 24 Oct 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496558231088-3edcbbbd59f57878d2fe67cb12641732?1634788130" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十五話（後編）　彼女が翳ると闇夜が降りて雨がふる①</title>
+            <link>https://comic-days.com/episode/3269754496558231083</link>
+            <guid isPermalink="false">comicdays:episode:3269754496558231083</guid>
+            <pubDate>Sun, 24 Oct 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496558231083-4bab6f7bde4a89ae83238088190651b1?1634788121" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十五話（前編）　彼女が翳ると闇夜が降りて雨がふる</title>
+            <link>https://comic-days.com/episode/3269754496509982371</link>
+            <guid isPermalink="false">comicdays:episode:3269754496509982371</guid>
+            <pubDate>Fri, 24 Sep 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496509982371-a512c0a724a14f1a7c6e92c2c54144df?1632276533" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十四話（後編）　楽しい殴り合い②</title>
+            <link>https://comic-days.com/episode/3269754496455960857</link>
+            <guid isPermalink="false">comicdays:episode:3269754496455960857</guid>
+            <pubDate>Tue, 24 Aug 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496455960857-9c91d32893b08c21e57ad6feb41040a7?1629694279" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十四話（後編）　楽しい殴り合い①</title>
+            <link>https://comic-days.com/episode/3269754496455960853</link>
+            <guid isPermalink="false">comicdays:episode:3269754496455960853</guid>
+            <pubDate>Tue, 24 Aug 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496455960853-677da176e826f9ce467e327cc07988ea?1629694269" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十四話（中編）　楽しい殴り合い</title>
+            <link>https://comic-days.com/episode/3269754496406934459</link>
+            <guid isPermalink="false">comicdays:episode:3269754496406934459</guid>
+            <pubDate>Sun, 25 Jul 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496406934459-360d9f73512a5fa368f11eaebd674992?1626752190" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十四話（前編）　楽しい殴り合い</title>
+            <link>https://comic-days.com/episode/3269754496323930417</link>
+            <guid isPermalink="false">comicdays:episode:3269754496323930417</guid>
+            <pubDate>Mon, 24 May 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269754496323930417-cc2c9839b2d03194acae27b03b9b1268?1621817219" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十三話　成長したら飼えない獣２</title>
+            <link>https://comic-days.com/episode/3269632237330828623</link>
+            <guid isPermalink="false">comicdays:episode:3269632237330828623</guid>
+            <pubDate>Fri, 23 Apr 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269632237330828623-3e3572e81140c7a9c53720f0050c2040?1619071845" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十二話（前編）　成長したら飼えない獣</title>
+            <link>https://comic-days.com/episode/3269632237294757959</link>
+            <guid isPermalink="false">comicdays:episode:3269632237294757959</guid>
+            <pubDate>Wed, 24 Mar 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269632237294757959-79365cb0ad09235debad24671dd97fb9?1616493395" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十一話　本音を言えば結婚したい６②</title>
+            <link>https://comic-days.com/episode/3269632237261316472</link>
+            <guid isPermalink="false">comicdays:episode:3269632237261316472</guid>
+            <pubDate>Wed, 24 Feb 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269632237261316472-c19034dc6e69d61f8f5038409fea63e5?1613974386" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十一話　本音を言えば結婚したい６①</title>
+            <link>https://comic-days.com/episode/3269632237261316467</link>
+            <guid isPermalink="false">comicdays:episode:3269632237261316467</guid>
+            <pubDate>Wed, 24 Feb 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/3269632237261316467-1585350a3affb3c8e6a1f2ba9f417875?1613974367" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十話（中編）　本音を言えば結婚したい５</title>
+            <link>https://comic-days.com/episode/13933686331799849193</link>
+            <guid isPermalink="false">comicdays:episode:13933686331799849193</guid>
+            <pubDate>Sun, 24 Jan 2021 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13933686331799849193-cadfdad2496163879961c553815a5daa?1611192034" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十話（中編）　本音を言えば結婚したい４</title>
+            <link>https://comic-days.com/episode/13933686331768729395</link>
+            <guid isPermalink="false">comicdays:episode:13933686331768729395</guid>
+            <pubDate>Thu, 24 Dec 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13933686331768729395-f9967d8efb0b87f960d5ce94854865cd?1608689976" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第二十話（前編）　本音を言えば結婚したい４</title>
+            <link>https://comic-days.com/episode/13933686331741069719</link>
+            <guid isPermalink="false">comicdays:episode:13933686331741069719</guid>
+            <pubDate>Tue, 24 Nov 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13933686331741069719-4c6e63bf04b80a8d0cca85686d21d845?1605836188" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十九話（後編）　本音を言えば結婚したい３</title>
+            <link>https://comic-days.com/episode/13933686331724591233</link>
+            <guid isPermalink="false">comicdays:episode:13933686331724591233</guid>
+            <pubDate>Fri, 23 Oct 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13933686331724591233-e49e9f29d2c118cccfb51dabbc02444b?1612527465" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十九話（前編）　本音を言えば結婚したい３</title>
+            <link>https://comic-days.com/episode/13933686331711040226</link>
+            <guid isPermalink="false">comicdays:episode:13933686331711040226</guid>
+            <pubDate>Fri, 23 Oct 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13933686331711040226-b50e4c36725ac1e3caa1b549190837bb?1600835818" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十八話（後編）　本音を言えば結婚したい２</title>
+            <link>https://comic-days.com/episode/13933686331697683940</link>
+            <guid isPermalink="false">comicdays:episode:13933686331697683940</guid>
+            <pubDate>Thu, 24 Sep 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13933686331697683940-0d483995df71875d87e75496520afbf4?1598495396" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十八話（前編）　本音を言えば結婚したい２</title>
+            <link>https://comic-days.com/episode/13933686331668847411</link>
+            <guid isPermalink="false">comicdays:episode:13933686331668847411</guid>
+            <pubDate>Fri, 24 Jul 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13933686331668847411-1073115494357b6cb1894be805fd6cd2?1593750334" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十七話（後編）　本音を言えば結婚したい②</title>
+            <link>https://comic-days.com/episode/13933686331653168489</link>
+            <guid isPermalink="false">comicdays:episode:13933686331653168489</guid>
+            <pubDate>Mon, 22 Jun 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13933686331653168489-72493e9a22f92abe42d086a1bd1a1d70?1592276555" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十七話（後編）　本音を言えば結婚したい①</title>
+            <link>https://comic-days.com/episode/13933686331653168482</link>
+            <guid isPermalink="false">comicdays:episode:13933686331653168482</guid>
+            <pubDate>Mon, 22 Jun 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13933686331653168482-9b4623457bd9043eaec8f325a1c1c02a?1592276555" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>番外編</title>
+            <link>https://comic-days.com/episode/13933686331631363487</link>
+            <guid isPermalink="false">comicdays:episode:13933686331631363487</guid>
+            <pubDate>Sun, 24 May 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13933686331631363487-ef2eec222d8da2b8c49ae5911f1d73d3?1588837165" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十七話（前編）　無関心ならいっそ嫌われたほうがいい５②</title>
+            <link>https://comic-days.com/episode/13933686331610221189</link>
+            <guid isPermalink="false">comicdays:episode:13933686331610221189</guid>
+            <pubDate>Fri, 24 Apr 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13933686331610221189-4360278881276f8dcb5d29476f46b286?1590395519" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十七話（前編）　無関心ならいっそ嫌われたほうがいい５①</title>
+            <link>https://comic-days.com/episode/13933686331610221182</link>
+            <guid isPermalink="false">comicdays:episode:13933686331610221182</guid>
+            <pubDate>Fri, 24 Apr 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13933686331610221182-d414f4c3193169306dc0557f4aad31a3?1590395519" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十六話（後編）　無関心ならいっそ嫌われたほうがいい４</title>
+            <link>https://comic-days.com/episode/10834108156746050482</link>
+            <guid isPermalink="false">comicdays:episode:10834108156746050482</guid>
+            <pubDate>Mon, 24 Feb 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156746050482-20c6b29d257d3651f23c755aa7affb56?1579852371" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十六話（前編）　無関心ならいっそ嫌われたほうがいい４</title>
+            <link>https://comic-days.com/episode/10834108156728426175</link>
+            <guid isPermalink="false">comicdays:episode:10834108156728426175</guid>
+            <pubDate>Fri, 24 Jan 2020 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156728426175-378bf1509d26df47dae3153fe30d88ed?1579249601" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十五話（後編）　無関心ならいっそ嫌われたほうがいい３</title>
+            <link>https://comic-days.com/episode/10834108156714563611</link>
+            <guid isPermalink="false">comicdays:episode:10834108156714563611</guid>
+            <pubDate>Tue, 24 Dec 2019 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156714563611-9c5b4f3500eb25e137c3f3c8241203a6?1574928126" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十五話（中編）　無関心ならいっそ嫌われたほうがいい３</title>
+            <link>https://comic-days.com/episode/10834108156702932557</link>
+            <guid isPermalink="false">comicdays:episode:10834108156702932557</guid>
+            <pubDate>Sun, 24 Nov 2019 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156702932557-0c33289d3f762cfb4133bc323bb3473b?1574230403" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十五話（前編）　無関心ならいっそ嫌われたほうがいい３</title>
+            <link>https://comic-days.com/episode/10834108156689695231</link>
+            <guid isPermalink="false">comicdays:episode:10834108156689695231</guid>
+            <pubDate>Thu, 24 Oct 2019 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156689695231-abac319b7153a7bdfb3f13b057d65ec3?1568955998" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十四話（後編）　無関心ならいっそ嫌われたほうがいい２</title>
+            <link>https://comic-days.com/episode/10834108156681817568</link>
+            <guid isPermalink="false">comicdays:episode:10834108156681817568</guid>
+            <pubDate>Tue, 24 Sep 2019 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156681817568-7fb2b2988d64da0881db6bef880a01e4?1568883988" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第十四話（前編）　無関心ならいっそ嫌われたほうがいい２</title>
+            <link>https://comic-days.com/episode/10834108156674222608</link>
+            <guid isPermalink="false">comicdays:episode:10834108156674222608</guid>
+            <pubDate>Tue, 24 Sep 2019 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156674222608-f6552695c229ea43f13bff3e118af596?1568883988" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第１３話　無関心ならいっそ嫌われたほうがいい１</title>
+            <link>https://comic-days.com/episode/10834108156655725681</link>
+            <guid isPermalink="false">comicdays:episode:10834108156655725681</guid>
+            <pubDate>Wed, 22 May 2019 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156655725681-60ac3c9846765f117aec5364474d4351?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第１２話　椿姫</title>
+            <link>https://comic-days.com/episode/10834108156655725282</link>
+            <guid isPermalink="false">comicdays:episode:10834108156655725282</guid>
+            <pubDate>Wed, 22 May 2019 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156655725282-4800fb49756c50406bf528239f45f72d?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第１１話　頭がいいのか馬鹿なのか</title>
+            <link>https://comic-days.com/episode/10834108156655724601</link>
+            <guid isPermalink="false">comicdays:episode:10834108156655724601</guid>
+            <pubDate>Wed, 22 May 2019 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156655724601-4eec2e88229604fb1cec0ce3df5384ef?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第１０話　悪女、もしくは破滅を呼ぶ女</title>
+            <link>https://comic-days.com/episode/10834108156655723467</link>
+            <guid isPermalink="false">comicdays:episode:10834108156655723467</guid>
+            <pubDate>Wed, 22 May 2019 15:00:00 +0000</pubDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156655723467-2b18ec7109a438479f2310668b705eda?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第９話　地獄の三角関係〈後編〉</title>
+            <link>https://comic-days.com/episode/10834108156632165784</link>
+            <guid isPermalink="false">comicdays:episode:10834108156632165784</guid>
+            <pubDate>Sun, 22 Jul 2018 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Mon, 24 Jan 2022 03:00:00 +0000</giga:freeTermStartDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156632165784-a2683350fd1189ed77fc96976c7566c9?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第８話　地獄の三角関係〈前編〉</title>
+            <link>https://comic-days.com/episode/10834108156632165685</link>
+            <guid isPermalink="false">comicdays:episode:10834108156632165685</guid>
+            <pubDate>Sun, 22 Jul 2018 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Mon, 17 Jan 2022 03:00:00 +0000</giga:freeTermStartDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156632165685-2ecb5da68286dcff2c7068f98a41ed19?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第７話　拳で殴らず笑顔で脅す</title>
+            <link>https://comic-days.com/episode/10834108156632165609</link>
+            <guid isPermalink="false">comicdays:episode:10834108156632165609</guid>
+            <pubDate>Sun, 22 Jul 2018 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Mon, 10 Jan 2022 03:00:00 +0000</giga:freeTermStartDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156632165609-4ac6a1b0fd779ec9ed06bc6b5f2dbc14?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第６話　人間一年生</title>
+            <link>https://comic-days.com/episode/10834108156632165448</link>
+            <guid isPermalink="false">comicdays:episode:10834108156632165448</guid>
+            <pubDate>Sun, 22 Jul 2018 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Mon, 03 Jan 2022 03:00:00 +0000</giga:freeTermStartDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156632165448-972b0939f34e7fd5674e540ebdba9a4b?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第５話　誠意を見せたい。あわよくば少し好きになってほしい ３</title>
+            <link>https://comic-days.com/episode/10834108156632165207</link>
+            <guid isPermalink="false">comicdays:episode:10834108156632165207</guid>
+            <pubDate>Sun, 22 Jul 2018 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Mon, 27 Dec 2021 03:00:00 +0000</giga:freeTermStartDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156632165207-7a9f7b804a3879fe296390ef712ae2eb?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第４話　誠意を見せたい。あわよくば少し好きになってほしい ２</title>
+            <link>https://comic-days.com/episode/10834108156632165141</link>
+            <guid isPermalink="false">comicdays:episode:10834108156632165141</guid>
+            <pubDate>Sun, 22 Jul 2018 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Mon, 20 Dec 2021 03:00:00 +0000</giga:freeTermStartDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/10834108156632165141-98f0cdad318b384c3b5b7ff931075c73?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第３話　誠意を見せたい。あわよくば少し好きになってほしい １</title>
+            <link>https://comic-days.com/episode/13932016480029555507</link>
+            <guid isPermalink="false">comicdays:episode:13932016480029555507</guid>
+            <pubDate>Wed, 31 Jan 2018 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Mon, 13 Dec 2021 03:00:00 +0000</giga:freeTermStartDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13932016480029555507-500f136472214b64e73ebc0d7c4bff5b?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第２話　負け犬に出る幕はない〈後編〉</title>
+            <link>https://comic-days.com/episode/13932016480029554280</link>
+            <guid isPermalink="false">comicdays:episode:13932016480029554280</guid>
+            <pubDate>Wed, 31 Jan 2018 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Mon, 06 Dec 2021 03:00:00 +0000</giga:freeTermStartDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13932016480029554280-0234c523a424d84de37905fc52e9571c?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+        <item>
+            <title>第１話　負け犬に出る幕はない〈前編〉</title>
+            <link>https://comic-days.com/episode/13932016480029553694</link>
+            <guid isPermalink="false">comicdays:episode:13932016480029553694</guid>
+            <pubDate>Wed, 31 Jan 2018 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Mon, 29 Nov 2021 03:00:00 +0000</giga:freeTermStartDate>            <description>来世は他人がいい</description>
+            <enclosure url="https://cdn-img.comic-days.com/public/episode-thumbnail/13932016480029553694-99c284c1681108a93e2f8c771b2816fb?1637035258" length="0" type="image/jpeg" />
+            <author>小西明日翔</author>
+        </item>
+    </channel>
+</rss>
