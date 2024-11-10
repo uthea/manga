@@ -113,6 +113,13 @@ jobs:
           replace: ${{ secrets.GITHUB_TOKEN }}
           include: "**values.yaml"
 
+      - name: Find and Replace 10
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ INGRESS_HOST }"
+          replace: ${{ secrets.INGRESS_HOST }}
+          include: "**values.yaml"
+
       - name: Authorize tailscale
         uses: tailscale/github-action@v1
         with:
