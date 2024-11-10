@@ -31,4 +31,7 @@ pub enum MangaSource {
 
     #[strum(to_string = "Comic Days")]
     ComicDays,
+
+    #[strum(to_string = "Magazine Pocket")]
+    MagazinePocket,
 }

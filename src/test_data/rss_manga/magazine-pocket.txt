@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:giga="https://gigaviewer.com">
+    <channel>
+        <title>マガポケ（辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜）</title>
+        <pubDate>Sat, 02 Nov 2024 15:00:00 +0000</pubDate>
+        <link>https://pocket.shonenmagazine.com/episode/4856001361564457356</link>
+        <description>最果ての村に住む少年・リーフは、ある日許嫁に裏切られ、家も仕事もすべてを失ってしまう。失意の中で出会ったのは、王都でも指折りの大貴族のお嬢様で――!?不人気職業のハズの薬師が、チート“調薬”スキルで無双!!小説家になろう発、成り上がり冒険ファンタジー!!　※「小説家になろう」は株式会社ヒナプロジェクトの登録商標です</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <item>
+            <title>【第53話】初めて出会った日</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550912964789987912</link>
+            <guid isPermalink="false">magapoke:episode:2550912964789987912</guid>
+            <pubDate>Sat, 02 Nov 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550912964789987912-e947d9008b7b972068fb50c4d7d68558?1730128505" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【単行本宣伝話】</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550912964789987892</link>
+            <guid isPermalink="false">magapoke:episode:2550912964789987892</guid>
+            <pubDate>Sat, 02 Nov 2024 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Sat, 02 Nov 2024 15:00:00 +0000</giga:freeTermStartDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550912964789987892-bf40415e8ab7ce3c439d4d8492ef06f2?1729577166" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第52話】オカロンの顛末</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550912964743453960</link>
+            <guid isPermalink="false">magapoke:episode:2550912964743453960</guid>
+            <pubDate>Sat, 26 Oct 2024 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Sat, 02 Nov 2024 15:00:00 +0000</giga:freeTermStartDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550912964743453960-5b42cd24f10146d9c5db77d9fa7ef34e?1728637625" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第51話】エイリーンの思惑</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550912964734352847</link>
+            <guid isPermalink="false">magapoke:episode:2550912964734352847</guid>
+            <pubDate>Sat, 19 Oct 2024 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Sat, 26 Oct 2024 15:00:00 +0000</giga:freeTermStartDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550912964734352847-4c45a8ea46c7bafe4dae002435588d14?1728573315" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第50話】大ピンチ！</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550912964668844150</link>
+            <guid isPermalink="false">magapoke:episode:2550912964668844150</guid>
+            <pubDate>Sat, 05 Oct 2024 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Sat, 19 Oct 2024 15:00:00 +0000</giga:freeTermStartDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550912964668844150-050017992b0468519010ab99b7dbc06a?1728573315" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第49話】潜入開始！</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550912964642518380</link>
+            <guid isPermalink="false">magapoke:episode:2550912964642518380</guid>
+            <pubDate>Sat, 28 Sep 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550912964642518380-519211cfdfe045ca0f701d60bd74302e?1726639599" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第48話】エイリーンとの再会</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550912964557357282</link>
+            <guid isPermalink="false">magapoke:episode:2550912964557357282</guid>
+            <pubDate>Sat, 14 Sep 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550912964557357282-484e72f191915dc37ab72f6a3df711a1?1725008866" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第47話】ブラムスの怒り</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550912964519016206</link>
+            <guid isPermalink="false">magapoke:episode:2550912964519016206</guid>
+            <pubDate>Sat, 07 Sep 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550912964519016206-440f94f4ce66435cac0d15deac12e69e?1724317583" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第46話】元許嫁との再会</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550912964485980319</link>
+            <guid isPermalink="false">magapoke:episode:2550912964485980319</guid>
+            <pubDate>Sat, 31 Aug 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550912964485980319-555105a77ebfa40b6017c97cf636fdb3?1723712767" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第45話】領地の現状</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550912964453409470</link>
+            <guid isPermalink="false">magapoke:episode:2550912964453409470</guid>
+            <pubDate>Sat, 24 Aug 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550912964453409470-574c6497ed34abce84ebad241e62c665?1723097218" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第44話】タイちゃん</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798884181791</link>
+            <guid isPermalink="false">magapoke:episode:2550689798884181791</guid>
+            <pubDate>Sat, 10 Aug 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798884181791-4f59ee4dbd011168880fbeeac12b465f?1721887710" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第43話】異例の昇格</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798859425098</link>
+            <guid isPermalink="false">magapoke:episode:2550689798859425098</guid>
+            <pubDate>Sat, 03 Aug 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798859425098-eb8f623ea3217bd7c9147aa3f02e81ad?1721380049" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【単行本宣伝話】</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798859425066</link>
+            <guid isPermalink="false">magapoke:episode:2550689798859425066</guid>
+            <pubDate>Sat, 03 Aug 2024 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Sat, 03 Aug 2024 15:00:00 +0000</giga:freeTermStartDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798859425066-1b476800a1aeda3c8782278599ee07b9?1721379982" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第42話】世界樹のしずく</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798828821091</link>
+            <guid isPermalink="false">magapoke:episode:2550689798828821091</guid>
+            <pubDate>Sat, 27 Jul 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798828821091-3285cc5f521c221e0e3bcd7d6126c43a?1720764377" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第41話】仲間と共に</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798768068067</link>
+            <guid isPermalink="false">magapoke:episode:2550689798768068067</guid>
+            <pubDate>Sat, 13 Jul 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798768068067-cb64e736a1633edfbefa044f09baebfc?1719831963" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第40話】墜落解放（デモンスペル）</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798733289401</link>
+            <guid isPermalink="false">magapoke:episode:2550689798733289401</guid>
+            <pubDate>Sat, 06 Jul 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798733289401-ba139e83878c8eba89e2cc9e568797a6?1718874394" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第39話】３対１</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798702535603</link>
+            <guid isPermalink="false">magapoke:episode:2550689798702535603</guid>
+            <pubDate>Sat, 29 Jun 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798702535603-51fe773cf3537643a798b3d124560777?1718258769" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第38話】センの正体</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798643060710</link>
+            <guid isPermalink="false">magapoke:episode:2550689798643060710</guid>
+            <pubDate>Sat, 15 Jun 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798643060710-470c4c555930a75b89673b7fdc2f2794?1718258766" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第37話】絶望の淵</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798580482007</link>
+            <guid isPermalink="false">magapoke:episode:2550689798580482007</guid>
+            <pubDate>Sat, 01 Jun 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798580482007-dced8269d3ed79483223e1b46a79d7b2?1715839613" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第36話】扉の奥には</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798548367270</link>
+            <guid isPermalink="false">magapoke:episode:2550689798548367270</guid>
+            <pubDate>Sat, 25 May 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798548367270-f3399f552372a42be2b1e4baf06c9096?1715252763" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第35話】受け継がれた想い</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798515152393</link>
+            <guid isPermalink="false">magapoke:episode:2550689798515152393</guid>
+            <pubDate>Sat, 18 May 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798515152393-e7f49ace9c685b6019ba8d55a86b0354?1715252763" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第34話】円卓の闘気（ラウンズ）</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798472723908</link>
+            <guid isPermalink="false">magapoke:episode:2550689798472723908</guid>
+            <pubDate>Sat, 11 May 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798472723908-aff0bc5ec01da352543b22b12ee41504?1715252763" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【単行本宣伝話】</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798427573262</link>
+            <guid isPermalink="false">magapoke:episode:2550689798427573262</guid>
+            <pubDate>Sat, 04 May 2024 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Sat, 04 May 2024 15:00:00 +0000</giga:freeTermStartDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798427573262-100859d3c17d267d3652ae466297df68?1713420367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第33話】魔獣との遭遇</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798402762942</link>
+            <guid isPermalink="false">magapoke:episode:2550689798402762942</guid>
+            <pubDate>Sat, 27 Apr 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798402762942-906b76c542d941e69f5b6bcfa90744b3?1712815579" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第32話】龍の意志</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798355663415</link>
+            <guid isPermalink="false">magapoke:episode:2550689798355663415</guid>
+            <pubDate>Sat, 13 Apr 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798355663415-8c606dcf17a27394d347f4a09eb7d899?1711605998" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第31話】世界樹の場所</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798333590178</link>
+            <guid isPermalink="false">magapoke:episode:2550689798333590178</guid>
+            <pubDate>Sat, 06 Apr 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798333590178-43dc09d9b2e8435f5f1477e2c98b70a1?1711001169" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第30話】ビーチで休息</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550689798289068504</link>
+            <guid isPermalink="false">magapoke:episode:2550689798289068504</guid>
+            <pubDate>Sat, 23 Mar 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550689798289068504-ba011b7d6a118e8afcb086f22e2ae3f3?1710396365" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第29話】薬師の葛藤</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550668106006291788</link>
+            <guid isPermalink="false">magapoke:episode:2550668106006291788</guid>
+            <pubDate>Sat, 09 Mar 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550668106006291788-dd00345d15703aed76494330c7dcd787?1710396365" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第28話】真夜中の誘惑</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550668105985517955</link>
+            <guid isPermalink="false">magapoke:episode:2550668105985517955</guid>
+            <pubDate>Sat, 02 Mar 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550668105985517955-1cf2329cd2140545dfaa71711bb85996?1709186202" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【単行本宣伝話】</title>
+            <link>https://pocket.shonenmagazine.com/episode/2550668106002919699</link>
+            <guid isPermalink="false">magapoke:episode:2550668106002919699</guid>
+            <pubDate>Sat, 02 Mar 2024 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Sat, 02 Mar 2024 15:00:00 +0000</giga:freeTermStartDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/2550668106002919699-7d702fa5e665dcc769d85ae5de10639f?1708495623" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第27話】世界樹を探して</title>
+            <link>https://pocket.shonenmagazine.com/episode/11341664176573263031</link>
+            <guid isPermalink="false">magapoke:episode:11341664176573263031</guid>
+            <pubDate>Sat, 17 Feb 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/11341664176573263031-73b58f738b00863606026e3afac7e51b?1709186198" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第26話】VS. サタナキア</title>
+            <link>https://pocket.shonenmagazine.com/episode/11341664176552291710</link>
+            <guid isPermalink="false">magapoke:episode:11341664176552291710</guid>
+            <pubDate>Sat, 10 Feb 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/11341664176552291710-a68183a244358290d67698f02dd9e3a8?1709186198" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第25話】Sランク会議</title>
+            <link>https://pocket.shonenmagazine.com/episode/10044607041220885573</link>
+            <guid isPermalink="false">magapoke:episode:10044607041220885573</guid>
+            <pubDate>Sat, 03 Feb 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/10044607041220885573-7b58923a588e19ab90ce99c01f2f0ea6?1709186190" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第24話】求めていたもの</title>
+            <link>https://pocket.shonenmagazine.com/episode/10044607041200910678</link>
+            <guid isPermalink="false">magapoke:episode:10044607041200910678</guid>
+            <pubDate>Sat, 27 Jan 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/10044607041200910678-2bb23dd191401ecec62b4d3d25f35416?1709186199" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第23話】即席パーティ</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755610268384</link>
+            <guid isPermalink="false">magapoke:episode:14079602755610268384</guid>
+            <pubDate>Sat, 20 Jan 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755610268384-f93d46cfff0ad29a707d20b8f6340090?1709186201" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第22話】決着</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755607735708</link>
+            <guid isPermalink="false">magapoke:episode:14079602755607735708</guid>
+            <pubDate>Sat, 13 Jan 2024 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755607735708-b0234ae93a94381ef4e317c784bf485a?1709186197" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第21話】真相</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755567364638</link>
+            <guid isPermalink="false">magapoke:episode:14079602755567364638</guid>
+            <pubDate>Sat, 30 Dec 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755567364638-d1a39e7d568ae36b3adfdcf7fbd6e2f8?1709186191" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第20話】誘拐の目的</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755514943538</link>
+            <guid isPermalink="false">magapoke:episode:14079602755514943538</guid>
+            <pubDate>Sat, 16 Dec 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755514943538-78ccd2b0101252ec4227b77161bed464?1709186196" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第19話】姉と弟</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755492663259</link>
+            <guid isPermalink="false">magapoke:episode:14079602755492663259</guid>
+            <pubDate>Sat, 09 Dec 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755492663259-79f3eadf118be667467fad3e85929e57?1709186180" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第18話】真犯人</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755456116938</link>
+            <guid isPermalink="false">magapoke:episode:14079602755456116938</guid>
+            <pubDate>Sat, 02 Dec 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755456116938-f215561f20b95275e1c89822bace9668?1709186177" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【単行本宣伝話】</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755456116885</link>
+            <guid isPermalink="false">magapoke:episode:14079602755456116885</guid>
+            <pubDate>Sat, 02 Dec 2023 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Sat, 02 Dec 2023 15:00:00 +0000</giga:freeTermStartDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755456116885-98ea4ebaf31b6f0e9b7e1251a1105aca?1700114832" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第17話】連続誘拐事件</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755426723504</link>
+            <guid isPermalink="false">magapoke:episode:14079602755426723504</guid>
+            <pubDate>Sat, 25 Nov 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755426723504-1f82e35946184ad891364a3ee11b596c?1709186206" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第16話】新しい夢</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755400335519</link>
+            <guid isPermalink="false">magapoke:episode:14079602755400335519</guid>
+            <pubDate>Sat, 18 Nov 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755400335519-d993b92a5cd269da71a7fee7a57cc6d4?1709186181" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第15話】チームプレイ！</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755372602391</link>
+            <guid isPermalink="false">magapoke:episode:14079602755372602391</guid>
+            <pubDate>Sat, 11 Nov 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755372602391-ee25826e8ccd84005bf083149fe8dbdf?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第14話】ヒドラの正体</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755346371431</link>
+            <guid isPermalink="false">magapoke:episode:14079602755346371431</guid>
+            <pubDate>Sat, 04 Nov 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755346371431-885d2ff1455cbbffa84ecb482c43cd3d?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第13話】死の渓谷</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755307247119</link>
+            <guid isPermalink="false">magapoke:episode:14079602755307247119</guid>
+            <pubDate>Sat, 28 Oct 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755307247119-513ef3c436f0dfab6882c1c096e1ef03?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第12話】Sランクパーティー</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755281895045</link>
+            <guid isPermalink="false">magapoke:episode:14079602755281895045</guid>
+            <pubDate>Sat, 21 Oct 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755281895045-303f69a9f1c7dae93514f42fc94ada07?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第11話】初めての依頼</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755257614481</link>
+            <guid isPermalink="false">magapoke:episode:14079602755257614481</guid>
+            <pubDate>Sat, 14 Oct 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755257614481-b1bf1d57ba27f33e7a2ad00c20b85318?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第10話】愚かな辺境領主</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755231592576</link>
+            <guid isPermalink="false">magapoke:episode:14079602755231592576</guid>
+            <pubDate>Sat, 07 Oct 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755231592576-159a5b432eb9a791c1c96560ac3da8b2?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第9話】魔力試験</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755209660445</link>
+            <guid isPermalink="false">magapoke:episode:14079602755209660445</guid>
+            <pubDate>Sat, 30 Sep 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755209660445-4167a4a560b47832f649a50bf728ffc8?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第8話】彗星工房にて</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755181222052</link>
+            <guid isPermalink="false">magapoke:episode:14079602755181222052</guid>
+            <pubDate>Sat, 23 Sep 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755181222052-19074872334668fd58c1c4e867d7d0b2?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第7話】プリシラの恩返し</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755157719478</link>
+            <guid isPermalink="false">magapoke:episode:14079602755157719478</guid>
+            <pubDate>Sat, 16 Sep 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755157719478-9699624ac7e1fb7e06326f090ebb0672?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第6話】プリシラを救え！</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755132515273</link>
+            <guid isPermalink="false">magapoke:episode:14079602755132515273</guid>
+            <pubDate>Sat, 09 Sep 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755132515273-b17ffc3b1912dc09a4ac9631168f73ff?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第5話】薬師の神杖</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755107858994</link>
+            <guid isPermalink="false">magapoke:episode:14079602755107858994</guid>
+            <pubDate>Sat, 02 Sep 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755107858994-303414dd3eaaabae25a0dcd9315be7ea?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第4話】診察対決!?</title>
+            <link>https://pocket.shonenmagazine.com/episode/14079602755083418319</link>
+            <guid isPermalink="false">magapoke:episode:14079602755083418319</guid>
+            <pubDate>Sat, 26 Aug 2023 15:00:00 +0000</pubDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/14079602755083418319-d293450f1a5e801e188cdabf6a0a2e66?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第3話】公爵からのお願い</title>
+            <link>https://pocket.shonenmagazine.com/episode/4856001361588400749</link>
+            <guid isPermalink="false">magapoke:episode:4856001361588400749</guid>
+            <pubDate>Sat, 19 Aug 2023 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Sat, 26 Aug 2023 15:00:00 +0000</giga:freeTermStartDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/4856001361588400749-fcaf3caf0111ef4ab818ebe3d1c6def3?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第2話】師匠からの贈り物</title>
+            <link>https://pocket.shonenmagazine.com/episode/4856001361564457393</link>
+            <guid isPermalink="false">magapoke:episode:4856001361564457393</guid>
+            <pubDate>Sat, 12 Aug 2023 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Sat, 19 Aug 2023 15:00:00 +0000</giga:freeTermStartDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/4856001361564457393-a385236f53a87bc45812efe2fe02c3b0?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+        <item>
+            <title>【第1話】辺境の薬師</title>
+            <link>https://pocket.shonenmagazine.com/episode/4856001361564457356</link>
+            <guid isPermalink="false">magapoke:episode:4856001361564457356</guid>
+            <pubDate>Sat, 12 Aug 2023 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Sat, 12 Aug 2023 15:00:00 +0000</giga:freeTermStartDate>            <description>辺境の薬師、都でSランク冒険者となる～英雄村の少年がチート薬で無自覚無双〜</description>
+            <enclosure url="https://cdn-img.pocket.shonenmagazine.com/public/episode-thumbnail/4856001361564457356-c2db3894463517370606b239f3188f7e?1727244367" length="0" type="image/jpeg" />
+            <author>原作/茨木野 漫画/kakao</author>
+        </item>
+    </channel>
+</rss>

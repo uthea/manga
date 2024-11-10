@@ -27,6 +27,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::KurageBunch => "https://kuragebunch.com/rss/series/",
         MangaSource::ComicGrowl => "https://comic-growl.com/rss/series/",
         MangaSource::ComicDays => "https://comic-days.com/rss/series/",
+        MangaSource::MagazinePocket => "https://pocket.shonenmagazine.com/rss/series/",
     };
 
     let response = reqwest::get(format!("{}{}", base_url, manga_id))
@@ -43,7 +44,8 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         | MangaSource::ComicEarthStar
         | MangaSource::KurageBunch
         | MangaSource::ComicGrowl
-        | MangaSource::ComicDays => from_rss_xml(&response)?,
+        | MangaSource::ComicDays
+        | MangaSource::MagazinePocket => from_rss_xml(&response)?,
     };
 
     Ok(manga_info)
