@@ -2,7 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: { { include "manga-tracker.fullname" . } }
-  labels: { { - include "manga-tracker.labels" . | nindent 4 } }
+  labels: 
+    { { - include "manga-tracker.labels" . | nindent 4 } }
 spec:
   type: { { .Values.service.type } }
   ports:
@@ -10,4 +11,5 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
-  selector: { { - include "manga-tracker.selectorLabels" . | nindent 4 } }
+  selector: 
+    { { - include "manga-tracker.selectorLabels" . | nindent 4 } }
