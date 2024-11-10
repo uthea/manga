@@ -36,7 +36,7 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          target: runtime
+          target: runner
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
