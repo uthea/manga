@@ -7,7 +7,7 @@ use leptos::{context::provide_context, logging::log};
 use leptos_axum::handle_server_fns_with_context;
 use manga_tracker::{app::shell, job::series::update_books, state::AppState};
 use sqlx::migrate::Migrator;
-use underway::{Job, To};
+use underway::{job::JobHandle, Job, To};
 
 async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
     use std::env;
@@ -52,7 +52,7 @@ async fn spawn_background_job(
     webhook_url: String,
     cron_expression: &str,
     pool: sqlx::PgPool,
-) -> Result<(), Box<dyn std::error::Error>> {
+) -> Result<JobHandle, Box<dyn std::error::Error>> {
     let cloned_pool = pool.clone();
 
     let job = Job::builder()
@@ -73,11 +73,7 @@ async fn spawn_background_job(
     let cron = cron_expression.parse()?;
     job.schedule(&cron, &()).await?;
 
-    tokio::spawn(async move {
-        job.run().await.expect("Error running job");
-    });
-
-    Ok(())
+    Ok(job.start())
 }
 
 async fn server_fn_handler(
@@ -160,7 +156,7 @@ async fn main() {
     log!("listening on http://{}", &addr);
     let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
 
-    spawn_background_job(webhook_url, &cron_expression, db_pool.clone())
+    let _job_handle = spawn_background_job(webhook_url, &cron_expression, db_pool.clone())
         .await
         .expect("Fail at spawning background job");
 
