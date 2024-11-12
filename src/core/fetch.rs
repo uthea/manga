@@ -6,6 +6,7 @@ use crate::core::parser::rss_manga::Rss;
 use super::{
     parser::{
         comic_pixiv::{fetch_pixiv_data, PixivError},
+        urasunday::{parse_urasunday_from_html, UrasundayParseError},
         yanmaga::{parse_yanmaga_from_html, YanmagaParseError},
     },
     types::{Manga, MangaSource},
@@ -18,6 +19,7 @@ pub enum FetchError {
     DeserialzeXmlError(serde_xml_rs::Error),
     YanmagaParseError(YanmagaParseError),
     ComicPixivError(PixivError),
+    UrasundayParseError(UrasundayParseError),
 }
 
 impl From<YanmagaParseError> for FetchError {
@@ -29,6 +31,12 @@ impl From<YanmagaParseError> for FetchError {
 impl From<PixivError> for FetchError {
     fn from(value: PixivError) -> Self {
         Self::ComicPixivError(value)
+    }
+}
+
+impl From<UrasundayParseError> for FetchError {
+    fn from(value: UrasundayParseError) -> Self {
+        Self::UrasundayParseError(value)
     }
 }
 
@@ -58,6 +66,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         }
         MangaSource::Yanmaga => format!("https://yanmaga.jp/comics/{}", manga_id),
         MangaSource::ComicPixiv => unreachable!(),
+        MangaSource::Urasunday => format!("https://urasunday.com/title/{}", manga_id),
     };
 
     let response = reqwest::get(url)
@@ -78,6 +87,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         | MangaSource::MagazinePocket => from_rss_xml(&response)?,
 
         MangaSource::Yanmaga => parse_yanmaga_from_html(response).map_err(FetchError::from)?,
+        MangaSource::Urasunday => parse_urasunday_from_html(response).map_err(FetchError::from)?,
         MangaSource::ComicPixiv => unreachable!(),
     };
 

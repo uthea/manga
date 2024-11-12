@@ -40,6 +40,9 @@ pub enum MangaSource {
 
     #[strum(to_string = "Comic Pixiv")]
     ComicPixiv,
+
+    #[strum(to_string = "Urasunday")]
+    Urasunday,
 }
 
 #[derive(Deserialize, Serialize, Clone, Debug)]
