@@ -34,6 +34,7 @@ pub async fn add_manga(
     let manga = fetch_manga(&manga_id, source.as_ref().unwrap())
         .await
         .map_err(|e| {
+            dbg!(&e);
             let msg = match e {
                 FetchError::ConvertError(_) => "Error converting type",
                 FetchError::ReqwestError(e) => {
@@ -47,6 +48,7 @@ pub async fn add_manga(
                 }
                 FetchError::DeserialzeXmlError(_) => "Error deserializing rss",
                 FetchError::YanmagaParseError(_) => "Error parsing yanmaga html",
+                FetchError::ComicPixivError(_) => "Error fetching data from comic pixiv api",
             };
 
             ServerFnError::new(msg)
