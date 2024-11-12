@@ -3,7 +3,7 @@ use chrono::{NaiveDateTime, Weekday};
 use chrono::TimeZone;
 use chrono_tz::Japan;
 
-use crate::core::{manga::Manga, types::MangaSource};
+use crate::core::{types::Manga, types::MangaSource};
 
 #[derive(Debug)]
 pub struct Paginated<T> {

@@ -1,6 +1,6 @@
 use sqlx::PgPool;
 
-use crate::core::{manga::Manga, types::MangaSource};
+use crate::core::{types::Manga, types::MangaSource};
 
 use super::model::MangaRow;
 

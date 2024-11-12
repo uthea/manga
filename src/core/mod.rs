@@ -1,4 +1,6 @@
+#[cfg(feature = "ssr")]
 pub mod fetch;
-pub mod manga;
+
+#[cfg(feature = "ssr")]
 pub mod parser;
 pub mod types;
