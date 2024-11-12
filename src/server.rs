@@ -47,6 +47,7 @@ pub async fn add_manga(
                 }
                 FetchError::DeserialzeXmlError(_) => "Error deserializing rss",
                 FetchError::YanmagaParseError(_) => "Error parsing yanmaga html",
+                FetchError::ComicPixivError(_) => "Error fetching data from comic pixiv api",
             };
 
             ServerFnError::new(msg)

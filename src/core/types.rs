@@ -37,6 +37,9 @@ pub enum MangaSource {
 
     #[strum(to_string = "Magazine Pocket")]
     MagazinePocket,
+
+    #[strum(to_string = "Comic Pixiv")]
+    ComicPixiv,
 }
 
 #[derive(Deserialize, Serialize, Clone, Debug)]

@@ -4,7 +4,10 @@ use serde_xml_rs::from_str;
 use crate::core::parser::rss_manga::Rss;
 
 use super::{
-    parser::yanmaga::{parse_yanmaga_from_html, YanmagaParseError},
+    parser::{
+        comic_pixiv::{fetch_pixiv_data, PixivError},
+        yanmaga::{parse_yanmaga_from_html, YanmagaParseError},
+    },
     types::{Manga, MangaSource},
 };
 
@@ -14,11 +17,18 @@ pub enum FetchError {
     ReqwestError(reqwest::Error),
     DeserialzeXmlError(serde_xml_rs::Error),
     YanmagaParseError(YanmagaParseError),
+    ComicPixivError(PixivError),
 }
 
 impl From<YanmagaParseError> for FetchError {
     fn from(value: YanmagaParseError) -> Self {
         Self::YanmagaParseError(value)
+    }
+}
+
+impl From<PixivError> for FetchError {
+    fn from(value: PixivError) -> Self {
+        Self::ComicPixivError(value)
     }
 }
 
@@ -29,6 +39,10 @@ fn from_rss_xml(xml: &str) -> Result<Manga, FetchError> {
 }
 
 pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, FetchError> {
+    if source == &MangaSource::ComicPixiv {
+        return fetch_pixiv_data(manga_id).await.map_err(FetchError::from);
+    }
+
     let url = match source {
         MangaSource::ShounenJumpPlus => {
             format!("https://shonenjumpplus.com/rss/series/{}", manga_id)
@@ -43,6 +57,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
             format!("https://pocket.shonenmagazine.com/rss/series/{}", manga_id)
         }
         MangaSource::Yanmaga => format!("https://yanmaga.jp/comics/{}", manga_id),
+        MangaSource::ComicPixiv => unreachable!(),
     };
 
     let response = reqwest::get(url)
@@ -63,6 +78,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         | MangaSource::MagazinePocket => from_rss_xml(&response)?,
 
         MangaSource::Yanmaga => parse_yanmaga_from_html(response).map_err(FetchError::from)?,
+        MangaSource::ComicPixiv => unreachable!(),
     };
 
     Ok(manga_info)
