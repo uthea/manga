@@ -117,13 +117,10 @@ pub async fn fetch_pixiv_data(id: &str) -> Result<Manga, PixivError> {
         .ok_or(PixivError::EpisodeNotFound)?;
 
     let episode_detail = latest_episode.episode.unwrap();
-    dbg!(&episode_detail.read_start_at);
 
     let release_date = DateTime::from_timestamp_millis(episode_detail.read_start_at)
         .unwrap()
         .with_timezone(&Japan);
-
-    dbg!(&release_date);
 
     Ok(Manga {
         title: metadata.data.official_work.name,
