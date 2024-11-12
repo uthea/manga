@@ -1,3 +1,5 @@
+use chrono::{DateTime, FixedOffset, Weekday};
+use serde::{Deserialize, Serialize};
 use strum_macros::{Display, EnumIter, EnumString};
 
 #[derive(
@@ -15,8 +17,9 @@ use strum_macros::{Display, EnumIter, EnumString};
 #[cfg_attr(feature = "ssr", derive(sqlx::Type))]
 #[cfg_attr(feature = "ssr", sqlx(type_name = "MangaSource"))]
 pub enum MangaSource {
-    // #[strum(to_string = "Yan Maga")]
-    // Yanmaga,
+    #[strum(to_string = "YanMaga")]
+    Yanmaga,
+
     #[strum(to_string = "Shounen Jump Plus")]
     ShounenJumpPlus,
 
@@ -34,4 +37,15 @@ pub enum MangaSource {
 
     #[strum(to_string = "Magazine Pocket")]
     MagazinePocket,
+}
+
+#[derive(Deserialize, Serialize, Clone, Debug)]
+pub struct Manga {
+    pub title: String,
+    pub cover_url: String,
+    pub author: String,
+    pub latest_chapter_title: String,
+    pub latest_chapter_url: String,
+    pub latest_chapter_release_date: DateTime<FixedOffset>,
+    pub latest_chapter_publish_day: Weekday,
 }

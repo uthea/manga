@@ -1,5 +1,4 @@
-use crate::core::manga::Manga;
-use crate::core::types::MangaSource;
+use crate::core::types::{Manga, MangaSource};
 use leptos::server;
 use leptos::server_fn::ServerFnError;
 
@@ -47,6 +46,7 @@ pub async fn add_manga(
                     }
                 }
                 FetchError::DeserialzeXmlError(_) => "Error deserializing rss",
+                FetchError::YanmagaParseError(_) => "Error parsing yanmaga html",
             };
 
             ServerFnError::new(msg)

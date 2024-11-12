@@ -1,10 +1,11 @@
+use crate::core::parser::rss_manga::ConvertError;
 use serde_xml_rs::from_str;
 
 use crate::core::parser::rss_manga::Rss;
 
 use super::{
-    manga::{ConvertError, Manga},
-    types::MangaSource,
+    parser::yanmaga::{parse_yanmaga_from_html, YanmagaParseError},
+    types::{Manga, MangaSource},
 };
 
 #[derive(Debug)]
@@ -12,6 +13,13 @@ pub enum FetchError {
     ConvertError(ConvertError),
     ReqwestError(reqwest::Error),
     DeserialzeXmlError(serde_xml_rs::Error),
+    YanmagaParseError(YanmagaParseError),
+}
+
+impl From<YanmagaParseError> for FetchError {
+    fn from(value: YanmagaParseError) -> Self {
+        Self::YanmagaParseError(value)
+    }
 }
 
 fn from_rss_xml(xml: &str) -> Result<Manga, FetchError> {
@@ -21,16 +29,23 @@ fn from_rss_xml(xml: &str) -> Result<Manga, FetchError> {
 }
 
 pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, FetchError> {
-    let base_url = match source {
-        MangaSource::ShounenJumpPlus => "https://shonenjumpplus.com/rss/series/",
-        MangaSource::ComicEarthStar => "https://comic-earthstar.com/rss/series/",
-        MangaSource::KurageBunch => "https://kuragebunch.com/rss/series/",
-        MangaSource::ComicGrowl => "https://comic-growl.com/rss/series/",
-        MangaSource::ComicDays => "https://comic-days.com/rss/series/",
-        MangaSource::MagazinePocket => "https://pocket.shonenmagazine.com/rss/series/",
+    let url = match source {
+        MangaSource::ShounenJumpPlus => {
+            format!("https://shonenjumpplus.com/rss/series/{}", manga_id)
+        }
+        MangaSource::ComicEarthStar => {
+            format!("https://comic-earthstar.com/rss/series/{}", manga_id)
+        }
+        MangaSource::KurageBunch => format!("https://kuragebunch.com/rss/series/{}", manga_id),
+        MangaSource::ComicGrowl => format!("https://comic-growl.com/rss/series/{}", manga_id),
+        MangaSource::ComicDays => format!("https://comic-days.com/rss/series/{}", manga_id),
+        MangaSource::MagazinePocket => {
+            format!("https://pocket.shonenmagazine.com/rss/series/{}", manga_id)
+        }
+        MangaSource::Yanmaga => format!("https://yanmaga.jp/comics/{}", manga_id),
     };
 
-    let response = reqwest::get(format!("{}{}", base_url, manga_id))
+    let response = reqwest::get(url)
         .await
         .map_err(FetchError::ReqwestError)?
         .error_for_status()
@@ -46,6 +61,8 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         | MangaSource::ComicGrowl
         | MangaSource::ComicDays
         | MangaSource::MagazinePocket => from_rss_xml(&response)?,
+
+        MangaSource::Yanmaga => parse_yanmaga_from_html(response).map_err(FetchError::from)?,
     };
 
     Ok(manga_info)
