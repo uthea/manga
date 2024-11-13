@@ -53,11 +53,7 @@ pub async fn get_manga_paginated(
     query.push(" ) select *, count(*) over () as total_count from cte ORDER BY manga_id LIMIT ");
     query.push_bind(page_size);
     query.push(" OFFSET ");
-    query.push_bind(if page_number == 1 {
-        0
-    } else {
-        page_number * page_size
-    });
+    query.push_bind((page_number - 1) * page_size);
 
     let result = query.build().fetch_all(pool).await?;
 

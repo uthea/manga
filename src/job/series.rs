@@ -27,6 +27,7 @@ pub async fn update_series(webhook_url: String, pool: &PgPool) {
     let mut all_series: Vec<MangaRow> = Vec::new();
 
     loop {
+        println!("fetching series from db: page {}", page_counter);
         let series = get_manga_paginated(
             page_counter,
             10,
