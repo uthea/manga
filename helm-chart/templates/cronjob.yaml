@@ -1,0 +1,53 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "manga-tracker.fullname" . }}
+  labels:
+    {{- include "manga-tracker.labels" . | nindent 4 }}
+spec:
+  timeZone: 'Asia/Jakarta'
+  schedule: {{ .Values.schedule }}
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: Never
+          imagePullSecrets:
+            - name: {{ .Release.Name }}-docker-cred
+          containers:
+            - name: {{ .Chart.Name }}-cron
+              image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+              args: ["update"]
+              imagePullPolicy: {{ .Values.image.pullPolicy }}
+              env:
+              - name: DB_HOST
+                valueFrom:
+                  secretKeyRef:
+                    key:  db_host
+                    name: {{ .Release.Name }}-config
+              - name: DB_USERNAME
+                valueFrom:
+                  secretKeyRef:
+                    key:  db_username
+                    name: {{ .Release.Name }}-config
+              - name: DB_PASSWORD
+                valueFrom:
+                  secretKeyRef:
+                    key:  db_password
+                    name: {{ .Release.Name }}-config
+              - name: DB_NAME
+                valueFrom:
+                  secretKeyRef:
+                    key:  db_name
+                    name: {{ .Release.Name }}-config
+              - name: WEBHOOK_URL
+                valueFrom:
+                  secretKeyRef:
+                    key:  webhook_url
+                    name: {{ .Release.Name }}-config
+              - name: CRON_EXPR
+                valueFrom:
+                  secretKeyRef:
+                    key:  cron
+                    name: {{ .Release.Name }}-config
+
