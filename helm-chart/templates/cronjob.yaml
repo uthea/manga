@@ -45,9 +45,4 @@ spec:
                   secretKeyRef:
                     key:  webhook_url
                     name: {{ .Release.Name }}-config
-              - name: CRON_EXPR
-                valueFrom:
-                  secretKeyRef:
-                    key:  cron
-                    name: {{ .Release.Name }}-config
 
