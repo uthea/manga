@@ -18,6 +18,7 @@ spec:
             - name: {{ .Chart.Name }}-cron
               image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
               args: ["update"]
+              command: ["./manga-tracker"]
               imagePullPolicy: {{ .Values.image.pullPolicy }}
               env:
               - name: DB_HOST
