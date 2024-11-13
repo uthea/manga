@@ -6,7 +6,7 @@ metadata:
     {{- include "manga-tracker.labels" . | nindent 4 }}
 spec:
   timeZone: 'Asia/Jakarta'
-  schedule: {{ .Values.schedule | quote }}
+  schedule: {{ .Values.schedule }}
   jobTemplate:
     spec:
       template:
