@@ -20,7 +20,7 @@ pub enum DiffingResult {
     Released(MangaRow),
 }
 
-pub async fn update_books(webhook_url: String, pool: &PgPool) {
+pub async fn update_series(webhook_url: String, pool: &PgPool) {
     // retrieve series from db (paginated) based on the current day
     // for each series check for latest update
     let mut page_counter = 1;
