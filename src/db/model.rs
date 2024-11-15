@@ -28,7 +28,7 @@ pub struct MangaRow {
 
 impl MangaRow {
     pub fn from_manga(manga_id: String, source: MangaSource, info: Manga) -> Self {
-        let current_dt = chrono::offset::Local::now().naive_local();
+        let current_dt = chrono::offset::Utc::now();
         let release_dt = info.latest_chapter_release_date.naive_local();
         let wd: DbWeekday = info.latest_chapter_publish_day.into();
 
@@ -42,9 +42,9 @@ impl MangaRow {
             latest_chapter_url: info.latest_chapter_url,
             latest_chapter_release_date: release_dt,
             latest_chapter_publish_day: wd,
-            latest_chapter_released: Japan.from_local_datetime(&current_dt).unwrap()
+            latest_chapter_released: current_dt.with_timezone(&Japan)
                 >= Japan.from_local_datetime(&release_dt).unwrap(),
-            last_update: current_dt,
+            last_update: chrono::offset::Local::now().naive_local(),
         }
     }
 }
