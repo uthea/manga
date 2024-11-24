@@ -43,6 +43,9 @@ pub enum MangaSource {
 
     #[strum(to_string = "Urasunday")]
     Urasunday,
+
+    #[strum(to_string = "Comic Walker")]
+    ComicWalker,
 }
 
 #[derive(Deserialize, Serialize, Clone, Debug)]

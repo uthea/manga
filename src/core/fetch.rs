@@ -6,6 +6,7 @@ use crate::core::parser::rss_manga::Rss;
 use super::{
     parser::{
         comic_pixiv::{fetch_pixiv_data, PixivError},
+        comic_walker::{fetch_comic_walker_data, ComicWalkerError},
         urasunday::{parse_urasunday_from_html, UrasundayParseError},
         yanmaga::{parse_yanmaga_from_html, YanmagaParseError},
     },
@@ -20,6 +21,7 @@ pub enum FetchError {
     YanmagaParseError(YanmagaParseError),
     ComicPixivError(PixivError),
     UrasundayParseError(UrasundayParseError),
+    ComicWalkerError(ComicWalkerError),
 }
 
 impl From<YanmagaParseError> for FetchError {
@@ -40,6 +42,12 @@ impl From<UrasundayParseError> for FetchError {
     }
 }
 
+impl From<ComicWalkerError> for FetchError {
+    fn from(value: ComicWalkerError) -> Self {
+        Self::ComicWalkerError(value)
+    }
+}
+
 fn from_rss_xml(xml: &str) -> Result<Manga, FetchError> {
     let rss: Rss = from_str(xml).map_err(FetchError::DeserialzeXmlError)?;
 
@@ -49,6 +57,12 @@ fn from_rss_xml(xml: &str) -> Result<Manga, FetchError> {
 pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, FetchError> {
     if source == &MangaSource::ComicPixiv {
         return fetch_pixiv_data(manga_id).await.map_err(FetchError::from);
+    }
+
+    if source == &MangaSource::ComicWalker {
+        return fetch_comic_walker_data(manga_id)
+            .await
+            .map_err(FetchError::from);
     }
 
     let url = match source {
@@ -67,6 +81,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::Yanmaga => format!("https://yanmaga.jp/comics/{}", manga_id),
         MangaSource::ComicPixiv => unreachable!(),
         MangaSource::Urasunday => format!("https://urasunday.com/title/{}", manga_id),
+        MangaSource::ComicWalker => unreachable!(),
     };
 
     let response = reqwest::get(url)
@@ -89,6 +104,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::Yanmaga => parse_yanmaga_from_html(response).map_err(FetchError::from)?,
         MangaSource::Urasunday => parse_urasunday_from_html(response).map_err(FetchError::from)?,
         MangaSource::ComicPixiv => unreachable!(),
+        MangaSource::ComicWalker => unreachable!(),
     };
 
     Ok(manga_info)
