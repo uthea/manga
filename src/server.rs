@@ -49,6 +49,7 @@ pub async fn add_manga(
                 FetchError::YanmagaParseError(_) => "Error parsing yanmaga html",
                 FetchError::UrasundayParseError(_) => "Error parsing urasunday html",
                 FetchError::ComicPixivError(_) => "Error fetching data from comic pixiv api",
+                FetchError::ComicWalkerError(_) => "Error fetching data from comic walker api",
             };
 
             ServerFnError::new(msg)
