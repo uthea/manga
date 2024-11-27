@@ -82,6 +82,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::ComicPixiv => unreachable!(),
         MangaSource::Urasunday => format!("https://urasunday.com/title/{}", manga_id),
         MangaSource::ComicWalker => unreachable!(),
+        MangaSource::TonariYoungJump => format!("https://tonarinoyj.jp/rss/series/{}", manga_id),
     };
 
     let response = reqwest::get(url)
@@ -99,7 +100,8 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         | MangaSource::KurageBunch
         | MangaSource::ComicGrowl
         | MangaSource::ComicDays
-        | MangaSource::MagazinePocket => from_rss_xml(&response)?,
+        | MangaSource::MagazinePocket
+        | MangaSource::TonariYoungJump => from_rss_xml(&response)?,
 
         MangaSource::Yanmaga => parse_yanmaga_from_html(response).map_err(FetchError::from)?,
         MangaSource::Urasunday => parse_urasunday_from_html(response).map_err(FetchError::from)?,

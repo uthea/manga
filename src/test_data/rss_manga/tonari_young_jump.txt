@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:giga="https://gigaviewer.com">
+    <channel>
+        <title>となりのヤングジャンプ（姉のともだち）</title>
+        <pubDate>Wed, 20 Nov 2024 03:00:00 +0000</pubDate>
+        <link>https://tonarinoyj.jp/episode/10044607041237644941</link>
+        <description>姉とふたり暮らしの家にいりびたる、姉の友人・ひーちゃん。完璧に顔がよくてかわいくて、その上距離感がバグりまくっている彼女に、オタク男子高校生・旭は翻弄されっぱなし…？大好評読切『姉の友人』が改題して連載化!</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <item>
+            <title>[第14-1話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550912964879764268</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550912964879764268</guid>
+            <pubDate>Wed, 20 Nov 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 20 Nov 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550912964879764268-1817c680e45d1b2bf03575943d9f86ae?1731666818" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第13-2話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550912964823479650</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550912964823479650</guid>
+            <pubDate>Wed, 06 Nov 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 06 Nov 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550912964823479650-dcb45d568116f140f894ad2e6da3c49c?1730350020" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第13-1話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550912964764251186</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550912964764251186</guid>
+            <pubDate>Wed, 23 Oct 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 23 Oct 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550912964764251186-df1396f750c4bc4717eea159c2228503?1729062955" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第12-2話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550912964694148973</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550912964694148973</guid>
+            <pubDate>Wed, 09 Oct 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 09 Oct 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550912964694148973-dd2a97832190ca4ed26c926ef93d1405?1728272638" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第12-1話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550912964638137198</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550912964638137198</guid>
+            <pubDate>Wed, 25 Sep 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 25 Sep 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550912964638137198-932aaafdfc3faf605a840835e39aab72?1726637509" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第11-3話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550912964575128700</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550912964575128700</guid>
+            <pubDate>Wed, 11 Sep 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 11 Sep 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550912964575128700-cdffb8deb7d42418de09e41a4b94d997?1725869711" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第11-2話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550912964510563064</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550912964510563064</guid>
+            <pubDate>Wed, 28 Aug 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 28 Aug 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550912964510563064-2232889bfc51122a08ac56e1d757b31f?1724311474" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第11-1話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550912964438706786</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550912964438706786</guid>
+            <pubDate>Wed, 14 Aug 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 14 Aug 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550912964438706786-1ef3eb57a84429a1d2e0de475995bc68?1723514398" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第10-2話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550689798874630485</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550689798874630485</guid>
+            <pubDate>Wed, 31 Jul 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 31 Jul 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550689798874630485-ff071518696a95b6aa5da89b55792936?1721989450" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第10-1話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550689798810792163</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550689798810792163</guid>
+            <pubDate>Wed, 17 Jul 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 17 Jul 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550689798810792163-9a14a866d7f0e00d18638ada9dfc4053?1720669944" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第9-2話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550689798753813520</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550689798753813520</guid>
+            <pubDate>Wed, 03 Jul 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 03 Jul 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550689798753813520-aab7530ccee79a9b7818fb356cbfbb69?1719478253" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第9-1話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550689798689687284</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550689798689687284</guid>
+            <pubDate>Wed, 19 Jun 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 19 Jun 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550689798689687284-ba2b86379721f5bfec89ab85df8a6a31?1718253186" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第8-2話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550689798635293599</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550689798635293599</guid>
+            <pubDate>Wed, 05 Jun 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 05 Jun 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550689798635293599-147ab52ce2c5183b7bc1444da739a236?1717147887" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第8-1話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550689798574883051</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550689798574883051</guid>
+            <pubDate>Wed, 22 May 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 22 May 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550689798574883051-09dcbf5efaecde0d56473ccff6a29139?1716188057" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第7.5話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/2550689798302678808</link>
+            <guid isPermalink="false">tonarino_yj:episode:2550689798302678808</guid>
+            <pubDate>Wed, 20 Mar 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 20 Mar 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/2550689798302678808-c0ab8fdbf8103300b8ceeb34a2e87369?1710234651" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+        <item>
+            <title>[第1話] 姉のともだち</title>
+            <link>https://tonarinoyj.jp/episode/10044607041237644941</link>
+            <guid isPermalink="false">tonarino_yj:episode:10044607041237644941</guid>
+            <pubDate>Wed, 31 Jan 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Wed, 31 Jan 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>姉のともだち</description>
+            <enclosure url="https://cdn-img.tonarinoyj.jp/public/episode-thumbnail/10044607041237644941-36e4de0a5525a88276a765e1565925ec?1706174149" length="0" type="image/jpeg" />
+            <author>高瀬わか</author>
+        </item>
+    </channel>
+</rss>

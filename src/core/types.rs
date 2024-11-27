@@ -46,6 +46,9 @@ pub enum MangaSource {
 
     #[strum(to_string = "Comic Walker")]
     ComicWalker,
+
+    #[strum(to_string = "Tonari Young Jump")]
+    TonariYoungJump,
 }
 
 #[derive(Deserialize, Serialize, Clone, Debug)]
