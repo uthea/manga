@@ -7,6 +7,7 @@ use scraper::{Html, Selector};
 pub enum UrasundayParseError {
     NotFound,
     ChapterNotFound,
+    ParseDateError,
 }
 
 pub fn parse_urasunday_from_html(html: String) -> Result<Manga, UrasundayParseError> {
@@ -57,11 +58,12 @@ pub fn parse_urasunday_from_html(html: String) -> Result<Manga, UrasundayParseEr
 
         let chapter_release_date = {
             let raw = chapter_details_children
-                .next()
+                .last()
                 .ok_or(UrasundayParseError::ChapterNotFound)?
                 .inner_html();
 
-            let naive_date = NaiveDate::parse_from_str(&raw, "%Y/%m/%d").unwrap();
+            let naive_date = NaiveDate::parse_from_str(&raw, "%Y/%m/%d")
+                .map_err(|_| UrasundayParseError::ParseDateError)?;
 
             Local
                 .from_local_datetime(&naive_date.and_time(NaiveTime::default()))

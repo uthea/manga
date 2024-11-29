@@ -34,6 +34,7 @@ pub async fn add_manga(
     let manga = fetch_manga(&manga_id, source.as_ref().unwrap())
         .await
         .map_err(|e| {
+            println!("Fetch error: {:?}", e);
             let msg = match e {
                 FetchError::ConvertError(_) => "Error converting type",
                 FetchError::ReqwestError(e) => {
