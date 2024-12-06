@@ -7,6 +7,7 @@ use super::{
     parser::{
         comic_pixiv::{fetch_pixiv_data, PixivError},
         comic_walker::{fetch_comic_walker_data, ComicWalkerError},
+        manga_up::{parse_manga_up_from_html, MangaUpError},
         urasunday::{parse_urasunday_from_html, UrasundayParseError},
         yanmaga::{parse_yanmaga_from_html, YanmagaParseError},
     },
@@ -22,6 +23,7 @@ pub enum FetchError {
     ComicPixivError(PixivError),
     UrasundayParseError(UrasundayParseError),
     ComicWalkerError(ComicWalkerError),
+    MangaUpError(MangaUpError),
 }
 
 impl From<YanmagaParseError> for FetchError {
@@ -45,6 +47,12 @@ impl From<UrasundayParseError> for FetchError {
 impl From<ComicWalkerError> for FetchError {
     fn from(value: ComicWalkerError) -> Self {
         Self::ComicWalkerError(value)
+    }
+}
+
+impl From<MangaUpError> for FetchError {
+    fn from(value: MangaUpError) -> Self {
+        Self::MangaUpError(value)
     }
 }
 
@@ -83,6 +91,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::Urasunday => format!("https://urasunday.com/title/{}", manga_id),
         MangaSource::ComicWalker => unreachable!(),
         MangaSource::TonariYoungJump => format!("https://tonarinoyj.jp/rss/series/{}", manga_id),
+        MangaSource::MangaUp => format!("https://www.manga-up.com/titles/{}", manga_id),
         MangaSource::SundayWebry => format!("https://www.sunday-webry.com/rss/series/{}", manga_id),
     };
 
@@ -109,6 +118,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::Urasunday => parse_urasunday_from_html(response).map_err(FetchError::from)?,
         MangaSource::ComicPixiv => unreachable!(),
         MangaSource::ComicWalker => unreachable!(),
+        MangaSource::MangaUp => parse_manga_up_from_html(response).map_err(FetchError::from)?,
     };
 
     Ok(manga_info)
