@@ -7,7 +7,7 @@ use super::{
     parser::{
         comic_pixiv::{fetch_pixiv_data, PixivError},
         comic_walker::{fetch_comic_walker_data, ComicWalkerError},
-        manga_up::MangaUpError,
+        manga_up::{parse_manga_up_from_html, MangaUpError},
         urasunday::{parse_urasunday_from_html, UrasundayParseError},
         yanmaga::{parse_yanmaga_from_html, YanmagaParseError},
     },
@@ -116,7 +116,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::Urasunday => parse_urasunday_from_html(response).map_err(FetchError::from)?,
         MangaSource::ComicPixiv => unreachable!(),
         MangaSource::ComicWalker => unreachable!(),
-        MangaSource::MangaUp => unreachable!(),
+        MangaSource::MangaUp => parse_manga_up_from_html(response).map_err(FetchError::from)?,
     };
 
     Ok(manga_info)
