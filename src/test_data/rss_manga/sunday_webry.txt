@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:giga="https://gigaviewer.com">
+    <channel>
+        <title>サンデーうぇぶり（アイツノカノジョ）</title>
+        <pubDate>Thu, 28 Nov 2024 15:00:00 +0000</pubDate>
+        <link>https://www.sunday-webry.com/episode/316112896879947791</link>
+        <description>高３の４月。始業式･･･
+気になる美少女は“親友の彼女”。
+危険な「１年間」が幕を開ける――･･･</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <item>
+            <title>第51話 家族みたいに</title>
+            <link>https://www.sunday-webry.com/episode/2550912964948728222</link>
+            <guid isPermalink="false">sunday_webry:episode:2550912964948728222</guid>
+            <pubDate>Thu, 28 Nov 2024 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Thu, 28 Nov 2024 15:00:00 +0000</giga:freeTermStartDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/2550912964948728222-eab6c6b0706ad62a6e35a458fc931d50?1732768902" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>第50話 見たいですか？</title>
+            <link>https://www.sunday-webry.com/episode/2550912964887589741</link>
+            <guid isPermalink="false">sunday_webry:episode:2550912964887589741</guid>
+            <pubDate>Thu, 14 Nov 2024 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Thu, 14 Nov 2024 15:00:00 +0000</giga:freeTermStartDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/2550912964887589741-5bb0d750573c08044ed78c976f261cd1?1731548491" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>おまけイラスト リクならいいよ</title>
+            <link>https://www.sunday-webry.com/episode/2550689798759422071</link>
+            <guid isPermalink="false">sunday_webry:episode:2550689798759422071</guid>
+            <pubDate>Thu, 27 Jun 2024 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Thu, 27 Jun 2024 15:00:00 +0000</giga:freeTermStartDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/2550689798759422071-4cf87d4a398ac23b04d2f59712c57636?1720159785" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>シャワールームでの気付き</title>
+            <link>https://www.sunday-webry.com/episode/2550689798333900384</link>
+            <guid isPermalink="false">sunday_webry:episode:2550689798333900384</guid>
+            <pubDate>Thu, 21 Mar 2024 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Thu, 21 Mar 2024 15:00:00 +0000</giga:freeTermStartDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/2550689798333900384-acc97536797b6912783ce8ec03c615b8?1711070771" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>おまけ うみみは◯◯◯◯</title>
+            <link>https://www.sunday-webry.com/episode/14079602755202739834</link>
+            <guid isPermalink="false">sunday_webry:episode:14079602755202739834</guid>
+            <pubDate>Thu, 14 Sep 2023 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Thu, 14 Sep 2023 15:00:00 +0000</giga:freeTermStartDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/14079602755202739834-f45c2d16c5683948c1677e1461c9a067?1696040971" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>おまけ</title>
+            <link>https://www.sunday-webry.com/episode/4856001361318161228</link>
+            <guid isPermalink="false">sunday_webry:episode:4856001361318161228</guid>
+            <pubDate>Thu, 08 Jun 2023 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Thu, 08 Jun 2023 15:00:00 +0000</giga:freeTermStartDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/4856001361318161228-0e15aae509310f5f88c3190a2c82a251?1686210108" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>おまけ</title>
+            <link>https://www.sunday-webry.com/episode/4855956445074933792</link>
+            <guid isPermalink="false">sunday_webry:episode:4855956445074933792</guid>
+            <pubDate>Thu, 09 Feb 2023 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Thu, 09 Feb 2023 15:00:00 +0000</giga:freeTermStartDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/4855956445074933792-755bf5cef03e3bcf9b91cfb2bb9f9a81?1686210108" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>第8話 元カノ今カノ</title>
+            <link>https://www.sunday-webry.com/episode/316190247113123350</link>
+            <guid isPermalink="false">sunday_webry:episode:316190247113123350</guid>
+            <pubDate>Thu, 19 Jan 2023 15:00:00 +0000</pubDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/316190247113123350-a0b60786016e32aa1ddeaff0a3d61122?1718856097" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>第7話 伊波うみみ</title>
+            <link>https://www.sunday-webry.com/episode/316190247042536068</link>
+            <guid isPermalink="false">sunday_webry:episode:316190247042536068</guid>
+            <pubDate>Thu, 22 Dec 2022 15:00:00 +0000</pubDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/316190247042536068-d0a809947b6dab7101420c6e0b410922?1718856097" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>第6話 もう一回</title>
+            <link>https://www.sunday-webry.com/episode/316190247018695834</link>
+            <guid isPermalink="false">sunday_webry:episode:316190247018695834</guid>
+            <pubDate>Thu, 08 Dec 2022 15:00:00 +0000</pubDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/316190247018695834-2c1c73550a83d681e4e4db3a69e77af7?1718856097" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>第5話 「私のせいで」</title>
+            <link>https://www.sunday-webry.com/episode/316190246989794600</link>
+            <guid isPermalink="false">sunday_webry:episode:316190246989794600</guid>
+            <pubDate>Thu, 24 Nov 2022 15:00:00 +0000</pubDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/316190246989794600-fa32986a9bbd8bda25675d4a8967c242?1718856097" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>第4話 かくれんぼ</title>
+            <link>https://www.sunday-webry.com/episode/316190246910994415</link>
+            <guid isPermalink="false">sunday_webry:episode:316190246910994415</guid>
+            <pubDate>Thu, 10 Nov 2022 15:00:00 +0000</pubDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/316190246910994415-fd33bcf21c578e08dd8107d695fdfce2?1718856097" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>第3話 秘密基地</title>
+            <link>https://www.sunday-webry.com/episode/316190246910994411</link>
+            <guid isPermalink="false">sunday_webry:episode:316190246910994411</guid>
+            <pubDate>Thu, 27 Oct 2022 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Thu, 27 Oct 2022 15:00:00 +0000</giga:freeTermStartDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/316190246910994411-32029ca195f1204c602cd0e9febf046d?1686210108" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>第2話 「したいの？」</title>
+            <link>https://www.sunday-webry.com/episode/316112896925392755</link>
+            <guid isPermalink="false">sunday_webry:episode:316112896925392755</guid>
+            <pubDate>Thu, 13 Oct 2022 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Thu, 13 Oct 2022 15:00:00 +0000</giga:freeTermStartDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/316112896925392755-9d48343261493f4a84ff622b20c437ec?1686210108" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+        <item>
+            <title>第1話 「始まりの日」</title>
+            <link>https://www.sunday-webry.com/episode/316112896879947791</link>
+            <guid isPermalink="false">sunday_webry:episode:316112896879947791</guid>
+            <pubDate>Thu, 29 Sep 2022 15:00:00 +0000</pubDate>                <giga:freeTermStartDate>Thu, 29 Sep 2022 15:00:00 +0000</giga:freeTermStartDate>            <description>アイツノカノジョ</description>
+            <enclosure url="https://cdn-img.www.sunday-webry.com/public/episode-thumbnail/316112896879947791-cc744a5c836fdcee5fa17584fb9bbd60?1686210108" length="0" type="image/jpeg" />
+            <author>肉丸</author>
+        </item>
+    </channel>
+</rss>
