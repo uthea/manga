@@ -8,6 +8,7 @@ use super::{
         comic_fuz::{parse_comic_fuz_from_html, ComicFuzError},
         comic_pixiv::{fetch_pixiv_data, PixivError},
         comic_walker::{fetch_comic_walker_data, ComicWalkerError},
+        gangan_online::{parse_gangan_online_from_html, GanganOnlineError},
         manga_up::{parse_manga_up_from_html, MangaUpError},
         urasunday::{parse_urasunday_from_html, UrasundayParseError},
         yanmaga::{parse_yanmaga_from_html, YanmagaParseError},
@@ -26,6 +27,7 @@ pub enum FetchError {
     ComicWalkerError(ComicWalkerError),
     MangaUpError(MangaUpError),
     ComicFuzError(ComicFuzError),
+    GanganOnlineError(GanganOnlineError),
 }
 
 impl From<YanmagaParseError> for FetchError {
@@ -61,6 +63,12 @@ impl From<MangaUpError> for FetchError {
 impl From<ComicFuzError> for FetchError {
     fn from(value: ComicFuzError) -> Self {
         Self::ComicFuzError(value)
+    }
+}
+
+impl From<GanganOnlineError> for FetchError {
+    fn from(value: GanganOnlineError) -> Self {
+        Self::GanganOnlineError(value)
     }
 }
 
@@ -102,6 +110,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::MangaUp => format!("https://www.manga-up.com/titles/{}", manga_id),
         MangaSource::SundayWebry => format!("https://www.sunday-webry.com/rss/series/{}", manga_id),
         MangaSource::ComicFuz => format!("https://comic-fuz.com/manga/{}", manga_id),
+        MangaSource::GanganOnline => format!("https://www.ganganonline.com/title/{}", manga_id),
     };
 
     let response = reqwest::get(url)
@@ -129,6 +138,9 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::ComicWalker => unreachable!(),
         MangaSource::MangaUp => parse_manga_up_from_html(response).map_err(FetchError::from)?,
         MangaSource::ComicFuz => parse_comic_fuz_from_html(response).map_err(FetchError::from)?,
+        MangaSource::GanganOnline => {
+            parse_gangan_online_from_html(response).map_err(FetchError::from)?
+        }
     };
 
     Ok(manga_info)

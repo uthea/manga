@@ -53,6 +53,7 @@ pub async fn add_manga(
                 FetchError::ComicWalkerError(_) => "Error fetching data from comic walker api",
                 FetchError::MangaUpError(_) => "Error parsing mangaup html",
                 FetchError::ComicFuzError(_) => "Error parsing comic fuz html",
+                FetchError::GanganOnlineError(_) => "Error parsing gangan online html",
             };
 
             ServerFnError::new(msg)
