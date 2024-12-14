@@ -5,6 +5,7 @@ use crate::core::parser::rss_manga::Rss;
 
 use super::{
     parser::{
+        comic_fuz::{parse_comic_fuz_from_html, ComicFuzError},
         comic_pixiv::{fetch_pixiv_data, PixivError},
         comic_walker::{fetch_comic_walker_data, ComicWalkerError},
         manga_up::{parse_manga_up_from_html, MangaUpError},
@@ -24,6 +25,7 @@ pub enum FetchError {
     UrasundayParseError(UrasundayParseError),
     ComicWalkerError(ComicWalkerError),
     MangaUpError(MangaUpError),
+    ComicFuzError(ComicFuzError),
 }
 
 impl From<YanmagaParseError> for FetchError {
@@ -53,6 +55,12 @@ impl From<ComicWalkerError> for FetchError {
 impl From<MangaUpError> for FetchError {
     fn from(value: MangaUpError) -> Self {
         Self::MangaUpError(value)
+    }
+}
+
+impl From<ComicFuzError> for FetchError {
+    fn from(value: ComicFuzError) -> Self {
+        Self::ComicFuzError(value)
     }
 }
 
@@ -93,6 +101,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::TonariYoungJump => format!("https://tonarinoyj.jp/rss/series/{}", manga_id),
         MangaSource::MangaUp => format!("https://www.manga-up.com/titles/{}", manga_id),
         MangaSource::SundayWebry => format!("https://www.sunday-webry.com/rss/series/{}", manga_id),
+        MangaSource::ComicFuz => format!("https://comic-fuz.com/manga/{}", manga_id),
     };
 
     let response = reqwest::get(url)
@@ -119,6 +128,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::ComicPixiv => unreachable!(),
         MangaSource::ComicWalker => unreachable!(),
         MangaSource::MangaUp => parse_manga_up_from_html(response).map_err(FetchError::from)?,
+        MangaSource::ComicFuz => parse_comic_fuz_from_html(response).map_err(FetchError::from)?,
     };
 
     Ok(manga_info)
