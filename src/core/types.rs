@@ -52,9 +52,12 @@ pub enum MangaSource {
 
     #[strum(to_string = "Manga Up")]
     MangaUp,
-  
+
     #[strum(to_string = "Sunday Webry")]
     SundayWebry,
+
+    #[strum(to_string = "Comic Fuz")]
+    ComicFuz,
 }
 
 #[derive(Deserialize, Serialize, Clone, Debug)]
