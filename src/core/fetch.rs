@@ -5,9 +5,9 @@ use crate::core::parser::rss_manga::Rss;
 
 use super::{
     parser::{
+        comic_fuz::{parse_comic_fuz_from_html, ComicFuzError},
         comic_pixiv::{fetch_pixiv_data, PixivError},
         comic_walker::{fetch_comic_walker_data, ComicWalkerError},
-        comif_fuz::{parse_comic_fuz_from_html, ComicFuzError},
         manga_up::{parse_manga_up_from_html, MangaUpError},
         urasunday::{parse_urasunday_from_html, UrasundayParseError},
         yanmaga::{parse_yanmaga_from_html, YanmagaParseError},

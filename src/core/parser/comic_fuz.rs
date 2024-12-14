@@ -77,8 +77,6 @@ pub fn parse_comic_fuz_from_html(html: String) -> Result<Manga, ComicFuzError> {
         .ok_or(ComicFuzError::PageNotFound)?
         .inner_html();
 
-    dbg!(&next_data);
-
     let data = {
         let obj: ComicFuz = serde_json::from_str(&next_data).map_err(|e| {
             dbg!(e);
@@ -102,8 +100,6 @@ pub fn parse_comic_fuz_from_html(html: String) -> Result<Manga, ComicFuzError> {
         .first()
         .ok_or(ComicFuzError::ChapterNotFound)?;
 
-    dbg!(&latest_chapter);
-
     let release_date = match &latest_chapter.updated_date {
         Some(raw) => {
             let naive_date = NaiveDate::parse_from_str(raw, "%Y/%m/%d")
@@ -118,7 +114,7 @@ pub fn parse_comic_fuz_from_html(html: String) -> Result<Manga, ComicFuzError> {
 
     Ok(Manga {
         title: data.manga.manga_name.to_owned(),
-        cover_url: format!("https://img.comic-fuz.com/{}", latest_chapter.thumbnail_url),
+        cover_url: format!("https://img.comic-fuz.com{}", latest_chapter.thumbnail_url),
         author,
         latest_chapter_title: latest_chapter.chapter_main_name.to_owned(),
         latest_chapter_url: format!(
