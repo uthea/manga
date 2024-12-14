@@ -58,6 +58,9 @@ pub enum MangaSource {
 
     #[strum(to_string = "Comic Fuz")]
     ComicFuz,
+
+    #[strum(to_string = "Gangan Online")]
+    GanganOnline,
 }
 
 #[derive(Deserialize, Serialize, Clone, Debug)]
