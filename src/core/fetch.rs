@@ -8,6 +8,7 @@ use super::{
         comic_fuz::{parse_comic_fuz_from_html, ComicFuzError},
         comic_pixiv::{fetch_pixiv_data, PixivError},
         comic_walker::{fetch_comic_walker_data, ComicWalkerError},
+        gamma_plus::{parse_gamma_plus_from_html, GammaPlusError},
         gangan_online::{parse_gangan_online_from_html, GanganOnlineError},
         manga_up::{parse_manga_up_from_html, MangaUpError},
         urasunday::{parse_urasunday_from_html, UrasundayParseError},
@@ -28,6 +29,7 @@ pub enum FetchError {
     MangaUpError(MangaUpError),
     ComicFuzError(ComicFuzError),
     GanganOnlineError(GanganOnlineError),
+    GammaPlusError(GammaPlusError),
 }
 
 impl From<YanmagaParseError> for FetchError {
@@ -72,6 +74,12 @@ impl From<GanganOnlineError> for FetchError {
     }
 }
 
+impl From<GammaPlusError> for FetchError {
+    fn from(value: GammaPlusError) -> Self {
+        Self::GammaPlusError(value)
+    }
+}
+
 fn from_rss_xml(xml: &str) -> Result<Manga, FetchError> {
     let rss: Rss = from_str(xml).map_err(FetchError::DeserialzeXmlError)?;
 
@@ -111,6 +119,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::SundayWebry => format!("https://www.sunday-webry.com/rss/series/{}", manga_id),
         MangaSource::ComicFuz => format!("https://comic-fuz.com/manga/{}", manga_id),
         MangaSource::GanganOnline => format!("https://www.ganganonline.com/title/{}", manga_id),
+        MangaSource::GammaPlus => format!("https://gammaplus.takeshobo.co.jp/manga/{}", manga_id),
     };
 
     let response = reqwest::get(url)
@@ -141,6 +150,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::GanganOnline => {
             parse_gangan_online_from_html(response).map_err(FetchError::from)?
         }
+        MangaSource::GammaPlus => parse_gamma_plus_from_html(response).map_err(FetchError::from)?,
     };
 
     Ok(manga_info)
