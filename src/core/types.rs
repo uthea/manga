@@ -64,6 +64,9 @@ pub enum MangaSource {
 
     #[strum(to_string = "Gamma Plus")]
     GammaPlus,
+
+    #[strum(to_string = "Champion Cross")]
+    ChampionCross,
 }
 
 #[derive(Deserialize, Serialize, Clone, Debug)]
