@@ -1,3 +1,4 @@
+pub mod champion_cross;
 pub mod comic_fuz;
 pub mod comic_pixiv;
 pub mod comic_walker;
