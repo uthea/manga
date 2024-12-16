@@ -1,0 +1,365 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title>&#x300c;&#x304a;&#x304b;&#x3048;&#x308a;&#x3001;&#x30d1;&#x30d1;&#x300d;</title>
+        <description>
+            <div>
+                <p>
+                    <span>僕が結婚した女性には娘さんがいる。高校2年生の女の子で透桜子ちゃんという。年頃の娘さんがいると聞いて心配したけど、懐いてくれているようで良かった。良かったんだけど、なんだか妙に距離が近すぎる瞬間があって…?「これからよろしくね、パパ」この子の真意は、きっと誰にも分からない。SNSで話題の作家が贈る、仄暗いホームサスペンス。 </span>
+                </p>
+            </div>
+        </description>
+        <link>https://championcross.jp/series/c887451b8309e</link>
+        <atom:link rel="self" type="application/rss+xml" href="https://championcross.jp/series/c887451b8309e/rss"/>
+        <copyright>&#x300c;&#x304a;&#x304b;&#x3048;&#x308a;&#x3001;&#x30d1;&#x30d1;&#x300d;</copyright>
+        <webfeeds:icon>https://cdn-public.comici.jp/series/2/20240514160558180B9E664127D47EA24E2CEC707FB070E60.png</webfeeds:icon>
+        <webfeeds:logo>https://cdn-public.comici.jp/series/2/20240514160558180B9E664127D47EA24E2CEC707FB070E60.png</webfeeds:logo>
+        <webfeeds:accentColor>D80C24</webfeeds:accentColor>
+        <webfeeds:related layout="card" target="browser"/>
+        <webfeeds:analytics id="UA-114502607-1" engine="GoogleAnalytics"/>
+        <language>ja</language>
+        <pubDate>Sun, 15 Dec 2024 19:56:22 +0900</pubDate>
+        <lastBuildDate>Sun, 15 Dec 2024 19:56:22 +0900</lastBuildDate>
+        <item>
+            <title><![CDATA[特別編　自室]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1731996201820_okaeri_papa_25.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 25 Nov 2024 00:00:00 +0900</pubDate>
+            <link>https://championcross.jp/episodes/4f55160098e81/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>269316</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第23話　逃避]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/21480/default/20241022114001981A1080536C26B574FD74836464A2AC822-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 28 Oct 2024 00:00:00 +0900</pubDate>
+            <link>https://championcross.jp/episodes/93e6bb1a0cbce/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>260009</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第22話　旧友]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/1193201/default/202409181010299672D3B42A0215538D03CF88E1092B0AEE2-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 23 Sep 2024 00:00:00 +0900</pubDate>
+            <link>https://championcross.jp/episodes/95f5fff10bb8a/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>252458</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[特別編　追想]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/21480/default/20240819173013465012D49F4DE0120825E41B8B0E1E447E3-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 26 Aug 2024 00:00:00 +0900</pubDate>
+            <link>https://championcross.jp/episodes/445d573d1fb75/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>247450</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第21話　海]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/21480/default/2024071714302760150502713A31526FF2F0CAC51B36931F1-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 22 Jul 2024 00:00:00 +0900</pubDate>
+            <link>https://championcross.jp/episodes/81433d8d3c26a/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>245388</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第20話　蠱惑]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/202406171635450183D7A8884F016BDEE7FDDE6C5959F4376-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 24 Jun 2024 00:00:00 +0900</pubDate>
+            <link>https://championcross.jp/episodes/f706fdad67974/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>237058</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第19話　葛藤]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/20240516123927105A1080536C26B574FD74836464A2AC822-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 27 May 2024 00:00:00 +0900</pubDate>
+            <link>https://championcross.jp/episodes/ccdc33b0a6b49/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>232567</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第18話　亀裂]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1713533901540_okaeri_papa_18.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 22 Apr 2024 00:00:00 +0900</pubDate>
+            <link>https://championcross.jp/episodes/b13ce56b854da/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>227363</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第17話　夏祭り]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1713533894399_okaeri_papa_17.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 19 Apr 2024
+				22:38:15 +0900</pubDate>
+            <link>https://championcross.jp/episodes/da1eb053f610d/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>227362</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第16話　兄妹]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222243968_okaeri_papa_16.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:44:04 +0900</pubDate>
+            <link>https://championcross.jp/episodes/d1d573f70d879/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198344</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第15話　母の望み]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222237941_okaeri_papa_15.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:43:58 +0900</pubDate>
+            <link>https://championcross.jp/episodes/c6df693430dc6/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198343</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第14話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222231314_okaeri_papa_14.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:43:52 +0900</pubDate>
+            <link>https://championcross.jp/episodes/1162ffbb23e91/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198342</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第13話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222224496_okaeri_papa_13.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:43:45 +0900</pubDate>
+            <link>https://championcross.jp/episodes/b0cca848cf6f4/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198341</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第12話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222217994_okaeri_papa_12.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:43:38 +0900</pubDate>
+            <link>https://championcross.jp/episodes/264157c1a0b4a/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198340</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第11話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222212431_okaeri_papa_11.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:43:33 +0900</pubDate>
+            <link>https://championcross.jp/episodes/a53f2ce809b8e/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198339</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第10話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222206514_okaeri_papa_10.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:43:27 +0900</pubDate>
+            <link>https://championcross.jp/episodes/fab2f32bd93b3/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198338</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第9話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222200606_okaeri_papa_9.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:43:21 +0900</pubDate>
+            <link>https://championcross.jp/episodes/9410192140918/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198336</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第8話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222195888_okaeri_papa_8.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:43:16 +0900</pubDate>
+            <link>https://championcross.jp/episodes/c44b711ab4922/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198335</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第7話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222189460_okaeri_papa_7.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:43:10 +0900</pubDate>
+            <link>https://championcross.jp/episodes/7d75aa117dafd/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198334</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第6話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222181096_okaeri_papa_6.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:43:02 +0900</pubDate>
+            <link>https://championcross.jp/episodes/76596d342c90d/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198333</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第5話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222173003_okaeri_papa_5.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:42:54 +0900</pubDate>
+            <link>https://championcross.jp/episodes/63bfebdcfef5b/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198332</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第4話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222165393_okaeri_papa_4.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:42:46 +0900</pubDate>
+            <link>https://championcross.jp/episodes/6a095f4c3d61f/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198331</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第3話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222157609_okaeri_papa_3.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:42:38 +0900</pubDate>
+            <link>https://championcross.jp/episodes/2584f6571bbce/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198330</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第2話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222150687_okaeri_papa_2.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:42:31 +0900</pubDate>
+            <link>https://championcross.jp/episodes/69798d3c19550/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198329</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[第1話]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/10258/1710222143162_okaeri_papa_1.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 12 Mar 2024
+				14:42:24 +0900</pubDate>
+            <link>https://championcross.jp/episodes/1382e83961052/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>198328</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>チャンピオンクロス</dc:creator>
+            <dc:language></dc:language>
+        </item>
+    </channel>
+</rss>
