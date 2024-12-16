@@ -128,7 +128,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::ComicFuz => format!("https://comic-fuz.com/manga/{}", manga_id),
         MangaSource::GanganOnline => format!("https://www.ganganonline.com/title/{}", manga_id),
         MangaSource::GammaPlus => format!("https://gammaplus.takeshobo.co.jp/manga/{}", manga_id),
-        MangaSource::ChampionCross => format!("https://championcross.jp/series/{}", manga_id),
+        MangaSource::ChampionCross => format!("https://championcross.jp/series/{}/rss", manga_id),
     };
 
     let response = reqwest::get(url)

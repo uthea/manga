@@ -63,6 +63,7 @@ pub struct Item {
     #[xmlserde(name = b"media:thumbnail", ty = "child")]
     pub thumbnail: Value,
 
+    // no author related information in the rss
     #[xmlserde(name = b"dc:creator", ty = "child")]
     pub creator: Value,
 }
