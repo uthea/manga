@@ -58,8 +58,8 @@ pub struct EpisodeResult {
     pub code: String,
     pub title: String,
     pub sub_title: String,
-    pub thumbnail: String,
-    pub original_thumbnail: String,
+    pub thumbnail: Option<String>,
+    pub original_thumbnail: Option<String>,
     pub update_date: DateTime<Local>,
     pub delivery_period: String,
     pub is_new: bool,
@@ -113,7 +113,10 @@ pub async fn fetch_comic_walker_data(id: &str) -> Result<Manga, ComicWalkerError
 
     Ok(Manga {
         title: data.work.title,
-        cover_url: latest_chapter.original_thumbnail.to_owned(),
+        cover_url: latest_chapter
+            .original_thumbnail
+            .to_owned()
+            .unwrap_or(data.work.original_thumbnail.clone()),
         author,
         latest_chapter_title: latest_chapter.title.to_owned(),
         latest_chapter_url: format!(
