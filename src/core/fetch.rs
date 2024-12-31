@@ -1,4 +1,5 @@
 use crate::core::parser::rss_manga::ConvertError;
+use http::header;
 use serde_xml_rs::from_str;
 
 use crate::core::parser::rss_manga::Rss;
@@ -140,7 +141,22 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::GANMA => format!("https://ganma.jp/web/magazine/{}", manga_id),
     };
 
-    let response = reqwest::get(url)
+    let client = {
+        if source == &MangaSource::GANMA {
+            let mut headers = header::HeaderMap::new();
+            headers.insert("User-Agent", header::HeaderValue::from_static("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"));
+            reqwest::Client::builder()
+                .default_headers(headers)
+                .build()
+                .unwrap()
+        } else {
+            reqwest::Client::builder().build().unwrap()
+        }
+    };
+
+    let response = client
+        .get(url)
+        .send()
         .await
         .map_err(FetchError::ReqwestError)?
         .error_for_status()
