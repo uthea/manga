@@ -1,4 +1,5 @@
 use crate::core::parser::rss_manga::ConvertError;
+use http::header;
 use serde_xml_rs::from_str;
 
 use crate::core::parser::rss_manga::Rss;
@@ -11,6 +12,7 @@ use super::{
         comic_walker::{fetch_comic_walker_data, ComicWalkerError},
         gamma_plus::{parse_gamma_plus_from_html, GammaPlusError},
         gangan_online::{parse_gangan_online_from_html, GanganOnlineError},
+        ganma::{parse_ganma_from_html, GanmaError},
         manga_up::{parse_manga_up_from_html, MangaUpError},
         urasunday::{parse_urasunday_from_html, UrasundayParseError},
         yanmaga::{parse_yanmaga_from_html, YanmagaParseError},
@@ -32,6 +34,7 @@ pub enum FetchError {
     GanganOnlineError(GanganOnlineError),
     GammaPlusError(GammaPlusError),
     ChampionCrossError(ChampionCrossError),
+    GanmaError(GanmaError),
 }
 
 impl From<YanmagaParseError> for FetchError {
@@ -88,6 +91,12 @@ impl From<ChampionCrossError> for FetchError {
     }
 }
 
+impl From<GanmaError> for FetchError {
+    fn from(value: GanmaError) -> Self {
+        Self::GanmaError(value)
+    }
+}
+
 fn from_rss_xml(xml: &str) -> Result<Manga, FetchError> {
     let rss: Rss = from_str(xml).map_err(FetchError::DeserialzeXmlError)?;
 
@@ -129,9 +138,25 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::GanganOnline => format!("https://www.ganganonline.com/title/{}", manga_id),
         MangaSource::GammaPlus => format!("https://gammaplus.takeshobo.co.jp/manga/{}", manga_id),
         MangaSource::ChampionCross => format!("https://championcross.jp/series/{}/rss", manga_id),
+        MangaSource::GANMA => format!("https://ganma.jp/web/magazine/{}", manga_id),
     };
 
-    let response = reqwest::get(url)
+    let client = {
+        if source == &MangaSource::GANMA {
+            let mut headers = header::HeaderMap::new();
+            headers.insert("User-Agent", header::HeaderValue::from_static("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"));
+            reqwest::Client::builder()
+                .default_headers(headers)
+                .build()
+                .unwrap()
+        } else {
+            reqwest::Client::builder().build().unwrap()
+        }
+    };
+
+    let response = client
+        .get(url)
+        .send()
         .await
         .map_err(FetchError::ReqwestError)?
         .error_for_status()
@@ -163,6 +188,7 @@ pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, 
         MangaSource::ChampionCross => {
             parse_champion_cross_xml(response).map_err(FetchError::from)?
         }
+        MangaSource::GANMA => parse_ganma_from_html(response).map_err(FetchError::from)?,
     };
 
     Ok(manga_info)

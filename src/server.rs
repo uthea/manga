@@ -56,6 +56,7 @@ pub async fn add_manga(
                 FetchError::GanganOnlineError(_) => "Error parsing gangan online html",
                 FetchError::GammaPlusError(_) => "Error parsing gamma plus html",
                 FetchError::ChampionCrossError(_) => "Error parsing champion cross xml",
+                FetchError::GanmaError(_) => "Error parsing ganma html",
             };
 
             ServerFnError::new(msg)
