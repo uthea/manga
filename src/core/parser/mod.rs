@@ -4,6 +4,7 @@ pub mod comic_pixiv;
 pub mod comic_walker;
 pub mod gamma_plus;
 pub mod gangan_online;
+pub mod ganma;
 pub mod manga_up;
 pub mod rss_manga;
 pub mod urasunday;
