@@ -1,0 +1,348 @@
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title>S&#x30e9;&#x30f3;&#x30af;&#x30e2;&#x30f3;&#x30b9;&#x30bf;&#x30fc;&#x306e;&#x300a;&#x30d9;&#x30d2;&#x30fc;&#x30e2;&#x30b9;&#x300b;&#x3060;&#x3051;&#x3069;&#x3001;&#x732b;&#x3068;&#x9593;&#x9055;&#x308f;&#x308c;&#x3066;&#x30a8;&#x30eb;&#x30d5;&#x5a18;&#x306e;&#x9a0e;&#x58eb;&#xff08;&#x30da;&#x30c3;&#x30c8;&#xff09;&#x3068;&#x3057;&#x3066;&#x66ae;&#x3089;&#x3057;&#x3066;&#x307e;&#x3059;</title>
+        <description>
+            <div>
+                <p>
+                    <span>「小説家になろう」で大人気の原作を東雲太郎がコミカライズ。元騎士の主人公が転生したのはSランクモンスターの「ベヒーモス」。しかし幼体なので見た目は仔猫!? 自分を拾ってくれた美少女エルフ娘を守るため、騎士（ペット）としての誇りを胸に戦う！ 異世界冒険ファンタジー！ </span>
+                </p>
+            </div>
+        </description>
+        <link>https://younganimal.com/series/c909ad9c5cd69</link>
+        <atom:link rel="self" type="application/rss+xml" href="https://younganimal.com/series/c909ad9c5cd69/rss"/>
+        <copyright>S&#x30e9;&#x30f3;&#x30af;&#x30e2;&#x30f3;&#x30b9;&#x30bf;&#x30fc;&#x306e;&#x300a;&#x30d9;&#x30d2;&#x30fc;&#x30e2;&#x30b9;&#x300b;&#x3060;&#x3051;&#x3069;&#x3001;&#x732b;&#x3068;&#x9593;&#x9055;&#x308f;&#x308c;&#x3066;&#x30a8;&#x30eb;&#x30d5;&#x5a18;&#x306e;&#x9a0e;&#x58eb;&#xff08;&#x30da;&#x30c3;&#x30c8;&#xff09;&#x3068;&#x3057;&#x3066;&#x66ae;&#x3089;&#x3057;&#x3066;&#x307e;&#x3059;</copyright>
+        <webfeeds:icon>https://cdn-public.comici.jp/series/63278/202306132002347189EAD36108580E9DC73DA5EB24708349C.png</webfeeds:icon>
+        <webfeeds:logo>https://cdn-public.comici.jp/series/63278/202306132002347189EAD36108580E9DC73DA5EB24708349C.png</webfeeds:logo>
+        <webfeeds:accentColor>D80C24</webfeeds:accentColor>
+        <webfeeds:related layout="card" target="browser"/>
+        <webfeeds:analytics id="UA-114502607-1" engine="GoogleAnalytics"/>
+        <language>ja</language>
+        <pubDate>Sat, 04 Jan 2025 19:10:38 +0900</pubDate>
+        <lastBuildDate>Sat, 04 Jan 2025 19:10:38 +0900</lastBuildDate>
+        <item>
+            <title><![CDATA[#74「異世界でも猫乳はさみ」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/21480/default/202412251106237294DE9C28F9759C5C7F8E2684FAA0E32D4-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 27 Dec 2024 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/6689ae63c43bd/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>278487</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#73「空の旅」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/21480/default/2024110610324639831C54A5BCD179B0174488022FDC68FD0-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 08 Nov 2024 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/36e278e01ca6e/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>266691</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#72「アークの迷宮」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/1193201/default/202409111145475469ACC3CFA6B224381D1A8EFB1FFE34F89-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 13 Sep 2024 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/bfb2d43b061be/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>251560</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#71「イブラ村」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/21480/default/20240807113624763063A70E10E3481EEF345E530A348FD75-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 09 Aug 2024 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/a2f1e84c7dcdc/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>246176</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#70「異世界へ」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/202406121119476606640D32224FEDB946F93A272979D1947-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 14 Jun 2024 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/33c0c3471c335/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>236419</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#69「新たな戦いの予感」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/2024052211411232801311E98DEE1E813B96D2C346FC21370-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 24 May 2024 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/b6787eaf96603/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>233250</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#68「ベルフェゴール第二形態」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/20240410102748442AA67D7D9515F15E5AAD424A83F854850-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 12 Apr 2024 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/729e08049aa95/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>218406</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#67「VSエンシェントゴーレム」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/20240319121358827330489C0009FE742E871AF908A43B5D4-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 22 Mar 2024 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/2848f3a8f12ed/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>201337</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#66「七大魔王が一柱ベルフェゴール」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/2024020711533075384548D509272FF2FAD1415676F7B432B-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 09 Feb 2024 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/75599bb1162f7/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>185512</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#番外編「アリアの母」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/202401101150179459E554416B849079C0FBFB5BDA7C27953-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 12 Jan 2024 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/a160664442861/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>180648</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#65「ドラゴン娘と猫騎士の連携」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/20231206101525984D685310EDC8FC15B0A665DF591D58CC5-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 08 Dec 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/731a571c301cd/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>177122</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#64「氷の女勇者」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/202311080953598908F85A26B0329713722082E6AAA098263-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 10 Nov 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/164b8ef82b9c5/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>170105</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#63「大魔導士の愛娘の力の片鱗」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/21480/default/2023101111290752624BD9E2A2BD52FD90DD7A1CDA64B7B65-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 13 Oct 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/1825886f870f3/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>165452</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#62「異界のモンスター」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/21480/default/20230906121236943B86B1EB0496114B70A8553D3506AF871-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 08 Sep 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/50cfe09310992/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>160486</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#61「未来人？」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/21480/default/20230807173215002C9C30DC26698B8C58378E8C8396E9456-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Thu, 10 Aug 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/7f8d8ce57679b/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>156811</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#60「少女の旅立ちなの！」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/202307121036036731B33201ED971DD09416E3C48DA6B4041-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 14 Jul 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/f9b3dafda11cb/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>151696</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#59「激突する聖なる力と魔の力」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/63278/default/202307101656040048E20CE49029DABB6184684CACA4FCF82-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 14 Jul 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/4106f7cfbf144/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>151005</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#58「激戦②」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/63278/default/20230710165314946044FCCEB48D188587DCD399C3E7765D0-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 14 Jul 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/1077878d6ee24/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>151004</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#57「激戦」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/63278/default/20230710165043035B36F0AA7F724542E6C131121B5BB557A-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 14 Jul 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/7e973b6c3fbbb/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>151003</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#56「みんなで模擬戦」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/63278/default/20230710164814649928E58AEE723504DD5250B97FE38A6BA-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 14 Jul 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/605f8939061b3/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>151002</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#55「母との再会」]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/63278/default/2023071016364688420CE0EC22F1BE224596B667D9CF2C479-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Fri, 14 Jul 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/1cca76cf46bf4/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>151001</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#54「女騎士とエレメンタルキャット」②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/book/7293/1715854348452_thumbnail.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 06 Jun 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/85d2a348c4ad4/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>150981</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#54「女騎士とエレメンタルキャット」①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/book/7293/1715854347996_thumbnail.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 06 Jun 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/c4538a9c9f97d/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>150980</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#53「ルミルスに向けて」②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/book/7293/1715854347534_thumbnail.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 06 Jun 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/a131ceb4e4f29/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>150979</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+        <item>
+            <title><![CDATA[#53「ルミルスに向けて」①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/book/7293/1715854347097_thumbnail.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Tue, 06 Jun 2023 00:00:00 +0900</pubDate>
+            <link>https://younganimal.com/episodes/32e71f10a07bd/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>150978</guid>
+            <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            <dc:creator>ヤングアニマルWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+    </channel>
+</rss>
