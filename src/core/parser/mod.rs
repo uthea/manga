@@ -1,4 +1,4 @@
-pub mod champion_cross;
+pub mod cdata_rss;
 pub mod comic_fuz;
 pub mod comic_pixiv;
 pub mod comic_walker;

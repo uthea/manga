@@ -1,15 +1,10 @@
 use chrono::{DateTime, Datelike, FixedOffset};
 use chrono_tz::Japan;
+use reqwest::Client;
 use xmlserde::{xml_deserialize_from_str, XmlValue};
 use xmlserde_derives::XmlDeserialize;
 
-use crate::core::types::Manga;
-
-#[derive(Debug)]
-pub enum ChampionCrossError {
-    DeserializeError,
-    EmptyChapter,
-}
+use crate::core::{fetch::FetchError, types::Manga};
 
 #[derive(Debug, XmlDeserialize)]
 #[xmlserde(root = b"rss")]
@@ -28,10 +23,13 @@ pub struct Channel {
 }
 
 impl TryFrom<Channel> for Manga {
-    type Error = ChampionCrossError;
+    type Error = FetchError;
 
     fn try_from(value: Channel) -> Result<Self, Self::Error> {
-        let latest_chapter = value.item.first().ok_or(ChampionCrossError::EmptyChapter)?;
+        let latest_chapter = value
+            .item
+            .first()
+            .ok_or(FetchError::ChapterNotFound(None))?;
         let release_date = &latest_chapter.pub_date.date.0.with_timezone(&Japan);
 
         Ok(Self {
@@ -95,11 +93,26 @@ impl XmlValue for Rfc2822Date {
     }
 }
 
-pub fn parse_champion_cross_xml(xml: String) -> Result<Manga, ChampionCrossError> {
+pub fn parse_cdata_xml(xml: String) -> Result<Manga, FetchError> {
     let result: Rss = xml_deserialize_from_str(&xml.replace("<![CDATA[", "").replace("]]>", ""))
-        .map_err(|_| ChampionCrossError::DeserializeError)?;
+        .map_err(|e| FetchError::XmlDeserializeError(Some(e)))?;
 
     Manga::try_from(result.channel)
+}
+
+pub async fn fetch_cdata_rss(client: Client, url: String) -> Result<Manga, FetchError> {
+    let rss = client
+        .get(url)
+        .send()
+        .await
+        .map_err(FetchError::ReqwestError)?
+        .error_for_status()
+        .map_err(FetchError::ReqwestError)?
+        .text()
+        .await
+        .map_err(FetchError::ReqwestError)?;
+
+    parse_cdata_xml(rss)
 }
 
 #[cfg(test)]
@@ -115,7 +128,7 @@ mod tests {
         for path in paths {
             let doc = fs::read_to_string(path.unwrap().path()).unwrap();
 
-            parse_champion_cross_xml(doc).unwrap();
+            parse_cdata_xml(doc).unwrap();
         }
     }
 }

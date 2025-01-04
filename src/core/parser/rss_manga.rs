@@ -1,13 +1,10 @@
 use chrono::{DateTime, Datelike, FixedOffset};
 use chrono_tz::Japan;
+use reqwest::Client;
 use serde::Deserialize;
+use serde_xml_rs::from_str;
 
-use crate::core::types::Manga;
-
-#[derive(Debug)]
-pub enum ConvertError {
-    EmptyChapter,
-}
+use crate::core::{fetch::FetchError, types::Manga};
 
 #[derive(Debug, Deserialize)]
 pub struct Rss {
@@ -29,10 +26,13 @@ pub struct Channel {
 
 #[cfg(feature = "ssr")]
 impl TryFrom<Channel> for Manga {
-    type Error = ConvertError;
+    type Error = FetchError;
 
     fn try_from(value: Channel) -> Result<Self, Self::Error> {
-        let latest_chapter = value.item.first().ok_or(ConvertError::EmptyChapter)?;
+        let latest_chapter = value
+            .item
+            .first()
+            .ok_or(FetchError::ChapterNotFound(None))?;
         let release_date = &latest_chapter.pub_date.with_timezone(&Japan);
 
         Ok(Self {
@@ -100,6 +100,28 @@ pub mod rfc2822 {
             DateTime::parse_from_rfc2822(date_string).map_err(E::custom)
         }
     }
+}
+
+fn from_rss_xml(xml: &str) -> Result<Manga, FetchError> {
+    let rss: Rss =
+        from_str(xml).map_err(|e| FetchError::XmlDeserializeError(Some(e.to_string())))?;
+
+    Manga::try_from(rss.channel)
+}
+
+pub async fn fetch_generic_rss(client: Client, url: String) -> Result<Manga, FetchError> {
+    let rss = client
+        .get(url)
+        .send()
+        .await
+        .map_err(FetchError::ReqwestError)?
+        .error_for_status()
+        .map_err(FetchError::ReqwestError)?
+        .text()
+        .await
+        .map_err(FetchError::ReqwestError)?;
+
+    from_rss_xml(&rss)
 }
 
 #[cfg(test)]

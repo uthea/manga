@@ -2,16 +2,12 @@ use chrono::DateTime;
 use chrono::Datelike;
 use chrono::Local;
 use chrono_tz::Japan;
+use reqwest::Client;
 use serde::Deserialize;
 use serde::Serialize;
 
+use crate::core::fetch::FetchError;
 use crate::core::types::Manga;
-
-#[derive(Debug)]
-pub enum ComicWalkerError {
-    ReqwestError(reqwest::Error),
-    EpisodeNotFound,
-}
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
@@ -79,27 +75,27 @@ pub struct Internal {
     pub episodetype: String,
 }
 
-pub async fn fetch_comic_walker_data(id: &str) -> Result<Manga, ComicWalkerError> {
-    let client = reqwest::Client::new();
-
+pub async fn fetch_comic_walker_data(client: Client, id: &str) -> Result<Manga, FetchError> {
     let data = client
         .get(format!(
             " https://comic-walker.com/api/contents/details/work?workCode={}",
             id
         ))
-        .header("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36")
+/*         .header("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36") */
         .send()
         .await
-        .map_err(ComicWalkerError::ReqwestError)?
+        .map_err(FetchError::ReqwestError)?
         .json::<ComicWalkerData>()
         .await
-        .map_err(ComicWalkerError::ReqwestError)?;
+        .map_err(FetchError::ReqwestError)?;
 
     let latest_chapter = data
         .latest_episodes
         .result
         .first()
-        .ok_or(ComicWalkerError::EpisodeNotFound)?;
+        .ok_or(FetchError::ChapterNotFound(Some(
+            "episodes is empty".into(),
+        )))?;
 
     let author = data
         .work

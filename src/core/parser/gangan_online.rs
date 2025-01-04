@@ -1,9 +1,10 @@
 use chrono::{Datelike, Local};
 use chrono_tz::Japan;
+use reqwest::Client;
 use scraper::{Html, Selector};
 use serde::{Deserialize, Serialize};
 
-use crate::core::types::Manga;
+use crate::core::{fetch::FetchError, types::Manga};
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
@@ -53,26 +54,22 @@ pub struct Chapter {
     pub publishing_period: Option<String>,
 }
 
-#[derive(Debug)]
-pub enum GanganOnlineError {
-    PageNotFound,
-    ChapterNotFound,
-}
-
-pub fn parse_gangan_online_from_html(html: String) -> Result<Manga, GanganOnlineError> {
+pub fn parse_gangan_online_from_html(html: String) -> Result<Manga, FetchError> {
     let next_data_selector = Selector::parse(r#"script[id="__NEXT_DATA__"]"#).unwrap();
     let document = Html::parse_document(&html);
 
     let next_data = document
         .select(&next_data_selector)
         .next()
-        .ok_or(GanganOnlineError::PageNotFound)?
+        .ok_or(FetchError::PageNotFound(Some(
+            "__NEXT_DATA__ not found".into(),
+        )))?
         .inner_html();
 
     let data = {
         let obj: GanganOnline = serde_json::from_str(&next_data).map_err(|e| {
-            dbg!(e);
-            GanganOnlineError::PageNotFound
+            dbg!(&e);
+            FetchError::JsonDeserializeError(e)
         })?;
 
         obj.props.page_props.data.default
@@ -81,7 +78,7 @@ pub fn parse_gangan_online_from_html(html: String) -> Result<Manga, GanganOnline
     let latest_chapter = data
         .chapters
         .first()
-        .ok_or(GanganOnlineError::ChapterNotFound)?;
+        .ok_or(FetchError::PageNotFound(Some("chapters are empty".into())))?;
 
     let latest_chapter_title = if latest_chapter.sub_text.is_some() {
         latest_chapter.sub_text.clone().unwrap()
@@ -104,6 +101,23 @@ pub fn parse_gangan_online_from_html(html: String) -> Result<Manga, GanganOnline
         latest_chapter_release_date: Local::now().fixed_offset(),
         latest_chapter_publish_day: Local::now().with_timezone(&Japan).weekday(),
     })
+}
+
+pub async fn fetch_gangan_online(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
+    let url = format!("https://www.ganganonline.com/title/{}", manga_id);
+
+    let html = client
+        .get(url)
+        .send()
+        .await
+        .map_err(FetchError::ReqwestError)?
+        .error_for_status()
+        .map_err(FetchError::ReqwestError)?
+        .text()
+        .await
+        .map_err(FetchError::ReqwestError)?;
+
+    parse_gangan_online_from_html(html)
 }
 
 #[cfg(test)]

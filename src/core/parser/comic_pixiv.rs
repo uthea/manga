@@ -1,16 +1,12 @@
 use chrono::DateTime;
 use chrono::Datelike;
 use chrono_tz::Japan;
+use reqwest::Client;
 use serde::Deserialize;
 use serde::Serialize;
 
+use crate::core::fetch::FetchError;
 use crate::core::types::Manga;
-
-#[derive(Debug)]
-pub enum PixivError {
-    ReqwestError(reqwest::Error),
-    EpisodeNotFound,
-}
 
 // metadata struct
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
@@ -79,18 +75,16 @@ pub struct EpisodeDetail {
     pub state: String,
 }
 
-pub async fn fetch_pixiv_data(id: &str) -> Result<Manga, PixivError> {
-    let client = reqwest::Client::new();
-
+pub async fn fetch_pixiv_data(client: Client, id: &str) -> Result<Manga, FetchError> {
     let metadata = client
         .get(format!("https://comic.pixiv.net/api/app/works/v5/{}", id))
         .header("x-requested-with", "pixivcomic")
         .send()
         .await
-        .map_err(PixivError::ReqwestError)?
+        .map_err(FetchError::ReqwestError)?
         .json::<Metadata>()
         .await
-        .map_err(PixivError::ReqwestError)?;
+        .map_err(FetchError::ReqwestError)?;
 
     let details = client
         .get(format!(
@@ -100,13 +94,15 @@ pub async fn fetch_pixiv_data(id: &str) -> Result<Manga, PixivError> {
         .header("x-requested-with", "pixivcomic")
         .send()
         .await
-        .map_err(PixivError::ReqwestError)?
+        .map_err(FetchError::ReqwestError)?
         .json::<Detail>()
         .await
-        .map_err(PixivError::ReqwestError)?;
+        .map_err(FetchError::ReqwestError)?;
 
     if details.data.episodes.is_empty() {
-        return Err(PixivError::EpisodeNotFound);
+        return Err(FetchError::ChapterNotFound(Some(
+            "episodes is empty".into(),
+        )));
     }
 
     let latest_episode = details
@@ -114,7 +110,9 @@ pub async fn fetch_pixiv_data(id: &str) -> Result<Manga, PixivError> {
         .episodes
         .into_iter()
         .find(|d| d.state.ne("not_publishing"))
-        .ok_or(PixivError::EpisodeNotFound)?;
+        .ok_or(FetchError::ChapterNotFound(Some(
+            "latest episode not found".into(),
+        )))?;
 
     let episode_detail = latest_episode.episode.unwrap();
 

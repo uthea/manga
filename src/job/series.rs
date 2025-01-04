@@ -5,7 +5,7 @@ use serenity::all::{CreateEmbed, ExecuteWebhook, Http, Webhook};
 use sqlx::PgPool;
 
 use crate::{
-    core::{fetch::fetch_manga, types::MangaSource},
+    core::types::MangaSource,
     db::{
         inquiry::{get_manga_paginated, MangaQuery},
         model::MangaRow,
@@ -158,7 +158,9 @@ pub async fn diff_update(
         .await;
 
     // for each mangarow retrieve latest update
-    let latest_update = fetch_manga(&data.manga_id, &data.source)
+    let latest_update = data
+        .source
+        .fetch(&data.manga_id)
         .await
         .expect("Fail to fetch manga");
 

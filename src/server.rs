@@ -4,11 +4,8 @@ use leptos::server_fn::ServerFnError;
 
 #[cfg(feature = "ssr")]
 use {
-    crate::core::fetch::{fetch_manga, FetchError},
-    crate::db::inquiry::get_manga,
-    crate::db::insert::insert_manga,
-    crate::state::AppState,
-    leptos::context::use_context,
+    crate::core::fetch::FetchError, crate::db::inquiry::get_manga, crate::db::insert::insert_manga,
+    crate::state::AppState, leptos::context::use_context,
 };
 
 #[server]
@@ -31,32 +28,21 @@ pub async fn add_manga(
         _ => return Err(ServerFnError::new("error checking manga in db")),
     };
 
-    let manga = fetch_manga(&manga_id, source.as_ref().unwrap())
+    let manga = source
+        .as_ref()
+        .unwrap()
+        .fetch(&manga_id)
         .await
         .map_err(|e| {
             println!("Fetch error: {:?}", e);
             let msg = match e {
-                FetchError::ConvertError(_) => "Error converting type",
-                FetchError::ReqwestError(e) => {
-                    if e.status()
-                        .is_some_and(|s| s == reqwest::StatusCode::NOT_FOUND)
-                    {
-                        "Error page not found"
-                    } else {
-                        "Error on request"
-                    }
+                FetchError::ReqwestError(err) => err.to_string(),
+                FetchError::JsonDeserializeError(err) => err.to_string(),
+                FetchError::XmlDeserializeError(err) => {
+                    err.unwrap_or("Error on deserializing xml".to_string())
                 }
-                FetchError::DeserialzeXmlError(_) => "Error deserializing rss",
-                FetchError::YanmagaParseError(_) => "Error parsing yanmaga html",
-                FetchError::UrasundayParseError(_) => "Error parsing urasunday html",
-                FetchError::ComicPixivError(_) => "Error fetching data from comic pixiv api",
-                FetchError::ComicWalkerError(_) => "Error fetching data from comic walker api",
-                FetchError::MangaUpError(_) => "Error parsing mangaup html",
-                FetchError::ComicFuzError(_) => "Error parsing comic fuz html",
-                FetchError::GanganOnlineError(_) => "Error parsing gangan online html",
-                FetchError::GammaPlusError(_) => "Error parsing gamma plus html",
-                FetchError::ChampionCrossError(_) => "Error parsing champion cross xml",
-                FetchError::GanmaError(_) => "Error parsing ganma html",
+                FetchError::ChapterNotFound(err) => err.unwrap_or("Chapter Not Found".to_string()),
+                FetchError::PageNotFound(err) => err.unwrap_or("Page Not Found".to_string()),
             };
 
             ServerFnError::new(msg)
