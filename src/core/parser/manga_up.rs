@@ -1,6 +1,7 @@
-use crate::core::types::Manga;
+use crate::core::{fetch::FetchError, types::Manga};
 use chrono::{Datelike, Local};
 use regex::{Regex, RegexBuilder};
+use reqwest::Client;
 use scraper::{Html, Selector};
 use serde::Deserialize;
 use std::sync::LazyLock;
@@ -11,13 +12,6 @@ static CHAPTER_REGEX: LazyLock<Regex> = LazyLock::new(|| {
         .build()
         .unwrap()
 });
-
-#[derive(Debug)]
-pub enum MangaUpError {
-    TitleNotFound,
-    AuthorNotFound,
-    ChapterNotFound,
-}
 
 #[derive(Default, Debug, Clone, PartialEq, Deserialize)]
 #[serde(rename_all = "camelCase")]
@@ -40,7 +34,7 @@ pub struct Chapter {
     pub days_to_change_status: String,
 }
 
-pub fn parse_manga_up_from_html(html: String) -> Result<Manga, MangaUpError> {
+pub fn parse_manga_up_from_html(html: String) -> Result<Manga, FetchError> {
     let title_selector = Selector::parse(r#"h2[class*="pc:text-title-lg-pc"]"#).unwrap();
     let author_selector = Selector::parse(
         r#"div[class="text-on_background_medium sp:text-body-md-sp pc:text-body-md-pc"]"#,
@@ -51,33 +45,39 @@ pub fn parse_manga_up_from_html(html: String) -> Result<Manga, MangaUpError> {
     let title = document
         .select(&title_selector)
         .next()
-        .ok_or(MangaUpError::TitleNotFound)?
+        .ok_or(FetchError::PageNotFound(Some("title not found".into())))?
         .inner_html();
     let author = document
         .select(&author_selector)
         .next()
-        .ok_or(MangaUpError::AuthorNotFound)?
+        .ok_or(FetchError::PageNotFound(Some("author not found".into())))?
         .inner_html();
 
     // parse chapter related data
     let captures = CHAPTER_REGEX
         .captures(&html)
-        .ok_or(MangaUpError::ChapterNotFound)?;
+        .ok_or(FetchError::ChapterNotFound(Some(
+            "no match from regex search".into(),
+        )))?;
 
     let chapter_data_json = captures
         .get(0)
-        .ok_or(MangaUpError::ChapterNotFound)?
+        .ok_or(FetchError::ChapterNotFound(Some(
+            "no result from regex capture".into(),
+        )))?
         .as_str()
         .replace(r#"],[\"$\",\"$L6f"#, "")
         .replace("\\", "");
 
     let chapter_data: MangaUpData =
-        serde_json::from_str(&chapter_data_json).map_err(|_| MangaUpError::ChapterNotFound)?;
+        serde_json::from_str(&chapter_data_json).map_err(FetchError::JsonDeserializeError)?;
 
     let latest_chapter = chapter_data
         .chapters
         .last()
-        .ok_or(MangaUpError::ChapterNotFound)?;
+        .ok_or(FetchError::ChapterNotFound(Some(
+            "chapters is empty".into(),
+        )))?;
 
     Ok(Manga {
         title,
@@ -93,6 +93,23 @@ pub fn parse_manga_up_from_html(html: String) -> Result<Manga, MangaUpError> {
         latest_chapter_release_date: Local::now().fixed_offset(),
         latest_chapter_publish_day: Local::now().weekday(),
     })
+}
+
+pub async fn fetch_mangaup(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
+    let url = format!("https://www.manga-up.com/titles/{}", manga_id);
+
+    let html = client
+        .get(url)
+        .send()
+        .await
+        .map_err(FetchError::ReqwestError)?
+        .error_for_status()
+        .map_err(FetchError::ReqwestError)?
+        .text()
+        .await
+        .map_err(FetchError::ReqwestError)?;
+
+    parse_manga_up_from_html(html)
 }
 
 #[cfg(test)]

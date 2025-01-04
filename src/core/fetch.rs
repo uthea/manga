@@ -1,195 +1,107 @@
-use crate::core::parser::rss_manga::ConvertError;
-use http::header;
-use serde_xml_rs::from_str;
-
-use crate::core::parser::rss_manga::Rss;
-
-use super::{
-    parser::{
-        champion_cross::{parse_champion_cross_xml, ChampionCrossError},
-        comic_fuz::{parse_comic_fuz_from_html, ComicFuzError},
-        comic_pixiv::{fetch_pixiv_data, PixivError},
-        comic_walker::{fetch_comic_walker_data, ComicWalkerError},
-        gamma_plus::{parse_gamma_plus_from_html, GammaPlusError},
-        gangan_online::{parse_gangan_online_from_html, GanganOnlineError},
-        ganma::{parse_ganma_from_html, GanmaError},
-        manga_up::{parse_manga_up_from_html, MangaUpError},
-        urasunday::{parse_urasunday_from_html, UrasundayParseError},
-        yanmaga::{parse_yanmaga_from_html, YanmagaParseError},
-    },
-    types::{Manga, MangaSource},
+use crate::core::parser::{
+    cdata_rss::fetch_cdata_rss, comic_fuz::fetch_comic_fuz, comic_pixiv::fetch_pixiv_data,
+    comic_walker::fetch_comic_walker_data, gamma_plus::fetch_gamma_plus,
+    gangan_online::fetch_gangan_online, ganma::fetch_ganma, manga_up::fetch_mangaup,
+    rss_manga::fetch_generic_rss, urasunday::fetch_urasunday, yanmaga::fetch_yanmaga,
 };
+use http::header;
+
+use super::types::{Manga, MangaSource};
 
 #[derive(Debug)]
 pub enum FetchError {
-    ConvertError(ConvertError),
     ReqwestError(reqwest::Error),
-    DeserialzeXmlError(serde_xml_rs::Error),
-    YanmagaParseError(YanmagaParseError),
-    ComicPixivError(PixivError),
-    UrasundayParseError(UrasundayParseError),
-    ComicWalkerError(ComicWalkerError),
-    MangaUpError(MangaUpError),
-    ComicFuzError(ComicFuzError),
-    GanganOnlineError(GanganOnlineError),
-    GammaPlusError(GammaPlusError),
-    ChampionCrossError(ChampionCrossError),
-    GanmaError(GanmaError),
+    JsonDeserializeError(serde_json::Error),
+    XmlDeserializeError(Option<String>),
+    ChapterNotFound(Option<String>),
+    PageNotFound(Option<String>),
 }
 
-impl From<YanmagaParseError> for FetchError {
-    fn from(value: YanmagaParseError) -> Self {
-        Self::YanmagaParseError(value)
-    }
-}
-
-impl From<PixivError> for FetchError {
-    fn from(value: PixivError) -> Self {
-        Self::ComicPixivError(value)
-    }
-}
-
-impl From<UrasundayParseError> for FetchError {
-    fn from(value: UrasundayParseError) -> Self {
-        Self::UrasundayParseError(value)
-    }
-}
-
-impl From<ComicWalkerError> for FetchError {
-    fn from(value: ComicWalkerError) -> Self {
-        Self::ComicWalkerError(value)
-    }
-}
-
-impl From<MangaUpError> for FetchError {
-    fn from(value: MangaUpError) -> Self {
-        Self::MangaUpError(value)
-    }
-}
-
-impl From<ComicFuzError> for FetchError {
-    fn from(value: ComicFuzError) -> Self {
-        Self::ComicFuzError(value)
-    }
-}
-
-impl From<GanganOnlineError> for FetchError {
-    fn from(value: GanganOnlineError) -> Self {
-        Self::GanganOnlineError(value)
-    }
-}
-
-impl From<GammaPlusError> for FetchError {
-    fn from(value: GammaPlusError) -> Self {
-        Self::GammaPlusError(value)
-    }
-}
-
-impl From<ChampionCrossError> for FetchError {
-    fn from(value: ChampionCrossError) -> Self {
-        Self::ChampionCrossError(value)
-    }
-}
-
-impl From<GanmaError> for FetchError {
-    fn from(value: GanmaError) -> Self {
-        Self::GanmaError(value)
-    }
-}
-
-fn from_rss_xml(xml: &str) -> Result<Manga, FetchError> {
-    let rss: Rss = from_str(xml).map_err(FetchError::DeserialzeXmlError)?;
-
-    Manga::try_from(rss.channel).map_err(FetchError::ConvertError)
-}
-
-pub async fn fetch_manga(manga_id: &str, source: &MangaSource) -> Result<Manga, FetchError> {
-    if source == &MangaSource::ComicPixiv {
-        return fetch_pixiv_data(manga_id).await.map_err(FetchError::from);
-    }
-
-    if source == &MangaSource::ComicWalker {
-        return fetch_comic_walker_data(manga_id)
-            .await
-            .map_err(FetchError::from);
-    }
-
-    let url = match source {
-        MangaSource::ShounenJumpPlus => {
-            format!("https://shonenjumpplus.com/rss/series/{}", manga_id)
-        }
-        MangaSource::ComicEarthStar => {
-            format!("https://comic-earthstar.com/rss/series/{}", manga_id)
-        }
-        MangaSource::KurageBunch => format!("https://kuragebunch.com/rss/series/{}", manga_id),
-        MangaSource::ComicGrowl => format!("https://comic-growl.com/rss/series/{}", manga_id),
-        MangaSource::ComicDays => format!("https://comic-days.com/rss/series/{}", manga_id),
-        MangaSource::MagazinePocket => {
-            format!("https://pocket.shonenmagazine.com/rss/series/{}", manga_id)
-        }
-        MangaSource::Yanmaga => format!("https://yanmaga.jp/comics/{}", manga_id),
-        MangaSource::ComicPixiv => unreachable!(),
-        MangaSource::Urasunday => format!("https://urasunday.com/title/{}", manga_id),
-        MangaSource::ComicWalker => unreachable!(),
-        MangaSource::TonariYoungJump => format!("https://tonarinoyj.jp/rss/series/{}", manga_id),
-        MangaSource::MangaUp => format!("https://www.manga-up.com/titles/{}", manga_id),
-        MangaSource::SundayWebry => format!("https://www.sunday-webry.com/rss/series/{}", manga_id),
-        MangaSource::ComicFuz => format!("https://comic-fuz.com/manga/{}", manga_id),
-        MangaSource::GanganOnline => format!("https://www.ganganonline.com/title/{}", manga_id),
-        MangaSource::GammaPlus => format!("https://gammaplus.takeshobo.co.jp/manga/{}", manga_id),
-        MangaSource::ChampionCross => format!("https://championcross.jp/series/{}/rss", manga_id),
-        MangaSource::GANMA => format!("https://ganma.jp/web/magazine/{}", manga_id),
-    };
-
-    let client = {
-        if source == &MangaSource::GANMA {
+impl MangaSource {
+    pub async fn fetch(&self, manga_id: &str) -> Result<Manga, FetchError> {
+        let client = {
             let mut headers = header::HeaderMap::new();
             headers.insert("User-Agent", header::HeaderValue::from_static("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"));
             reqwest::Client::builder()
                 .default_headers(headers)
                 .build()
                 .unwrap()
-        } else {
-            reqwest::Client::builder().build().unwrap()
+        };
+
+        match self {
+            MangaSource::Yanmaga => fetch_yanmaga(client, manga_id).await,
+            MangaSource::ShounenJumpPlus => {
+                fetch_generic_rss(
+                    client,
+                    format!("https://shonenjumpplus.com/rss/series/{}", manga_id),
+                )
+                .await
+            }
+            MangaSource::ComicEarthStar => {
+                fetch_generic_rss(
+                    client,
+                    format!("https://comic-earthstar.com/rss/series/{}", manga_id),
+                )
+                .await
+            }
+            MangaSource::KurageBunch => {
+                fetch_generic_rss(
+                    client,
+                    format!("https://kuragebunch.com/rss/series/{}", manga_id),
+                )
+                .await
+            }
+            MangaSource::ComicGrowl => {
+                fetch_generic_rss(
+                    client,
+                    format!("https://comic-growl.com/rss/series/{}", manga_id),
+                )
+                .await
+            }
+            MangaSource::ComicDays => {
+                fetch_generic_rss(
+                    client,
+                    format!("https://comic-days.com/rss/series/{}", manga_id),
+                )
+                .await
+            }
+            MangaSource::MagazinePocket => {
+                fetch_generic_rss(
+                    client,
+                    format!("https://pocket.shonenmagazine.com/rss/series/{}", manga_id),
+                )
+                .await
+            }
+            MangaSource::TonariYoungJump => {
+                fetch_generic_rss(
+                    client,
+                    format!("https://tonarinoyj.jp/rss/series/{}", manga_id),
+                )
+                .await
+            }
+            MangaSource::SundayWebry => {
+                fetch_generic_rss(
+                    client,
+                    format!("https://www.sunday-webry.com/rss/series/{}", manga_id),
+                )
+                .await
+            }
+
+            MangaSource::ComicPixiv => fetch_pixiv_data(client, manga_id).await,
+            MangaSource::Urasunday => fetch_urasunday(client, manga_id).await,
+            MangaSource::ComicWalker => fetch_comic_walker_data(client, manga_id).await,
+            MangaSource::MangaUp => fetch_mangaup(client, manga_id).await,
+            MangaSource::ComicFuz => fetch_comic_fuz(client, manga_id).await,
+            MangaSource::GanganOnline => fetch_gangan_online(client, manga_id).await,
+            MangaSource::GammaPlus => fetch_gamma_plus(client, manga_id).await,
+            MangaSource::ChampionCross => {
+                fetch_cdata_rss(
+                    client,
+                    format!("https://championcross.jp/series/{}/rss", manga_id),
+                )
+                .await
+            }
+            MangaSource::GANMA => fetch_ganma(client, manga_id).await,
         }
-    };
-
-    let response = client
-        .get(url)
-        .send()
-        .await
-        .map_err(FetchError::ReqwestError)?
-        .error_for_status()
-        .map_err(FetchError::ReqwestError)?
-        .text()
-        .await
-        .map_err(FetchError::ReqwestError)?;
-
-    let manga_info = match source {
-        MangaSource::ShounenJumpPlus
-        | MangaSource::ComicEarthStar
-        | MangaSource::KurageBunch
-        | MangaSource::ComicGrowl
-        | MangaSource::ComicDays
-        | MangaSource::MagazinePocket
-        | MangaSource::TonariYoungJump
-        | MangaSource::SundayWebry => from_rss_xml(&response)?,
-
-        MangaSource::Yanmaga => parse_yanmaga_from_html(response).map_err(FetchError::from)?,
-        MangaSource::Urasunday => parse_urasunday_from_html(response).map_err(FetchError::from)?,
-        MangaSource::ComicPixiv => unreachable!(),
-        MangaSource::ComicWalker => unreachable!(),
-        MangaSource::MangaUp => parse_manga_up_from_html(response).map_err(FetchError::from)?,
-        MangaSource::ComicFuz => parse_comic_fuz_from_html(response).map_err(FetchError::from)?,
-        MangaSource::GanganOnline => {
-            parse_gangan_online_from_html(response).map_err(FetchError::from)?
-        }
-        MangaSource::GammaPlus => parse_gamma_plus_from_html(response).map_err(FetchError::from)?,
-        MangaSource::ChampionCross => {
-            parse_champion_cross_xml(response).map_err(FetchError::from)?
-        }
-        MangaSource::GANMA => parse_ganma_from_html(response).map_err(FetchError::from)?,
-    };
-
-    Ok(manga_info)
+    }
 }

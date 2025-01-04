@@ -1,19 +1,11 @@
 use chrono::{Datelike, Local, NaiveDate, NaiveTime, TimeZone};
 use chrono_tz::Japan;
+use reqwest::Client;
 use scraper::{selectable::Selectable, Html, Selector};
 
-use crate::core::types::Manga;
+use crate::core::{fetch::FetchError, types::Manga};
 
-#[derive(Debug)]
-pub enum YanmagaParseError {
-    NotFound,
-    ChapterTitleNotFound,
-    ReleaseDateNotFound,
-    CoverNotFound,
-    ChapterUrlNotFound,
-}
-
-pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, YanmagaParseError> {
+pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, FetchError> {
     let document = Html::parse_document(&html);
     let title_selector = Selector::parse(r#"h1[class="detailv2-outline-title"]"#).unwrap();
     let author_selector =
@@ -39,37 +31,49 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, YanmagaParseError>
     let title = document
         .select(&title_selector)
         .next()
-        .ok_or(YanmagaParseError::NotFound)?
+        .ok_or(FetchError::PageNotFound(Some("Title not found".into())))?
         .inner_html();
     let author = document
         .select(&author_selector)
         .next()
-        .ok_or(YanmagaParseError::NotFound)?
+        .ok_or(FetchError::PageNotFound(Some("Author not found".into())))?
         .inner_html();
 
     // get latest chapter
-    let latest_chapter = document
-        .select(&chapter_selector)
-        .next()
-        .ok_or(YanmagaParseError::NotFound)?;
+    let latest_chapter =
+        document
+            .select(&chapter_selector)
+            .next()
+            .ok_or(FetchError::ChapterNotFound(Some(
+                "zero result from chapter selector".into(),
+            )))?;
 
     if let Some(not_released) = latest_chapter.select(&chapter_not_released_selector).next() {
         let mut childrens = not_released.child_elements();
         let chapter_title = childrens
             .next()
-            .ok_or(YanmagaParseError::ChapterTitleNotFound)?
+            .ok_or(FetchError::ChapterNotFound(Some("title not found".into())))?
             .inner_html();
         let chapter_release_date = {
             let raw_date = childrens
                 .next()
-                .ok_or(YanmagaParseError::ReleaseDateNotFound)?
+                .ok_or(FetchError::ChapterNotFound(Some(
+                    "release date not found".into(),
+                )))?
                 .inner_html();
             let date_only = raw_date
                 .split('(')
                 .next()
-                .ok_or(YanmagaParseError::ReleaseDateNotFound)?;
-            let naive_date = NaiveDate::parse_from_str(date_only, "%Y/%m/%d")
-                .map_err(|_| YanmagaParseError::ReleaseDateNotFound)?;
+                .ok_or(FetchError::ChapterNotFound(Some(format!(
+                    "error extracting date from : {}",
+                    &raw_date
+                ))))?;
+            let naive_date = NaiveDate::parse_from_str(date_only, "%Y/%m/%d").map_err(|e| {
+                FetchError::ChapterNotFound(Some(format!(
+                    "{}, error parsing date : {}",
+                    e, date_only
+                )))
+            })?;
 
             Local
                 .from_local_datetime(&naive_date.and_time(NaiveTime::default()))
@@ -79,9 +83,11 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, YanmagaParseError>
         let cover_url = latest_chapter
             .select(&cover_url_selector)
             .next()
-            .ok_or(YanmagaParseError::CoverNotFound)?
+            .ok_or(FetchError::ChapterNotFound(Some("cover not found".into())))?
             .attr("src")
-            .ok_or(YanmagaParseError::CoverNotFound)?;
+            .ok_or(FetchError::ChapterNotFound(Some(
+                "src attribute is empty".into(),
+            )))?;
 
         Ok(Manga {
             title,
@@ -96,19 +102,21 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, YanmagaParseError>
         let chapter_title = latest_chapter
             .select(&chapter_title_selector)
             .next()
-            .ok_or(YanmagaParseError::ChapterTitleNotFound)?
+            .ok_or(FetchError::ChapterNotFound(Some("title not found".into())))?
             .inner_html();
 
         let chapter_release_date = NaiveDate::parse_from_str(
             latest_chapter
                 .select(&chapter_release_date_selector)
                 .next()
-                .ok_or(YanmagaParseError::ReleaseDateNotFound)?
+                .ok_or(FetchError::ChapterNotFound(Some(
+                    "release date not found".into(),
+                )))?
                 .inner_html()
                 .as_str(),
             "%Y/%m/%d",
         )
-        .map_err(|_| YanmagaParseError::ReleaseDateNotFound)?;
+        .map_err(|e| FetchError::ChapterNotFound(Some(format!("error parsing date : {}", e))))?;
 
         let chapter_release_date = Local
             .from_local_datetime(&chapter_release_date.and_time(NaiveTime::default()))
@@ -117,16 +125,20 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, YanmagaParseError>
         let cover_url = latest_chapter
             .select(&cover_url_selector)
             .next()
-            .ok_or(YanmagaParseError::CoverNotFound)?
+            .ok_or(FetchError::ChapterNotFound(Some("cover not found".into())))?
             .attr("src")
-            .ok_or(YanmagaParseError::CoverNotFound)?;
+            .ok_or(FetchError::ChapterNotFound(Some(
+                "src attribute is empty".into(),
+            )))?;
 
         let chapter_url = latest_chapter
             .select(&chapter_url_selector)
             .next()
-            .ok_or(YanmagaParseError::ChapterUrlNotFound)?
+            .ok_or(FetchError::ChapterNotFound(Some("url not found".into())))?
             .attr("href")
-            .ok_or(YanmagaParseError::ChapterUrlNotFound)?;
+            .ok_or(FetchError::ChapterNotFound(Some(
+                "href attribute is empty".into(),
+            )))?;
 
         Ok(Manga {
             title,
@@ -138,6 +150,23 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, YanmagaParseError>
             latest_chapter_publish_day: chapter_release_date.with_timezone(&Japan).weekday(),
         })
     }
+}
+
+pub async fn fetch_yanmaga(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
+    let url = format!("https://yanmaga.jp/comics/{}", manga_id);
+
+    let html = client
+        .get(url)
+        .send()
+        .await
+        .map_err(FetchError::ReqwestError)?
+        .error_for_status()
+        .map_err(FetchError::ReqwestError)?
+        .text()
+        .await
+        .map_err(FetchError::ReqwestError)?;
+
+    parse_yanmaga_from_html(html)
 }
 
 #[cfg(test)]

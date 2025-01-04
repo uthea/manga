@@ -1,16 +1,10 @@
 use chrono::{Datelike, Local, NaiveDate, NaiveTime, TimeZone};
 use chrono_tz::Japan;
+use reqwest::Client;
 use scraper::{Html, Selector};
 use serde::{Deserialize, Serialize};
 
-use crate::core::types::Manga;
-
-#[derive(Debug)]
-pub enum ComicFuzError {
-    PageNotFound,
-    ChapterNotFound,
-    ParseDateError,
-}
+use crate::core::{fetch::FetchError, types::Manga};
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
@@ -67,20 +61,22 @@ pub struct MangaInfo {
     pub manga_name: String,
 }
 
-pub fn parse_comic_fuz_from_html(html: String) -> Result<Manga, ComicFuzError> {
+pub fn parse_comic_fuz_from_html(html: String) -> Result<Manga, FetchError> {
     let next_data_selector = Selector::parse(r#"script[id="__NEXT_DATA__"]"#).unwrap();
     let document = Html::parse_document(&html);
 
     let next_data = document
         .select(&next_data_selector)
         .next()
-        .ok_or(ComicFuzError::PageNotFound)?
+        .ok_or(FetchError::PageNotFound(Some(
+            "__NEXT_DATA__ not found".into(),
+        )))?
         .inner_html();
 
     let data = {
         let obj: ComicFuz = serde_json::from_str(&next_data).map_err(|e| {
-            dbg!(e);
-            ComicFuzError::PageNotFound
+            dbg!(&e);
+            FetchError::PageNotFound(Some(e.to_string()))
         })?;
         obj.props.page_props
     };
@@ -95,15 +91,20 @@ pub fn parse_comic_fuz_from_html(html: String) -> Result<Manga, ComicFuzError> {
     let latest_chapter = data
         .chapters
         .first()
-        .ok_or(ComicFuzError::ChapterNotFound)?
+        .ok_or(FetchError::ChapterNotFound(Some(
+            "chapters is empty".into(),
+        )))?
         .chapters
         .first()
-        .ok_or(ComicFuzError::ChapterNotFound)?;
+        .ok_or(FetchError::ChapterNotFound(Some(
+            "nested chapters is empty".into(),
+        )))?;
 
     let release_date = match &latest_chapter.updated_date {
         Some(raw) => {
-            let naive_date = NaiveDate::parse_from_str(raw, "%Y/%m/%d")
-                .map_err(|_| ComicFuzError::ParseDateError)?;
+            let naive_date = NaiveDate::parse_from_str(raw, "%Y/%m/%d").map_err(|e| {
+                FetchError::ChapterNotFound(Some(format!("error on date parse {} : {}", &raw, e)))
+            })?;
 
             Local
                 .from_local_datetime(&naive_date.and_time(NaiveTime::default()))
@@ -124,6 +125,23 @@ pub fn parse_comic_fuz_from_html(html: String) -> Result<Manga, ComicFuzError> {
         latest_chapter_release_date: release_date.fixed_offset(),
         latest_chapter_publish_day: release_date.with_timezone(&Japan).weekday(),
     })
+}
+
+pub async fn fetch_comic_fuz(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
+    let url = format!("https://comic-fuz.com/manga/{}", manga_id);
+
+    let html = client
+        .get(url)
+        .send()
+        .await
+        .map_err(FetchError::ReqwestError)?
+        .error_for_status()
+        .map_err(FetchError::ReqwestError)?
+        .text()
+        .await
+        .map_err(FetchError::ReqwestError)?;
+
+    parse_comic_fuz_from_html(html)
 }
 
 #[cfg(test)]
