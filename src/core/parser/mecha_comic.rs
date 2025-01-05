@@ -129,7 +129,7 @@ pub async fn fetch_mecha_comic(client: Client, manga_id: &str) -> Result<Manga, 
 
     let html = client
         .get(url)
-        .query(&("chapter_number", latest_chap_num))
+        .query(&[("chapter_number", latest_chap_num)])
         .send()
         .await
         .map_err(FetchError::ReqwestError)?
