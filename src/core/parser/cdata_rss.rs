@@ -122,8 +122,8 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_parse_champion_cross_rss() {
-        let paths = fs::read_dir("src/test_data/champion_cross").unwrap();
+    fn test_parse_cdata_rss() {
+        let paths = fs::read_dir("src/test_data/cdata_rss").unwrap();
 
         for path in paths {
             let doc = fs::read_to_string(path.unwrap().path()).unwrap();

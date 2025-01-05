@@ -70,6 +70,9 @@ pub enum MangaSource {
 
     #[strum(to_string = "GANMA")]
     GANMA,
+
+    #[strum(to_string = "Young Animal")]
+    YoungAnimal,
 }
 
 #[derive(Deserialize, Serialize, Clone, Debug)]

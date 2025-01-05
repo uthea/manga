@@ -102,6 +102,13 @@ impl MangaSource {
                 .await
             }
             MangaSource::GANMA => fetch_ganma(client, manga_id).await,
+            MangaSource::YoungAnimal => {
+                fetch_cdata_rss(
+                    client,
+                    format!("https://younganimal.com/series/{}/rss", manga_id),
+                )
+                .await
+            }
         }
     }
 }
