@@ -2,7 +2,8 @@ use crate::core::parser::{
     cdata_rss::fetch_cdata_rss, comic_fuz::fetch_comic_fuz, comic_pixiv::fetch_pixiv_data,
     comic_walker::fetch_comic_walker_data, gamma_plus::fetch_gamma_plus,
     gangan_online::fetch_gangan_online, ganma::fetch_ganma, manga_up::fetch_mangaup,
-    rss_manga::fetch_generic_rss, urasunday::fetch_urasunday, yanmaga::fetch_yanmaga,
+    mecha_comic::fetch_mecha_comic, rss_manga::fetch_generic_rss, urasunday::fetch_urasunday,
+    yanmaga::fetch_yanmaga,
 };
 use http::header;
 
@@ -102,6 +103,7 @@ impl MangaSource {
                 .await
             }
             MangaSource::GANMA => fetch_ganma(client, manga_id).await,
+            MangaSource::MechaComic => fetch_mecha_comic(client, manga_id).await,
         }
     }
 }
