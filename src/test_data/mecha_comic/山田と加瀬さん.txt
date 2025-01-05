@@ -1,0 +1,2819 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# books: http://ogp.me/ns/books#">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="CivhNOMriYbZ5CWzvL3Y7/VPB2dH9HZnzEf/GxDon9wcBRvb0eZ04f725L2812qhE5uToO+1Ss1zUoVcAHl/wA==" />
+    <meta charset="utf-8" />
+      <title>【無料試し読みあり】山田と加瀬さん。 | 漫画なら、めちゃコミック</title>
+
+    
+
+            <meta name="description" content="CMでおなじみ、めちゃコミック！あらすじ：わたしと加瀬さんは女の子同士ですが、ずっとつきあっています――。晴れて女子大の園芸学科に入学した山田と、体育大でトレーニング三昧の加瀬さん。授業が始まってからなかなかゆっくり会えなかったふたりは、加瀬さんの誕生日を一緒にお祝いしようと...">
+<meta property="og:image" content="https://c.mechacomic.jp/images/parts/re-ogp_logo_mecha_300x300.png">
+  <meta property="og:title" content="【無料試し読みあり】山田と加瀬さん。 - めちゃコミック">
+  <meta property="og:description" content="わたしと加瀬さんは女の子同士ですが、ずっとつきあっています――。晴れて女子大の園芸学科に入学した山田と、体育大でトレーニング三昧の加瀬さん。授業が始まってからなかなかゆっくり...">
+<meta property="og:site_name" content="めちゃコミック">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://mechacomic.jp/books/127560">
+<meta property="fb:app_id" content="1249827165107483">
+
+ <meta name="twitter:card" content="summary">
+ 
+  <meta name="twitter:image" content="https://c.mechacomic.jp/images/book/74/127/127560/yamadatokase_001_xl.jpg">
+ 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3" />
+        <link rel="icon" href="/images/parts/mechacomic_64.ico">
+    <link rel="stylesheet" href="https://c.mechacomic.jp/stylesheets/html5reset.css?02a554977a561f99cf028a90b42c01ca3078cb297a55d145abbc4a2faa0cf7fe" media="screen" />
+      <link rel="stylesheet" href="https://c.mechacomic.jp/stylesheets/ext/base.css?353fd173988a23fa31ff824d8bd3e9d2183cedd3b740fabc354ce9765b0e1074" media="screen" />
+<link rel="stylesheet" href="https://c.mechacomic.jp/stylesheets/ext/base_pc.css?23ac516a9682ca6d89451a97a4570fc637c3538a6cd8da9869648d345121537a" media="screen" />
+    <link rel="stylesheet" href="https://mechacomic.jp/stylesheets/ext/font-awesome-pc.css?2c9d5b47f3da393c98fac6af52bd7f6eb072ab0a5207459527a1c258ff357eb6" media="screen" />
+        <link rel="stylesheet" href="https://c.mechacomic.jp/stylesheets/ext/books_show_pc.css?e913fa2e592a8af5aa94d90c9344ebf39ad200af3eb0d2cf591e103340901140" media="screen" />
+  <style>
+    .p-bookInfo_message {
+      position: relative;
+      width: 70%;
+      max-width: 320px;
+      margin: 0 auto 1.6rem;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background: #EEEEEE;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .p-bookInfo_message::before {
+      position: absolute;
+      bottom: -0.8rem;
+      left: 50%;
+      -webkit-transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-50%) translateX(-50%);
+      width: 0;
+      height: 0;
+      border-width: 6px 4px 0 4px;
+      border-style: solid;
+      border-color: #EEEEEE transparent transparent transparent;
+      content: '';
+    }
+
+    .p-bookInfo_message span {
+      display: block;
+      padding: 0.8rem 0;
+      color: #4D4D4D;
+      font-size: 1.1rem;
+    }
+  </style>
+  <style>
+    .area_btn_sns {
+      padding: 10px 2px 2px 10px;
+      background-color: #FFFFFF;
+    }
+    .area_btn_sns > div {
+      float: left;
+    }
+    .btn_sns {
+      display: block;
+      margin: 0 8px 8px 0;
+      float: left;
+    }
+    .btn_sns a,
+    .btn_sns button {
+      line-height: 1;
+      font-size: 12px;
+    }
+    .btn_sns a {
+      display: inline-block;
+      padding: 4px 6px;
+      border-radius: 3px;
+    }
+    .btn_sns a,
+    .btn_sns a:link,
+    .btn_sns a:visited {
+      color: #FFFFFF;
+    }
+    .btn_sns a:hover {
+      text-decoration: none;
+    }
+    .btn_sns i {
+      display: inline-block;
+      margin-bottom: 1px;
+      vertical-align: middle;
+    }
+    .btn_line a {
+      line-height: 1.2;
+      background-color: #00B900;
+    }
+    .btn_twitter a {
+      background-color: #000000;
+    }
+    .btn-x_icon {
+      width: 1.3em;
+      height: 1.3em;
+      vertical-align: middle;
+    }
+    .btn_hatena a {
+      line-height: 1.2;
+      background-color: #00A4DE;
+    }
+    .btn_hatena a span {
+      font-size: 13px;
+      font-weight: bold;
+    }
+    .btn_url {
+      margin: 0;
+      position: relative;
+    }
+    .btn_url button {
+      margin: -1px 8px 8px 0;
+      padding: 4px 8px;
+      border: 1px solid #CCCCCC;
+      border-radius: 4px;
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
+      cursor: pointer;
+      outline: none;
+      appearance: none;
+      color: #555555;
+      background-color: #EEEEEE;
+    }
+    .btn_url button span {
+      display: block;
+      position: absolute;
+      left: -3%;
+      bottom: 105%;
+      padding: 0.5em;
+      border-radius: 0.5em;
+      pointer-events: none;
+      white-space: nowrap;
+      color: #FFFFFF;
+      background-color: #444444;
+    }
+  </style>
+      <style>
+        .p-footer_bulkBuy {
+          color: #4D4D4D;
+        }
+
+        .p-footer_msg {
+          padding: 0.4rem;
+          text-align: center;
+        }
+
+        .p-footer_msg-warning {
+          background-color: #ECC359;
+        }
+
+        .p-footer_msg:not(.p-footer_msg-warning) + .p-bulkBuy_action {
+          padding-top: 0.4rem;
+        }
+
+        .p-bulkBuy_chapterCount {
+          background-color: #F6F6F6;
+        }
+
+          .p-footer_msg {
+            font-size: 1.6rem;
+          }
+      </style>
+<style>
+  .p-bookScene_bookImg {
+    margin-bottom: 0.8rem;
+  }
+
+  .p-bookScene_bookTitle {
+    display: block;
+    margin-bottom: 0.8rem;
+    overflow: hidden;
+    color: #666666;
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .p-bookScene .button a {
+    display: block;
+  }
+
+    .p-bookScene.p-imgList-col4 li {
+      margin-bottom: 8%;
+    }
+
+    .p-bookScene .button {
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    .p-bookScene a:hover {
+      color: #666666;
+    }
+
+    .p-bookScene .button a:hover {
+      text-decoration: none;
+    }
+</style>
+  <style>
+    /*
+    //--------------------------------------------------------------------------
+    // めちゃコミッククリエイターズ枠
+    //--------------------------------------------------------------------------
+    */
+      .p-creators_subTitle {
+        font-size: 1.2rem;
+        padding-right: 4px;
+        color: #666666;
+      }
+
+      .p-topScene_bookTitle {
+        display: block;
+        margin-bottom: 0.8rem;
+        overflow: hidden;
+        color: #666666;
+        font-size: 1.2rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .p-topScene_bookImg {
+        margin-bottom: 0.4rem;
+      }
+
+      .p-topScene_body {
+        margin: 0 auto;
+      }
+
+      .p-topScene_body img {
+        width: 100%;
+      }
+
+      .p-topScene_body .btn_free a,
+      .p-topScene_body .btn_sample a {
+        display: block;
+        width: 100%;
+      }
+
+      .p-topScene_body-noBtn .p-topScene_bookTitle {
+        margin-bottom: 0;
+      }
+
+      .p-creators_logo {
+        width: 190px;
+      }
+
+      .p-topScene a:hover {
+        color: #666666;
+      }
+
+      .p-topScene .button {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .p-topScene .button a:hover {
+        text-decoration: none;
+      }
+
+      .p-topScene_body {
+        max-width: 704px;
+      }
+
+      .p-topScene_body li {
+        margin-bottom: 5%;
+      }
+
+      .p-topScene_body li:nth-child(n+3) {
+        margin-bottom: 0;
+      }
+
+      .p-topScene_icon-extLink {
+        display: block;
+        position: relative;
+      }
+
+      .p-topScene_icon-extLink:after {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 16px;
+        height: 16px;
+        background: url(https://c.mechacomic.jp/images/common/icon_external-link.png) no-repeat top left;
+        background-size: 16px;
+        content: " ";
+      }
+  </style>
+  <style>
+    .p-pointBonus_btn {
+      position: fixed;
+      bottom: 54px;
+      right: 8px;
+      width: 62px;
+      height: 62px;
+      z-index: 1;
+    }
+      .p-pointBonus_btn {
+        bottom: 60px;
+      }
+  </style>
+
+    <script src="https://c.mechacomic.jp/javascripts/jquery.js?4837f7e1f1565ff667528cd75c41f401e07e229de1bd1b232f0a7a40d4c46f79"></script>
+<script src="https://c.mechacomic.jp/javascripts/jquery.cookie.js?d6f218e7eb673e6264b7b6c71d9a46c2379cb2f396c3317d7ecedbf0b99ab2c9"></script>
+<script src="https://c.mechacomic.jp/javascripts/tabs.js?adbf92c8e49103acf2135c2f2fce71e4150a53fed5a763b4baae01612aacc37b"></script>
+<script src="https://c.mechacomic.jp/javascripts/preventdoubleclick.js?bdc1cb87b66c5a736da161a1cf1dd95aee4737a109e8c5ba46faa29da4fc0379"></script>
+<script src="https://c.mechacomic.jp/javascripts/rails-ujs.js?01c6512d4e8bdd51de0acb7cb39b7111f1fc4611b16793448eef4dad0597ab6f"></script>
+    <script src="https://c.mechacomic.jp/javascripts/ext/base.js?3da7a04c4bb2564d6798ba27dc328d87e392f8432d1eb6d48f74947f69454cd6"></script>
+      <script type="text/javascript">
+    window.addEventListener('load', function() {
+      if (typeof $igniter_var === 'undefined') {
+        !function n(t,c,o,r,a,i,e,s,f){f=null!=t[o]&&"function"==typeof t[o].now?t[o].now():null,t.$igniter_var=i,t[i]=t[i]||function(){(t[i].q=t[i].q||[]).push(arguments)},e=c.getElementsByTagName(r)[0],(s=c.createElement(r)).async=1,"//cdn"==a?(t[i].s=f,s.onerror=function(e){t[i].e=e,n(t,c,o,r,a+"-fallback",i)}):t[i].r=f,s.src=a+".petametrics.com/edgi0ikvf1kq26pm.js?ts="+(new Date/216e5|0),e.parentNode.insertBefore(s,e)}(window,document,"performance","script","//cdn","$p");
+        $p('init', "edgi0ikvf1kq26pm", {
+          config: {
+             sdk: {
+               multiFetch: true,
+               allowLazyRegister: true
+            },
+            trackingTransURL: function(url) {
+              if ((url.indexOf('chapter') !== -1) || (url.indexOf('sample') !== -1)) {
+                var aTags = document.querySelectorAll('.js-li_button a')
+                for(var i = 0; i < aTags.length; i++) {
+                  var a = aTags[i]
+                  if (a.href === url) {
+                    try {
+                      var target = a.getAttribute('data-parent')
+                      var bookHref = document.querySelector('#' + target).href
+                      url = bookHref
+                    } catch(e) {
+                      console.log('LI: Error setting chapter tracking url')
+                    }
+                  }
+                }
+              }
+              return url
+            }
+          }
+        })
+        $p('send', "pageview");
+              }
+    });
+  </script>
+    
+
+  <script>
+    window.gtmId = 'GTM-MTZPFBF';
+    analyticsEvent = function() {};
+    analyticsVPV = function() {};
+    analyticsClearVPV = function() {};
+    window.dataLayer = window.dataLayer || [];
+
+    dataLayer.push({
+      'mbr':'0',
+      'lgn':'0',
+      'cflt':'1'
+    });
+  </script>
+
+  <script>
+//<![CDATA[
+window.ga_gtm_enabled_flag = window.ga_gtm_enabled_flag || false;
+function ga_ecommerce_product_click(selector) {
+  jQuery(function() {
+    jQuery(selector).one('click', function() {
+      try {
+        if (!ga_gtm_enabled_flag) {
+          return true;
+        }
+        var target = jQuery(this);
+        dataLayer.push({
+          'event': 'productClick',
+          'productListName': target.data('list'),
+          'ecommerce': {
+            'click': {
+              'actionField': {'list': target.data('list')},
+              'products': [{'id': target.data('id'),'position': target.data('position')}]
+            }
+          }
+        })
+
+        dataLayer.push({ ecommerce: null });
+        dataLayer.push({
+          'event': 'ec_select_item',
+          'event_item_list_name': target.data('list'),
+          'event_item_name': target.data('name'),
+          'event_item_id': target.data('id'),
+          'ecommerce': {
+            'item_list_name': target.data('list'),
+            'items': [
+              {
+                'item_id': target.data('id'),
+                'item_name': target.data('name'),
+                'index': target.data('position'),
+                'coupon': target.data('coupon'),
+              }
+            ]
+          }
+        });
+        jQuery.cookie('ga4_item_list_name', target.data('list'), {path: "/", secure: true});
+        jQuery.cookie('ga4_index', target.data('position'), {path: "/", secure: true});
+      } catch(e) {
+        return true;
+      }
+    });
+  })
+}
+
+function ga_ecommerce_impressions(impressions, event_type) {
+  try {
+    var parsed_impressions = JSON.parse(impressions);
+    var impressions_list = parsed_impressions.map(function(element) {
+      return {
+        'id': element.id,
+        'list': element.list,
+        'position': element.position,
+      };
+    });
+    var impressions_message = {};
+    impressions_message['ecommerce'] = {'impressions': impressions_list};
+    if (event_type == 1) {
+      impressions_message['event'] = 'asyncImpressions';
+    } else if (event_type == 2) {
+      impressions_message['event'] = 'cachedImpressions';
+    } else {
+      impressions_message['event'] = 'pageImpressions';
+    }
+    dataLayer.push(impressions_message);
+
+    var view_item_list = parsed_impressions.map(function(element) {
+      return {
+        'item_id': element.id,
+        'index': element.position,
+        'coupon': element.coupon,
+      };
+    });
+    var view_item_list_message = {};
+    var item_list_name = parsed_impressions[0].list;
+    view_item_list_message['event'] = 'ec_view_item_list';
+    view_item_list_message['event_item_list_name'] = item_list_name;
+    view_item_list_message['ecommerce'] = {
+      'item_list_name': item_list_name,
+      'items': view_item_list,
+    };
+    dataLayer.push({ ecommerce: null });
+    dataLayer.push(view_item_list_message);
+  } catch(e) {}
+}
+
+function ga_download_event(selector) {
+  jQuery(function() {
+    jQuery(selector).one('click', function() {
+      try {
+        if (!ga_gtm_enabled_flag) {
+          return true;
+        }
+        var target = jQuery(this);
+        var category = 'DLイベント(未ログイン)';
+        var label = target.data('id') + '_' + target.data('number');
+        var list_name = target.data('list') == undefined ? '(not set)' : target.data('list');
+        var action = 'not_set';
+        switch(target.data('action')){
+          case 'discount': action = '期間限定無料'; break;
+          case 'always_discount': action = '常時無料'; break;
+          case 'free_serial': action = '無料連載'; break;
+          case 'free_daily': action = '無料連載'; break;
+          case 'sample': action = '試し読み'; break;
+        }
+
+        dataLayer.push({
+          'event': 'analyticsEvent',
+          'eventCategory': category,
+          'eventAction': action,
+          'eventLabel': label,
+          'eventValue': 1,
+          'productListName': list_name,
+        })
+
+        dataLayer.push({ ecommerce: null });
+        dataLayer.push({
+          'event': 'ec_select_item',
+          'event_item_list_name': list_name,
+          'event_item_name': target.data('name'),
+          'event_item_id': target.data('id'),
+          'ecommerce': {
+            'item_list_name': list_name,
+            'items': [
+              {
+                'item_id': target.data('id'),
+                'item_name': target.data('name'),
+                'coupon': target.data('coupon'),
+              }
+            ]
+          }
+        });
+      } catch(e) {
+        return true;
+      }
+    });
+  })
+}
+
+function ga_product_click_event(selector) {
+  jQuery(function() {
+    jQuery(selector).one('click', function() {
+      try {
+        if (!ga_gtm_enabled_flag) {
+          return true;
+        }
+        var target = jQuery(this);
+        var category = '商品クリック(未ログイン)';
+        var label = target.data('id');
+        var list_name = target.data('list') == undefined ? '(not set)' : target.data('list');
+        var action = 'not_set';
+        switch(target.data('pdc_action')){
+          case 'discount': action = '期間限定無料'; break;
+          case 'always_discount': action = '常時無料'; break;
+          case 'free_daily': action = '無料連載'; break;
+          case 'sample': action = '試し読み'; break;
+        }
+
+        dataLayer.push({
+          'event': 'analyticsEvent',
+          'eventCategory': category,
+          'eventAction': action,
+          'eventLabel': label,
+          'eventValue': 1,
+          'productListName': list_name,
+        })
+
+        dataLayer.push({ ecommerce: null });
+        dataLayer.push({
+          'event': 'ec_select_item',
+          'event_item_list_name': list_name,
+          'event_item_name': target.data('name'),
+          'event_item_id': label,
+          'ecommerce': {
+            'item_list_name': list_name,
+            'items': [
+              {
+                'item_id': label,
+                'item_name': target.data('name'),
+                'coupon': target.data('coupon'),
+              }
+            ]
+          }
+        });
+        if (!(list_name == '(not set)')) {
+          jQuery.cookie('ga4_item_list_name', list_name, {path: "/", secure: true});
+        }
+        jQuery.cookie('ga4_index', target.data('position'), {path: "/", secure: true});
+      } catch(e) {
+        return true;
+      }
+    });
+  })
+}
+
+
+//]]>
+</script>
+  
+  
+
+
+    
+    <script>
+//<![CDATA[
+            jQuery(function() {
+              var message = {"item_id":"80653","item_name":"山田と加瀬さん。","coupon":"試し読み","affiliation":"新書館","item_brand":"ひらり、コミックス","item_category":"少女漫画","item_category2":"恋愛","item_category3":"高嶋ひろみ"};
+              var item_list_name = jQuery.cookie('ga4_item_list_name') || '(not set)';
+              var index = jQuery.cookie('ga4_index');
+              if (index == null) {
+                message['index'] = '(not set)';
+              } else {
+                message['index'] = index;
+              }
+              dataLayer.push({ ecommerce: null });
+              dataLayer.push({
+                'event': 'ec_view_item',
+                'event_item_list_name': item_list_name,
+                'event_item_name': message['item_name'],
+                'event_item_id': message['item_id'],
+                'ecommerce': {
+                  'item_list_name': item_list_name,
+                  'items': [message]
+                }
+              });
+            })
+
+//]]>
+</script>
+    <script>
+//<![CDATA[
+          jQuery(function() {
+            dataLayer.push({ 'cloud_retail': null });
+            dataLayer.push({
+              'event': 'retailDetailPageView',
+              'cloud_retail': {
+                'eventType': 'detail-page-view',
+                'productDetails': [{
+                  'product': {
+                    'id': '80653'
+                  }
+                }]
+              }
+            });
+          })
+
+//]]>
+</script>
+
+
+  <script class="js-download-events" type="application/json">"[data-evid=\"ev_Books_Show_127560_1\"]"</script>
+
+  <script class="js-product-click-events" type="application/json">"[data-pdc_evid=\"ev_book_scene_1_product_click\"],[data-pdc_evid=\"ev_book_scene_2_product_click\"],[data-pdc_evid=\"ev_book_scene_3_product_click\"],[data-pdc_evid=\"ev_book_scene_4_product_click\"],[data-pdc_evid=\"ev_book_scene_5_product_click\"],[data-pdc_evid=\"ev_book_scene_6_product_click\"],[data-pdc_evid=\"ev_book_scene_7_product_click\"],[data-pdc_evid=\"ev_book_scene_8_product_click\"],[data-pdc_evid=\"ev_book_scene_9_product_click\"],[data-pdc_evid=\"ev_book_scene_10_product_click\"],[data-pdc_evid=\"ev_book_scene_11_product_click\"],[data-pdc_evid=\"ev_book_scene_12_product_click\"],[data-pdc_evid=\"ev_book_scene_13_product_click\"],[data-pdc_evid=\"ev_book_scene_14_product_click\"],[data-pdc_evid=\"ev_book_scene_15_product_click\"],[data-pdc_evid=\"ev_book_scene_16_product_click\"],[data-pdc_evid=\"ev_book_scene_17_product_click\"],[data-pdc_evid=\"ev_book_scene_18_product_click\"],[data-pdc_evid=\"ev_book_original_exclusive_19_product_click\"],[data-pdc_evid=\"ev_book_original_exclusive_20_product_click\"],[data-pdc_evid=\"ev_book_original_exclusive_21_product_click\"],[data-pdc_evid=\"ev_book_original_exclusive_22_product_click\"],[data-pdc_evid=\"ev_book_original_exclusive_23_product_click\"],[data-pdc_evid=\"ev_book_original_exclusive_24_product_click\"],[data-pdc_evid=\"ev_book_original_exclusive_25_product_click\"],[data-pdc_evid=\"ev_book_original_exclusive_26_product_click\"],[data-pdc_evid=\"ev_book_original_exclusive_27_product_click\"],[data-pdc_evid=\"ev_book_original_exclusive_28_product_click\"]"</script>
+
+  
+
+
+
+
+  
+
+    <script src="https://c.mechacomic.jp/javascripts/jquery-ui-1.10.4.custom.min.js?2df118e64b9a5e1a4c19dc48d0a46704dbca859755592e1a50f3b00c15a312b9"></script>
+        <script src="https://c.mechacomic.jp/javascripts/jquery.lazyload.js?0a09e540b04677b98c1176d19d1e788bb4bb16e451573c94e3c78c0fe4881a07"></script>  <script src="https://c.mechacomic.jp/javascripts/jquery.flicksimple.js?cdd1ca77aa59ccdc8ed66246e4cfea414ff873d27f86eac3e4c32de158609557"></script>
+      <script type="text/javascript">
+      function doScroll() { if (window.pageYOffset === 0) { window.scrollTo(0,1); } }
+      window.onload = function() { setTimeout(doScroll, 100); }
+      </script>
+
+    <link rel="apple-touch-icon-precomposed" href="https://c.mechacomic.jp/images/design/mechacomics.png?5abe464b0b77372dfcfb3f0975219e6ef4aa3b4d676b1ef5904a0703e043a91f">
+    <link rel="canonical" href="https://mechacomic.jp/books/127560" />
+              </head>
+
+  <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTZPFBF" height="0" width="0" style="display:none; visibility:hidden"></iframe></noscript>
+
+    
+    <div class="pc all">
+        <header id="top" class="pc_header">
+
+  <div class="header_group">
+    <div class="logo_group">
+      <a class="service_main_logo" href="/">          <img decoding="async" alt="めちゃコミック" src="https://c.mechacomic.jp/images/parts/re-pc_mechacomicLogo.png?2de1249d5b67ff97b59ca4dd20be0e42c341f8a32fe04a3587ff4e44022b7577" />
+</a>    </div>
+
+    <div class="Search">
+      <div class="formSearch">
+        <form class="clearfix" id="books_search_form_header" action="/books" accept-charset="UTF-8" method="get">        <input type="text" name="text" id="text_header" placeholder="キーワード･作家名入力" maxlength="200" /><button type="submit" class="searchBtn">検索</button>
+</form>      </div>
+    </div>
+
+    <div class="action_group">
+          <ul class="logout">
+              <li class="login edit"><a rel="nofollow" href="/register"><div class="btn btn_register"><i class="icon-edit"></i><span>会員登録</span></div></a>
+              <li class="login"><a href="/login"><div  class="btn btn_login"><i class="icon-lock"></i><span>ログイン</span></div></a>
+          </ul>
+    </div>
+  </div>
+
+  <nav class="global global_menu clearfix">
+    <ul class="nav">
+      <li class="nav_item"><a href="/genres">ジャンル一覧</a></li>
+      <li class="nav_item"><a href="/free">無料漫画</a></li>
+      <li class="nav_item"><a href="/free/reviews">レビュー・感想</a></li>
+      <li class="nav_item"><a href="/sales_rankings/current">人気ランキング</a></li>
+      <li class="nav_item"><a href="/books/recent">新着入荷</a></li>
+      <li class="nav_item"><a href="/features">おすすめ特集</a></li>
+      <li class="nav_item"><a href="/labels">雑誌・レーベル</a></li>
+      <li class="nav_item"><a href="/authors/list">漫画家・作家</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+<!--[if lt IE 10 ]>
+  <aside class="attention">
+    <p>お使いのブラウザでは、当サイトは正しく表示されない場合がございます。推奨ブラウザにてアクセスしてください。</p>
+    <dl class="brows">
+ <dt>めちゃコミック 推奨ブラウザ</dt>
+ <dd>chrome　最新版</dd>
+ <dd>Microsoft Edge　最新版</dd> 
+ <dd>Internet Explorer　11以上</dd>
+ <dd>Firefox　最新版</dd> 
+ <dd>Safari　最新版</dd>
+</dl>  </aside>
+<![endif]-->
+
+  
+
+
+
+
+
+
+        
+
+
+
+
+    
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+<div class="container clearfix ">
+  <div class="container_body right">
+
+
+    
+    <article class="u-bg_white u-pb32 u-mb16">
+        <div class="p-bookInfo">
+          <header>
+            <div class="p-bookInfo_title">
+              <h1>山田と加瀬さん。</h1>
+            </div>
+            <div class="c-breadcrumbGroup">
+  <ol class="c-breadcrumb p-bookInfo_breadcrumb">
+    <li class="c-breadcrumb_item"><a href="/">めちゃコミック</a></li>
+        <li class="c-breadcrumb_item"><a href="/genre/girl">少女漫画</a></li>
+      <li class="c-breadcrumb_item"><a href="/labels/1935">ひらり、コミックス</a></li>
+    <li class="c-breadcrumb_item c-breadcrumb_item-active">山田と加瀬さん。</li>
+  </ol>
+</div>
+
+
+          </header>
+
+          <div class="p-bookInfo_item">
+  <div class="p-bookInfo_media">
+    <div class="p-bookInfo_jacket">
+        <img decoding="async" alt="山田と加瀬さん。" class="jacket_image_l" src="https://c.mechacomic.jp/images/book/74/127/127560/yamadatokase_001_xl.jpg?6fb6ee6ee748b8b4f409f853e8c47ced136f2013c6c099f7a8be5257e697bab7" />    </div>
+
+    <ul class="p-bookInfo_displayType u-clearfix">
+          <li>
+            <span class="c-label c-label-displayType c-label-displayType-tap">タップ</span>
+          </li>
+          <li>
+            <span class="c-label c-label-displayType c-label-displayType-scroll">スクロール</span>
+          </li>
+    </ul>
+  </div>
+
+  <div class="p-bookInfo_body">
+
+    
+
+
+
+    <ul class="p-tagList u-mb8 u-clearfix">
+          <li><a class="c-tag c-tag-default" href="/genre/girl">少女漫画</a></li>
+        <li><a class="c-tag c-tag-default" href="/labels/1935">ひらり、コミックス</a></li>
+
+                            </ul>
+
+    <ul class="p-reviewGroup">
+    <li class="p-reviewGroup_item">
+       <span class="h2 u-strong u-mr8">みんなの評価</span>
+
+<div class="p-customerReview_average">
+  <img decoding="async" alt="評価：5.0" class="p-customerReview_stars" src="https://c.mechacomic.jp/images/common/review_star_5_0.svg?0c2a6f36a877b37943457a44320e4e1065458ecd66ac289ff4a28a1fecaea6f4" />
+  <span class="p-customerReview_averageScore">
+    5.0  </span>
+  <span class="p-customerReview_commentCount">
+    (<a href="/books/127560/reviews?sort=helpful">      <img decoding="async" class="p-comment_icon" alt="レビュー" src="https://c.mechacomic.jp/images/common/icon_review.svg?469dbb71c387595e61025c3457677a26f50282ea587c6f70e9fd6a4bc1b2b17a" />全4件</a>)
+  </span>
+</div>
+  
+
+  
+    <li class="u-inlineBlock u-mr8">
+      
+        <a rel="nofollow" class="c-btn c-btn-boder-default" href="/info/review_campaign">          <span class="u-strong">レビューを書く</span>
+          
+            <span class="p-reviewGroup_icon-remark">
+              レビュー投稿で20ptゲット！
+            </span>
+          
+</a>      
+    </li>
+  
+
+    <li class="u-inlineBlock" id="favorite_book">
+      
+  <a rel="nofollow" class="c-btn c-btn-boder-default" href="/login">    <img decoding="async" alt="ハートOFF" class="p-favorite_icon" src="https://c.mechacomic.jp/images/parts/favo_heart_off.png?3a672fe41595e14864a428abc9aff65ae00085356b03adc42f6465dd04daa0f0" />
+    <span class="p-favorite_title">キープ登録</span>
+    <span class="p-favorite_subTxt">36人登録中</span>
+</a>    </li>
+
+</ul>
+
+    <dl class="p-bookInfo_defList u-clearfix">
+      <dt>作家</dt>
+      <dd>
+        <div class="p-sepList">
+              <span class="p-sepList_item p-sepList_item-thrash"><a href="/authors/9728">高嶋ひろみ</a></span>
+        </div>
+      </dd>
+
+        <dt>ジャンル</dt>
+        <dd>
+            <a href="/genre/girl">少女漫画</a>
+        </dd>
+
+          <dt>出版社</dt>
+          <dd>
+            <a href="/publishers/199">              新書館</a>          </dd>
+
+          <dt>レーベル</dt>
+          <dd>
+            <a href="/labels/1935">ひらり、コミックス</a>
+          </dd>
+
+        <dt>配信話数</dt>
+        <dd>
+          
+          70話まで配信中(<span class="u-txt-point u-strong">50～60pt</span> / 話)
+        </dd>
+
+        <dt>タグ</dt>
+        <dd>
+          <div class="p-sepList">
+              <span class="p-sepList_item p-sepList_item-thrash">
+                  <a href="/books?genre=2&amp;tags%5B%5D=38">恋愛</a>              </span>
+              <span class="p-sepList_item p-sepList_item-thrash">
+                  <a href="/books?genre=2&amp;tags%5B%5D=78">同級生</a>              </span>
+              <span class="p-sepList_item p-sepList_item-thrash">
+                  <a href="/books?genre=2&amp;tags%5B%5D=622">学生</a>              </span>
+              <span class="p-sepList_item p-sepList_item-thrash">
+                  <a href="/books?genre=2&amp;tags%5B%5D=37">ガールズラブ</a>              </span>
+              <span class="p-sepList_item p-sepList_item-thrash">
+                  <a href="/books?genre=2&amp;tags%5B%5D=275">青春</a>              </span>
+          </div>
+        </dd>
+
+    </dl>
+
+
+
+  </div>
+</div>
+
+  
+<div class="p-bookInfo_action">
+  
+
+  <ul class="p-btnList">
+      
+    
+      
+        
+          <li class="p-btnList_item"><a rel="nofollow" class="c-btn c-btn-sample u-strong" data-evid="ev_Books_Show_127560_1" data-id="80653" data-name="山田と加瀬さん。" data-action="sample" data-number="0" data-coupon="試し読み" href="/books/127560/sample_download">今すぐ試し読み</a>        
+      
+    
+  
+
+    
+
+      
+          
+                  
+  </ul>
+</div>
+
+
+  <section class="p-bookInfo_item">
+      <div class="p-bookInfo_summary">
+        <h2 class="h5 u-mb8 u-strong">あらすじ</h2>
+        <p>わたしと加瀬さんは女の子同士ですが、ずっとつきあっています――。晴れて女子大の園芸学科に入学した山田と、体育大でトレーニング三昧の加瀬さん。授業が始まってからなかなかゆっくり会えなかったふたりは、加瀬さんの誕生日を一緒にお祝いしようと約束したのですが……。山田と加瀬さんのキラキラ青春ダイアリー、大学生篇スタート!</p>
+      </div>
+
+  </section>
+          <div class="p-bookInfo_action">
+            <div class="area_btn_sns clearfix">
+  <div>
+    <span class="btn_sns btn_line" onClick="send_click_line();">
+        <a rel="nofollow" href="//timeline.line.me/social-plugin/share?url=https%3A%2F%2Fmechacomic.jp%2Fbooks%2F127560">          LINEで送る
+</a>    </span>
+    <span class="btn_sns btn_twitter" onClick="send_click_twitter();">
+        <a target="_blank" rel="nofollow noopener noreferrer" href="//x.com/intent/post?text=%E3%80%90%E7%84%A1%E6%96%99%E8%A9%A6%E3%81%97%E8%AA%AD%E3%81%BF%E3%81%82%E3%82%8A%E3%80%91%E5%B1%B1%E7%94%B0%E3%81%A8%E5%8A%A0%E7%80%AC%E3%81%95%E3%82%93%E3%80%82%20%23%E3%82%81%E3%81%A1%E3%82%83%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%20%23%E3%82%81%E3%81%A1%E3%82%83%E3%82%B3%E3%83%9F&amp;url=https%3A%2F%2Fmechacomic.jp%2Fbooks%2F127560%3Futm_campaign%3Dbook%26utm_medium%3Dsocial%26utm_source%3Dtwitter">          <img decoding="async" class="btn-x_icon" alt="" src="https://c.mechacomic.jp/images/common/icon_x_logo_white.svg?063c4ddec839e92a059bad27021a70341b31ddec0d0fc08aa897033f627184d4" />
+          ポスト
+</a>    </span>
+    <span class="btn_sns btn_hatena" onClick="send_click_hatena();">
+        <a target="_blank" rel="nofollow noopener noreferrer" href="//b.hatena.ne.jp/entry/s/mechacomic.jp/books/127560">          <span>B!</span> ブックマーク
+</a>    </span>
+  </div>
+  <div>
+    <span class="btn_sns btn_url" onClick="send_click_url();">
+      <button class="js-copy_target conceal" data-clipboard-text="https://mechacomic.jp/books/127560">
+        URLをコピー
+      </button>
+    </span>
+  </div>
+</div>
+          </div>
+          
+
+
+        </div>
+
+
+
+
+              
+              <div id="chapters_list" class="p-chapters_list_area">
+                <form id="js-bulkBuyForm" action="/books/127560/bulk_chapters/buy_confirm" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Nf/k5fKZ2/ttqsGl5EEChmQ8oq8UZJJib2B9ezsbV4lHcAt+lJXa7FBTEgNgrDiP4yb6SYr61XzJUmCvN/ozvQ==" autocomplete="off" />
+  <ol class="p-chapterList">
+    <li class="p-chapterList_item u-pb8">
+      <div class="p-chapter_checkbox">
+        <span class="p-bulkText u-block u-strong h5">まとめ買い</span>
+          <label class="c-form_label c-form_label-check c-form_checkbox-static c-form_checkbox-mediumGray c-form_disabled">
+            <input type="checkbox" name="bulk_buy_all_check" id="bulk_buy_all_check" value="1" class="c-form_checkbox" disabled="disabled" />          </label>
+      </div>
+
+      <div class="p-chapterInfo p-chapterInfo-note u-txt-right">
+        <a class="u-mr8 u-txt-mediumDark js-modal p-modalOpen u-font-lg" href="#modal-howToUse">          一覧の使い方を見る <span class="c-badge c-badge-circle c-badge-sm c-badge-info">？</span>
+</a>        
+        <div class="c-alert c-alert-info u-mt8 u-mb0">
+            <p class="u-txt-center u-mb0">
+              まとめ買いは会員限定の機能です
+            </p>
+        </div>
+      </div>
+    </li>
+
+
+              <li class="p-chapterList_item">
+          <div class="p-chapter_checkbox js-checkboxBackground">
+              <label class="c-form_label c-form_label-check c-form_checkbox-static c-form_disabled">
+                <input type="checkbox" name="chapter_ids[]" id="buy_check_3259307" value="3259307" disabled="disabled" class="c-form_checkbox" />              </label>
+          </div>
+          <div class="p-chapterInfo p-chapterInfo-comic u-clearfix">
+              
+  
+      
+<dl>
+  <dt class="p-chapterList_no">
+      061話      <span class="p-comment_count">
+      <a href="/info/review_campaign">        <img decoding="async" class="p-comment_icon" alt="コメント" src="https://c.mechacomic.jp/images/common/icon_comment.svg?737170540566fb4ba83e3ff2b783a810fbb9178bc1463c9fbd108dfbac0a4fab" />0
+</a>  </span>
+  </dt>
+  <dd class="p-chapterList_name">
+    キスマークと加瀬さん。(3)  </dd>
+
+
+</dl>
+
+
+          <a class="p-btn-chapter c-btn c-btn-boder-buy prevent" rel="nofollow" href="/chapters/3259307">            60pt
+</a>
+
+          </div>
+        </li>
+              <li class="p-chapterList_item">
+          <div class="p-chapter_checkbox js-checkboxBackground">
+              <label class="c-form_label c-form_label-check c-form_checkbox-static c-form_disabled">
+                <input type="checkbox" name="chapter_ids[]" id="buy_check_3259308" value="3259308" disabled="disabled" class="c-form_checkbox" />              </label>
+          </div>
+          <div class="p-chapterInfo p-chapterInfo-comic u-clearfix">
+              
+  
+      
+<dl>
+  <dt class="p-chapterList_no">
+      062話      <span class="p-comment_count">
+      <a href="/info/review_campaign">        <img decoding="async" class="p-comment_icon" alt="コメント" src="https://c.mechacomic.jp/images/common/icon_comment.svg?737170540566fb4ba83e3ff2b783a810fbb9178bc1463c9fbd108dfbac0a4fab" />0
+</a>  </span>
+  </dt>
+  <dd class="p-chapterList_name">
+    深見と加瀬さん。 前篇(1)  </dd>
+
+
+</dl>
+
+
+          <a class="p-btn-chapter c-btn c-btn-boder-buy prevent" rel="nofollow" href="/chapters/3259308">            60pt
+</a>
+
+          </div>
+        </li>
+              <li class="p-chapterList_item">
+          <div class="p-chapter_checkbox js-checkboxBackground">
+              <label class="c-form_label c-form_label-check c-form_checkbox-static c-form_disabled">
+                <input type="checkbox" name="chapter_ids[]" id="buy_check_3259309" value="3259309" disabled="disabled" class="c-form_checkbox" />              </label>
+          </div>
+          <div class="p-chapterInfo p-chapterInfo-comic u-clearfix">
+              
+  
+      
+<dl>
+  <dt class="p-chapterList_no">
+      063話      <span class="p-comment_count">
+      <a href="/info/review_campaign">        <img decoding="async" class="p-comment_icon" alt="コメント" src="https://c.mechacomic.jp/images/common/icon_comment.svg?737170540566fb4ba83e3ff2b783a810fbb9178bc1463c9fbd108dfbac0a4fab" />0
+</a>  </span>
+  </dt>
+  <dd class="p-chapterList_name">
+    深見と加瀬さん。 前篇(2)  </dd>
+
+
+</dl>
+
+
+          <a class="p-btn-chapter c-btn c-btn-boder-buy prevent" rel="nofollow" href="/chapters/3259309">            60pt
+</a>
+
+          </div>
+        </li>
+              <li class="p-chapterList_item">
+          <div class="p-chapter_checkbox js-checkboxBackground">
+              <label class="c-form_label c-form_label-check c-form_checkbox-static c-form_disabled">
+                <input type="checkbox" name="chapter_ids[]" id="buy_check_3259310" value="3259310" disabled="disabled" class="c-form_checkbox" />              </label>
+          </div>
+          <div class="p-chapterInfo p-chapterInfo-comic u-clearfix">
+              
+  
+      
+<dl>
+  <dt class="p-chapterList_no">
+      064話      <span class="p-comment_count">
+      <a href="/info/review_campaign">        <img decoding="async" class="p-comment_icon" alt="コメント" src="https://c.mechacomic.jp/images/common/icon_comment.svg?737170540566fb4ba83e3ff2b783a810fbb9178bc1463c9fbd108dfbac0a4fab" />0
+</a>  </span>
+  </dt>
+  <dd class="p-chapterList_name">
+    深見と加瀬さん。 後篇(1)  </dd>
+
+
+</dl>
+
+
+          <a class="p-btn-chapter c-btn c-btn-boder-buy prevent" rel="nofollow" href="/chapters/3259310">            60pt
+</a>
+
+          </div>
+        </li>
+              <li class="p-chapterList_item">
+          <div class="p-chapter_checkbox js-checkboxBackground">
+              <label class="c-form_label c-form_label-check c-form_checkbox-static c-form_disabled">
+                <input type="checkbox" name="chapter_ids[]" id="buy_check_3259311" value="3259311" disabled="disabled" class="c-form_checkbox" />              </label>
+          </div>
+          <div class="p-chapterInfo p-chapterInfo-comic u-clearfix">
+              
+  
+      
+<dl>
+  <dt class="p-chapterList_no">
+      065話      <span class="p-comment_count">
+      <a href="/info/review_campaign">        <img decoding="async" class="p-comment_icon" alt="コメント" src="https://c.mechacomic.jp/images/common/icon_comment.svg?737170540566fb4ba83e3ff2b783a810fbb9178bc1463c9fbd108dfbac0a4fab" />0
+</a>  </span>
+  </dt>
+  <dd class="p-chapterList_name">
+    深見と加瀬さん。 後篇(2)  </dd>
+
+
+</dl>
+
+
+          <a class="p-btn-chapter c-btn c-btn-boder-buy prevent" rel="nofollow" href="/chapters/3259311">            60pt
+</a>
+
+          </div>
+        </li>
+              <li class="p-chapterList_item">
+          <div class="p-chapter_checkbox js-checkboxBackground">
+              <label class="c-form_label c-form_label-check c-form_checkbox-static c-form_disabled">
+                <input type="checkbox" name="chapter_ids[]" id="buy_check_3259312" value="3259312" disabled="disabled" class="c-form_checkbox" />              </label>
+          </div>
+          <div class="p-chapterInfo p-chapterInfo-comic u-clearfix">
+              
+  
+      
+<dl>
+  <dt class="p-chapterList_no">
+      066話      <span class="p-comment_count">
+      <a href="/info/review_campaign">        <img decoding="async" class="p-comment_icon" alt="コメント" src="https://c.mechacomic.jp/images/common/icon_comment.svg?737170540566fb4ba83e3ff2b783a810fbb9178bc1463c9fbd108dfbac0a4fab" />0
+</a>  </span>
+  </dt>
+  <dd class="p-chapterList_name">
+    深見と加瀬さん。 後篇(3)  </dd>
+
+
+</dl>
+
+
+          <a class="p-btn-chapter c-btn c-btn-boder-buy prevent" rel="nofollow" href="/chapters/3259312">            60pt
+</a>
+
+          </div>
+        </li>
+              <li class="p-chapterList_item">
+          <div class="p-chapter_checkbox js-checkboxBackground">
+              <label class="c-form_label c-form_label-check c-form_checkbox-static c-form_disabled">
+                <input type="checkbox" name="chapter_ids[]" id="buy_check_3259313" value="3259313" disabled="disabled" class="c-form_checkbox" />              </label>
+          </div>
+          <div class="p-chapterInfo p-chapterInfo-comic u-clearfix">
+              
+  
+      
+<dl>
+  <dt class="p-chapterList_no">
+      067話      <span class="p-comment_count">
+      <a href="/info/review_campaign">        <img decoding="async" class="p-comment_icon" alt="コメント" src="https://c.mechacomic.jp/images/common/icon_comment.svg?737170540566fb4ba83e3ff2b783a810fbb9178bc1463c9fbd108dfbac0a4fab" />0
+</a>  </span>
+  </dt>
+  <dd class="p-chapterList_name">
+    お引っ越しと加瀬さん。(1)  </dd>
+
+
+</dl>
+
+
+          <a class="p-btn-chapter c-btn c-btn-boder-buy prevent" rel="nofollow" href="/chapters/3259313">            60pt
+</a>
+
+          </div>
+        </li>
+              <li class="p-chapterList_item">
+          <div class="p-chapter_checkbox js-checkboxBackground">
+              <label class="c-form_label c-form_label-check c-form_checkbox-static c-form_disabled">
+                <input type="checkbox" name="chapter_ids[]" id="buy_check_3259314" value="3259314" disabled="disabled" class="c-form_checkbox" />              </label>
+          </div>
+          <div class="p-chapterInfo p-chapterInfo-comic u-clearfix">
+              
+  
+      
+<dl>
+  <dt class="p-chapterList_no">
+      068話      <span class="p-comment_count">
+      <a href="/info/review_campaign">        <img decoding="async" class="p-comment_icon" alt="コメント" src="https://c.mechacomic.jp/images/common/icon_comment.svg?737170540566fb4ba83e3ff2b783a810fbb9178bc1463c9fbd108dfbac0a4fab" />0
+</a>  </span>
+  </dt>
+  <dd class="p-chapterList_name">
+    お引っ越しと加瀬さん。(2)  </dd>
+
+
+</dl>
+
+
+          <a class="p-btn-chapter c-btn c-btn-boder-buy prevent" rel="nofollow" href="/chapters/3259314">            60pt
+</a>
+
+          </div>
+        </li>
+              <li class="p-chapterList_item">
+          <div class="p-chapter_checkbox js-checkboxBackground">
+              <label class="c-form_label c-form_label-check c-form_checkbox-static c-form_disabled">
+                <input type="checkbox" name="chapter_ids[]" id="buy_check_3259315" value="3259315" disabled="disabled" class="c-form_checkbox" />              </label>
+          </div>
+          <div class="p-chapterInfo p-chapterInfo-comic u-clearfix">
+              
+  
+      
+<dl>
+  <dt class="p-chapterList_no">
+      069話      <span class="p-comment_count">
+      <a href="/info/review_campaign">        <img decoding="async" class="p-comment_icon" alt="コメント" src="https://c.mechacomic.jp/images/common/icon_comment.svg?737170540566fb4ba83e3ff2b783a810fbb9178bc1463c9fbd108dfbac0a4fab" />0
+</a>  </span>
+  </dt>
+  <dd class="p-chapterList_name">
+    お引っ越しと加瀬さん。(3)  </dd>
+
+
+</dl>
+
+
+          <a class="p-btn-chapter c-btn c-btn-boder-buy prevent" rel="nofollow" href="/chapters/3259315">            60pt
+</a>
+
+          </div>
+        </li>
+              <li class="p-chapterList_item">
+          <div class="p-chapter_checkbox js-checkboxBackground">
+              <label class="c-form_label c-form_label-check c-form_checkbox-static c-form_disabled">
+                <input type="checkbox" name="chapter_ids[]" id="buy_check_3259316" value="3259316" disabled="disabled" class="c-form_checkbox" />              </label>
+          </div>
+          <div class="p-chapterInfo p-chapterInfo-comic u-clearfix">
+              
+  
+      
+<dl>
+  <dt class="p-chapterList_no">
+      070話      <span class="p-comment_count">
+      <a href="/info/review_campaign">        <img decoding="async" class="p-comment_icon" alt="コメント" src="https://c.mechacomic.jp/images/common/icon_comment.svg?737170540566fb4ba83e3ff2b783a810fbb9178bc1463c9fbd108dfbac0a4fab" />0
+</a>  </span>
+  </dt>
+  <dd class="p-chapterList_name">
+    お引っ越しと加瀬さん。(4)  </dd>
+
+
+</dl>
+
+
+          <a class="p-btn-chapter c-btn c-btn-boder-buy prevent" rel="nofollow" href="/chapters/3259316">            60pt
+</a>
+
+          </div>
+        </li>
+  </ol>
+
+
+    <div class="p-tmpPage">
+      <div role="navigation" class="pagination"><a class="prev_page" href="/books/127560?page=6">前</a> <a href="/books/127560">1</a> <span class="gap">&hellip;</span> <a href="/books/127560?page=5">5</a> <a href="/books/127560?page=6">6</a> <span class="current">7</span> <span class="next_page disabled" aria-disabled="true">次</span></div>  </div>
+
+
+
+    <div class="p-footer_bulkBuy">
+      <div id="js-bulkBuyLimitMessage" class="u-conceal p-footer_msg p-footer_msg-warning">101話以上はチェックできません</div>
+
+      <div class="p-bulkBuy_action">
+        <button id="js-bulkBuyConfirmSubmit" type="submit" class="p-bulkBuy_submit">
+          <span class="p-bulkBuy_group">
+            <span class="p-bulkBuy_chapterCount">0<span class="h6">話</span></span>
+            <span class="p-bulkBuy_btn"><span class="c-btn c-btn-buy u-block c-btn-lg">チェックした話を購入する</span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+</form>
+  <div class="p-search_chapterNo">
+      <form id="js-pageJumpForm" action="/books/127560" accept-charset="UTF-8" method="get">      <div class="u-inlineBlock">
+        <input type="number" name="chapter_number" id="chapter_number" placeholder="話数入力" class="c-form_control p-chapterNo" />      </div>
+      <div class="u-inlineBlock">
+        <span>／70話へ</span>
+        <input type="submit" value="移動" class="c-btn c-btn-default c-btn-w80" data-disable-with="移動" />      </div>
+</form>  </div>
+
+  <script>
+//<![CDATA[
+jQuery(function() {
+  var is_check_change = false;
+  jQuery('.pagination a').click(function () {
+    set_buy_contents();
+  });
+  jQuery('#js-pageJumpForm').submit(function () {
+    set_buy_contents();
+  });
+  function set_buy_contents() {
+    if(is_check_change){
+      var checked_ids = [];
+      jQuery('#js-bulkBuyForm [name="chapter_ids[]"]').each(function(index, input) {
+        $this = jQuery(this);
+        if(($this.attr('type') == 'checkbox' && $this.is(':checked')) || $this.attr('type') == 'hidden'){
+          checked_ids.push($this.val());
+        }
+      });
+      var expires_at=new Date();
+      expires_at.setTime(expires_at.getTime() + (1*60*1000));
+      jQuery.cookie("tmp_cids", checked_ids, {expires: expires_at, path: '/'});
+    }
+  };
+  jQuery('.buy_chapter_check').change(function() {
+    is_check_change = true;
+    refresh_check_box();
+  });
+  function refresh_check_box() {
+    var checked_size = jQuery('.buy_chapter_check:checked').size() + 0;
+    if(checked_size >= 100) {
+      jQuery('.buy_chapter_check:not(":checked")').attr("disabled", "disabled");
+    } else {
+      jQuery('.buy_chapter_check:not(":checked")').removeAttr("disabled");
+    }
+    if(checked_size >= 100) {
+      jQuery('.js-checkboxBackground').addClass("js-bulkBuyCheckedDisabled");
+    } else {
+      jQuery('.js-checkboxBackground').removeClass("js-bulkBuyCheckedDisabled");
+    }
+    refresh_submit_button(checked_size);
+    refresh_discount_message(checked_size);
+    refresh_all_chapter_checkbox();
+  };
+  function refresh_submit_button(checked_size) {
+    $submit_tag = jQuery('#js-bulkBuyConfirmSubmit');
+    if(checked_size > 0) {
+      $submit_tag.html('<span class="p-bulkBuy_group"><span class="p-bulkBuy_chapterCount">' + checked_size + '<span class="h6">話</span></span>' + '<span class="p-bulkBuy_btn"><span class="c-btn c-btn-buy u-block c-btn-lg">チェックした話を購入する</span></span></span>');
+      $submit_tag.removeAttr("disabled");
+    } else {
+      $submit_tag.html('<span class="p-bulkBuy_group"><span class="p-bulkBuy_chapterCount">0<span class="h6">話</span></span><span class="p-bulkBuy_btn"><span class="c-btn c-btn-flat c-btn-purchased u-block c-btn-lg">まとめ買い話が未選択です</span></span></span>');
+      $submit_tag.attr("disabled", "disabled");
+    }
+    if(checked_size >= 100) {
+      jQuery('#js-bulkBuyLimitMessage').show();
+    } else {
+      jQuery('#js-bulkBuyLimitMessage').hide();
+    }
+  };
+  function refresh_discount_message(checked_size) {
+  };
+  function refresh_all_chapter_checkbox() {
+    var $allChapterCheck = $('.js-allChapterCheck');
+    var $allChapterCheckbox = $('.js-allChapterCheckbox');
+    var checked_size = $('.buy_chapter_check:checked').size();
+    var checkbox_size = $('.buy_chapter_check').size();
+
+    if(checkbox_size == 0) {
+      $allChapterCheck.prop('disabled', true);
+      $allChapterCheckbox.addClass("js-disabledAllChapterCheckbox");
+      return;
+    }
+    if(checked_size == 0) {
+      $allChapterCheck.prop('checked', false);
+    } else {
+      $allChapterCheck.prop('checked', true);
+    }
+    if(0 < checked_size && checked_size < checkbox_size) {
+      $allChapterCheckbox.addClass("js-someBulkBuyChecked");
+    } else {
+      $allChapterCheckbox.removeClass("js-someBulkBuyChecked");
+    }
+  }
+  jQuery('.js-allChapterCheck').change(function() {
+    if($(this).prop('checked')) {
+      $('.buy_chapter_check').each(function(index, input) {
+        var $this = $(this)
+        if(!$this.prop('disabled')) {
+          $this.prop('checked', true).trigger('change');
+        }
+      });
+    } else {
+      var $inputs = $('.buy_chapter_check');
+      $inputs.prop('checked', false);
+      $inputs.first().trigger('change');
+    }
+  });
+
+  refresh_check_box();
+});
+
+//]]>
+</script>              </div>
+
+
+          <section class="c-content">
+    <a class="p-title" href="/info/about_alert">      <h2 class="c-contentTitle p-title_txt p-title_txt-w70">入荷お知らせ設定</h2>
+      <span class="p-title_open"><span class="c-badge c-badge-circle c-badge-sm c-badge-info u-font-md u-mr8">？</span>機能について</span>
+</a>    <p class="u-txt-muted h5">
+      入荷お知らせをONにした作品の続話／作家の新着入荷をお知らせする便利な機能です。ご利用には<a class="tu-txt-line" href="/login">ログイン</a>が必要です。
+    </p>
+</section>
+
+          <section class="c-content rev_list">
+            <h2 class="c-contentTitle">みんなのレビュー</h2>
+
+                <ol class="p-commentList">
+        <li class="p-commentList_item p-comment">
+          <article>
+
+            <div class="p-commentInfo u-clearfix">
+              <div class="p-comment_score">
+                <h4>
+                  <img decoding="async" alt="評価：5.000" class="p-comment_score-star" src="https://c.mechacomic.jp/images/common/review_star_5_0.svg?0c2a6f36a877b37943457a44320e4e1065458ecd66ac289ff4a28a1fecaea6f4" />
+                  <span class="p-comment_score-average">5.0</span>
+                </h4>
+              </div>
+              <div class="p-comment_updateDay">
+                <time content="2024/03/11 6:29" datetime="2024/03/11 6:29" >2024/03/11 6:29</time>
+              </div>
+            </div>
+
+              <h5 class="p-comment_title">
+                かわいい〜              </h5>
+
+             <p id="js-description_9143022" class="p-comment_content">
+               GLってあまり読んだことなかったのですが、アニメの方で可愛らしい絵柄に惹かれ鑑賞してみたところストーリーも素敵でハマってしまいました！加瀬さんはかっこいいけど山田のことが大好きで暴走しがちだち、山田はほわほわしていて恥ずかしがりだけど加瀬さんをいつも想っていて結構芯は強いし、可愛いカップルですね！続編でないかなぁ。。             </p>
+
+            <div class="p-comment_customerName">
+              by 
+                  <a class="txtLine" href="/reviewers/91515?sort=helpful">aihara</a>            </div>
+
+            <div class="u-txt-right u-mt16">
+              <ul class="p-commentSubMenu">
+                <li id="review_like_count_9143022" class="p-commentSubMenu_item">
+                  
+    <span class="p-commentSubMenu_good-link">
+        <img decoding="async" class="p-comment_icon-good" alt="" src="https://c.mechacomic.jp/images/common/icon_good-off.png?e5df8b5c87caea1a4b8087b38e349dbf68320e193d79c7a18d3ef41e367d9ef1" />0    </span>
+                </li>
+              </ul>
+            </div>
+
+
+          </article>
+        </li>
+        <li class="p-commentList_item p-comment">
+          <article>
+
+            <div class="p-commentInfo u-clearfix">
+              <div class="p-comment_score">
+                <h4>
+                  <img decoding="async" alt="評価：5.000" class="p-comment_score-star" src="https://c.mechacomic.jp/images/common/review_star_5_0.svg?0c2a6f36a877b37943457a44320e4e1065458ecd66ac289ff4a28a1fecaea6f4" />
+                  <span class="p-comment_score-average">5.0</span>
+                </h4>
+              </div>
+              <div class="p-comment_updateDay">
+                <time content="2024/08/31 19:20" datetime="2024/08/31 19:20" >2024/08/31 19:20</time>
+              </div>
+            </div>
+
+
+             <p id="js-description_9787114" class="p-comment_content">
+               高校生2人の淡い恋心から始まる恋愛がたまらなく最高！！<br>
+可愛い絵柄でストーリーも読みやすいです。そして加瀬さんがかっこいい！！<br>
+大学生編も最高ですが、制服の2人がエモ過ぎて定期的に高校生時代を読み返します。笑             </p>
+
+            <div class="p-comment_customerName">
+              by 
+                  <a class="txtLine" href="/reviewers/358823?sort=helpful">壱万円</a>            </div>
+
+            <div class="u-txt-right u-mt16">
+              <ul class="p-commentSubMenu">
+                <li id="review_like_count_9787114" class="p-commentSubMenu_item">
+                  
+    <span class="p-commentSubMenu_good-link">
+        <img decoding="async" class="p-comment_icon-good" alt="" src="https://c.mechacomic.jp/images/common/icon_good-off.png?e5df8b5c87caea1a4b8087b38e349dbf68320e193d79c7a18d3ef41e367d9ef1" />0    </span>
+                </li>
+              </ul>
+            </div>
+
+
+          </article>
+        </li>
+        <li class="p-commentList_item p-comment">
+          <article>
+
+            <div class="p-commentInfo u-clearfix">
+              <div class="p-comment_score">
+                <h4>
+                  <img decoding="async" alt="評価：5.000" class="p-comment_score-star" src="https://c.mechacomic.jp/images/common/review_star_5_0.svg?0c2a6f36a877b37943457a44320e4e1065458ecd66ac289ff4a28a1fecaea6f4" />
+                  <span class="p-comment_score-average">5.0</span>
+                </h4>
+              </div>
+              <div class="p-comment_updateDay">
+                <time content="2020/11/30 8:33" datetime="2020/11/30 8:33" >2020/11/30 8:33</time>
+              </div>
+            </div>
+
+              <h5 class="p-comment_title">
+                可愛い              </h5>
+
+             <p id="js-description_5469506" class="p-comment_content">
+               アニメ見てから読みました。シリーズになっていて、アニメのつづきで大学生になった2人が見たくて読んでみた。山田かわいい。。この先の花も気になる。             </p>
+
+            <div class="p-comment_customerName">
+              by 
+                匿名希望
+            </div>
+
+            <div class="u-txt-right u-mt16">
+              <ul class="p-commentSubMenu">
+                <li id="review_like_count_5469506" class="p-commentSubMenu_item">
+                  
+    <span class="p-commentSubMenu_good-link">
+        <img decoding="async" class="p-comment_icon-good" alt="" src="https://c.mechacomic.jp/images/common/icon_good-off.png?e5df8b5c87caea1a4b8087b38e349dbf68320e193d79c7a18d3ef41e367d9ef1" />1    </span>
+                </li>
+              </ul>
+            </div>
+
+
+          </article>
+        </li>
+        <li class="p-commentList_item p-comment">
+          <article>
+
+            <div class="p-commentInfo u-clearfix">
+              <div class="p-comment_score">
+                <h4>
+                  <img decoding="async" alt="評価：5.000" class="p-comment_score-star" src="https://c.mechacomic.jp/images/common/review_star_5_0.svg?0c2a6f36a877b37943457a44320e4e1065458ecd66ac289ff4a28a1fecaea6f4" />
+                  <span class="p-comment_score-average">5.0</span>
+                </h4>
+              </div>
+              <div class="p-comment_updateDay">
+                <time content="2020/06/18 19:35" datetime="2020/06/18 19:35" >2020/06/18 19:35</time>
+              </div>
+            </div>
+
+              <h5 class="p-comment_title">
+                加瀬さん、ここにあり❣️              </h5>
+
+             <p id="js-description_4506683" class="p-comment_content">
+               嫉妬する加瀬さんが可愛い❣️スーツ姿の加瀬さん、かっこいいなぁ❤️加瀬さんのルームメイトのキャラもオモロ〜笑             </p>
+
+            <div class="p-comment_customerName">
+              by 
+                匿名希望
+            </div>
+
+            <div class="u-txt-right u-mt16">
+              <ul class="p-commentSubMenu">
+                <li id="review_like_count_4506683" class="p-commentSubMenu_item">
+                  
+    <span class="p-commentSubMenu_good-link">
+        <img decoding="async" class="p-comment_icon-good" alt="" src="https://c.mechacomic.jp/images/common/icon_good-off.png?e5df8b5c87caea1a4b8087b38e349dbf68320e193d79c7a18d3ef41e367d9ef1" />0    </span>
+                </li>
+              </ul>
+            </div>
+
+
+          </article>
+        </li>
+  </ol>
+              <p class="u-txt-right u-mt8"><a href="/books/127560/reviews?sort=helpful">すべてのレビューを見る（4件）</a></p>
+          </section>
+
+
+
+
+
+            <section id="async_frame_all_popular_books">
+  <h2 class="c-contentTitle">同じ作家の作品</h2>
+  <div class="c-loader">
+    <img decoding="async" alt="" src="https://c.mechacomic.jp/images/common/loading.gif?db1b01307138a0e718e3a0ca362ffe6cacd9d44c0f65dfb602aecb1fc45b25e2" width="30" height="30" />
+    <p class="h6 u-txt-disabled">Loading</p>
+  </div>
+  <h2 class="c-contentTitle">関連する作品</h2>
+  <div class="c-loader">
+    <img decoding="async" alt="" src="https://c.mechacomic.jp/images/common/loading.gif?db1b01307138a0e718e3a0ca362ffe6cacd9d44c0f65dfb602aecb1fc45b25e2" width="30" height="30" />
+    <p class="h6 u-txt-disabled">Loading</p>
+  </div>
+</section>
+
+<script>
+//<![CDATA[
+jQuery.get("/async_frames/all_popular_books?book_id=127560&element_id=async_frame_all_popular_books")
+.fail(function() {jQuery("#async_frame_all_popular_books").remove();});
+
+//]]>
+</script>
+      <section class="c-content">
+      <h2 class="c-contentTitle">みんなが読んでるおすすめコミック</h2>
+      <ul class="p-imgList p-imgList-col4 p-bookScene u-clearfix">
+          <li class="u-txt-center">
+            <a id="ec_book_scene_1" data-id="115504" data-list="book_scene" data-position="1" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_1_product_click" data-name="今夜、夫の後輩に抱かれます" data-pdc_action="discount" href="/books/180411">
+              <img decoding="async" alt="今夜、夫の後輩に抱かれます" class="p-bookScene_bookImg" src="https://c.mechacomic.jp/images/book/161/180/180411/scene_115504_20241213.png?cb8354c3a162d4abc464a8bceafaab9eccfabd3ba177144506d0ad471ac5b67c" />              <span class="p-bookScene_bookTitle">
+                今夜、夫の後輩に抱かれます              </span>
+</a>                  <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_scene_2" data-id="115504" data-list="book_scene" data-position="2" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_2_product_click" data-name="今夜、夫の後輩に抱かれます" data-pdc_action="discount" href="/books/180411">              7話無料
+</a>        </div>
+      </div>
+          </li>
+          <li class="u-txt-center">
+            <a id="ec_book_scene_3" data-id="120037" data-list="book_scene" data-position="3" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_3_product_click" data-name="よそとせ自立" data-pdc_action="discount" href="/books/189210">
+              <img decoding="async" alt="よそとせ自立" class="p-bookScene_bookImg" src="https://c.mechacomic.jp/images/book/193/189/189210/scene_120037_20241213.png?51e22ac754045c232cc202316aa90052e1ae80ffb8b86b24ffb119e187b6f9c3" />              <span class="p-bookScene_bookTitle">
+                よそとせ自立              </span>
+</a>                  <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_scene_4" data-id="120037" data-list="book_scene" data-position="4" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_4_product_click" data-name="よそとせ自立" data-pdc_action="discount" href="/books/189210">              2話無料
+</a>        </div>
+      </div>
+          </li>
+          <li class="u-txt-center">
+            <a id="ec_book_scene_5" data-id="114653" data-list="book_scene" data-position="5" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_5_product_click" data-name="大正身代わり婚～金平糖は甘くほどけて～" data-pdc_action="discount" href="/books/178671">
+              <img decoding="async" alt="大正身代わり婚～金平糖は甘くほどけて～" class="p-bookScene_bookImg" src="https://c.mechacomic.jp/images/book/200/178/178671/scene_114653_20241213.png?dc20104872e96e766ac3127d389babae8a8f08bb29b5a6e9ce80674a774fb3c4" />              <span class="p-bookScene_bookTitle">
+                大正身代わり婚～金平糖は甘くほどけて～              </span>
+</a>                  <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_scene_6" data-id="114653" data-list="book_scene" data-position="6" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_6_product_click" data-name="大正身代わり婚～金平糖は甘くほどけて～" data-pdc_action="discount" href="/books/178671">              27話無料
+</a>        </div>
+      </div>
+          </li>
+          <li class="u-txt-center">
+            <a id="ec_book_scene_7" data-id="120832" data-list="book_scene" data-position="7" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_7_product_click" data-name="復讐代行うさぎチャンネル" data-pdc_action="discount" href="/books/190969">
+              <img decoding="async" alt="復讐代行うさぎチャンネル" class="p-bookScene_bookImg" src="https://c.mechacomic.jp/images/book/161/190/190969/scene_120832_20241213.png?fc0875f7e31b3f0ade945708450b081ac4c0bafbafdef2f86da4a3d9429bbc45" />              <span class="p-bookScene_bookTitle">
+                復讐代行うさぎチャンネル              </span>
+</a>                  <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_scene_8" data-id="120832" data-list="book_scene" data-position="8" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_8_product_click" data-name="復讐代行うさぎチャンネル" data-pdc_action="discount" href="/books/190969">              7話無料
+</a>        </div>
+      </div>
+          </li>
+          <li class="u-txt-center">
+            <a id="ec_book_scene_9" data-id="113964" data-list="book_scene" data-position="9" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_9_product_click" data-name="軍神と偽りの花嫁" data-pdc_action="discount" href="/books/177193">
+              <img decoding="async" alt="軍神と偽りの花嫁" class="p-bookScene_bookImg" src="https://c.mechacomic.jp/images/book/193/177/177193/scene_113964_20241213.png?2bf0188b0733fa2a35c105a280b6e20d6e20a949779f8a66611530734dcb754f" />              <span class="p-bookScene_bookTitle">
+                軍神と偽りの花嫁              </span>
+</a>                  <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_scene_10" data-id="113964" data-list="book_scene" data-position="10" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_10_product_click" data-name="軍神と偽りの花嫁" data-pdc_action="discount" href="/books/177193">              12話無料
+</a>        </div>
+      </div>
+          </li>
+          <li class="u-txt-center">
+            <a id="ec_book_scene_11" data-id="124183" data-list="book_scene" data-position="11" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_11_product_click" data-name="変な絵(コミック)" data-pdc_action="discount" href="/books/198503">
+              <img decoding="async" alt="変な絵(コミック)" class="p-bookScene_bookImg" src="https://c.mechacomic.jp/images/book/81/198/198503/scene_124183_20241213.png?02b7e07fa6c8f327bfa15db30f74f43a7c815997eb74646f86759fafd16011b7" />              <span class="p-bookScene_bookTitle">
+                変な絵(コミック)              </span>
+</a>                  <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_scene_12" data-id="124183" data-list="book_scene" data-position="12" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_12_product_click" data-name="変な絵(コミック)" data-pdc_action="discount" href="/books/198503">              4話無料
+</a>        </div>
+      </div>
+          </li>
+          <li class="u-txt-center">
+            <a id="ec_book_scene_13" data-id="104498" data-list="book_scene" data-position="13" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_13_product_click" data-name="真実の愛を見つけたと言われて婚約破棄されたので、復縁を迫られても今さらもう遅いです!(コミック)" data-pdc_action="discount" href="/books/157282">
+              <img decoding="async" alt="真実の愛を見つけたと言われて婚約破棄されたので、復縁を迫られても今さらもう遅いです!(コミック)" class="p-bookScene_bookImg" src="https://c.mechacomic.jp/images/book/81/157/157282/scene_104498_20241213.png?b849c75bced220579fc6830cc17f2f4db90c90af9b05e70be9204af0e8910d59" />              <span class="p-bookScene_bookTitle">
+                真実の愛を見つけたと言われて婚約破棄されたので、復縁を迫られても今さらもう遅いです!(コミック)              </span>
+</a>                  <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_scene_14" data-id="104498" data-list="book_scene" data-position="14" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_14_product_click" data-name="真実の愛を見つけたと言われて婚約破棄されたので、復縁を迫られても今さらもう遅いです!(コミック)" data-pdc_action="discount" href="/books/157282">              49話無料
+</a>        </div>
+      </div>
+          </li>
+          <li class="u-txt-center">
+            <a id="ec_book_scene_15" data-id="68561" data-list="book_scene" data-position="15" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_15_product_click" data-name="その溺愛、お断りします" data-pdc_action="discount" href="/books/112427">
+              <img decoding="async" alt="その溺愛、お断りします" class="p-bookScene_bookImg" src="https://c.mechacomic.jp/images/book/109/112/112427/scene_68561_20241213.png?6ee6286f9078827c5be420245f6bbefa932d929e031154c59ea27757a40d10a2" />              <span class="p-bookScene_bookTitle">
+                その溺愛、お断りします              </span>
+</a>                  <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_scene_16" data-id="68561" data-list="book_scene" data-position="16" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_16_product_click" data-name="その溺愛、お断りします" data-pdc_action="discount" href="/books/112427">              16話無料
+</a>        </div>
+      </div>
+          </li>
+          <li class="u-txt-center">
+            <a id="ec_book_scene_17" data-id="124374" data-list="book_scene" data-position="17" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_17_product_click" data-name="裏切り者に復讐の花束を～絶対に許さない～" data-pdc_action="discount" href="/books/198895">
+              <img decoding="async" alt="裏切り者に復讐の花束を～絶対に許さない～" class="p-bookScene_bookImg" src="https://c.mechacomic.jp/images/book/200/198/198895/scene_124374_20241213.png?586bba90738bc839b1f26f37f20c2097241a54f6af85ee38027a12303314dce0" />              <span class="p-bookScene_bookTitle">
+                裏切り者に復讐の花束を～絶対に許さない～              </span>
+</a>                  <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_scene_18" data-id="124374" data-list="book_scene" data-position="18" data-coupon="期間限定無料" data-pdc_evid="ev_book_scene_18_product_click" data-name="裏切り者に復讐の花束を～絶対に許さない～" data-pdc_action="discount" href="/books/198895">              8話無料
+</a>        </div>
+      </div>
+          </li>
+      </ul>
+    </section>
+  
+
+
+<div id="footmark_books">
+    <a class="p-title" href="/my/footmarks">    <h2 class="c-contentTitle p-title_txt p-title_txt-w70">最近チェックした作品</h2>
+    <span class="p-title_more">&gt;</span>
+</a>
+  <div class="c-loader">
+    <img decoding="async" alt="" src="https://c.mechacomic.jp/images/common/loading.gif?db1b01307138a0e718e3a0ca362ffe6cacd9d44c0f65dfb602aecb1fc45b25e2" width="30" height="30" />
+    <p class="h6 u-txt-disabled">Loading</p>
+  </div>
+  <script>
+//<![CDATA[
+jQuery(window).on('scroll.asyncFootmarkBooks1', function(){
+  jQuery.get("/footmark?element_id=footmark_books&except=127560&limit=10&page_id=book")
+.fail(function() {jQuery("#footmark_books").hide();});
+
+  jQuery(window).off('.asyncFootmarkBooks1');
+})
+
+//]]>
+</script></div>
+
+  
+  <section class="c-content" id="li-recommend_books_show_free_daily_hidden">
+  <h2 class="c-contentTitle">おすすめ無料連載作品</h2>
+
+  <div id="li-recommend_books_show_free_daily_lazyload">
+    <ul class="jacket_books list_col5 clearfix" id="li-recommend_books_show_free_daily">
+      <div class="c-loader">
+  <img decoding="async" alt="" src="https://c.mechacomic.jp/images/common/loading.gif?db1b01307138a0e718e3a0ca362ffe6cacd9d44c0f65dfb602aecb1fc45b25e2" width="30" height="30" />
+  <p class="h6 u-txt-disabled">Loading</p>
+</div>
+    </ul>
+  </div>
+</section>
+
+
+
+
+    <section class="c-content">
+      <h2 class="c-contentTitle">迷ったら無料で読めるこの作品！</h2>
+
+      <div class="test-88475">
+        <ul class="jacket_books list_col5 clearfix">
+            <li><div class="book">
+  <a class="detail" id="ec_book_original_exclusive_1" data-id="124421" data-list="book_original_exclusive" data-position="1" data-coupon="期間限定無料" data-pdc_evid="ev_book_original_exclusive_19_product_click" data-name="大嫌いなままでいいですので、私と子供を作ってもらえませんか?" data-pdc_action="discount" href="/books/198977">    <div class="jacket_area">
+  <div class="jacket">
+    <span class="cell">
+        <img decoding="async" alt="大嫌いなままでいいですので、私と子供を作ってもらえませんか?" class="jacket_image_l" src="https://c.mechacomic.jp/images/book/113/198/198977/daikirainamamadeiidesunodewatashitokodomowotsuku_001_xl.jpg?1b1db3dd702b5c7bcfec931cadbde580e87f855966b8025d9a7ed583f0e74342" />    </span>
+  </div>
+
+
+</div>
+    <span class="title">
+      大嫌いなままでいいですので、私と子供を作ってもらえませんか?    </span>
+</a>            <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_original_exclusive_2" data-id="124421" data-list="book_original_exclusive" data-position="2" data-coupon="期間限定無料" data-pdc_evid="ev_book_original_exclusive_20_product_click" data-name="大嫌いなままでいいですので、私と子供を作ってもらえませんか?" data-pdc_action="discount" href="/books/198977">              2話無料
+</a>        </div>
+      </div>
+</div></li>
+            <li><div class="book">
+  <a class="detail" id="ec_book_original_exclusive_3" data-id="120653" data-list="book_original_exclusive" data-position="3" data-coupon="期間限定無料" data-pdc_evid="ev_book_original_exclusive_21_product_click" data-name="侯爵令嬢リディアの美しき決断～裏切られたのでこちらから婚約破棄させていただきます～" data-pdc_action="discount" href="/books/190565">    <div class="jacket_area">
+  <div class="jacket">
+    <span class="cell">
+        <img decoding="async" alt="侯爵令嬢リディアの美しき決断～裏切られたのでこちらから婚約破棄させていただきます～" class="jacket_image_l" src="https://c.mechacomic.jp/images/book/57/190/190565/850059_koushyaku_xl.jpg?1a8f84da5766fe1f1bb0f12624b7085fadff0a1ef5f29c879a652cf7afdc5f67" />    </span>
+  </div>
+
+
+</div>
+    <span class="title">
+      侯爵令嬢リディアの美しき決断～裏切られたのでこちらから婚約破棄させていただきます～    </span>
+</a>            <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_original_exclusive_4" data-id="120653" data-list="book_original_exclusive" data-position="4" data-coupon="期間限定無料" data-pdc_evid="ev_book_original_exclusive_22_product_click" data-name="侯爵令嬢リディアの美しき決断～裏切られたのでこちらから婚約破棄させていただきます～" data-pdc_action="discount" href="/books/190565">              6話無料
+</a>        </div>
+      </div>
+</div></li>
+            <li><div class="book">
+  <a class="detail" id="ec_book_original_exclusive_5" data-id="121828" data-list="book_original_exclusive" data-position="5" data-coupon="期間限定無料" data-pdc_evid="ev_book_original_exclusive_23_product_click" data-name="黒妖の花嫁～忌み嫌われた私が冷酷大尉に愛されるまで～" data-pdc_action="discount" href="/books/193281">    <div class="jacket_area">
+  <div class="jacket">
+    <span class="cell">
+        <img decoding="async" alt="黒妖の花嫁～忌み嫌われた私が冷酷大尉に愛されるまで～" class="jacket_image_l" src="https://c.mechacomic.jp/images/book/57/193/193281/850106_kokuyou_xl.jpg?b67516c7b6c12dc3ba50749b8a618db77c7e267a0cf03aa879b9ad045cfb07ac" />    </span>
+  </div>
+
+
+</div>
+    <span class="title">
+      黒妖の花嫁～忌み嫌われた私が冷酷大尉に愛されるまで～    </span>
+</a>            <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_original_exclusive_6" data-id="121828" data-list="book_original_exclusive" data-position="6" data-coupon="期間限定無料" data-pdc_evid="ev_book_original_exclusive_24_product_click" data-name="黒妖の花嫁～忌み嫌われた私が冷酷大尉に愛されるまで～" data-pdc_action="discount" href="/books/193281">              3話無料
+</a>        </div>
+      </div>
+</div></li>
+            <li><div class="book">
+  <a class="detail" id="ec_book_original_exclusive_7" data-id="125203" data-list="book_original_exclusive" data-position="7" data-coupon="毎日無料_時短版" data-pdc_evid="ev_book_original_exclusive_25_product_click" data-name="あんた私のことを好きだったの?" data-pdc_action="free_daily" href="/books/200594">    <div class="jacket_area">
+  <div class="jacket">
+    <span class="cell">
+        <img decoding="async" alt="あんた私のことを好きだったの?" class="jacket_image_l" src="https://c.mechacomic.jp/images/book/275/200/200594/antawatashino_m39753_xl.jpg?e108ee74a23f9bfc190e23b68a5916ef9dc86290985efa53cec51c44d12b1893" />    </span>
+  </div>
+    <img decoding="async" alt="続話入荷" class="add_icon" src="https://c.mechacomic.jp/images/common/icon_txt_additional_book-white.svg?4fa1bf4f0bdbf70853352a38e4be6315cb31177bf3bf5285b0087e0e15e9f573" />
+
+
+      <div class="p-jacket_icon-freeSerialPlus">毎日<span class="p-jacket_icon_space-freeSerialPlus">無料</span></div>
+</div>
+    <span class="title">
+      あんた私のことを好きだったの?    </span>
+</a>            <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_original_exclusive_8" data-id="125203" data-list="book_original_exclusive" data-position="8" data-coupon="毎日無料_時短版" data-pdc_evid="ev_book_original_exclusive_26_product_click" data-name="あんた私のことを好きだったの?" data-pdc_action="free_daily" href="/books/200594">              3話無料
+</a>        </div>
+      </div>
+</div></li>
+            <li><div class="book">
+  <a class="detail" id="ec_book_original_exclusive_9" data-id="125197" data-list="book_original_exclusive" data-position="9" data-coupon="毎日無料_通常版" data-pdc_evid="ev_book_original_exclusive_27_product_click" data-name="黒幕王子との添い寝は秘密です" data-pdc_action="free_daily" href="/books/200551">    <div class="jacket_area">
+  <div class="jacket">
+    <span class="cell">
+        <img decoding="async" alt="黒幕王子との添い寝は秘密です" class="jacket_image_l" src="https://c.mechacomic.jp/images/book/237/200/200551/kuromakusoine_KV_xl.jpg?8e2f72ea6122c96313e02b1d6be692347d8299c5844c3ee218d54fd90c8fd644" />    </span>
+  </div>
+    <img decoding="async" alt="続話入荷" class="add_icon" src="https://c.mechacomic.jp/images/common/icon_txt_additional_book-white.svg?4fa1bf4f0bdbf70853352a38e4be6315cb31177bf3bf5285b0087e0e15e9f573" />
+
+
+      <div class="p-jacket_icon-freeSerial">毎日<span class="u-pl24">無料</span></div>
+</div>
+    <span class="title">
+      黒幕王子との添い寝は秘密です    </span>
+</a>            <div class="button">
+        <div class="btn_free">
+          <a id="ec_book_original_exclusive_10" data-id="125197" data-list="book_original_exclusive" data-position="10" data-coupon="毎日無料_通常版" data-pdc_evid="ev_book_original_exclusive_28_product_click" data-name="黒幕王子との添い寝は秘密です" data-pdc_action="free_daily" href="/books/200551">              3話無料
+</a>        </div>
+      </div>
+</div></li>
+        </ul>
+      </div>
+    </section>
+
+
+
+
+      
+
+
+
+
+
+  <section class="c-content ">
+    <h2 class="c-contentTitle p-title_txt">
+      <img decoding="async" class="p-creators_logo" alt="めちゃコミッククリエイターズ作品" src="https://c.mechacomic.jp/images/common/logo_creators_one-column.svg?6f85fc691084986bbceb8b1648228878733568b41e890e4b6dd9c9b3c63aa8eb" />
+      <span class="p-creators_subTitle u-block">新たな才能を発掘！注目の投稿漫画</span>
+    </h2>
+    <div class="p-topScene">
+      <ul class="p-topScene_body p-topScene_body-noBtn list_col3 u-clearfix">
+          <li class="u-txt-center">
+            <a class="p-topScene_icon-extLink" target="_blank" rel="noopener noreferrer" href="https://creators.mechacomic.jp/title/11682/chapter/32091?utm_source=book_nlogin&amp;utm_medium=mecha&amp;utm_campaign=book_1">              <img decoding="async" class="p-topScene_bookImg" alt="国王による皇子様との結婚のすすめ" src="https://c.mechacomic.jp/images/display/index/creators/2412/thumbnail_id-11682.jpg?2973853370ae5c3e8a8ea464f4cd0ba2fdb86c1c24ea8e87e0afddb78c3353cf" />
+              <span class="p-topScene_bookTitle">
+                国王による皇子様との結婚のすすめ              </span>
+</a>          </li>
+          <li class="u-txt-center">
+            <a class="p-topScene_icon-extLink" target="_blank" rel="noopener noreferrer" href="https://creators.mechacomic.jp/title/11904/chapter/33513?utm_source=book_nlogin&amp;utm_medium=mecha&amp;utm_campaign=book_2">              <img decoding="async" class="p-topScene_bookImg" alt="ズッコケデート" src="https://c.mechacomic.jp/images/display/index/creators/2412/thumbnail_id-11904.jpg?7c2b84cc1b14a7b8670cf22d74599c252eee0332e2e33ab1c29eebb0a6c0fd41" />
+              <span class="p-topScene_bookTitle">
+                ズッコケデート              </span>
+</a>          </li>
+          <li class="u-txt-center">
+            <a class="p-topScene_icon-extLink" target="_blank" rel="noopener noreferrer" href="https://creators.mechacomic.jp/title/11511/chapter/31455?utm_source=book_nlogin&amp;utm_medium=mecha&amp;utm_campaign=book_3">              <img decoding="async" class="p-topScene_bookImg" alt="越えた先には" src="https://c.mechacomic.jp/images/display/index/creators/2412/thumbnail_id-11511.jpg?69c8d5109779d49ef8c48bccbb40a7d85fc6a67688da04642e35035e03f9cb87" />
+              <span class="p-topScene_bookTitle">
+                越えた先には              </span>
+</a>          </li>
+          <li class="u-txt-center">
+            <a class="p-topScene_icon-extLink" target="_blank" rel="noopener noreferrer" href="https://creators.mechacomic.jp/title/11676/chapter/32034?utm_source=book_nlogin&amp;utm_medium=mecha&amp;utm_campaign=book_4">              <img decoding="async" class="p-topScene_bookImg" alt="鮫に恋するJK" src="https://c.mechacomic.jp/images/display/index/creators/2412/thumbnail_id-11676.png?8508bac60b7f9491449e11d6da2dac1ff666b7edf3d419d8883c148ee70cd638" />
+              <span class="p-topScene_bookTitle">
+                鮫に恋するJK              </span>
+</a>          </li>
+          <li class="u-txt-center">
+            <a class="p-topScene_icon-extLink" target="_blank" rel="noopener noreferrer" href="https://creators.mechacomic.jp/title/11784/chapter/33198?utm_source=book_nlogin&amp;utm_medium=mecha&amp;utm_campaign=book_5">              <img decoding="async" class="p-topScene_bookImg" alt="幽霊なんて見えてませんが？" src="https://c.mechacomic.jp/images/display/index/creators/2412/thumbnail_id-11784.jpg?e92b0ffe9e0ed583c82a4ebfa921d4f339aae155dbe9bbd3bbe0c6131e9d6c58" />
+              <span class="p-topScene_bookTitle">
+                幽霊なんて見えてませんが？              </span>
+</a>          </li>
+          <li class="u-txt-center">
+            <a class="p-topScene_icon-extLink" target="_blank" rel="noopener noreferrer" href="https://creators.mechacomic.jp/title/11928/chapter/33570?utm_source=book_nlogin&amp;utm_medium=mecha&amp;utm_campaign=book_6">              <img decoding="async" class="p-topScene_bookImg" alt="言えない2人" src="https://c.mechacomic.jp/images/display/index/creators/2412/thumbnail_id-11928.png?563086b3553b866bf15c7d5e7216469fc0d38c456bd9362ec816419f2426449d" />
+              <span class="p-topScene_bookTitle">
+                言えない2人              </span>
+</a>          </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+
+        
+        <section class="c-content u-bg-white">
+    <a class="p-title" href="/display/backnumber">      <h2 class="c-contentTitle p-title_txt p-title_txt-w70">おすすめ特集</h2>
+      <span class="p-title_more">&gt;</span>
+</a>    <ul class="p-mediaList">
+        <li>
+          <a class="c-linkArrow" href="/feature/girl_mylord">            <div class="p-media">
+  <div class="p-media_img p-media_img-feature">
+    <img decoding="async" alt="主従×恋特集" src="https://c.mechacomic.jp/images/design/banner/sp_girl_mylord_01_s.jpg?2db11881adb3c11e3b1aa8b5e61a7828bd834e8c1b6ff54fb936b57cd112409b" />
+  </div>
+  <div class="p-media_body p-media_body-feature">
+    <div class="p-tagList p-tagList-tight u-clearfix">
+        <div class="p-tagList_item">
+          <span class="c-tag c-tag-default c-tag-sm c-tag-tight">少女</span>
+        </div>
+        <div class="p-tagList_item">
+          <span class="c-tag c-tag-default c-tag-sm c-tag-tight">女性</span>
+        </div>
+    </div>
+    <p class="p-media_title">主従×恋特集</p>
+    <p class="p-media_summary">敬愛を越えて恋愛に発展していく、切なくて甘い主従関係…</p>
+  </div>
+</div>
+</a>        </li>
+        <li>
+          <a class="c-linkArrow" href="/feature/girl_dekiaimanga">            <div class="p-media">
+  <div class="p-media_img p-media_img-feature">
+    <img decoding="async" alt="激甘注意♡溺愛マンガ特集 Vol.2" src="https://c.mechacomic.jp/images/design/banner/sp_girl_dekiaimanga_02_t.jpg?2123431d8b2d5d4fc0fffef82e49b25d0f78eb9d59ea720ae127e3e927d8b66a" />
+  </div>
+  <div class="p-media_body p-media_body-feature">
+    <div class="p-tagList p-tagList-tight u-clearfix">
+        <div class="p-tagList_item">
+          <span class="c-tag c-tag-default c-tag-sm c-tag-tight">少女</span>
+        </div>
+        <div class="p-tagList_item">
+          <span class="c-tag c-tag-default c-tag-sm c-tag-tight">女性</span>
+        </div>
+    </div>
+    <p class="p-media_title">激甘注意♡溺愛マンガ特集 Vol.2</p>
+    <p class="p-media_summary">糖度120%♡甘くて癒されるオススメ恋愛マンガ</p>
+  </div>
+</div>
+</a>        </li>
+        <li>
+          <a class="c-linkArrow" href="/feature/girl_hanayume_50th">            <div class="p-media">
+  <div class="p-media_img p-media_img-feature">
+    <img decoding="async" alt="花とゆめレーベル50周年記念特集" src="https://c.mechacomic.jp/images/design/banner/sp_girl_hanayume_50th_01_t.jpg?535811cdab3d05d0782df0e35b0bcd38e8c693542d6685913c115d8900577beb" />
+  </div>
+  <div class="p-media_body p-media_body-feature">
+    <div class="p-tagList p-tagList-tight u-clearfix">
+        <div class="p-tagList_item">
+          <span class="c-tag c-tag-default c-tag-sm c-tag-tight">少女</span>
+        </div>
+        <div class="p-tagList_item">
+          <span class="c-tag c-tag-default c-tag-sm c-tag-tight">女性</span>
+        </div>
+    </div>
+    <p class="p-media_title">花とゆめレーベル50周年記念特集</p>
+    <p class="p-media_summary">夢と希望、そして愛が沢山詰まった少女漫画誌『花とゆめ』</p>
+  </div>
+</div>
+</a>        </li>
+        <li>
+          <a class="c-linkArrow" href="/feature/i_toshishita">            <div class="p-media">
+  <div class="p-media_img p-media_img-feature">
+    <img decoding="async" alt="年下男子特集Vol.2" src="https://c.mechacomic.jp/images/design/banner/sp_i_toshishita_02_s.jpg?c8e63e00bdecd75fda15ada0013845beacca5a09f0979545627de3f68ddc3561" />
+  </div>
+  <div class="p-media_body p-media_body-feature">
+    <div class="p-tagList p-tagList-tight u-clearfix">
+        <div class="p-tagList_item">
+          <span class="c-tag c-tag-default c-tag-sm c-tag-tight">少女</span>
+        </div>
+        <div class="p-tagList_item">
+          <span class="c-tag c-tag-default c-tag-sm c-tag-tight">女性</span>
+        </div>
+        <div class="p-tagList_item">
+          <span class="c-tag c-tag-default c-tag-sm c-tag-tight">青年</span>
+        </div>
+    </div>
+    <p class="p-media_title">年下男子特集Vol.2</p>
+    <p class="p-media_summary">かわいさの間に見せる大人な顔に胸キュン必至！</p>
+  </div>
+</div>
+</a>        </li>
+    </ul>
+  </section>
+
+        
+    </article>
+  </div>
+
+    <div class="container_sidebar">
+
+  <nav>
+    
+
+<aside class="btm12 bgWhite2 pdg5 cntr subMenu p_1 menu_box mb_1">
+  <a href="/books/exclusive_top">    <img decoding="async" alt="独占先行" class="maxwidth" src="https://c.mechacomic.jp/images/display/menu_pc/img_exclusivetop_leftmenu_01.png?77f88970015b35758a2d7c72035aa713c8d4dfea6dc1e47ce14b988b445fdfa2" /></a></aside>
+
+  <aside class="btm24 bgWhite2 pdg5 cntr subMenu mb_3 p_1 menu_box">
+    <a href="/free">      <img decoding="async" alt="今すぐ読める！無料漫画コーナー" class="maxwidth" src="https://c.mechacomic.jp/images/display/freecomics/img_freecomics_sm2_01.png?f1bc71bcfbf3e2ea88f7e0ef67af80375141147372fd1e3091ed8582d6052fd2" />
+</a>  </aside>
+
+
+    <div class="base btm24 bgWhite2 pdg5 subMenu mb_3 p_1 menu_box cntr text_center">
+      <a href="/info/guide"><img decoding="async" alt="めちゃコミック はじめてガイド" class="borderGray" src="https://c.mechacomic.jp/images/display/menu_pc/bnr_beginner_guide.png" /></a>    </div>
+
+    
+  <div class="btm24 subMenu mb_3 menu_box">
+  <dl class="nav">
+    <dt class="title_primary">ジャンルから探す</dt>
+    <dd class="nav_item"><a href="/genre/boy">少年・青年漫画</a></dd>
+    <dd class="nav_item"><a href="/genre/girl">少女・女性漫画</a></dd>
+    <dd class="nav_item"><a href="/genre/harlequin-manga">ハーレクイン漫画</a></dd>
+    <dd>
+      <p class="more"><a class="arrow2" href="/genres">ジャンル一覧へ</a></p>
+    </dd>
+  </dl>
+</div>
+
+<div class="btm24 subMenu mb_3 menu_box">
+  <dl class="nav">
+    <dt class="title_primary">漫画家から探す</dt>
+    <dd>
+      <dl class="nav">
+        <dt class="title_secondary">男性向け漫画家</dt>
+         
+         <dd class="nav_item"><a href="/authors/456">福本伸行</a></dd>
+
+         <dd class="nav_item"><a href="/authors/53">古谷実</a></dd>
+
+         <dd class="nav_item"><a href="/authors/55">江川達也</a></dd>
+
+         <dd class="nav_item"><a href="/authors/1307">皆川亮二</a></dd>
+
+         <dd class="nav_item"><a href="/authors/651">倉科遼</a></dd>
+      </dl>
+    </dd>
+    <dd>
+      <dl class="nav">
+        <dt class="title_secondary">女性向け漫画家</dt>
+         
+         <dd class="nav_item"><a href="/authors/97">安野モヨコ</a></dd>
+
+         <dd class="nav_item"><a href="/authors/1901">円城寺マキ</a></dd>
+
+         <dd class="nav_item"><a href="/authors/216">新條まゆ</a></dd>
+
+         <dd class="nav_item"><a href="/authors/605">水波風南</a></dd>
+
+         <dd class="nav_item"><a href="/authors/1290">北川みゆき</a></dd>
+      </dl>
+    </dd>
+    <dd>
+      <p class="more"><a class="arrow2" href="/authors/list">漫画家一覧へ</a></p>
+    </dd>
+  </dl>
+</div>
+
+<div class="btm24 subMenu mb_3 menu_box">
+  <dl class="nav">
+    <dt class="title_primary">漫画雑誌から探す</dt>
+    <dd>
+      <dl class="nav">
+        <dt class="title_secondary">男性向け漫画雑誌</dt>
+        
+        <dd class="nav_item"><a href="/labels/1051">少年サンデー</a></dd>
+
+        <dd class="nav_item"><a href="/labels/1070">少年マガジン</a></dd>
+
+        <dd class="nav_item"><a href="/labels/1048">ヤングマガジン</a></dd>
+
+        <dd class="nav_item"><a href="/labels/1046">モーニング</a></dd>
+
+        <dd class="nav_item"><a href="/labels/1020">漫画アクション</a></dd>
+      </dl>
+    </dd>
+    <dd>
+      <dl class="nav">
+        <dt class="title_secondary">女性向け漫画雑誌</dt>
+        
+        <dd class="nav_item"><a href="/labels/1033">Sho-Comi</a></dd>
+
+        <dd class="nav_item"><a href="/labels/1043">別冊フレンド</a></dd>
+
+        <dd class="nav_item"><a href="/labels/1029">Cheese!</a></dd>
+
+        <dd class="nav_item"><a href="/labels/1039">なかよし</a></dd>
+
+        <dd class="nav_item"><a href="/labels/1038">デザート</a></dd>
+      </dl>
+    </dd>
+    <dd>
+      <p class="more"><a class="arrow2" href="/labels">漫画雑誌一覧へ</a></p>
+    </dd>
+  </dl>
+</div>
+
+      <div class="btm24 subMenu mb_3 menu_box">
+        <dl class="leftMenuNews nav news-list">
+          <dt class="title_primary">お知らせ</dt>
+                <dd class="nav_item">
+                <a href="/announcements/1477">ポイントプラスのボーナスポイント増量キャンペーンについて                  <p class="menuNewsDay reset_date">(2024/12/27)</p>
+</a>                </dd>
+          <dd class="more"><p><a class="arrow2" href="/announcements">お知らせ一覧へ</a></p></dd>
+        </dl>
+      </div>
+
+      <div class="btm24 subMenu mb_3 menu_box">
+        <dl class="nav point_info">
+         <dt class="title_primary">お得にポイントGET！</dt>
+           <dd class="nav_item"><a class="about" href="/campaigns/lot">毎週火曜･木曜限定!!絶対もらえる、おみくじポイント!!<br>最大100ptが当たる大チャンス★</a></dd>
+           <dd class="nav_item"><a class="about" href="/campaigns/welcome">1日1回､来店ポイントプレゼント!!</a></dd>
+           <dd class="nav_item"><a class="about" href="/mail_magazine">メルマガ継続で毎月10ポイントGET!!</a></dd>
+        </dl>
+      </div>
+
+    
+  </nav>
+
+  <aside class="topQR">
+    <dl class="device subMenu">
+      <dt class="device_title">めちゃコミックとは</dt>
+      <dd><p class="txt11 lft">めちゃコミック（めちゃコミ）はCM・広告や口コミで評判の国内最大級の電子書籍・漫画ストアです。スマホの画面に1コマずつ大きく表示するので読みやすくて、わざわざ拡大しなくても片手でサクサク操作できます。話題の新作や感動の名作からめちゃコミック（めちゃコミ）でしか読めないオリジナル作品まで充実の品揃えで無料試し読みも可能。気に入った漫画は1話30ポイント（30円相当）の値段から気軽に読めます。</p></dd>
+    </dl>
+      
+    <dl class="device subMenu">
+      <dt class="device_title txt12">めちゃコミック スマホ版</dt>
+      <dd>
+        <p><img decoding="async" alt="スマートフォン版めちゃコミックのQRコード" src="https://c.mechacomic.jp/images/parts/qr_sp_top01_98x98.png?af89464f77cc1e42863deedf221c5cea9784fabf41db52d118e6931218348ad8" width="98" height="98" /></p>
+      <p class="txt11">めちゃコミック</p><p class="txt11">スマートフォンサイトへアクセス</p></dd>
+    </dl>
+
+   <aside class="btm20 bgWhite2 pdg5 cntr subMenu mb_3 p_1">
+    <div class="maxwidth">
+    <a href="/info/mechainu">      <img decoding="async" class="maxwidth" alt="めちゃ犬のお部屋" src="https://c.mechacomic.jp/images/design/banner/mechainu_room2.jpg?1092fb3aacc11063cb0c2eb3affcdd3b53c5399ef62b593f9ca8e85e29844190" /></a></div>
+    <a href="/info/mechainu">        <p class="top5 txt12">TVCM動画配信中</p>
+</a>   </aside>
+
+    <div class="snsfan subMenu">
+      <ul>
+        <li class="fb">
+          <a target="_blank" rel="noopener noreferrer" class="spriteGenre fbicon" href="https://www.facebook.com/pages/%E3%82%81%E3%81%A1%E3%82%83%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF/450923665041182?ref=hl">            <p class="txt16b">facebook</p>
+            <p class="txt11">めちゃコミック公式ページ</p>
+</a>
+        <li class="tw">
+        <a target="_blank" rel="noopener noreferrer" href="https://x.com/mechacomic">          <p class="txt16b">X</p>
+
+          <p class="txt11">めちゃコミック公式アカウント</p>
+</a>      </ul>
+    </div>
+
+  </aside>
+
+</div>
+
+</div>
+
+
+  
+    <a href="/member?payment_type=charge"><img decoding="async" alt="ボーナスポイント2倍" class="p-pointBonus_btn" src="https://c.mechacomic.jp/images/parts/icon_yearend_bonus.png?bf7b92c99e5ce62f1a30917e6e975f29131c713b850ec1be549697528e04d42c" /></a>
+
+
+
+          <aside class="pageup">
+ <p><a href="#top">このページの先頭へ</a></p>
+</aside>
+<footer class="l-footer">
+
+  <nav class="p-footer_nav u-clearfix">
+
+      <ul class="p-footerMenu">
+        <li>
+          <a href="/register">会員登録</a>        </li>
+        <li>
+          <a href="/mail_magazine">メルマガ登録･変更</a>        </li>
+        <li>
+          <a href="/info/guide">はじめてガイド</a>        </li>
+        <li>
+          <a href="/info/useful">お役立ち情報</a>        </li>
+        <li>
+          <a href="/announcements">お知らせ</a>        </li>
+        <li>
+          <a href="/faqs">ヘルプ･お問い合わせ</a>        </li>
+      </ul>
+      <ul class="p-footerMenu">
+        <li>
+          <a href="/account">お客様情報</a>        </li>
+        <li>
+          <a href="/member/quit">月額コース解除</a>        </li>
+        <li>
+          <a href="/display/devices">推奨環境</a>        </li>
+        <li>
+          <a href="/display/datashift">データバックアップ</a>        </li>
+      </ul>
+      <ul class="p-footerMenu">
+        <li>
+          <a href="/display/contract">利用規約</a>        </li>
+        <li>
+          <a href="/display/tokusyo">特定商取引法</a>        </li>
+        <li>
+          <a href="/display/telecommunications">利用者情報の外部送信</a>        </li>
+        <li>
+          <a href="/display/privacy">プライバシーポリシー</a>        </li>
+        <li>
+          <a href="https://www.amutus.co.jp/company/profile/">会社概要</a>        </li>
+        <li>
+          <a href="https://www.amutus.co.jp/writer_recruiting/">漫画家募集</a>        </li>
+        <li>
+          <a href="/info/abj">海賊版に関する取組みについて</a>        </li>
+      </ul>
+
+  </nav>
+
+    <div class="p-abj u-clearfix">
+      <p>
+        <img decoding="async" alt="ABJ(Authorized Books of Japan) 10481000" src="https://c.mechacomic.jp/images/info/abj_logo.jpg?15b41f6a35ca8dfbecda939ae82a4e9c1afe5903f5c90326b9870564443c621b" />
+        ABJマークは、この電子書店・電子書籍配信サービスが、著作権者からコンテンツ使用許諾を得た正規版配信サービスであることを示す登録商標（登録番号 第6091713号）です。詳しくは［ABJマーク］または［電子出版制作・流通協議会］で検索してください。
+      </p>
+    </div>
+
+  
+  <p class="p-footer_copyright">
+    <small>
+      <a href="/">めちゃコミック（めちゃコミ）</a>      &copy;
+      <a href="https://www.amutus.co.jp/">アムタス</a>    </small>
+  </p>
+</footer>    </div>
+
+    
+    
+          <script>
+//<![CDATA[
+      jQuery("#chapters_list").appearIn({duration:100});
+
+//]]>
+</script>  <script type="text/javascript">
+//<![CDATA[
+void 0===window.adcstq&&function(t,c){t.adcstq=function(){t.adcstq.Q=t.adcstq.Q||[],t.adcstq.Q.push(arguments)};var s=c.getElementsByTagName("script")[0],e=c.createElement("script");e.async=!0,e.src="//t.adclr.jp/st/adcst.js",s.parentNode.insertBefore(e,s)}(window,document);
+window.adcstq({"event":"PageView","dataLayer":{}});
+window.adcstq({"site":537,"page":"009_title","product":["80653"]});
+
+//]]>
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "https://mechacomic.jp/",
+      "name": "めちゃコミック",
+      "image": "https://c.mechacomic.jp/images/parts/re-mechacomic.png"
+    }
+  }
+    ,{
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+      "@id": "https://mechacomic.jp/genre/girl",
+      "name": "少女漫画"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 3,
+    "item": {
+      "@id": "https://mechacomic.jp/labels/1935",
+      "name": "ひらり、コミックス"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 4,
+    "item": {
+      "@id": "https://mechacomic.jp/books/127560",
+      "name": "山田と加瀬さん。"
+    }
+  }]
+}
+</script>
+  <script src="https://c.mechacomic.jp/javascripts/clipboard.min.js?99e1761c92764dcaeec33df3e1773160344cc4aa6b8ddaee0477372279a2c424"></script>  <script>
+//<![CDATA[
+      jQuery(function() {
+        if (ClipboardJS.isSupported()) {
+          jQuery('.js-copy_target').show();
+          var clipboard = new ClipboardJS('.js-copy_target');
+                clipboard.on('success', function(e) {
+        var message = jQuery('<span>コピーしました<\/span>');
+        jQuery(e.trigger).append(message);
+        setTimeout(function() {
+          message.remove();
+        }, 1000);
+      });
+
+                clipboard.on('error', function(e) {
+        var message = jQuery('<span>コピーできませんでした<\/span>');
+        jQuery(e.trigger).append(message);
+        setTimeout(function() {
+          message.remove();
+        }, 1000);
+      });
+
+        }
+      });
+
+//]]>
+</script>
+      <script>
+//<![CDATA[
+        function ga_social_event_push(network, action, target) {
+          dataLayer.push({
+            'event': 'socialEvent',
+            'socialNetwork': network,
+            'socialAction': action,
+            'socialTarget': target || '/books/127560?page=7'
+          });
+
+          dataLayer.push({
+            'event': 'share',
+            'method': network,
+            'event_action': action,
+            'event_label': target || '/books/127560?page=7'
+          });
+        }
+        function send_click_url() {
+          ga_social_event_push('URL', 'Copy');
+        }
+        function send_click_twitter() {
+            ga_social_event_push('Twitter', 'book', '/books/127560');
+        }
+        function send_click_hatena() {
+          ga_social_event_push('Hatena Bookmark', 'Bookmark');
+        }
+        function send_click_line() {
+          ga_social_event_push('Line', 'Send');
+        }
+        function send_click_twitter_share() {
+          ga_social_event_push('Twitter', 'sample');
+        }
+        function send_click_twitter_share_comment(target) {
+          ga_social_event_push('Twitter', 'comment', target);
+        }
+
+//]]>
+</script>  <div id="modal-howToUse" class="p-modal">
+    <div class="p-modal_backdrop js-modal_backdrop"></div>
+    <div class="p-modal_window js-modal_window">
+      <div class="p-modal_header">
+        <h2 class="p-modal_title">一覧の使い方</h2>
+      </div>
+      <div class="p-modal_body">
+        <div class="u-txt-center"><img decoding="async" class="p-helpSampleImage" alt="" src="https://c.mechacomic.jp/images/books/info/img_sample-chapterIcon-num.png?3b2d8ee1e1e97597ad7e88496a31a66e97e1c7024db2afcb11f5cba70957ac85" /></div>
+        <dl class="u-font-lg">
+          <dt>&#9312;</dt>
+          <dd><img decoding="async" class="p-comment_icon" alt="" src="https://c.mechacomic.jp/images/common/icon_comment.svg?737170540566fb4ba83e3ff2b783a810fbb9178bc1463c9fbd108dfbac0a4fab" />：話コメントを表示する</dd>
+          <dt class="u-mt8">&#9313;</dt>
+          <dd>
+            <ul>
+              <li class="p-infoIconList">
+                <span class="p-infoIconList_btn"><img decoding="async" class="p-infoIconList_image" alt="無料で読む" src="https://c.mechacomic.jp/images/books/info/img_btnSample-free.png?3b1da9d56944971a46915f4f8940269f9746091899de41b9b55eacb2a1c2a998" /></span>
+                <span class="p-infoIconList_txt">無料で話を読む</span>
+              </li>
+              <li class="p-infoIconList">
+                <span class="p-infoIconList_btn"><img decoding="async" class="p-infoIconList_image" alt="チャージを使って無料で読む" src="https://c.mechacomic.jp/images/books/info/img_btnSample-freeSerial.png?0e395dd1458322458050eb46c1b7895404258d411aba162affc18826ab9af4bc" /></span>
+                <span class="p-infoIconList_txt">【会員限定】「チャージ」を使って、無料で話を読む</span>
+              </li>
+              <li class="p-infoIconList">
+                <span class="p-infoIconList_btn"><img decoding="async" class="p-infoIconList_image" alt="ギフト券" src="https://c.mechacomic.jp/images/books/info/img_btnSample-gift.png?26a44a79de9f7d17e9a3d3df1dfe52b2e7d91d0f5d1c94830c676b8c5e2dd99d" /></span>
+                <span class="p-infoIconList_txt">【会員限定】「ギフト券」を使って、無料で話を読む</span>
+              </li>
+              <li class="p-infoIconList">
+                <span class="p-infoIconList_btn"><img decoding="async" class="p-infoIconList_image" alt="チャージ中" src="https://c.mechacomic.jp/images/books/info/img_btnSample-point.png?384771456b7bf0758c29c207316222541448583afd70719c01a469da115b6475" /></span>
+                <span class="p-infoIconList_txt">ポイントを使って話を読む</span>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+        <div class="u-txt-center u-mt16"><a class="c-subLink" href="/info/free_serial"><span class="h6 c-subLink_frontArrow">「チャージ」についてもっと詳しく見る</span></a></div>
+      </div>
+      <div class="p-modal_footer">
+        <button type="button" class="p-modal_close js-modal_close">閉じる</button>
+      </div>
+    </div>
+  </div>
+
+    <script type="application/mustache" id="li-recommendation-tag-group-template">
+  {{#groups}}
+    <section class="c-content">
+      <h2 class="c-contentTitle">{{title_item.tag_group_name}}</h2>
+      <div>
+        <ul class="jacket_books list_col5 clearfix">
+          {{#group_items}}
+          <li>
+          <div class="book">
+            <a class="detail js-li_track" id="{{data_parent}}" data-id="{{data_id}}" data-name="{{data_name}}" data-list="{{data_list}}" data-position="{{position}}" data-pdc_evid="{{data_pdc_evid}}" data-pdc_action="{{data_pdc_action}}" data-coupon="{{data_coupon}}" href="{{url}}">
+  <div class="jacket_area">
+    <div class="jacket">
+      <span class="cell"><img alt="{{jacket_image_alt}}" class="{{jacket_image_class}}" src="https://c.mechacomic.jp/{{jacket_image_path}}"></span>
+    </div>
+  {{#new_book_flag}}
+      <img decoding="async" alt="新着" class="new_icon" src="https://c.mechacomic.jp/images/common/icon_txt_new-white.png?3ed2ea3bee695d339f76f3575888f92843e7612b880594605a8509a90c3acf7d" />
+  {{/new_book_flag}}
+  {{^new_book_flag}}
+    {{#new_chapter_flag}}
+        <img decoding="async" alt="続話入荷" class="add_icon" src="https://c.mechacomic.jp/images/common/icon_txt_additional_book-white.png?35961d642e0f90538caed8e8bc2fe16f20a5d89f5f4aef9c437e4a1632bbc8da" />
+    {{/new_chapter_flag}}
+  {{/new_book_flag}}
+  {{#free_daily_flag}}
+    {{#free_daily_standard_flag}}
+      <div class="p-jacket_icon-freeSerial">毎日<span class="u-pl24">無料</span></div>
+    {{/free_daily_standard_flag}}
+    {{#free_daily_short_flag}}
+      <div class="p-jacket_icon-freeSerialPlus">毎日<span class="p-jacket_icon_space-freeSerialPlus">無料</span></div>
+    {{/free_daily_short_flag}}
+  {{/free_daily_flag}}
+  </div>
+  <span class="title">{{title}}</span>
+</a>
+
+            {{#button_flag}}
+            <div class="button js-li_button">
+              <div class="{{button_div_class}}">
+                <a class="js-li_track" data-id="{{data_id}}" data-name="{{data_name}}" data-list="{{data_list}}" data-parent="{{data_parent}}" data-position="{{position}}" data-pdc_evid="{{data_pdc_evid}}" data-pdc_action="{{data_pdc_action}}" data-coupon="{{data_coupon}}" href="{{button_href}}" rel="nofollow">{{button_name}}</a>
+              </div>
+            </div>
+            {{/button_flag}}
+            </div>
+          </li>
+          {{/group_items}}
+        </ul>
+      </div>
+    </section>
+  {{/groups}}
+</script>
+<script type="application/mustache" id="li-recommendation-colophon-template">
+  {{#items}}
+  <li>
+    <div class="book">
+      <a class="detail js-li_track" id="{{data_parent}}" data-id="{{data_id}}" data-name="{{data_name}}" data-list="{{data_list}}" data-position="{{position}}" data-pdc_evid="{{data_pdc_evid}}" data-pdc_action="{{data_pdc_action}}" data-coupon="{{data_coupon}}" href="{{url}}">
+  <div class="jacket_area">
+    <div class="jacket">
+      <span class="cell"><img alt="{{jacket_image_alt}}" class="{{jacket_image_class}}" src="https://c.mechacomic.jp/{{jacket_image_path}}"></span>
+    </div>
+  {{#new_book_flag}}
+      <img decoding="async" alt="新着" class="new_icon" src="https://c.mechacomic.jp/images/common/icon_txt_new-white.png?3ed2ea3bee695d339f76f3575888f92843e7612b880594605a8509a90c3acf7d" />
+  {{/new_book_flag}}
+  {{^new_book_flag}}
+    {{#new_chapter_flag}}
+        <img decoding="async" alt="続話入荷" class="add_icon" src="https://c.mechacomic.jp/images/common/icon_txt_additional_book-white.png?35961d642e0f90538caed8e8bc2fe16f20a5d89f5f4aef9c437e4a1632bbc8da" />
+    {{/new_chapter_flag}}
+  {{/new_book_flag}}
+  {{#free_daily_flag}}
+    {{#free_daily_standard_flag}}
+      <div class="p-jacket_icon-freeSerial">毎日<span class="u-pl24">無料</span></div>
+    {{/free_daily_standard_flag}}
+    {{#free_daily_short_flag}}
+      <div class="p-jacket_icon-freeSerialPlus">毎日<span class="p-jacket_icon_space-freeSerialPlus">無料</span></div>
+    {{/free_daily_short_flag}}
+  {{/free_daily_flag}}
+  </div>
+  <span class="title">{{title}}</span>
+</a>
+
+      {{#button_flag}}
+      <div class="button js-li_button">
+        <div class="{{button_div_class}}">
+          <a class="js-li_track" data-id="{{data_id}}" data-name="{{data_name}}" data-list="{{data_list}}" data-parent="{{data_parent}}" data-position="{{position}}" data-pdc_evid="{{data_pdc_evid}}" data-pdc_action="{{data_pdc_action}}" data-coupon="{{data_coupon}}" href="{{button_href}}" target="_top" rel="nofollow">{{button_name}}</a>
+        </div>
+      </div>
+      {{/button_flag}}
+    </div>
+  </li>
+  {{/items}}
+</script>
+<script type="application/mustache" id="li-recommendation-template">
+  {{#items}}
+  <li>
+    <div class="book">
+      {{#review_score_flag}}
+      <p class="reviews_score">
+        <span class="average_score"><img decoding="async" class="p-review_icon-star" alt="★" src="https://c.mechacomic.jp/images/common/icon_star.svg?b735750cdc4d39ffa3994360ccdd4af451ff85fa854aefdca8219370aebb22cd" />{{reviews_average_score}}</span>
+      </p>
+      {{/review_score_flag}}
+      <a class="detail js-li_track" id="{{data_parent}}" data-id="{{data_id}}" data-name="{{data_name}}" data-list="{{data_list}}" data-position="{{position}}" data-pdc_evid="{{data_pdc_evid}}" data-pdc_action="{{data_pdc_action}}" data-coupon="{{data_coupon}}" href="{{url}}">
+  <div class="jacket_area">
+    <div class="jacket">
+      <span class="cell"><img alt="{{jacket_image_alt}}" class="{{jacket_image_class}}" src="https://c.mechacomic.jp/{{jacket_image_path}}"></span>
+    </div>
+  {{#new_book_flag}}
+      <img decoding="async" alt="新着" class="new_icon" src="https://c.mechacomic.jp/images/common/icon_txt_new-white.png?3ed2ea3bee695d339f76f3575888f92843e7612b880594605a8509a90c3acf7d" />
+  {{/new_book_flag}}
+  {{^new_book_flag}}
+    {{#new_chapter_flag}}
+        <img decoding="async" alt="続話入荷" class="add_icon" src="https://c.mechacomic.jp/images/common/icon_txt_additional_book-white.png?35961d642e0f90538caed8e8bc2fe16f20a5d89f5f4aef9c437e4a1632bbc8da" />
+    {{/new_chapter_flag}}
+  {{/new_book_flag}}
+  {{#free_daily_flag}}
+    {{#free_daily_standard_flag}}
+      <div class="p-jacket_icon-freeSerial">毎日<span class="u-pl24">無料</span></div>
+    {{/free_daily_standard_flag}}
+    {{#free_daily_short_flag}}
+      <div class="p-jacket_icon-freeSerialPlus">毎日<span class="p-jacket_icon_space-freeSerialPlus">無料</span></div>
+    {{/free_daily_short_flag}}
+  {{/free_daily_flag}}
+  </div>
+  <span class="title">{{title}}</span>
+</a>
+
+      {{#button_flag}}
+      <div class="button js-li_button">
+        <div class="{{button_div_class}}">
+          <a class="js-li_track" data-id="{{data_id}}" data-name="{{data_name}}" data-list="{{data_list}}" data-parent="{{data_parent}}" data-position="{{position}}" data-pdc_evid="{{data_pdc_evid}}" data-pdc_action="{{data_pdc_action}}" data-coupon="{{data_coupon}}" href="{{button_href}}" rel="nofollow">{{button_name}}</a>
+        </div>
+      </div>
+      {{/button_flag}}
+    </div>
+  </li>
+  {{/items}}
+</script>
+<script type="application/mustache" id="li-recommendation-viewer-closed-template">
+  {{#items}}
+  <div class="book u-pb8">
+    <a class="detail js-li_track" id="{{data_parent}}" data-id="{{data_id}}" data-name="{{data_name}}" data-list="{{data_list}}" data-position="{{position}}" data-pdc_evid="{{data_pdc_evid}}" data-pdc_action="{{data_pdc_action}}" data-coupon="{{data_coupon}}" href="{{url}}">
+  <div class="jacket_area">
+    <div class="jacket">
+      <span class="cell"><img alt="{{jacket_image_alt}}" class="{{jacket_image_class}}" src="https://c.mechacomic.jp/{{jacket_image_path}}"></span>
+    </div>
+  {{#new_book_flag}}
+      <img decoding="async" alt="新着" class="new_icon" src="https://c.mechacomic.jp/images/common/icon_txt_new-white.png?3ed2ea3bee695d339f76f3575888f92843e7612b880594605a8509a90c3acf7d" />
+  {{/new_book_flag}}
+  {{^new_book_flag}}
+    {{#new_chapter_flag}}
+        <img decoding="async" alt="続話入荷" class="add_icon" src="https://c.mechacomic.jp/images/common/icon_txt_additional_book-white.png?35961d642e0f90538caed8e8bc2fe16f20a5d89f5f4aef9c437e4a1632bbc8da" />
+    {{/new_chapter_flag}}
+  {{/new_book_flag}}
+  {{#free_daily_flag}}
+    {{#free_daily_standard_flag}}
+      <div class="p-jacket_icon-freeSerial">毎日<span class="u-pl24">無料</span></div>
+    {{/free_daily_standard_flag}}
+    {{#free_daily_short_flag}}
+      <div class="p-jacket_icon-freeSerialPlus">毎日<span class="p-jacket_icon_space-freeSerialPlus">無料</span></div>
+    {{/free_daily_short_flag}}
+  {{/free_daily_flag}}
+  </div>
+  <span class="title">{{title}}</span>
+</a>
+
+    {{#button_flag}}
+    <div class="button js-li_button">
+      <div class="{{button_div_class}}">
+        <a class="js-li_track" data-id="{{data_id}}" data-name="{{data_name}}" data-list="{{data_list}}" data-parent="{{data_parent}}" data-position="{{position}}" data-pdc_evid="{{data_pdc_evid}}" data-pdc_action="{{data_pdc_action}}" data-coupon="{{data_coupon}}" href="{{button_href}}" rel="nofollow">{{button_name}}</a>
+      </div>
+    </div>
+    {{/button_flag}}
+  </div>
+  {{/items}}
+</script>
+<script type="text/javascript">
+function prepareWidget(args) {
+  var Widget = args || {}
+  Widget.template = document.querySelector(Widget.template_selector).innerHTML
+  Widget.impressions = []
+  var removeWidget = function() {
+    jQuery(Widget.hidden_id).remove()
+  }
+  var toBoolean = function(str) {
+    return str === 'true'
+  }
+  var addWidgetImpressions = function(item) {
+    if (Widget.ga_ecommerce_target_user_flag) {
+      Widget.impressions.push({
+        id: item.master_code,
+        list: Widget.ga_list_name,
+        position: item.position,
+        coupon: item.data_coupon
+      })
+    }
+  }
+  var flagTransformWithCurrentDate = function(item) {
+    var isInDuration = function(itemStartAt, itemEndAt) {
+      var startDate = new Date(itemStartAt)
+      var startFlag = Widget.current_date >= startDate
+      if (itemEndAt) {
+        var endDate = new Date(itemEndAt)
+        var endFlag = Widget.current_date < endDate
+        return  startFlag && endFlag
+      } else {
+        return startFlag
+      }
+    }
+    if (item.discount_flag) {
+      if (!isInDuration(item.discount_start_at, item.discount_end_at)) item.discount_flag = false
+    }
+    if (item.always_discount_flag) {
+      if (!isInDuration(item.always_discount_start_at)) item.always_discount_flag = false
+    }
+    if (item.free_serial_flag) {
+      if (!isInDuration(item.free_serial_chapter_start_at, item.free_serial_chapter_end_at)) item.free_serial_flag = false
+    }
+    if (item.free_daily_flag) {
+      if (!isInDuration(item.free_daily_start_at, item.free_daily_end_at)) item.free_daily_flag = false
+    }
+  }
+  var setButtonAttributes = function(item) {
+    var isButtonShow = function(item) {
+      return (item.sample_flag || item.discount_flag || item.always_discount_flag || item.free_serial_flag || item.free_daily_flag)
+    }
+    item.data_pdc_action = 'not_set'
+    item.data_coupon = ''
+    if (item.sample_flag) {
+      item.data_pdc_action = 'sample'
+      item.button_name = '無料試し読み'
+      item.button_href = item.url
+      item.button_div_class = 'btn_sample'
+      item.data_coupon = '試し読み'
+    }
+    if (item.discount_flag) {
+      item.data_pdc_action = 'discount'
+      item.button_name = item.discount_max_number + '話無料'
+      item.button_href = item.url
+      item.button_div_class = 'btn_free'
+      item.data_coupon = '期間限定無料'
+    }
+    if (item.always_discount_flag) {
+      item.data_pdc_action = 'always_discount'
+      item.button_name = item.always_discount_max_number + '話無料'
+      item.button_href = item.url
+      item.button_div_class = 'btn_free'
+      item.data_coupon = '常時無料'
+    }
+    if (item.free_serial_flag) {
+      item.button_name = '無料連載中'
+      item.button_href = item.url
+      item.button_div_class = 'btn_free'
+    }
+    if (item.free_daily_flag) {
+      item.data_pdc_action = 'free_daily'
+      item.button_name = item.free_daily_max_chapter_number_for_free + '話無料'
+      item.button_href = item.url
+      item.button_div_class = 'btn_free'
+      if (item.free_daily_standard_flag) {
+        item.data_coupon = '毎日無料_通常版'
+      } else if (item.free_daily_short_flag) {
+        item.data_coupon = '毎日無料_時短版'
+      }
+    }
+    item.button_flag = isButtonShow(item)
+  }
+  var itemsTransform = function(items) {
+    var dataParent = function(item) {
+      return 'ec_' + Widget.ga_list_name + '_' + item.position
+    }
+    var dataPdcEvid = function(item) {
+      return 'ev_' + Widget.ga_list_name + '_' + item.position + '_product_click'
+    }
+    for(var i = 0; i < items.length; i++) {
+      items[i].position = i + 1 //data-position attribute
+      items[i].data_list = Widget.ga_list_name
+      items[i].data_id = items[i].master_code
+      items[i].data_name = items[i].title
+      items[i].data_parent = dataParent(items[i])
+      items[i].novel_flag = toBoolean(items[i].novel_flag)
+      items[i].webtoon_flag = toBoolean(items[i].webtoon_flag)
+      items[i].sample_flag = toBoolean(items[i].sample_flag)
+      items[i].discount_flag = toBoolean(items[i].discount_flag)
+      items[i].always_discount_flag = toBoolean(items[i].always_discount_flag)
+      items[i].free_serial_flag = toBoolean(items[i].free_serial_flag)
+      items[i].new_book_flag = toBoolean(items[i].new_book_flag)
+      items[i].new_chapter_flag = toBoolean(items[i].new_chapter_flag)
+      items[i].free_daily_flag = toBoolean(items[i].free_daily_flag)
+      items[i].free_daily_standard_flag = toBoolean(items[i].free_daily_standard_flag)
+      items[i].free_daily_short_flag = toBoolean(items[i].free_daily_short_flag)
+      items[i].data_pdc_evid = dataPdcEvid(items[i])
+      items[i].review_score_flag = Widget.review_score_flag
+      if (Widget.review_score_flag) {
+        items[i].reviews_average_score = items[i].reviews_average_score.toPrecision(2);
+      }
+      flagTransformWithCurrentDate(items[i])
+      setButtonAttributes(items[i])
+      addWidgetImpressions(items[i])
+    }
+    return items
+  }
+  var itemsGrouping = function(items, size) {
+    if (size <= 0) size = items.length;
+
+    var groups = [];
+    var index = 0
+
+    while (index < items.length) {
+      groups.push({title_item: items[index], group_items: items.slice(index, index + size)});
+      index += size;
+    }
+    return groups;
+  }
+  var trackGa = function(items) {
+    var trackGaSelector = Widget.tracking_selector + ' .js-li_track'
+    if (Widget.ga_ecommerce_target_user_flag) {
+      ga_ecommerce_impressions(JSON.stringify(Widget.impressions), 1)
+      ga_ecommerce_product_click(trackGaSelector)
+    } else {
+      ga_product_click_event(trackGaSelector)
+    }
+  }
+  var registerCallback = function(resp) {
+    try {
+      var el = document.querySelector(Widget.selector)
+      resp.items = itemsTransform(resp.items)
+      if (Widget.grouping_size) {
+        resp.groups = itemsGrouping(resp.items, Widget.grouping_size)
+      }
+      el.innerHTML = $p('render', Widget.template, resp)
+      trackGa(resp.items)
+      $p('track', {
+        elements: document.querySelectorAll(Widget.tracking_selector),
+        name: Widget.name,
+        source: 'LI'
+      })
+    } catch(e) {
+      removeWidget()
+    }
+  }
+  var execRecommend = function() {
+    $p('register', {
+      max: Widget.item_max_size,
+      widget: Widget.name,
+      opts: Widget.register_opts, // Replace with more specific opts to invoke filter rules, once they are set up
+      callback: registerCallback
+    })
+    $p('setRequestFields', ['url','title','jacket_image_class','jacket_image_alt','jacket_image_path','master_code',
+       'book_id','first_chapter_id','novel_flag','sample_flag','webtoon_flag','free_serial_flag','always_discount_flag',
+       'discount_flag','first_chapter_id','discount_max_number','always_discount_max_number','free_chapter_id',
+       'discount_start_at','discount_end_at','free_serial_chapter_start_at','free_serial_chapter_end_at','always_discount_start_at',
+       'free_daily_flag','free_daily_standard_flag','free_daily_short_flag','free_daily_start_at','free_daily_end_at','free_daily_max_chapter_number_for_free', 'new_book_flag', 'new_chapter_flag', 'tag_group_label', 'tag_group_name',
+       'reviews_average_score'])
+    if (Widget.multi_fetch) {
+      $p('fetch')
+    }
+  }
+  var abTestSliceCallback = function(abSlice) {
+    try {
+      if (abSlice < Widget.lift_igniter_slice) {
+        execRecommend()
+      } else {
+        removeWidget()
+      }
+    } catch(e) {
+      removeWidget()
+    }
+  }
+  if (Widget.ab_test_flag) {
+    $p('abTestSlice', {
+      callback: abTestSliceCallback
+    })
+  } else {
+    execRecommend()
+  }
+}
+</script>
+
+
+  <script>
+//<![CDATA[
+        window.addEventListener('load', function() {
+          jQuery(window).on('scroll.liftIgniterRecommendTag2', function(){
+            try {
+  prepareWidget({
+    name: 'books-show-free_daily-recommend',
+    selector: '#li-recommend_books_show_free_daily',
+    tracking_selector: '#li-recommend_books_show_free_daily .book',
+    template_selector: '#li-recommendation-template',
+    rule: 'basic',
+    register_opts: {"_rule":"homepage","free_daily_flag":true,"adult_flag":"false"},
+    item_max_size: 10,
+    lift_igniter_slice: 0,
+    ab_test_flag: false,
+    review_score_flag: false,
+    member_flag: false,
+    ga_ecommerce_target_user_flag: false,
+    ga_list_name: 'book_free_daily_recli',
+    replace_target_str: 'item_id',
+    chapter_sample_download_path: '/chapters/item_id/sample_download',
+    sample_download_path: '/books/item_id/sample_download',
+    chapter_path: '/chapters/item_id',
+    free_chapter_download_path: '/free_chapters/item_id/download/b32602a539170cb60b6d355f94d2642a8417a9b0',
+    back_path: '%2Fbooks%2F127560%3Fpage%3D7',
+    current_date: new Date('2025-01-05T12:52:25+09:00'),
+    hidden_id: '#li-recommend_books_show_free_daily_hidden',
+    multi_fetch: true,
+    grouping_size: null,
+  })
+} catch(e) {
+  jQuery('#li-recommend_books_show_free_daily_hidden').remove()
+}
+
+            jQuery(window).off('.liftIgniterRecommendTag2');
+          })
+        })
+
+//]]>
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Service",
+  "name": "めちゃコミック",
+  "alternateName": "めちゃコミ",
+  "url": "https://mechacomic.jp/",
+  "description": "めちゃコミック（めちゃコミ）はCM・広告や口コミで評判の国内最大級の電子書籍・漫画ストアです。スマホの画面に1コマずつ大きく表示するので読みやすくて、わざわざ拡大しなくても片手でサクサク操作できます。話題の新作や感動の名作からめちゃコミック（めちゃコミ）でしか読めないオリジナル作品まで充実の品揃えで無料試し読みも可能。気に入った漫画は1話30ポイント（30円相当）の値段から気軽に読めます。",
+  "logo": "https://c.mechacomic.jp/images/parts/re-mechacomic.png",
+  "serviceType": "E-book store",
+  "areaServed": "Japan",
+  "sameAs": [
+    "https://ja.wikipedia.org/wiki/%E3%82%81%E3%81%A1%E3%82%83%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF",
+    "https://www.facebook.com/mechacomi/",
+    "https://www.instagram.com/mechacomic/",
+    "https://x.com/mechacomic" 
+  ],
+  "provider": {
+      "@type": "Organization",
+      "name": "アムタス",
+      "url": "https://www.amutus.co.jp/" 
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "山田と加瀬さん。",
+  "alternateName": "ヤマダトカセサン",
+  "category": "少女漫画",
+  "image": "https://c.mechacomic.jp/images/book/74/127/127560/yamadatokase_001_xl.jpg",
+  "description" : "わたしと加瀬さんは女の子同士ですが、ずっとつきあっています――。晴れて女子大の園芸学科に入学した山田と、体育大でトレーニング三昧の加瀬さん。授業が始まってからなかなかゆっくり会えなかったふたりは、加瀬さんの誕生日を一緒にお祝いしようと約束したのですが……。山田と加瀬さん...",
+  "url" : "https://mechacomic.jp/books/127560",
+  "brand": {
+    "@type": "brand",
+    "name": "ひらり、コミックス"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "4"
+  }
+}
+</script>
+  <script src="https://c.mechacomic.jp/javascripts/ext/jquery.modal.js?47124a7aa116f97c82e2290cf7df65b9daf5cf894e292ef1b92475bcf252f45c"></script>  <script>
+//<![CDATA[
+    $(function () {
+      $(".js-modal").modal();
+    });
+
+//]]>
+</script>    <script>
+//<![CDATA[
+function loadJS() {
+  var scriptURLs = ["https://c.mechacomic.jp/javascripts/ext/google_tag_manager.js?b046b677bc21d7f7cdfd316f6952a256cd9ed7468e3103db8d9d0bd93a0ca4e9","https://c.mechacomic.jp/javascripts/google_analytics_download_event.js?34eee3db63075c9f126d42ac3aaeba3e3c0849e25e51723b4c78a17005833a31","https://c.mechacomic.jp/javascripts/google_analytics_product_click_event.js?9ddc14058e92a3ff2257e63bd18592c9a5ab23c8c0578fe498529e132affece6"];
+
+  for (var i = 0; i < scriptURLs.length; i++) {
+    var script = document.createElement("script");
+
+    script.async = true;
+    script.src = scriptURLs[i];
+    document.body.appendChild(script);
+  }
+}
+
+if (window.addEventListener) {
+  window.addEventListener("load", loadJS, false);
+} else if (window.attachEvent) {
+  window.attachEvent("onload", loadJS);
+} else {
+  window.onload = loadJS;
+}
+
+//]]>
+</script>
+    
+
+
+  </body>
+</html>

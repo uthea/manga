@@ -6,6 +6,7 @@ pub mod gamma_plus;
 pub mod gangan_online;
 pub mod ganma;
 pub mod manga_up;
+pub mod mecha_comic;
 pub mod rss_manga;
 pub mod urasunday;
 pub mod yanmaga;
