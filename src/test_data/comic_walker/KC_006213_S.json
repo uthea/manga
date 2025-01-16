@@ -1,0 +1,340 @@
+{
+  "work": {
+    "code": "KC_006213_S",
+    "id": "0193e263-179c-76bc-9cd2-78407f8cf53c",
+    "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/resized/006213_001_01_0003.jpg",
+    "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/006213_001_0003.jpg",
+    "title": "その悪役貴族、ママヒロインが好きすぎる ～真摯な努力で最強となり不遇な推しキャラ助けまくる～",
+    "isOriginal": false,
+    "labelInfo": {
+      "code": "apanta",
+      "name": "WebComicアパンダ",
+      "description": "いま読みたい、すべてがある。MFCレーベルが贈るオリジナル作品を集めた新ブランド！ 『異世界おじさん』『見える子ちゃん』など 今話題の作品を掲載中！",
+      "iconImageUrl": "https://cdn.comic-walker.com/library/assets/018bc8c1-ce2f-7f3d-95da-1575c2e35a44.jpg",
+      "logoImageUrl": "https://cdn.comic-walker.com/library/assets/01934dde-ad14-76fd-9896-a3271ab13f81.jpg",
+      "color": "#3c3c3c"
+    },
+    "language": "ja",
+    "serializationStatus": "ongoing",
+    "serviceIds": [
+      "web"
+    ],
+    "internal": {
+      "departmentCode": "-",
+      "scrollType": "rtl",
+      "labelNames": [
+        "WebComicアパンダ"
+      ],
+      "fairIds": []
+    },
+    "summary": "ゲームに登場するママキャラたちは、\n全員がバッドエンドルートしかない、\nあまりにも不遇すぎるサブヒロインでした――。\n\n「なんで……なんでこんな\nかわいいママが死ななきゃならないんだよぉおお！」\n\n彼女たちの救済ルートを求めるも、叶わず落胆の日々を送っていた主人公。\nだが、ある日突然このゲーム世界に転生することに。\n\n・・・ただし、\n闇落ちルートしかない悪役貴族として。\n\nゲームのママキャラが好きすぎる男の、\n彼女たち（と自分）を救うための起死回生の日々が、\nそして、ふくよかなるハーレム生活が幕を開ける！！！！",
+    "genre": {
+      "code": "0202",
+      "id": "018a178c-a907-74f2-9038-a98bd8bbf2db",
+      "name": "青年"
+    },
+    "subGenre": {
+      "code": "0213",
+      "id": "018a262f-986a-7cca-8c8e-4c8d4b229a94",
+      "name": "ファンタジー"
+    },
+    "tags": [
+      {
+        "id": "018b8a02-f3dc-7095-a085-45594e3008b7",
+        "name": "異世界"
+      },
+      {
+        "id": "018b8a02-f3fc-76a0-b1a0-1ab8e0bf283f",
+        "name": "美少女"
+      },
+      {
+        "id": "018b8a02-f459-7561-a6de-9a6270d7a919",
+        "name": "大人向け"
+      },
+      {
+        "id": "018b8a02-f34b-7623-b290-b01ff400d7ef",
+        "name": "転生"
+      },
+      {
+        "id": "018b8a02-f362-736f-93e9-a783e8ad031a",
+        "name": "チート"
+      },
+      {
+        "id": "018b8a02-f3be-7f22-abfc-777d3a966744",
+        "name": "いちゃラブ"
+      },
+      {
+        "id": "018b8a02-f343-7d79-bb0b-098d9b7419ca",
+        "name": "ハーレム"
+      },
+      {
+        "id": "018b8a02-f464-7a16-9852-46d108d3401c",
+        "name": "お色気"
+      },
+      {
+        "id": "018b8a02-f42d-7380-8a08-5368772d49db",
+        "name": "おっぱい"
+      },
+      {
+        "id": "018b8a02-f3c8-7794-95bb-61a755c4afab",
+        "name": "カッコいい"
+      },
+      {
+        "id": "018b8a02-f406-7c3f-ba01-7350fb19ccdc",
+        "name": "巨乳"
+      },
+      {
+        "id": "018b8a02-f43e-7e2f-a2ee-bb44b7d9bb47",
+        "name": "性癖"
+      }
+    ],
+    "authors": [
+      {
+        "id": "0193e263-1793-76bc-876d-5c277efc065e",
+        "name": "おおみね",
+        "role": "著者"
+      },
+      {
+        "id": "018d6a53-8eb1-75a1-a03b-11bef5748324",
+        "name": "望公太",
+        "role": "原作"
+      }
+    ],
+    "followerCount": 0,
+    "isNew": true,
+    "nextUpdateDateText": "2025/01/22",
+    "isOneShot": false,
+    "ratingLevel": "adult",
+    "freeCampaigns": {}
+  },
+  "firstEpisodes": {
+    "total": 2,
+    "result": [
+      {
+        "id": "019402a9-9493-713a-af7c-f0f195aa12a3",
+        "code": "KC_0062130000200011_E",
+        "title": "第1話",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/00002/01/01/01/resized/006213_00002_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/00002/01/01/01/006213_00002_01_01_01_001_0001.jpg",
+        "updateDate": "2025-01-08T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 1,
+          "pageCount": 40,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      },
+      {
+        "id": "0194676c-b8f0-70b5-9968-a7fa1c99cbec",
+        "code": "KC_0062130000300011_E",
+        "title": "第2話",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/00003/01/01/01/resized/006213_00003_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/00003/01/01/01/006213_00003_01_01_01_001_0001.jpg",
+        "updateDate": "2025-01-15T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": true,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 2,
+          "pageCount": 15,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      }
+    ]
+  },
+  "latestEpisodes": {
+    "total": 2,
+    "result": [
+      {
+        "id": "0194676c-b8f0-70b5-9968-a7fa1c99cbec",
+        "code": "KC_0062130000300011_E",
+        "title": "第2話",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/00003/01/01/01/resized/006213_00003_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/00003/01/01/01/006213_00003_01_01_01_001_0001.jpg",
+        "updateDate": "2025-01-15T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": true,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 2,
+          "pageCount": 15,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      },
+      {
+        "id": "019402a9-9493-713a-af7c-f0f195aa12a3",
+        "code": "KC_0062130000200011_E",
+        "title": "第1話",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/00002/01/01/01/resized/006213_00002_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/00002/01/01/01/006213_00002_01_01_01_001_0001.jpg",
+        "updateDate": "2025-01-08T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 1,
+          "pageCount": 40,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      }
+    ]
+  },
+  "comics": {
+    "total": 0,
+    "result": []
+  },
+  "promotions": [],
+  "relatedBooks": {
+    "totalCount": 0,
+    "resources": []
+  },
+  "label": {
+    "id": "018c102b-882e-7657-a380-b92c95e44c57",
+    "name": "WebComicアパンダ",
+    "description": "いま読みたい、すべてがある。MFCレーベルが贈るオリジナル作品を集めた新ブランド！ 『異世界おじさん』『見える子ちゃん』など 今話題の作品を掲載中！",
+    "code": "apanta",
+    "color": "#3c3c3c",
+    "iconImageUrl": "https://cdn.comic-walker.com/library/assets/018bc8c1-ce2f-7f3d-95da-1575c2e35a44.jpg",
+    "logoImageUrl": "https://cdn.comic-walker.com/library/assets/01934dde-ad14-76fd-9896-a3271ab13f81.jpg",
+    "coverImageUrl": "https://cdn.comic-walker.com/library/assets/018bc8c1-ce2f-7f3c-86aa-5b9202227961.jpg"
+  },
+  "labels": [
+    {
+      "id": "018c102b-882e-7657-a380-b92c95e44c57",
+      "name": "WebComicアパンダ",
+      "description": "いま読みたい、すべてがある。MFCレーベルが贈るオリジナル作品を集めた新ブランド！ 『異世界おじさん』『見える子ちゃん』など 今話題の作品を掲載中！",
+      "code": "apanta",
+      "color": "#3c3c3c",
+      "iconImageUrl": "https://cdn.comic-walker.com/library/assets/018bc8c1-ce2f-7f3d-95da-1575c2e35a44.jpg",
+      "logoImageUrl": "https://cdn.comic-walker.com/library/assets/01934dde-ad14-76fd-9896-a3271ab13f81.jpg",
+      "coverImageUrl": "https://cdn.comic-walker.com/library/assets/018bc8c1-ce2f-7f3c-86aa-5b9202227961.jpg"
+    }
+  ],
+  "labelWorks": [
+    {
+      "code": "KC_003631_S",
+      "id": "018d6a65-6bb2-79b0-8a26-d248741e2c22",
+      "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/003631/resized/003631_001_01_0003.jpg",
+      "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/003631/003631_001_0003.jpg",
+      "bookCover": "https://cdn.comic-walker.com/integration/bibliodb/cover-image/prd/image/bw/coverImage_3369932.jpg",
+      "title": "異世界おじさん",
+      "isOriginal": false,
+      "language": "ja",
+      "serializationStatus": "ongoing",
+      "serviceIds": [
+        "app",
+        "web",
+        "web_trial"
+      ],
+      "internal": {
+        "labelNames": [
+          "WebComicアパンダ",
+          "異世界コミック"
+        ]
+      },
+      "isNew": false,
+      "episode": {
+        "type": "first",
+        "code": "KC_0036310000100011_E",
+        "title": "第1話"
+      }
+    },
+    {
+      "code": "KC_006213_S",
+      "id": "0193e263-179c-76bc-9cd2-78407f8cf53c",
+      "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/resized/006213_001_01_0003.jpg",
+      "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/006213_001_0003.jpg",
+      "title": "その悪役貴族、ママヒロインが好きすぎる ～真摯な努力で最強となり不遇な推しキャラ助けまくる～",
+      "isOriginal": false,
+      "language": "ja",
+      "serializationStatus": "ongoing",
+      "serviceIds": [
+        "web"
+      ],
+      "internal": {
+        "labelNames": [
+          "WebComicアパンダ"
+        ]
+      },
+      "isNew": true,
+      "episode": {
+        "type": "first",
+        "code": "KC_0062130000200011_E",
+        "title": "第1話"
+      }
+    },
+    {
+      "code": "KC_003960_S",
+      "id": "018d6a6a-9af5-7ac7-bcb9-edddb7c63ecd",
+      "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/003960/resized/003960_001_01_0001.jpg",
+      "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/003960/003960_001_0001.jpg",
+      "bookCover": "https://cdn.comic-walker.com/integration/bibliodb/cover-image/prd/image/bw/coverImage_3338365.jpg",
+      "title": "見える子ちゃん",
+      "isOriginal": false,
+      "language": "ja",
+      "serializationStatus": "ongoing",
+      "serviceIds": [
+        "web",
+        "web_trial"
+      ],
+      "internal": {
+        "labelNames": [
+          "WebComicアパンダ"
+        ]
+      },
+      "isNew": false,
+      "episode": {
+        "type": "first",
+        "code": "KC_0039600000100011_E",
+        "title": "第1話"
+      }
+    },
+    {
+      "code": "KC_006110_S",
+      "id": "01933d37-19c2-7da9-82ae-6bfd409d4f77",
+      "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006110/resized/006110_001_01_0001.jpg",
+      "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006110/006110_001_0001.jpg",
+      "title": "追放された魔王は地球を目指す！",
+      "isOriginal": false,
+      "language": "ja",
+      "serializationStatus": "ongoing",
+      "serviceIds": [
+        "web"
+      ],
+      "internal": {
+        "labelNames": [
+          "WebComicアパンダ"
+        ]
+      },
+      "isNew": false,
+      "episode": {
+        "type": "first",
+        "code": "KC_0061100000200011_E",
+        "title": "第1話　魔王、火星に立つ！"
+      }
+    }
+  ],
+  "latestEpisodeId": "0194676c-b8f0-70b5-9968-a7fa1c99cbec"
+}

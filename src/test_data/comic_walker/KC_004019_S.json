@@ -1,0 +1,1690 @@
+{
+  "work": {
+    "code": "KC_004019_S",
+    "id": "018d6a6b-ce7a-7af9-88c3-f1f74a2f6bdc",
+    "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/resized/004019_001_01_0002.jpg",
+    "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/004019_001_0002.jpg",
+    "bookCover": "https://cdn.comic-walker.com/integration/bibliodb/cover-image/prd/image/bw/coverImage_d259c0e8380b43deb973ed107b1b44c7.jpg",
+    "title": "ダメ人間の愛しかた",
+    "isOriginal": false,
+    "labelInfo": {
+      "code": "apanta",
+      "name": "WebComicアパンダ",
+      "description": "いま読みたい、すべてがある。MFCレーベルが贈るオリジナル作品を集めた新ブランド！ 『異世界おじさん』『見える子ちゃん』など 今話題の作品を掲載中！",
+      "iconImageUrl": "https://cdn.comic-walker.com/library/assets/018bc8c1-ce2f-7f3d-95da-1575c2e35a44.jpg",
+      "logoImageUrl": "https://cdn.comic-walker.com/library/assets/01934dde-ad14-76fd-9896-a3271ab13f81.jpg",
+      "color": "#3c3c3c"
+    },
+    "language": "ja",
+    "serializationStatus": "ongoing",
+    "serviceIds": [
+      "web",
+      "app",
+      "web_trial"
+    ],
+    "internal": {
+      "departmentCode": "I4047",
+      "scrollType": "rtl",
+      "labelNames": [
+        "WebComicアパンダ"
+      ],
+      "fairIds": []
+    },
+    "summary": "コミックス第1巻好評発売中！\n\nコミックス第1巻発売を記念して、早見沙織さんがヒロイン・ヒズミを演じるボイスコミックをYouTubeにて公開中です！ お聞き逃しなく！\n\n▼ショート版\nhttps://youtu.be/A1LODtRIJu0\n▼ロング版\nhttps://youtu.be/0VCGN2yMpMc\n\n\nSNSで話題沸騰の「ダメ人間と付き合ってくれている彼女」が\nタイトルを新たに連載漫画化！\n\n「才能もない お金もない 学歴もない キミは底辺のダメ人間」\n「でも・・・そんなキミを見ているだけで 私は幸せなの」\n\n無職の青年・シンバは所謂ダメ人間と呼ばれるタイプ。\nそんな彼となぜか付き合っている、クールでとても美しい女性、ヒズミ。\n\nシンバは大好きなヒズミのために、ダメ人間からの卒業を目指すものの、空回りばかりの毎日。\nそんな彼を見て、彼女は嘲嗤い/愛を囁く 否定して/傍にいる。\n\nダメ人間と魔性の彼女が贈る、不揃いな恋物語が幕を開ける。",
+    "genre": {
+      "code": "0201",
+      "id": "018a178c-a906-7b25-bb70-4cba748efdfa",
+      "name": "少年"
+    },
+    "subGenre": {
+      "code": "0208",
+      "id": "018a262f-9865-788e-9694-4758845b6e7d",
+      "name": "恋愛"
+    },
+    "tags": [
+      {
+        "id": "018b8a02-f3d7-723e-a60d-8ab63ba5c724",
+        "name": "ラブコメ"
+      }
+    ],
+    "authors": [
+      {
+        "id": "018d6a6b-ce75-7af9-b521-0b476e2aa4e6",
+        "name": "岩葉",
+        "role": "著者"
+      }
+    ],
+    "followerCount": 0,
+    "isNew": false,
+    "nextUpdateDateText": "2025/01/25",
+    "isOneShot": false,
+    "ratingLevel": "adult",
+    "freeCampaigns": {}
+  },
+  "firstComic": {
+    "id": "0194494b-3b96-7138-bb25-cf2d3b1cb30c",
+    "title": "ダメ人間の愛しかた1",
+    "thumbnail": "https://cdn.comic-walker.com/integration/bibliodb/cover-image/prd/image/bw/coverImage_d259c0e8380b43deb973ed107b1b44c7.jpg",
+    "release": "2024-05-23",
+    "episodes": [
+      {
+        "id": "018f87b7-2d64-754e-bec1-e9331b057a1b",
+        "code": "KC_0040190000100012_E",
+        "title": "第１話「ダメ人間と付き合っている彼女」",
+        "subTitle": "",
+        "updateDate": "2024-05-20T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web_trial",
+        "internal": {
+          "episodeNo": 1,
+          "pageCount": 26,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      },
+      {
+        "id": "018f87b7-5376-7587-8903-ff75940503ae",
+        "code": "KC_0040190000200012_E",
+        "title": "第２話「ダメ人間を看病する彼女」",
+        "subTitle": "",
+        "updateDate": "2024-09-04T07:25:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web_trial",
+        "internal": {
+          "episodeNo": 2,
+          "pageCount": 25,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      }
+    ],
+    "stores": [
+      {
+        "code": "amazon",
+        "name": "Amazon",
+        "url": "https://www.amazon.co.jp/s?k=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F&i=digital-text&tag=kadokawacw01-22",
+        "image": {
+          "src": "/_next/static/media/Amazon.245daf4d.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/AP///9fY2bCytb3BxcDAwbe4utXW2P///wD////z9PXu5N3t3NHu4Nbu7u719vb////+BSo4+3GU0wAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "book_live",
+        "name": "BookLive!",
+        "url": "https://booklive.jp/search/keyword?keyword=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F&use_search_box=1&utm_source=spad&utm_medium=affiliate&utm_campaign=102&utm_content=normal",
+        "image": {
+          "src": "/_next/static/media/BookLive.f2b38534.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/APfPw/rj3fnf1/nc1Pvo4vrj3PjXzPvp4gD75+L75+L65uD76OP76+b76+f52tD76eI6KCuLl8DoVAAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "book_walker",
+        "name": "BOOK☆WALKER",
+        "url": "https://bookwalker.jp/web_rd/?adpcnt=7qM_SasK&ecode=04683647A17470100000",
+        "image": {
+          "src": "/_next/static/media/BookWalker.82379641.png",
+          "height": 30,
+          "width": 240,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAABCAIAAABsYngUAAAAIklEQVR42mO8//g5889Pz16/FxERZmZheff2LScXJwc7BwCsZwqafzUpJAAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 1
+        }
+      },
+      {
+        "code": "comic_cmoa",
+        "name": "コミックシーモア",
+        "url": "https://www.cmoa.jp/title/294321/?pg=title_ditail&title_id=294321",
+        "image": {
+          "src": "/_next/static/media/Cmoa.6514ea60.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAN0lEQVR42g3JwQ0AIQgAQfvv6/xwCTH4N6ELFF2d7xTgrDn0b72rqplFBFCA3Pur1d1F5EVmAhc9WStnG+1l2QAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "ebook_japan",
+        "name": "ebookjapan",
+        "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3534797&pid=886627062&vc_url=https%3A%2F%2Febookjapan.yahoo.co.jp%2Fsearch%3Fkeyword%3D%25E3%2583%2580%25E3%2583%25A1%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%25AE%25E6%2584%259B%25E3%2581%2597%25E3%2581%258B%25E3%2581%259F%26useTitle%3D1%26dealerid%3D30064%26utm_source%3Dasp%26utm_medium%3Dvc%26utm_campaign%3Drate",
+        "image": {
+          "src": "/_next/static/media/EBookJapan.28c290d4.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAO0lEQVR42gVAsQ2AMAzr24y8wMA1iJ0DsFgQzpDImByBxrXt9zS/0kNWZndXVUSMEziW9cuUTRKAJNs/6Jcoxt7WmZcAAAAASUVORK5CYII=",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "honto",
+        "name": "honto",
+        "url": "https://honto.jp/ebook/search_09-saledate.html?detailFlg=1&pbNm=KADOKAWA&prdNm=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F&seldt=1960/all/all/after&srchf=1&store=1&partnerid=02vc01&tbty=2",
+        "image": {
+          "src": "/_next/static/media/Honto.fd1ccef2.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAO0lEQVR42mP4////+88/p+y6v+7ks7n7H/Vtv//l+2+gIAMQA1lHr7/ZffHl8ZtvLz/88PP33////wMAFxsqp6bpVBAAAAAASUVORK5CYII=",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "line_manga",
+        "name": "LINEマンガ",
+        "url": "https://manga.line.me/search_product/list?word=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F",
+        "image": {
+          "src": "/_next/static/media/LINEManga.36c9cfd5.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAAAAABA/8IxAAAAHElEQVR42mN4ev7g3fN3bu1g2L9v4ZVrVy9eBgB0XQzROuwq7QAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "mechacomic",
+        "name": "めちゃコミック",
+        "url": "https://mechacomic.jp/books?text=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F",
+        "image": {
+          "src": "/_next/static/media/MechaComic.fee2d34a.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAOUlEQVR42gWAOQ6AIBBFuf/dTOwsaIwFEUYDw9L+RwKQcj+uPL7BYzJXnYIAlH+e0drrxKS7yJdgA2cvLTB4bPyDAAAAAElFTkSuQmCC",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "piccoma",
+        "name": "ピッコマ",
+        "url": "https://piccoma.com/web/search/result?word=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F",
+        "image": {
+          "src": "/_next/static/media/Piccoma.4ea2c7e6.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/AP///9ve4cu6ouq4Ss2/rMDDxuDg3////wD////c3+PXxKjkt2DPw7PV19nq6un////igyglcb3tFwAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "renta",
+        "name": "Renta!",
+        "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3534797&pid=886627023&vc_url=https%3A%2F%2Frenta.papy.co.jp%2Frenta%2Fsc%2Ffrm%2Fsearch%3Fsuggest%3Don%26word%3D%25A5%25C0%25A5%25E1%25BF%25CD%25B4%25D6%25A4%25CE%25B0%25A6%25A4%25B7%25A4%25AB%25A4%25BF%26ref%3Dvc%26publisher%3DKADOKAWA",
+        "image": {
+          "src": "/_next/static/media/Renta.258adc02.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/ALDNhsPXp+Dt0d3qztHjutfnxN/r0MzhsgDC2qHA2p601IXF3aXD26XI3qqv0nzP4rWv0CUga11m6wAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      }
+    ]
+  },
+  "latestComic": {
+    "id": "0194494b-3b96-7139-8280-1fb4f650f9ca",
+    "title": "ダメ人間の愛しかた2【電子特典イラスト付き】",
+    "thumbnail": "https://cdn.comic-walker.com/integration/bibliodb/cover-image/prd/image/bw/coverImage_3442b9f1bcf244c19fedbed6ca40fb03.jpg",
+    "release": "2024-12-23",
+    "episodes": [],
+    "stores": [
+      {
+        "code": "book_walker",
+        "name": "BOOK☆WALKER",
+        "url": "https://bookwalker.jp/web_rd/?adpcnt=7qM_SasK&ecode=04684152A19393800000",
+        "image": {
+          "src": "/_next/static/media/BookWalker.82379641.png",
+          "height": 30,
+          "width": 240,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAABCAIAAABsYngUAAAAIklEQVR42mO8//g5889Pz16/FxERZmZheff2LScXJwc7BwCsZwqafzUpJAAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 1
+        }
+      },
+      {
+        "code": "amazon",
+        "name": "Amazon",
+        "url": "https://www.amazon.co.jp/s?k=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F&i=digital-text&tag=kadokawacw01-22",
+        "image": {
+          "src": "/_next/static/media/Amazon.245daf4d.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/AP///9fY2bCytb3BxcDAwbe4utXW2P///wD////z9PXu5N3t3NHu4Nbu7u719vb////+BSo4+3GU0wAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "piccoma",
+        "name": "ピッコマ",
+        "url": "https://piccoma.com/web/search/result?word=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F",
+        "image": {
+          "src": "/_next/static/media/Piccoma.4ea2c7e6.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/AP///9ve4cu6ouq4Ss2/rMDDxuDg3////wD////c3+PXxKjkt2DPw7PV19nq6un////igyglcb3tFwAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "line_manga",
+        "name": "LINEマンガ",
+        "url": "https://manga.line.me/search_product/list?word=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F",
+        "image": {
+          "src": "/_next/static/media/LINEManga.36c9cfd5.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAAAAABA/8IxAAAAHElEQVR42mN4ev7g3fN3bu1g2L9v4ZVrVy9eBgB0XQzROuwq7QAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "mechacomic",
+        "name": "めちゃコミック",
+        "url": "https://mechacomic.jp/books?text=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F",
+        "image": {
+          "src": "/_next/static/media/MechaComic.fee2d34a.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAOUlEQVR42gWAOQ6AIBBFuf/dTOwsaIwFEUYDw9L+RwKQcj+uPL7BYzJXnYIAlH+e0drrxKS7yJdgA2cvLTB4bPyDAAAAAElFTkSuQmCC",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "comic_cmoa",
+        "name": "コミックシーモア",
+        "url": "https://www.cmoa.jp/title/294321/?pg=title_ditail&title_id=294321",
+        "image": {
+          "src": "/_next/static/media/Cmoa.6514ea60.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAN0lEQVR42g3JwQ0AIQgAQfvv6/xwCTH4N6ELFF2d7xTgrDn0b72rqplFBFCA3Pur1d1F5EVmAhc9WStnG+1l2QAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "renta",
+        "name": "Renta!",
+        "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3534797&pid=886627023&vc_url=https%3A%2F%2Frenta.papy.co.jp%2Frenta%2Fsc%2Ffrm%2Fsearch%3Fsuggest%3Don%26word%3D%25A5%25C0%25A5%25E1%25BF%25CD%25B4%25D6%25A4%25CE%25B0%25A6%25A4%25B7%25A4%25AB%25A4%25BF%26ref%3Dvc%26publisher%3DKADOKAWA",
+        "image": {
+          "src": "/_next/static/media/Renta.258adc02.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/ALDNhsPXp+Dt0d3qztHjutfnxN/r0MzhsgDC2qHA2p601IXF3aXD26XI3qqv0nzP4rWv0CUga11m6wAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "ebook_japan",
+        "name": "ebookjapan",
+        "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3534797&pid=886627062&vc_url=https%3A%2F%2Febookjapan.yahoo.co.jp%2Fsearch%3Fkeyword%3D%25E3%2583%2580%25E3%2583%25A1%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%25AE%25E6%2584%259B%25E3%2581%2597%25E3%2581%258B%25E3%2581%259F%26useTitle%3D1%26dealerid%3D30064%26utm_source%3Dasp%26utm_medium%3Dvc%26utm_campaign%3Drate",
+        "image": {
+          "src": "/_next/static/media/EBookJapan.28c290d4.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAO0lEQVR42gVAsQ2AMAzr24y8wMA1iJ0DsFgQzpDImByBxrXt9zS/0kNWZndXVUSMEziW9cuUTRKAJNs/6Jcoxt7WmZcAAAAASUVORK5CYII=",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "book_live",
+        "name": "BookLive!",
+        "url": "https://booklive.jp/search/keyword?keyword=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F&use_search_box=1&utm_source=spad&utm_medium=affiliate&utm_campaign=102&utm_content=normal",
+        "image": {
+          "src": "/_next/static/media/BookLive.f2b38534.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/APfPw/rj3fnf1/nc1Pvo4vrj3PjXzPvp4gD75+L75+L65uD76OP76+b76+f52tD76eI6KCuLl8DoVAAAAABJRU5ErkJggg==",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      },
+      {
+        "code": "honto",
+        "name": "honto",
+        "url": "https://honto.jp/ebook/search_09-saledate.html?detailFlg=1&pbNm=KADOKAWA&prdNm=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F&seldt=1960/all/all/after&srchf=1&store=1&partnerid=02vc01&tbty=2",
+        "image": {
+          "src": "/_next/static/media/Honto.fd1ccef2.png",
+          "height": 30,
+          "width": 120,
+          "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAO0lEQVR42mP4////+88/p+y6v+7ks7n7H/Vtv//l+2+gIAMQA1lHr7/ZffHl8ZtvLz/88PP33////wMAFxsqp6bpVBAAAAAASUVORK5CYII=",
+          "blurWidth": 8,
+          "blurHeight": 2
+        }
+      }
+    ]
+  },
+  "firstEpisodes": {
+    "total": 20,
+    "result": [
+      {
+        "id": "018d6eb6-4862-7bc3-a754-7a01f8e5862a",
+        "code": "KC_0040190000100011_E",
+        "title": "第1話　ダメ人間と付き合っている彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00001/01/01/01/resized/004019_00001_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00001/01/01/01/004019_00001_01_01_01_001_0001.jpg",
+        "updateDate": "2023-11-11T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 1,
+          "pageCount": 26,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      },
+      {
+        "id": "018d6eb6-4c17-7bf6-8438-12d6b5807bc0",
+        "code": "KC_0040190000200011_E",
+        "title": "第2話　ダメ人間と看病する彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00002/01/01/01/resized/004019_00002_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00002/01/01/01/004019_00002_01_01_01_001_0001.jpg",
+        "updateDate": "2023-12-09T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 2,
+          "pageCount": 25,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      },
+      {
+        "id": "018d6eb6-4fe6-7c27-b589-ab380b203a73",
+        "code": "KC_0040190000300011_E",
+        "title": "第3話　ダメ人間からゲーセンに誘われる彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00003/01/01/01/resized/004019_00003_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00003/01/01/01/004019_00003_01_01_01_001_0001.jpg",
+        "updateDate": "2024-01-13T02:00:00Z",
+        "deliveryPeriod": "2024-05-16T05:30:00Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 3,
+          "pageCount": 26,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "018d8cdd-e956-7c85-9af0-fa09727c3a16",
+        "code": "KC_0040190000500011_E",
+        "title": "第4話　ダメ人間と一緒に歌ってくれる彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00005/01/01/01/resized/004019_00005_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00005/01/01/01/004019_00005_01_01_01_001_0001.jpg",
+        "updateDate": "2024-02-10T02:00:00Z",
+        "deliveryPeriod": "2024-05-16T05:30:00Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 4,
+          "pageCount": 27,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "018e1ceb-6f54-79b7-b8cb-76c3bc943802",
+        "code": "KC_0040190000600011_E",
+        "title": "第5話　ダメ人間を着せ替える彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00006/01/01/01/resized/004019_00006_01_01_01_001_01_0002.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00006/01/01/01/004019_00006_01_01_01_001_0002.jpg",
+        "updateDate": "2024-03-09T02:00:00Z",
+        "deliveryPeriod": "2024-05-16T05:30:00Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 5,
+          "pageCount": 27,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "018ed165-6b70-7330-9e5d-24da0cb46af0",
+        "code": "KC_0040190000700011_E",
+        "title": "第6話　ダメ人間と写らない彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00007/01/01/01/resized/004019_00007_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00007/01/01/01/004019_00007_01_01_01_001_0001.jpg",
+        "updateDate": "2024-04-13T02:00:00Z",
+        "deliveryPeriod": "2024-05-16T05:30:00Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 6,
+          "pageCount": 31,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "018fa9da-41c0-78ae-95f7-e0d0f0c2bb63",
+        "code": "KC_0040190000800011_E",
+        "title": "コミックス第1巻発売記念特別編",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00008/01/01/01/resized/004019_00008_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00008/01/01/01/004019_00008_01_01_01_001_0001.jpg",
+        "updateDate": "2024-05-25T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 7,
+          "pageCount": 1,
+          "episodetype": "pr"
+        },
+        "type": "pr",
+        "isActive": true
+      },
+      {
+        "id": "018ff218-a6d7-7d1b-803a-464a637cf1db",
+        "code": "KC_0040190000900011_E",
+        "title": "第7話前編　ダメ人間のバイト先へ行く彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00009/01/01/01/resized/004019_00009_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00009/01/01/01/004019_00009_01_01_01_001_0001.jpg",
+        "updateDate": "2024-06-08T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 8,
+          "pageCount": 15,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0190399e-fb04-7ccf-98da-47843a954556",
+        "code": "KC_0040190000900021_E",
+        "title": "第7話後編　ダメ人間のバイト先へ行く彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00009/01/01/02/resized/004019_00009_01_01_02_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00009/01/01/02/004019_00009_01_01_02_001_0001.jpg",
+        "updateDate": "2024-06-22T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 9,
+          "pageCount": 14,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0190a61a-8b94-7bbb-bd08-b94b8346fca9",
+        "code": "KC_0040190001000011_E",
+        "title": "第8話前編　ダメ人間に食べさせる彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00010/01/01/01/resized/004019_00010_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00010/01/01/01/004019_00010_01_01_01_001_0001.jpg",
+        "updateDate": "2024-07-13T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 10,
+          "pageCount": 16,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0190ed5c-546a-7f3d-bdef-1bda829f5a6a",
+        "code": "KC_0040190001000021_E",
+        "title": "第8話後編　ダメ人間に食べさせる彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00010/01/01/02/resized/004019_00010_01_01_02_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00010/01/01/02/004019_00010_01_01_02_001_0001.jpg",
+        "updateDate": "2024-07-27T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 11,
+          "pageCount": 11,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0191358c-3938-7e4f-ac91-ce80f9d4cb53",
+        "code": "KC_0040190001100011_E",
+        "title": "第9話前編　ダメ人間と出会った彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00011/01/01/01/resized/004019_00011_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00011/01/01/01/004019_00011_01_01_01_001_0001.jpg",
+        "updateDate": "2024-08-10T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 12,
+          "pageCount": 15,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0191358c-3938-7e50-b51f-26016d8ca20d",
+        "code": "KC_0040190001100021_E",
+        "title": "第9話後編　ダメ人間と出会った彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00011/01/01/02/resized/004019_00011_01_01_02_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00011/01/01/02/004019_00011_01_01_02_001_0001.jpg",
+        "updateDate": "2024-08-24T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 13,
+          "pageCount": 14,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0191e9e2-083c-7e86-918c-6c97aab6804b",
+        "code": "KC_0040190001200011_E",
+        "title": "第10話前編　ダメ人間と海水浴する彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00012/01/01/01/resized/004019_00012_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00012/01/01/01/004019_00012_01_01_01_001_0001.jpg",
+        "updateDate": "2024-09-14T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 14,
+          "pageCount": 15,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0191e9e2-083c-7e87-9bb4-d50be47c2119",
+        "code": "KC_0040190001200021_E",
+        "title": "第10話後編　ダメ人間と海水浴する彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00012/01/01/02/resized/004019_00012_01_01_02_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00012/01/01/02/004019_00012_01_01_02_001_0001.jpg",
+        "updateDate": "2024-09-28T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 15,
+          "pageCount": 11,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "019279ae-ff5f-731b-a503-dc979cc8cd42",
+        "code": "KC_0040190001300011_E",
+        "title": "第11話前編　ダメ人間と一夜を過ごす彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00013/01/01/01/resized/004019_00013_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00013/01/01/01/004019_00013_01_01_01_001_0001.jpg",
+        "updateDate": "2024-10-12T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 16,
+          "pageCount": 16,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0192c1b1-4cc1-7054-ada2-48891aa92f78",
+        "code": "KC_0040190001300021_E",
+        "title": "第11話後編　ダメ人間と一夜を過ごす彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00013/01/01/02/resized/004019_00013_01_01_02_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00013/01/01/02/004019_00013_01_01_02_001_0001.jpg",
+        "updateDate": "2024-10-26T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 17,
+          "pageCount": 15,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0193bea8-ed2c-7aa4-a9f6-518ab418b00b",
+        "code": "KC_0040190001400011_E",
+        "title": "第12話前編　ダメ人間と初恋のあの子",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00014/01/01/01/resized/004019_00014_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00014/01/01/01/004019_00014_01_01_01_001_0001.jpg",
+        "updateDate": "2024-12-14T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 18,
+          "pageCount": 15,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      },
+      {
+        "id": "0193dc73-1a61-72eb-b40c-9715d0b497e0",
+        "code": "KC_0040190001500011_E",
+        "title": "コミックス第2巻発売告知",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00015/01/01/01/resized/004019_00015_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00015/01/01/01/004019_00015_01_01_01_001_0001.jpg",
+        "updateDate": "2024-12-19T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 19,
+          "pageCount": 2,
+          "episodetype": "pr"
+        },
+        "type": "pr",
+        "isActive": true
+      },
+      {
+        "id": "0193fc83-12d4-7ff9-bf47-6fd7ad2729d3",
+        "code": "KC_0040190001400021_E",
+        "title": "第12話後編　ダメ人間と初恋のあの子",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00014/01/01/02/resized/004019_00014_01_01_02_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00014/01/01/02/004019_00014_01_01_02_001_0001.jpg",
+        "updateDate": "2024-12-28T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 20,
+          "pageCount": 16,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      }
+    ]
+  },
+  "latestEpisodes": {
+    "total": 20,
+    "result": [
+      {
+        "id": "0193fc83-12d4-7ff9-bf47-6fd7ad2729d3",
+        "code": "KC_0040190001400021_E",
+        "title": "第12話後編　ダメ人間と初恋のあの子",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00014/01/01/02/resized/004019_00014_01_01_02_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00014/01/01/02/004019_00014_01_01_02_001_0001.jpg",
+        "updateDate": "2024-12-28T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 20,
+          "pageCount": 16,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      },
+      {
+        "id": "0193dc73-1a61-72eb-b40c-9715d0b497e0",
+        "code": "KC_0040190001500011_E",
+        "title": "コミックス第2巻発売告知",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00015/01/01/01/resized/004019_00015_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00015/01/01/01/004019_00015_01_01_01_001_0001.jpg",
+        "updateDate": "2024-12-19T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 19,
+          "pageCount": 2,
+          "episodetype": "pr"
+        },
+        "type": "pr",
+        "isActive": true
+      },
+      {
+        "id": "0193bea8-ed2c-7aa4-a9f6-518ab418b00b",
+        "code": "KC_0040190001400011_E",
+        "title": "第12話前編　ダメ人間と初恋のあの子",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00014/01/01/01/resized/004019_00014_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00014/01/01/01/004019_00014_01_01_01_001_0001.jpg",
+        "updateDate": "2024-12-14T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 18,
+          "pageCount": 15,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      },
+      {
+        "id": "0192c1b1-4cc1-7054-ada2-48891aa92f78",
+        "code": "KC_0040190001300021_E",
+        "title": "第11話後編　ダメ人間と一夜を過ごす彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00013/01/01/02/resized/004019_00013_01_01_02_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00013/01/01/02/004019_00013_01_01_02_001_0001.jpg",
+        "updateDate": "2024-10-26T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 17,
+          "pageCount": 15,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "019279ae-ff5f-731b-a503-dc979cc8cd42",
+        "code": "KC_0040190001300011_E",
+        "title": "第11話前編　ダメ人間と一夜を過ごす彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00013/01/01/01/resized/004019_00013_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00013/01/01/01/004019_00013_01_01_01_001_0001.jpg",
+        "updateDate": "2024-10-12T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 16,
+          "pageCount": 16,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0191e9e2-083c-7e87-9bb4-d50be47c2119",
+        "code": "KC_0040190001200021_E",
+        "title": "第10話後編　ダメ人間と海水浴する彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00012/01/01/02/resized/004019_00012_01_01_02_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00012/01/01/02/004019_00012_01_01_02_001_0001.jpg",
+        "updateDate": "2024-09-28T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 15,
+          "pageCount": 11,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0191e9e2-083c-7e86-918c-6c97aab6804b",
+        "code": "KC_0040190001200011_E",
+        "title": "第10話前編　ダメ人間と海水浴する彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00012/01/01/01/resized/004019_00012_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00012/01/01/01/004019_00012_01_01_01_001_0001.jpg",
+        "updateDate": "2024-09-14T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 14,
+          "pageCount": 15,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0191358c-3938-7e50-b51f-26016d8ca20d",
+        "code": "KC_0040190001100021_E",
+        "title": "第9話後編　ダメ人間と出会った彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00011/01/01/02/resized/004019_00011_01_01_02_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00011/01/01/02/004019_00011_01_01_02_001_0001.jpg",
+        "updateDate": "2024-08-24T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 13,
+          "pageCount": 14,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0191358c-3938-7e4f-ac91-ce80f9d4cb53",
+        "code": "KC_0040190001100011_E",
+        "title": "第9話前編　ダメ人間と出会った彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00011/01/01/01/resized/004019_00011_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00011/01/01/01/004019_00011_01_01_01_001_0001.jpg",
+        "updateDate": "2024-08-10T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 12,
+          "pageCount": 15,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0190ed5c-546a-7f3d-bdef-1bda829f5a6a",
+        "code": "KC_0040190001000021_E",
+        "title": "第8話後編　ダメ人間に食べさせる彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00010/01/01/02/resized/004019_00010_01_01_02_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00010/01/01/02/004019_00010_01_01_02_001_0001.jpg",
+        "updateDate": "2024-07-27T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 11,
+          "pageCount": 11,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0190a61a-8b94-7bbb-bd08-b94b8346fca9",
+        "code": "KC_0040190001000011_E",
+        "title": "第8話前編　ダメ人間に食べさせる彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00010/01/01/01/resized/004019_00010_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00010/01/01/01/004019_00010_01_01_01_001_0001.jpg",
+        "updateDate": "2024-07-13T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 10,
+          "pageCount": 16,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "0190399e-fb04-7ccf-98da-47843a954556",
+        "code": "KC_0040190000900021_E",
+        "title": "第7話後編　ダメ人間のバイト先へ行く彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00009/01/01/02/resized/004019_00009_01_01_02_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00009/01/01/02/004019_00009_01_01_02_001_0001.jpg",
+        "updateDate": "2024-06-22T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 9,
+          "pageCount": 14,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "018ff218-a6d7-7d1b-803a-464a637cf1db",
+        "code": "KC_0040190000900011_E",
+        "title": "第7話前編　ダメ人間のバイト先へ行く彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00009/01/01/01/resized/004019_00009_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00009/01/01/01/004019_00009_01_01_01_001_0001.jpg",
+        "updateDate": "2024-06-08T02:00:00Z",
+        "deliveryPeriod": "2024-12-10T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 8,
+          "pageCount": 15,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "018fa9da-41c0-78ae-95f7-e0d0f0c2bb63",
+        "code": "KC_0040190000800011_E",
+        "title": "コミックス第1巻発売記念特別編",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00008/01/01/01/resized/004019_00008_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00008/01/01/01/004019_00008_01_01_01_001_0001.jpg",
+        "updateDate": "2024-05-25T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 7,
+          "pageCount": 1,
+          "episodetype": "pr"
+        },
+        "type": "pr",
+        "isActive": true
+      },
+      {
+        "id": "018ed165-6b70-7330-9e5d-24da0cb46af0",
+        "code": "KC_0040190000700011_E",
+        "title": "第6話　ダメ人間と写らない彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00007/01/01/01/resized/004019_00007_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00007/01/01/01/004019_00007_01_01_01_001_0001.jpg",
+        "updateDate": "2024-04-13T02:00:00Z",
+        "deliveryPeriod": "2024-05-16T05:30:00Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 6,
+          "pageCount": 31,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "018e1ceb-6f54-79b7-b8cb-76c3bc943802",
+        "code": "KC_0040190000600011_E",
+        "title": "第5話　ダメ人間を着せ替える彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00006/01/01/01/resized/004019_00006_01_01_01_001_01_0002.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00006/01/01/01/004019_00006_01_01_01_001_0002.jpg",
+        "updateDate": "2024-03-09T02:00:00Z",
+        "deliveryPeriod": "2024-05-16T05:30:00Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 5,
+          "pageCount": 27,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "018d8cdd-e956-7c85-9af0-fa09727c3a16",
+        "code": "KC_0040190000500011_E",
+        "title": "第4話　ダメ人間と一緒に歌ってくれる彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00005/01/01/01/resized/004019_00005_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00005/01/01/01/004019_00005_01_01_01_001_0001.jpg",
+        "updateDate": "2024-02-10T02:00:00Z",
+        "deliveryPeriod": "2024-05-16T05:30:00Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 4,
+          "pageCount": 27,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "018d6eb6-4fe6-7c27-b589-ab380b203a73",
+        "code": "KC_0040190000300011_E",
+        "title": "第3話　ダメ人間からゲーセンに誘われる彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00003/01/01/01/resized/004019_00003_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00003/01/01/01/004019_00003_01_01_01_001_0001.jpg",
+        "updateDate": "2024-01-13T02:00:00Z",
+        "deliveryPeriod": "2024-05-16T05:30:00Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 3,
+          "pageCount": 26,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": false
+      },
+      {
+        "id": "018d6eb6-4c17-7bf6-8438-12d6b5807bc0",
+        "code": "KC_0040190000200011_E",
+        "title": "第2話　ダメ人間と看病する彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00002/01/01/01/resized/004019_00002_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00002/01/01/01/004019_00002_01_01_01_001_0001.jpg",
+        "updateDate": "2023-12-09T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 2,
+          "pageCount": 25,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      },
+      {
+        "id": "018d6eb6-4862-7bc3-a754-7a01f8e5862a",
+        "code": "KC_0040190000100011_E",
+        "title": "第1話　ダメ人間と付き合っている彼女",
+        "subTitle": "",
+        "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00001/01/01/01/resized/004019_00001_01_01_01_001_01_0001.jpg",
+        "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/004019/00001/01/01/01/004019_00001_01_01_01_001_0001.jpg",
+        "updateDate": "2023-11-11T02:00:00Z",
+        "deliveryPeriod": "9999-12-31T14:59:59Z",
+        "isNew": false,
+        "hasRead": false,
+        "stores": [],
+        "serviceId": "web",
+        "internal": {
+          "episodeNo": 1,
+          "pageCount": 26,
+          "episodetype": "normal"
+        },
+        "type": "normal",
+        "isActive": true
+      }
+    ]
+  },
+  "comics": {
+    "total": 2,
+    "result": [
+      {
+        "id": "0194494b-3b96-7138-bb25-cf2d3b1cb30c",
+        "title": "ダメ人間の愛しかた1",
+        "thumbnail": "https://cdn.comic-walker.com/integration/bibliodb/cover-image/prd/image/bw/coverImage_d259c0e8380b43deb973ed107b1b44c7.jpg",
+        "release": "2024-05-23",
+        "episodes": [
+          {
+            "id": "018f87b7-2d64-754e-bec1-e9331b057a1b",
+            "code": "KC_0040190000100012_E",
+            "title": "第１話「ダメ人間と付き合っている彼女」",
+            "subTitle": "",
+            "updateDate": "2024-05-20T02:00:00Z",
+            "deliveryPeriod": "9999-12-31T14:59:59Z",
+            "isNew": false,
+            "hasRead": false,
+            "stores": [],
+            "serviceId": "web_trial",
+            "internal": {
+              "episodeNo": 1,
+              "pageCount": 26,
+              "episodetype": "normal"
+            },
+            "type": "normal",
+            "isActive": true
+          },
+          {
+            "id": "018f87b7-5376-7587-8903-ff75940503ae",
+            "code": "KC_0040190000200012_E",
+            "title": "第２話「ダメ人間を看病する彼女」",
+            "subTitle": "",
+            "updateDate": "2024-09-04T07:25:00Z",
+            "deliveryPeriod": "9999-12-31T14:59:59Z",
+            "isNew": false,
+            "hasRead": false,
+            "stores": [],
+            "serviceId": "web_trial",
+            "internal": {
+              "episodeNo": 2,
+              "pageCount": 25,
+              "episodetype": "normal"
+            },
+            "type": "normal",
+            "isActive": true
+          }
+        ],
+        "stores": [
+          {
+            "code": "amazon",
+            "name": "Amazon",
+            "url": "https://www.amazon.co.jp/s?k=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F&i=digital-text&tag=kadokawacw01-22",
+            "image": {
+              "src": "/_next/static/media/Amazon.245daf4d.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/AP///9fY2bCytb3BxcDAwbe4utXW2P///wD////z9PXu5N3t3NHu4Nbu7u719vb////+BSo4+3GU0wAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "book_live",
+            "name": "BookLive!",
+            "url": "https://booklive.jp/search/keyword?keyword=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F&use_search_box=1&utm_source=spad&utm_medium=affiliate&utm_campaign=102&utm_content=normal",
+            "image": {
+              "src": "/_next/static/media/BookLive.f2b38534.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/APfPw/rj3fnf1/nc1Pvo4vrj3PjXzPvp4gD75+L75+L65uD76OP76+b76+f52tD76eI6KCuLl8DoVAAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "book_walker",
+            "name": "BOOK☆WALKER",
+            "url": "https://bookwalker.jp/web_rd/?adpcnt=7qM_SasK&ecode=04683647A17470100000",
+            "image": {
+              "src": "/_next/static/media/BookWalker.82379641.png",
+              "height": 30,
+              "width": 240,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAABCAIAAABsYngUAAAAIklEQVR42mO8//g5889Pz16/FxERZmZheff2LScXJwc7BwCsZwqafzUpJAAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 1
+            }
+          },
+          {
+            "code": "comic_cmoa",
+            "name": "コミックシーモア",
+            "url": "https://www.cmoa.jp/title/294321/?pg=title_ditail&title_id=294321",
+            "image": {
+              "src": "/_next/static/media/Cmoa.6514ea60.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAN0lEQVR42g3JwQ0AIQgAQfvv6/xwCTH4N6ELFF2d7xTgrDn0b72rqplFBFCA3Pur1d1F5EVmAhc9WStnG+1l2QAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "ebook_japan",
+            "name": "ebookjapan",
+            "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3534797&pid=886627062&vc_url=https%3A%2F%2Febookjapan.yahoo.co.jp%2Fsearch%3Fkeyword%3D%25E3%2583%2580%25E3%2583%25A1%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%25AE%25E6%2584%259B%25E3%2581%2597%25E3%2581%258B%25E3%2581%259F%26useTitle%3D1%26dealerid%3D30064%26utm_source%3Dasp%26utm_medium%3Dvc%26utm_campaign%3Drate",
+            "image": {
+              "src": "/_next/static/media/EBookJapan.28c290d4.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAO0lEQVR42gVAsQ2AMAzr24y8wMA1iJ0DsFgQzpDImByBxrXt9zS/0kNWZndXVUSMEziW9cuUTRKAJNs/6Jcoxt7WmZcAAAAASUVORK5CYII=",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "honto",
+            "name": "honto",
+            "url": "https://honto.jp/ebook/search_09-saledate.html?detailFlg=1&pbNm=KADOKAWA&prdNm=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F&seldt=1960/all/all/after&srchf=1&store=1&partnerid=02vc01&tbty=2",
+            "image": {
+              "src": "/_next/static/media/Honto.fd1ccef2.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAO0lEQVR42mP4////+88/p+y6v+7ks7n7H/Vtv//l+2+gIAMQA1lHr7/ZffHl8ZtvLz/88PP33////wMAFxsqp6bpVBAAAAAASUVORK5CYII=",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "line_manga",
+            "name": "LINEマンガ",
+            "url": "https://manga.line.me/search_product/list?word=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F",
+            "image": {
+              "src": "/_next/static/media/LINEManga.36c9cfd5.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAAAAABA/8IxAAAAHElEQVR42mN4ev7g3fN3bu1g2L9v4ZVrVy9eBgB0XQzROuwq7QAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "mechacomic",
+            "name": "めちゃコミック",
+            "url": "https://mechacomic.jp/books?text=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F",
+            "image": {
+              "src": "/_next/static/media/MechaComic.fee2d34a.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAOUlEQVR42gWAOQ6AIBBFuf/dTOwsaIwFEUYDw9L+RwKQcj+uPL7BYzJXnYIAlH+e0drrxKS7yJdgA2cvLTB4bPyDAAAAAElFTkSuQmCC",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "piccoma",
+            "name": "ピッコマ",
+            "url": "https://piccoma.com/web/search/result?word=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F",
+            "image": {
+              "src": "/_next/static/media/Piccoma.4ea2c7e6.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/AP///9ve4cu6ouq4Ss2/rMDDxuDg3////wD////c3+PXxKjkt2DPw7PV19nq6un////igyglcb3tFwAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "renta",
+            "name": "Renta!",
+            "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3534797&pid=886627023&vc_url=https%3A%2F%2Frenta.papy.co.jp%2Frenta%2Fsc%2Ffrm%2Fsearch%3Fsuggest%3Don%26word%3D%25A5%25C0%25A5%25E1%25BF%25CD%25B4%25D6%25A4%25CE%25B0%25A6%25A4%25B7%25A4%25AB%25A4%25BF%26ref%3Dvc%26publisher%3DKADOKAWA",
+            "image": {
+              "src": "/_next/static/media/Renta.258adc02.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/ALDNhsPXp+Dt0d3qztHjutfnxN/r0MzhsgDC2qHA2p601IXF3aXD26XI3qqv0nzP4rWv0CUga11m6wAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": "0194494b-3b96-7139-8280-1fb4f650f9ca",
+        "title": "ダメ人間の愛しかた2【電子特典イラスト付き】",
+        "thumbnail": "https://cdn.comic-walker.com/integration/bibliodb/cover-image/prd/image/bw/coverImage_3442b9f1bcf244c19fedbed6ca40fb03.jpg",
+        "release": "2024-12-23",
+        "episodes": [],
+        "stores": [
+          {
+            "code": "book_walker",
+            "name": "BOOK☆WALKER",
+            "url": "https://bookwalker.jp/web_rd/?adpcnt=7qM_SasK&ecode=04684152A19393800000",
+            "image": {
+              "src": "/_next/static/media/BookWalker.82379641.png",
+              "height": 30,
+              "width": 240,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAABCAIAAABsYngUAAAAIklEQVR42mO8//g5889Pz16/FxERZmZheff2LScXJwc7BwCsZwqafzUpJAAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 1
+            }
+          },
+          {
+            "code": "amazon",
+            "name": "Amazon",
+            "url": "https://www.amazon.co.jp/s?k=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F&i=digital-text&tag=kadokawacw01-22",
+            "image": {
+              "src": "/_next/static/media/Amazon.245daf4d.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/AP///9fY2bCytb3BxcDAwbe4utXW2P///wD////z9PXu5N3t3NHu4Nbu7u719vb////+BSo4+3GU0wAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "piccoma",
+            "name": "ピッコマ",
+            "url": "https://piccoma.com/web/search/result?word=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F",
+            "image": {
+              "src": "/_next/static/media/Piccoma.4ea2c7e6.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/AP///9ve4cu6ouq4Ss2/rMDDxuDg3////wD////c3+PXxKjkt2DPw7PV19nq6un////igyglcb3tFwAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "line_manga",
+            "name": "LINEマンガ",
+            "url": "https://manga.line.me/search_product/list?word=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F",
+            "image": {
+              "src": "/_next/static/media/LINEManga.36c9cfd5.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAAAAABA/8IxAAAAHElEQVR42mN4ev7g3fN3bu1g2L9v4ZVrVy9eBgB0XQzROuwq7QAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "mechacomic",
+            "name": "めちゃコミック",
+            "url": "https://mechacomic.jp/books?text=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F",
+            "image": {
+              "src": "/_next/static/media/MechaComic.fee2d34a.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAOUlEQVR42gWAOQ6AIBBFuf/dTOwsaIwFEUYDw9L+RwKQcj+uPL7BYzJXnYIAlH+e0drrxKS7yJdgA2cvLTB4bPyDAAAAAElFTkSuQmCC",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "comic_cmoa",
+            "name": "コミックシーモア",
+            "url": "https://www.cmoa.jp/title/294321/?pg=title_ditail&title_id=294321",
+            "image": {
+              "src": "/_next/static/media/Cmoa.6514ea60.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAN0lEQVR42g3JwQ0AIQgAQfvv6/xwCTH4N6ELFF2d7xTgrDn0b72rqplFBFCA3Pur1d1F5EVmAhc9WStnG+1l2QAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "renta",
+            "name": "Renta!",
+            "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3534797&pid=886627023&vc_url=https%3A%2F%2Frenta.papy.co.jp%2Frenta%2Fsc%2Ffrm%2Fsearch%3Fsuggest%3Don%26word%3D%25A5%25C0%25A5%25E1%25BF%25CD%25B4%25D6%25A4%25CE%25B0%25A6%25A4%25B7%25A4%25AB%25A4%25BF%26ref%3Dvc%26publisher%3DKADOKAWA",
+            "image": {
+              "src": "/_next/static/media/Renta.258adc02.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/ALDNhsPXp+Dt0d3qztHjutfnxN/r0MzhsgDC2qHA2p601IXF3aXD26XI3qqv0nzP4rWv0CUga11m6wAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "ebook_japan",
+            "name": "ebookjapan",
+            "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3534797&pid=886627062&vc_url=https%3A%2F%2Febookjapan.yahoo.co.jp%2Fsearch%3Fkeyword%3D%25E3%2583%2580%25E3%2583%25A1%25E4%25BA%25BA%25E9%2596%2593%25E3%2581%25AE%25E6%2584%259B%25E3%2581%2597%25E3%2581%258B%25E3%2581%259F%26useTitle%3D1%26dealerid%3D30064%26utm_source%3Dasp%26utm_medium%3Dvc%26utm_campaign%3Drate",
+            "image": {
+              "src": "/_next/static/media/EBookJapan.28c290d4.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAO0lEQVR42gVAsQ2AMAzr24y8wMA1iJ0DsFgQzpDImByBxrXt9zS/0kNWZndXVUSMEziW9cuUTRKAJNs/6Jcoxt7WmZcAAAAASUVORK5CYII=",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "book_live",
+            "name": "BookLive!",
+            "url": "https://booklive.jp/search/keyword?keyword=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F&use_search_box=1&utm_source=spad&utm_medium=affiliate&utm_campaign=102&utm_content=normal",
+            "image": {
+              "src": "/_next/static/media/BookLive.f2b38534.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAPUlEQVR42gEyAM3/APfPw/rj3fnf1/nc1Pvo4vrj3PjXzPvp4gD75+L75+L65uD76OP76+b76+f52tD76eI6KCuLl8DoVAAAAABJRU5ErkJggg==",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          },
+          {
+            "code": "honto",
+            "name": "honto",
+            "url": "https://honto.jp/ebook/search_09-saledate.html?detailFlg=1&pbNm=KADOKAWA&prdNm=%E3%83%80%E3%83%A1%E4%BA%BA%E9%96%93%E3%81%AE%E6%84%9B%E3%81%97%E3%81%8B%E3%81%9F&seldt=1960/all/all/after&srchf=1&store=1&partnerid=02vc01&tbty=2",
+            "image": {
+              "src": "/_next/static/media/Honto.fd1ccef2.png",
+              "height": 30,
+              "width": 120,
+              "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAACCAIAAADq9gq6AAAAO0lEQVR42mP4////+88/p+y6v+7ks7n7H/Vtv//l+2+gIAMQA1lHr7/ZffHl8ZtvLz/88PP33////wMAFxsqp6bpVBAAAAAASUVORK5CYII=",
+              "blurWidth": 8,
+              "blurHeight": 2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "promotions": [
+    {
+      "type": "youtube",
+      "url": "https://www.youtube.com/embed/0VCGN2yMpMc"
+    }
+  ],
+  "relatedBooks": {
+    "totalCount": 0,
+    "resources": []
+  },
+  "label": {
+    "id": "018c102b-882e-7657-a380-b92c95e44c57",
+    "name": "WebComicアパンダ",
+    "description": "いま読みたい、すべてがある。MFCレーベルが贈るオリジナル作品を集めた新ブランド！ 『異世界おじさん』『見える子ちゃん』など 今話題の作品を掲載中！",
+    "code": "apanta",
+    "color": "#3c3c3c",
+    "iconImageUrl": "https://cdn.comic-walker.com/library/assets/018bc8c1-ce2f-7f3d-95da-1575c2e35a44.jpg",
+    "logoImageUrl": "https://cdn.comic-walker.com/library/assets/01934dde-ad14-76fd-9896-a3271ab13f81.jpg",
+    "coverImageUrl": "https://cdn.comic-walker.com/library/assets/018bc8c1-ce2f-7f3c-86aa-5b9202227961.jpg"
+  },
+  "labels": [
+    {
+      "id": "018c102b-882e-7657-a380-b92c95e44c57",
+      "name": "WebComicアパンダ",
+      "description": "いま読みたい、すべてがある。MFCレーベルが贈るオリジナル作品を集めた新ブランド！ 『異世界おじさん』『見える子ちゃん』など 今話題の作品を掲載中！",
+      "code": "apanta",
+      "color": "#3c3c3c",
+      "iconImageUrl": "https://cdn.comic-walker.com/library/assets/018bc8c1-ce2f-7f3d-95da-1575c2e35a44.jpg",
+      "logoImageUrl": "https://cdn.comic-walker.com/library/assets/01934dde-ad14-76fd-9896-a3271ab13f81.jpg",
+      "coverImageUrl": "https://cdn.comic-walker.com/library/assets/018bc8c1-ce2f-7f3c-86aa-5b9202227961.jpg"
+    }
+  ],
+  "labelWorks": [
+    {
+      "code": "KC_003631_S",
+      "id": "018d6a65-6bb2-79b0-8a26-d248741e2c22",
+      "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/003631/resized/003631_001_01_0003.jpg",
+      "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/003631/003631_001_0003.jpg",
+      "bookCover": "https://cdn.comic-walker.com/integration/bibliodb/cover-image/prd/image/bw/coverImage_3369932.jpg",
+      "title": "異世界おじさん",
+      "isOriginal": false,
+      "language": "ja",
+      "serializationStatus": "ongoing",
+      "serviceIds": [
+        "app",
+        "web",
+        "web_trial"
+      ],
+      "internal": {
+        "labelNames": [
+          "WebComicアパンダ",
+          "異世界コミック"
+        ]
+      },
+      "isNew": false,
+      "episode": {
+        "type": "first",
+        "code": "KC_0036310000100011_E",
+        "title": "第1話"
+      }
+    },
+    {
+      "code": "KC_006213_S",
+      "id": "0193e263-179c-76bc-9cd2-78407f8cf53c",
+      "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/resized/006213_001_01_0003.jpg",
+      "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006213/006213_001_0003.jpg",
+      "title": "その悪役貴族、ママヒロインが好きすぎる ～真摯な努力で最強となり不遇な推しキャラ助けまくる～",
+      "isOriginal": false,
+      "language": "ja",
+      "serializationStatus": "ongoing",
+      "serviceIds": [
+        "web"
+      ],
+      "internal": {
+        "labelNames": [
+          "WebComicアパンダ"
+        ]
+      },
+      "isNew": true,
+      "episode": {
+        "type": "first",
+        "code": "KC_0062130000200011_E",
+        "title": "第1話"
+      }
+    },
+    {
+      "code": "KC_003960_S",
+      "id": "018d6a6a-9af5-7ac7-bcb9-edddb7c63ecd",
+      "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/003960/resized/003960_001_01_0001.jpg",
+      "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/003960/003960_001_0001.jpg",
+      "bookCover": "https://cdn.comic-walker.com/integration/bibliodb/cover-image/prd/image/bw/coverImage_3338365.jpg",
+      "title": "見える子ちゃん",
+      "isOriginal": false,
+      "language": "ja",
+      "serializationStatus": "ongoing",
+      "serviceIds": [
+        "web",
+        "web_trial"
+      ],
+      "internal": {
+        "labelNames": [
+          "WebComicアパンダ"
+        ]
+      },
+      "isNew": false,
+      "episode": {
+        "type": "first",
+        "code": "KC_0039600000100011_E",
+        "title": "第1話"
+      }
+    },
+    {
+      "code": "KC_006110_S",
+      "id": "01933d37-19c2-7da9-82ae-6bfd409d4f77",
+      "thumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006110/resized/006110_001_01_0001.jpg",
+      "originalThumbnail": "https://cdn.comic-walker.com/integration/cdpf/resources/006110/006110_001_0001.jpg",
+      "title": "追放された魔王は地球を目指す！",
+      "isOriginal": false,
+      "language": "ja",
+      "serializationStatus": "ongoing",
+      "serviceIds": [
+        "web"
+      ],
+      "internal": {
+        "labelNames": [
+          "WebComicアパンダ"
+        ]
+      },
+      "isNew": false,
+      "episode": {
+        "type": "first",
+        "code": "KC_0061100000200011_E",
+        "title": "第1話　魔王、火星に立つ！"
+      }
+    }
+  ],
+  "latestEpisodeId": "0193fc83-12d4-7ff9-bf47-6fd7ad2729d3"
+}

@@ -24,7 +24,7 @@ pub struct Work {
     pub id: String,
     pub thumbnail: String,
     pub original_thumbnail: String,
-    pub book_cover: String,
+    pub book_cover: Option<String>,
     pub title: String,
     pub language: String,
     pub serialization_status: String,
@@ -78,7 +78,7 @@ pub struct Internal {
 pub async fn fetch_comic_walker_data(client: Client, id: &str) -> Result<Manga, FetchError> {
     let data = client
         .get(format!(
-            " https://comic-walker.com/api/contents/details/work?workCode={}",
+            "https://comic-walker.com/api/contents/details/work?workCode={}",
             id
         ))
 /*         .header("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36") */
@@ -122,4 +122,22 @@ pub async fn fetch_comic_walker_data(client: Client, id: &str) -> Result<Manga, 
         latest_chapter_release_date: release_date.fixed_offset(),
         latest_chapter_publish_day: release_date.weekday(),
     })
+}
+
+#[cfg(test)]
+mod tests {
+    use std::fs;
+
+    use super::*;
+
+    #[test]
+    fn test_deserialize_comic_walker_source() {
+        let paths = fs::read_dir("src/test_data/comic_walker").unwrap();
+
+        for path in paths {
+            let json = fs::read_to_string(path.unwrap().path()).unwrap();
+            let data: ComicWalkerData = serde_json::from_str(&json).unwrap();
+            dbg!(data);
+        }
+    }
 }
