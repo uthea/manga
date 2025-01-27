@@ -111,6 +111,13 @@ impl MangaSource {
                 .await
             }
             MangaSource::MechaComic => fetch_mecha_comic(client, manga_id).await,
+            MangaSource::YoungChampion => {
+                fetch_cdata_rss(
+                    client,
+                    format!("https://youngchampion.jp/series/{}/rss", manga_id),
+                )
+                .await
+            }
         }
     }
 }

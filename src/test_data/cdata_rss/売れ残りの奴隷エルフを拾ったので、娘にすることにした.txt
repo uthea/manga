@@ -1,0 +1,449 @@
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:webfeeds="http://webfeeds.org/rss/1.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title>&#x58f2;&#x308c;&#x6b8b;&#x308a;&#x306e;&#x5974;&#x96b7;&#x30a8;&#x30eb;&#x30d5;&#x3092;&#x62fe;&#x3063;&#x305f;&#x306e;&#x3067;&#x3001;&#x5a18;&#x306b;&#x3059;&#x308b;&#x3053;&#x3068;&#x306b;&#x3057;&#x305f;</title>
+        <description><div>
+ <p><span>悪人の街ゼニスで気ままに暮らす魔法使いのヴァイスは、奴隷として売られていたエルフの少女を見つける。ボロボロな身なりながらも、その少女が絶滅したはずの希少種であるハイエルフだと気づいたヴァイスは、彼女を購入し〝娘〟として育てることに。新米パパなヴァイスと、キュートな美幼女エルフのほっこりファンタジー★ </span></p>
+</div></description>
+        <link>https://youngchampion.jp/series/856798df666ae</link>
+        <atom:link rel="self" type="application/rss+xml" href="https://youngchampion.jp/series/856798df666ae/rss" />
+        <copyright>&#x58f2;&#x308c;&#x6b8b;&#x308a;&#x306e;&#x5974;&#x96b7;&#x30a8;&#x30eb;&#x30d5;&#x3092;&#x62fe;&#x3063;&#x305f;&#x306e;&#x3067;&#x3001;&#x5a18;&#x306b;&#x3059;&#x308b;&#x3053;&#x3068;&#x306b;&#x3057;&#x305f;</copyright>
+        <webfeeds:icon>https://cdn-public.comici.jp/series/2/202405141527516561443FA5C2A2B2B456EBA81F157D95727.png</webfeeds:icon>
+        <webfeeds:logo>https://cdn-public.comici.jp/series/2/202405141527516561443FA5C2A2B2B456EBA81F157D95727.png</webfeeds:logo>
+        <webfeeds:accentColor>D80C24</webfeeds:accentColor>
+        <webfeeds:related layout="card" target="browser" />
+        <webfeeds:analytics id="UA-114502607-1" engine="GoogleAnalytics" />
+        <language>ja</language>
+        <pubDate>Mon, 27 Jan 2025 22:13:15 +0900</pubDate>
+        <lastBuildDate>Mon, 27 Jan 2025 22:13:15 +0900</lastBuildDate>
+
+        <item>
+            <title><![CDATA[第14話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/7233/1735187986777_urenokori_elf_29.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 06 Jan 2025 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/17777f2179383/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>278816</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第14話①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/7233/1735187982291_urenokori_elf_28.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 30 Dec 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/8daf96f375c90/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>278815</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第13話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/7233/1732780747615_urenokori_elf_27.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 09 Dec 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/425934b619802/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>270591</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第13話①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/7233/1732780743252_urenokori_elf_26.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 02 Dec 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/bf3d53246e2b9/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>270590</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第12話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/21480/default/20241024123842150FE7F063C78DCFEB7DAA05A9AB46D0D6E-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 04 Nov 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/be34a959a37cd/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>260499</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第12話①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/21480/default/2024102412381152750502713A31526FF2F0CAC51B36931F1-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 28 Oct 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/ffa41459b2660/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>260498</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第11話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/602094/default/202409241847547294C15ED29E419A27D88BC22145482ED34-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 07 Oct 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/6313cd73d4cd0/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>254765</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第11話①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/602094/default/202409241844326932D3B42A0215538D03CF88E1092B0AEE2-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 30 Sep 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/7c0d445e5d38e/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>254764</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第10話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/1193201/default/202408191250548534CA5D288B9194AD2BF5AFE2E16E7B17A-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 09 Sep 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/166d6fb29e978/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>247409</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第10話①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/1193201/default/202408191246190183D7A8884F016BDEE7FDDE6C5959F4376-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 02 Sep 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/aa94789f14c41/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>247408</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第9話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/602094/default/20240703135048854970F1A9B533B0475A2722C78AFD3D063-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 05 Aug 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/0775b68dd5925/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>239604</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第9話①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/602094/default/20240703134623687A1080536C26B574FD74836464A2AC822-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 29 Jul 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/6796867863473/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>239602</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第8話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/20240607153901369FE7F063C78DCFEB7DAA05A9AB46D0D6E-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 08 Jul 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/063602624e76a/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>236033</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第8話①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/20240607153812298A1080536C26B574FD74836464A2AC822-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 01 Jul 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/fbb31731dd418/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>236032</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第7話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/202405091841141681DB92DCBA2A628120DC63F311724D7C3-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 10 Jun 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/0fb7a028a3340/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>230800</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第7話①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/20240509184011718526B2D5F6FE3410356B8E5E7537B6D0E-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 03 Jun 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/80e91e382fa1c/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>230799</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第6話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/20240408122721952FE7F063C78DCFEB7DAA05A9AB46D0D6E-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 06 May 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/49eaf6230fd78/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>217077</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第6話①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/202404081225345702A6CC14660867423738F68174470C56B-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 29 Apr 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/cedf470dcca0b/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>217076</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第5話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/2024030614311156571A44D3C0531F966C68C10DCE6D40BBB-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 08 Apr 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/15ceb4d09c633/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>196743</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第5話①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/20240306143027727526B2D5F6FE3410356B8E5E7537B6D0E-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 01 Apr 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/9540ea100a19e/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>196740</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第4話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/202402141436337994C15ED29E419A27D88BC22145482ED34-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 11 Mar 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/9836cae8e0f46/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>188249</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第4話①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/20240214143552993A1080536C26B574FD74836464A2AC822-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 04 Mar 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/878fc98d365e6/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>188247</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第3話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/202401151100078431DB92DCBA2A628120DC63F311724D7C3-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 05 Feb 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/537a40b22a11a/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>181312</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第3話①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/20240115105855897A1080536C26B574FD74836464A2AC822-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 29 Jan 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/58548cb009ab5/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>181310</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[第2話②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/2/default/2023122514592630171A44D3C0531F966C68C10DCE6D40BBB-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 08 Jan 2024 00:00:00 +0900</pubDate>
+            <link>https://youngchampion.jp/episodes/2dde10a2193cb/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>179129</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>ヤンチャンWeb</dc:creator>
+            <dc:language></dc:language>
+        </item>
+    </channel>
+</rss>
