@@ -8,16 +8,16 @@ use leptos_router::{
 use std::str::FromStr;
 use strum::IntoEnumIterator;
 use thaw::{
-    Button, ButtonAppearance, Combobox, ComboboxOption, ConfigProvider, Field, Input, Space,
-    SpaceJustify, Spinner, SpinnerSize, Toast, ToastBody, ToastIntent, ToastOptions, ToastTitle,
-    ToasterInjection, ToasterProvider,
+    Button, ButtonAppearance, Combobox, ComboboxOption, ConfigProvider, Divider, Field, Flex,
+    FlexGap, FlexJustify, Input, Layout, LayoutHeader, Link, Space, Spinner, SpinnerSize, Toast,
+    ToastBody, ToastIntent, ToastOptions, ToastTitle, ToasterInjection, ToasterProvider,
 };
 
 use crate::{core::types::MangaSource, server::add_manga};
 
 pub fn shell(options: LeptosOptions) -> impl IntoView {
     view! {
-        <!DOCTYPE html> 
+        <!DOCTYPE html>
         <html lang="en">
             <head>
                 <meta charset="utf-8" />
@@ -47,18 +47,15 @@ pub fn App() -> impl IntoView {
         // content for this welcome page
         <ConfigProvider>
             <ToasterProvider>
-                <NavBar />
                 <Router>
-                    <Space justify=SpaceJustify::Center>
-                        <main>
+                    <main>
+                        <PageLayout>
                             <Routes fallback=|| "Page not found.".into_view()>
                                 <Route path=StaticSegment("") view=HomePage />
                                 <Route path=StaticSegment("add") view=AddMangaPage />
                             </Routes>
-                        </main>
-                        {""}
-                    </Space>
-
+                        </PageLayout>
+                    </main>
                 </Router>
             </ToasterProvider>
         </ConfigProvider>
@@ -66,12 +63,32 @@ pub fn App() -> impl IntoView {
 }
 
 #[component]
-fn NavBar() -> impl IntoView {
+fn PageLayout(children: Children) -> impl IntoView {
     view! {
-        <Space vertical=false>
-            <p>"Manga Tracker"</p>
-            <div>""</div>
-        </Space>
+        <Layout>
+            <Flex vertical=true>
+                <LayoutHeader>
+                    <p>"Manga Tracker"</p>
+                    <Divider />
+                </LayoutHeader>
+
+                <Layout>
+                    <Flex gap=FlexGap::WH(60, 60)>
+                        <Flex gap=FlexGap::Large vertical=true style="padding-top:12px">
+                            <Link href="/">"Home"</Link>
+                            <Link href="/dashboard">"Dashboard"</Link>
+                        </Flex>
+
+                        <div style="position: absolute; left: 115px; height: 100%;">
+                            <Divider vertical=true />
+                        </div>
+                        <Flex justify=FlexJustify::Center style="width: 100%; padding-top:12px">
+                            {children()}
+                        </Flex>
+                    </Flex>
+                </Layout>
+            </Flex>
+        </Layout>
     }
 }
 
