@@ -112,7 +112,7 @@ fn AddMangaDialog(open: RwSignal<bool>, #[prop(into)] on_add: Callback<()>) -> i
     let is_submitting = RwSignal::new(false);
 
     let toaster = ToasterInjection::expect_context();
-    let on_add = move |_| {
+    let handle_add = move |_| {
         let id = manga_id.get();
         let source = selected_source
             .get()
@@ -190,7 +190,7 @@ fn AddMangaDialog(open: RwSignal<bool>, #[prop(into)] on_add: Callback<()>) -> i
                     <DialogActions>
                         <Button
                             appearance=ButtonAppearance::Primary
-                            on_click=on_add
+                            on_click=handle_add
                             disabled=is_submitting
                         >
                             {move || {
