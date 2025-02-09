@@ -53,30 +53,28 @@ pub fn Dashboard() -> impl IntoView {
                             </TableRow>
                         }
                     }>
-                        {move || {
+                        {move || Suspend::new(async move {
                             data_source
-                                .get()
-                                .map(|ds| {
-                                    ds.data
-                                        .into_iter()
-                                        .map(|(source, manga)| {
-                                            view! {
-                                                <TableRow>
-                                                    <TableCell>
-                                                        <TableCellLayout>{source.to_string()}</TableCellLayout>
-                                                    </TableCell>
-                                                    <TableCell>
-                                                        <TableCellLayout>{manga.title}</TableCellLayout>
-                                                    </TableCell>
-                                                    <TableCell>
-                                                        <TableCellLayout>{manga.author}</TableCellLayout>
-                                                    </TableCell>
-                                                </TableRow>
-                                            }
-                                        })
-                                        .collect_view()
+                                .await
+                                .data
+                                .into_iter()
+                                .map(|(source, manga)| {
+                                    view! {
+                                        <TableRow>
+                                            <TableCell>
+                                                <TableCellLayout>{source.to_string()}</TableCellLayout>
+                                            </TableCell>
+                                            <TableCell>
+                                                <TableCellLayout>{manga.title}</TableCellLayout>
+                                            </TableCell>
+                                            <TableCell>
+                                                <TableCellLayout>{manga.author}</TableCellLayout>
+                                            </TableCell>
+                                        </TableRow>
+                                    }
                                 })
-                        }}
+                                .collect_view()
+                        })}
                     </Transition>
                 </TableBody>
             </Table>
