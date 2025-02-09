@@ -1,11 +1,15 @@
-use crate::core::types::{Manga, MangaSource};
+use crate::core::types::Paginated;
+use crate::core::types::{Manga, MangaQuery, MangaSource};
 use leptos::server;
 use leptos::server_fn::ServerFnError;
 
 #[cfg(feature = "ssr")]
 use {
-    crate::core::fetch::FetchError, crate::db::inquiry::get_manga, crate::db::insert::insert_manga,
-    crate::state::AppState, leptos::context::use_context,
+    crate::core::fetch::FetchError,
+    crate::db::inquiry::{get_manga, get_manga_paginated},
+    crate::db::insert::insert_manga,
+    crate::state::AppState,
+    leptos::context::use_context,
 };
 
 #[server]
@@ -57,4 +61,28 @@ pub async fn add_manga(
         })?;
 
     Ok(manga)
+}
+
+#[server]
+pub async fn retrieve_manga(
+    page_number: i64,
+    page_size: i64,
+    #[server(default)] query_option: MangaQuery,
+) -> Result<Paginated<Vec<(MangaSource, Manga)>>, ServerFnError> {
+    let state = use_context::<AppState>().expect("AppState not found from context");
+
+    let paginated_result = get_manga_paginated(page_number, page_size, query_option, &state.pool)
+        .await
+        .map_err(|_| ServerFnError::new("Error at querying manga"))?;
+
+    let result = Paginated {
+        data: paginated_result
+            .data
+            .into_iter()
+            .map(|d| (d.source.clone(), d.into_manga()))
+            .collect(),
+        total_page: paginated_result.total_page,
+    };
+
+    Ok(result)
 }

@@ -5,12 +5,8 @@ use serenity::all::{CreateEmbed, ExecuteWebhook, Http, Webhook};
 use sqlx::PgPool;
 
 use crate::{
-    core::types::MangaSource,
-    db::{
-        inquiry::{get_manga_paginated, MangaQuery},
-        model::MangaRow,
-        update::update_manga_batch,
-    },
+    core::types::{MangaQuery, MangaSource},
+    db::{inquiry::get_manga_paginated, model::MangaRow, update::update_manga_batch},
 };
 
 #[derive(Debug)]

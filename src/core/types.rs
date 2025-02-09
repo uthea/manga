@@ -2,6 +2,18 @@ use chrono::{DateTime, FixedOffset, Weekday};
 use serde::{Deserialize, Serialize};
 use strum_macros::{Display, EnumIter, EnumString};
 
+#[derive(Default, Clone, Deserialize, Serialize, Debug, PartialEq)]
+pub struct MangaQuery {
+    pub source: Option<MangaSource>,
+    pub day: Option<Weekday>,
+}
+
+#[derive(Debug, Serialize, Deserialize, Clone)]
+pub struct Paginated<T> {
+    pub data: T,
+    pub total_page: i64,
+}
+
 #[derive(
     EnumIter,
     serde::Deserialize,

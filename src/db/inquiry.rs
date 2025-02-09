@@ -1,15 +1,6 @@
-use chrono::Weekday;
+use super::model::{DbWeekday, MangaRow};
+use crate::core::types::{MangaQuery, MangaSource, Paginated};
 use sqlx::{FromRow, PgPool, QueryBuilder, Row};
-
-use crate::core::types::MangaSource;
-
-use super::model::{DbWeekday, MangaRow, Paginated};
-
-#[derive(Default)]
-pub struct MangaQuery {
-    pub source: Option<MangaSource>,
-    pub day: Option<Weekday>,
-}
 
 pub async fn get_manga(
     source: &MangaSource,
