@@ -1,15 +1,7 @@
-use chrono::{NaiveDateTime, Weekday};
-
-use chrono::TimeZone;
-use chrono_tz::Japan;
-
 use crate::core::{types::Manga, types::MangaSource};
-
-#[derive(Debug)]
-pub struct Paginated<T> {
-    pub data: T,
-    pub total_page: i64,
-}
+use chrono::TimeZone;
+use chrono::{Local, NaiveDateTime, Weekday};
+use chrono_tz::Japan;
 
 #[derive(sqlx::FromRow, Debug)]
 pub struct MangaRow {
@@ -45,6 +37,22 @@ impl MangaRow {
             latest_chapter_released: current_dt.with_timezone(&Japan)
                 >= Japan.from_local_datetime(&release_dt).unwrap(),
             last_update: chrono::offset::Local::now().naive_local(),
+        }
+    }
+
+    pub fn into_manga(self) -> Manga {
+        Manga {
+            title: self.title,
+            cover_url: self.cover_url,
+            author: self.author,
+            latest_chapter_title: self.latest_chapter_title,
+            latest_chapter_url: self.latest_chapter_url,
+            latest_chapter_release_date: Local
+                .from_local_datetime(&self.latest_chapter_release_date)
+                .single()
+                .unwrap()
+                .fixed_offset(),
+            latest_chapter_publish_day: self.latest_chapter_publish_day.into(),
         }
     }
 }
