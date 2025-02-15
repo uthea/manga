@@ -24,16 +24,7 @@ pub async fn update_series(webhook_url: String, pool: &PgPool) {
 
     loop {
         println!("fetching series from db: page {}", page_counter);
-        let series = get_manga_paginated(
-            page_counter,
-            10,
-            MangaQuery {
-                source: None,
-                day: None,
-            },
-            pool,
-        )
-        .await;
+        let series = get_manga_paginated(page_counter, 10, MangaQuery::default(), pool).await;
 
         if let Ok(mut result) = series {
             if result.data.is_empty() {

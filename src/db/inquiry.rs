@@ -36,6 +36,24 @@ pub async fn get_manga_paginated(
         query.push_bind(source);
     }
 
+    if let Some(title) = &query_option.title {
+        query.push(" AND title like concat('%', ");
+        query.push_bind(title.to_lowercase());
+        query.push(", '%')");
+    }
+
+    if let Some(author) = &query_option.author {
+        query.push(" AND author like concat('%', ");
+        query.push_bind(author.to_lowercase());
+        query.push(", '%')");
+    }
+
+    if let Some(chapter_title) = &query_option.chapter_title {
+        query.push(" AND latest_chapter_title like concat('%', ");
+        query.push_bind(chapter_title.to_lowercase());
+        query.push(", '%')");
+    }
+
     if let Some(day) = &query_option.day {
         query.push(" AND latest_chapter_publish_day =  ");
         query.push_bind(DbWeekday::from(*day));

@@ -1,15 +1,17 @@
 use std::str::FromStr;
 
 use crate::core::types::{MangaQuery, MangaSource};
+use icondata::AiCaretDownOutlined;
 use leptos::{prelude::*, task::spawn_local};
 use leptos_meta::Title;
+use leptos_use::signal_debounced;
 use strum::IntoEnumIterator;
 use thaw::{
     Button, ButtonAppearance, Combobox, ComboboxOption, Dialog, DialogActions, DialogBody,
-    DialogContent, DialogSurface, DialogTitle, Field, Flex, FlexGap, FlexJustify, Input,
-    Pagination, Spinner, SpinnerSize, Table, TableBody, TableCell, TableCellLayout, TableHeader,
-    TableHeaderCell, TableRow, Toast, ToastBody, ToastIntent, ToastOptions, ToastTitle,
-    ToasterInjection,
+    DialogContent, DialogSurface, DialogTitle, Field, Flex, FlexAlign, FlexGap, FlexJustify, Icon,
+    Input, Menu, MenuItem, MenuPosition, MenuTrigger, Pagination, Spinner, SpinnerSize, Table,
+    TableBody, TableCell, TableCellLayout, TableHeader, TableHeaderCell, TableRow, Toast,
+    ToastBody, ToastIntent, ToastOptions, ToastTitle, ToasterInjection,
 };
 
 #[component]
@@ -18,17 +20,57 @@ pub fn Dashboard() -> impl IntoView {
 
     let show_add_dialog = RwSignal::new(false);
     let page: RwSignal<usize> = RwSignal::new(1);
-    let query_option = RwSignal::new(MangaQuery {
-        source: None,
-        day: None,
-    });
+
+    // filter
+    let source_filter = RwSignal::new(None::<String>);
+    let title_filter = RwSignal::new("".to_string());
+    let author_filter = RwSignal::new("".to_string());
+    let chapter_filter = RwSignal::new("".to_string());
+
+    let title_filter_debounce: Signal<String> = signal_debounced(title_filter.read_only(), 250.0);
+    let author_filter_debounce: Signal<String> = signal_debounced(author_filter.read_only(), 250.0);
+    let chapter_filter_debounce: Signal<String> =
+        signal_debounced(chapter_filter.read_only(), 250.0);
 
     let data_source = Resource::new(
-        move || (page.get(), query_option.get()),
-        move |(current_page, query_op)| async move {
-            retrieve_manga(current_page as i64, 10, query_op)
-                .await
-                .unwrap()
+        move || {
+            (
+                page.get(),
+                source_filter.get(),
+                title_filter_debounce.get(),
+                author_filter_debounce.get(),
+                chapter_filter_debounce.get(),
+            )
+        },
+        move |(current_page, source, title, author, chapter_title)| async move {
+            let title = match title.as_str() {
+                "" => None,
+                _ => Some(title),
+            };
+
+            let author = match author.as_str() {
+                "" => None,
+                _ => Some(author),
+            };
+
+            let chapter_title = match chapter_title.as_str() {
+                "" => None,
+                _ => Some(chapter_title),
+            };
+
+            retrieve_manga(
+                current_page as i64,
+                10,
+                MangaQuery {
+                    source: source.map(|s| MangaSource::from_str(&s).unwrap()),
+                    title,
+                    author,
+                    chapter_title,
+                    day: None,
+                },
+            )
+            .await
+            .unwrap()
         },
     );
 
@@ -40,9 +82,101 @@ pub fn Dashboard() -> impl IntoView {
             <Table>
                 <TableHeader>
                     <TableRow>
-                        <TableHeaderCell>"Source"</TableHeaderCell>
-                        <TableHeaderCell>"Title"</TableHeaderCell>
-                        <TableHeaderCell>"Author"</TableHeaderCell>
+                        <TableHeaderCell>
+                            <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
+                                <MenuTrigger slot>
+                                    <Flex align=FlexAlign::Center>
+                                        <p>"Source"</p>
+                                        <Icon
+                                            icon=AiCaretDownOutlined
+                                            width="1.5em"
+                                            height="1.5em"
+                                        />
+                                    </Flex>
+                                </MenuTrigger>
+
+                                <MenuItem value="no_icon" disabled=true>
+                                    <Field label="Filter Source">
+                                        <Combobox
+                                            selected_options=source_filter
+                                            placeholder="Select a source"
+                                            clearable=true
+                                        >
+                                            {move || {
+                                                MangaSource::iter()
+                                                    .map(|s| {
+                                                        view! {
+                                                            <ComboboxOption value=s.to_string() text=s.to_string() />
+                                                        }
+                                                    })
+                                                    .collect_view()
+                                            }}
+
+                                        </Combobox>
+                                    </Field>
+                                </MenuItem>
+                            </Menu>
+                        </TableHeaderCell>
+                        <TableHeaderCell>
+                            <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
+                                <MenuTrigger slot>
+                                    <Flex align=FlexAlign::Center>
+                                        <p>"Title"</p>
+                                        <Icon
+                                            icon=AiCaretDownOutlined
+                                            width="1.5em"
+                                            height="1.5em"
+                                        />
+                                    </Flex>
+                                </MenuTrigger>
+
+                                <MenuItem value="no_icon" disabled=true>
+                                    <Field label="Filter Title">
+                                        <Input value=title_filter />
+                                    </Field>
+                                </MenuItem>
+                            </Menu>
+                        </TableHeaderCell>
+                        <TableHeaderCell>
+                            <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
+                                <MenuTrigger slot>
+                                    <Flex align=FlexAlign::Center>
+                                        <p>"Author"</p>
+                                        <Icon
+                                            icon=AiCaretDownOutlined
+                                            width="1.5em"
+                                            height="1.5em"
+                                        />
+                                    </Flex>
+                                </MenuTrigger>
+
+                                <MenuItem value="no_icon" disabled=true>
+                                    <Field label="Filter Author">
+                                        <Input value=author_filter />
+                                    </Field>
+                                </MenuItem>
+                            </Menu>
+                        </TableHeaderCell>
+                        <TableHeaderCell>
+                            <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
+                                <MenuTrigger slot>
+                                    <Flex align=FlexAlign::Center>
+                                        <p>"Chapter Name"</p>
+                                        <Icon
+                                            icon=AiCaretDownOutlined
+                                            width="1.5em"
+                                            height="1.5em"
+                                        />
+                                    </Flex>
+                                </MenuTrigger>
+
+                                <MenuItem value="no_icon" disabled=true>
+                                    <Field label="Filter Chapter">
+                                        <Input value=chapter_filter />
+                                    </Field>
+                                </MenuItem>
+                            </Menu>
+                        </TableHeaderCell>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -69,6 +203,11 @@ pub fn Dashboard() -> impl IntoView {
                                             </TableCell>
                                             <TableCell>
                                                 <TableCellLayout>{manga.author}</TableCellLayout>
+                                            </TableCell>
+                                            <TableCell>
+                                                <TableCellLayout>
+                                                    {manga.latest_chapter_title}
+                                                </TableCellLayout>
                                             </TableCell>
                                         </TableRow>
                                     }
