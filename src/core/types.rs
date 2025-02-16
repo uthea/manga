@@ -5,6 +5,9 @@ use strum_macros::{Display, EnumIter, EnumString};
 #[derive(Default, Clone, Deserialize, Serialize, Debug, PartialEq)]
 pub struct MangaQuery {
     pub source: Option<MangaSource>,
+    pub title: Option<String>,
+    pub author: Option<String>,
+    pub chapter_title: Option<String>,
     pub day: Option<Weekday>,
 }
 
