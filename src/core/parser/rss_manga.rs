@@ -86,7 +86,7 @@ pub mod rfc2822 {
         deserializer.deserialize_str(Rfc2822Visitor)
     }
 
-    impl<'de> de::Visitor<'de> for Rfc2822Visitor {
+    impl de::Visitor<'_> for Rfc2822Visitor {
         type Value = DateTime<FixedOffset>;
 
         fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
