@@ -1,4 +1,4 @@
-use std::str::FromStr;
+use std::{collections::HashSet, str::FromStr};
 
 use crate::core::types::{MangaQuery, MangaSource};
 use icondata::AiCaretDownOutlined;
@@ -19,6 +19,7 @@ pub fn Dashboard() -> impl IntoView {
     use crate::server::retrieve_manga;
 
     let show_add_dialog = RwSignal::new(false);
+    let show_delete_dialog = RwSignal::new(false);
     let page: RwSignal<usize> = RwSignal::new(1);
 
     // filter
@@ -31,6 +32,8 @@ pub fn Dashboard() -> impl IntoView {
     let author_filter_debounce: Signal<String> = signal_debounced(author_filter.read_only(), 250.0);
     let chapter_filter_debounce: Signal<String> =
         signal_debounced(chapter_filter.read_only(), 250.0);
+
+    let selected_rows = RwSignal::new(HashSet::<(MangaSource, String)>::new());
 
     let data_source = Resource::new(
         move || {
@@ -75,6 +78,7 @@ pub fn Dashboard() -> impl IntoView {
     );
 
     let page_count = Signal::derive(move || data_source.get().map_or(1, |d| d.total_page as usize));
+    let is_select_empty = Signal::derive(move || selected_rows.get().is_empty());
 
     view! {
         <Flex vertical=true gap=FlexGap::Large>
@@ -82,6 +86,7 @@ pub fn Dashboard() -> impl IntoView {
             <Table>
                 <TableHeader>
                     <TableRow>
+                        <TableHeaderCell>"Action"</TableHeaderCell>
                         <TableHeaderCell>
                             <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
                                 <MenuTrigger slot>
@@ -192,9 +197,39 @@ pub fn Dashboard() -> impl IntoView {
                                 .await
                                 .data
                                 .into_iter()
-                                .map(|(source, manga)| {
+                                .map(|(source, manga_id, manga)| {
+                                    let src = source.clone();
+                                    let src_check = source.clone();
+                                    let id_check = manga_id.clone();
                                     view! {
                                         <TableRow>
+                                            <TableCell>
+                                                <input
+                                                    type="checkbox"
+                                                    style="transform: scale(1.3)"
+                                                    on:change:target=move |ev| {
+                                                        match ev.target().checked() {
+                                                            true => {
+                                                                selected_rows
+                                                                    .update(|value| {
+                                                                        value.insert((src.clone(), manga_id.clone()));
+                                                                    })
+                                                            }
+                                                            false => {
+                                                                selected_rows
+                                                                    .update(|value| {
+                                                                        value.remove(&(src.clone(), manga_id.clone()));
+                                                                    })
+                                                            }
+                                                        };
+                                                    }
+                                                    prop:checked=move || {
+                                                        selected_rows
+                                                            .get()
+                                                            .contains(&(src_check.clone(), id_check.clone()))
+                                                    }
+                                                />
+                                            </TableCell>
                                             <TableCell>
                                                 <TableCellLayout>{source.to_string()}</TableCellLayout>
                                             </TableCell>
@@ -218,12 +253,22 @@ pub fn Dashboard() -> impl IntoView {
                 </TableBody>
             </Table>
             <Flex justify=FlexJustify::SpaceBetween>
-                <Button
-                    appearance=ButtonAppearance::Primary
-                    on_click=move |_| show_add_dialog.set(true)
-                >
-                    "Add"
-                </Button>
+                <Flex justify=FlexJustify::SpaceBetween gap=FlexGap::Large>
+                    <Button
+                        appearance=ButtonAppearance::Primary
+                        on_click=move |_| show_add_dialog.set(true)
+                    >
+                        "Add"
+                    </Button>
+                    <Button
+                        appearance=ButtonAppearance::Primary
+                        on_click=move |_| show_delete_dialog.set(true)
+                        disabled=is_select_empty
+                    >
+                        "Delete"
+                    </Button>
+
+                </Flex>
                 <Transition fallback=move || {
                     view! { <p>"Loading..."</p> }
                 }>{move || view! { <Pagination page page_count /> }}</Transition>
@@ -233,6 +278,15 @@ pub fn Dashboard() -> impl IntoView {
         <AddMangaDialog
             open=show_add_dialog
             on_add=move || {
+                data_source.refetch();
+            }
+        />
+
+        <DeleteMangaDialog
+            open=show_delete_dialog
+            selected_rows=selected_rows.read_only()
+            on_delete=move || {
+                selected_rows.update(|values| values.clear());
                 data_source.refetch();
             }
         />
@@ -336,6 +390,91 @@ fn AddMangaDialog(open: RwSignal<bool>, #[prop(into)] on_add: Callback<()>) -> i
                                     .then(|| view! { <Spinner size=SpinnerSize::Tiny /> })
                             }}
                             "Add"
+                        </Button>
+                    </DialogActions>
+                </DialogBody>
+            </DialogSurface>
+        </Dialog>
+    }
+}
+
+#[component]
+fn DeleteMangaDialog(
+    open: RwSignal<bool>,
+    selected_rows: ReadSignal<HashSet<(MangaSource, String)>>,
+    #[prop(into)] on_delete: Callback<()>,
+) -> impl IntoView {
+    use crate::server::delete_manga;
+
+    // state
+    let is_submitting = RwSignal::new(false);
+
+    let toaster = ToasterInjection::expect_context();
+    let handle_delete =
+        move |_| {
+            spawn_local(async move {
+                is_submitting.set(true);
+                let values = selected_rows.get().into_iter().collect::<Vec<_>>();
+                let result = delete_manga(values).await;
+
+                match result {
+                    Ok(num_rows) => {
+                        toaster.dispatch_toast(
+                        move || view! {
+                            <Toast>
+                                <ToastTitle>"Delete Success"</ToastTitle>
+                                <ToastBody>{format!("{} manga deleted", num_rows)}</ToastBody>
+                            </Toast>
+                        },
+                        ToastOptions::default().with_intent(ToastIntent::Success),
+                    );
+                        on_delete.run(());
+                    }
+                    Err(e) => toaster.dispatch_toast(
+                        move || {
+                            view! {
+                                <Toast>
+                                    <ToastTitle>"Error"</ToastTitle>
+                                    <ToastBody>{e.to_string()}</ToastBody>
+                                </Toast>
+                            }
+                        },
+                        ToastOptions::default().with_intent(ToastIntent::Error),
+                    ),
+                }
+
+                is_submitting.set(false);
+                open.set(false);
+            })
+        };
+
+    view! {
+        <Dialog open>
+            <DialogSurface>
+                <DialogBody>
+                    <DialogTitle>"Delete Manga"</DialogTitle>
+                    <DialogContent>
+                        <p>"Are you sure to delete selected manga ?"</p>
+                    </DialogContent>
+
+                    <DialogActions>
+                        <Button
+                            appearance=ButtonAppearance::Primary
+                            on_click=handle_delete
+                            disabled=is_submitting
+                        >
+                            {move || {
+                                is_submitting
+                                    .get()
+                                    .then(|| view! { <Spinner size=SpinnerSize::Tiny /> })
+                            }}
+                            "Yes"
+                        </Button>
+                        <Button
+                            appearance=ButtonAppearance::Primary
+                            on_click=move |_| open.set(false)
+                        >
+                            "No"
                         </Button>
                     </DialogActions>
                 </DialogBody>

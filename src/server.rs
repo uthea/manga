@@ -6,6 +6,7 @@ use leptos::server_fn::ServerFnError;
 #[cfg(feature = "ssr")]
 use {
     crate::core::fetch::FetchError,
+    crate::db::delete::delete_manga_bulk,
     crate::db::inquiry::{get_manga, get_manga_paginated},
     crate::db::insert::insert_manga,
     crate::state::AppState,
@@ -68,7 +69,7 @@ pub async fn retrieve_manga(
     page_number: i64,
     page_size: i64,
     #[server(default)] query_option: MangaQuery,
-) -> Result<Paginated<Vec<(MangaSource, Manga)>>, ServerFnError> {
+) -> Result<Paginated<Vec<(MangaSource, String, Manga)>>, ServerFnError> {
     let state = use_context::<AppState>().expect("AppState not found from context");
 
     let paginated_result = get_manga_paginated(page_number, page_size, query_option, &state.pool)
@@ -79,10 +80,31 @@ pub async fn retrieve_manga(
         data: paginated_result
             .data
             .into_iter()
-            .map(|d| (d.source.clone(), d.into_manga()))
+            .map(|d| (d.source.clone(), d.manga_id.clone(), d.into_manga()))
             .collect(),
         total_page: paginated_result.total_page,
     };
 
     Ok(result)
+}
+
+#[server]
+pub async fn delete_manga(
+    #[server(default)] manga_list: Vec<(MangaSource, String)>,
+) -> Result<u64, ServerFnError> {
+    let state = use_context::<AppState>().expect("AppState not found from context");
+
+    if manga_list.is_empty() {
+        return Err(ServerFnError::new("manga list cannot be empty"));
+    }
+
+    let num_rows = delete_manga_bulk(manga_list, &state.pool)
+        .await
+        .map_err(|_| ServerFnError::new("Error at deleting manga"))?;
+
+    if num_rows == 0 {
+        return Err(ServerFnError::new("no manga deleted"));
+    }
+
+    Ok(num_rows)
 }
