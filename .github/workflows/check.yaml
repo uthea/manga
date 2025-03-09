@@ -13,8 +13,10 @@ jobs:
       - uses: actions/checkout@v3
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
+      - name: Run csr tests
+        run: cargo test --no-default-features --features hydrate --lib
       - name: Run ssr tests
-        run: cargo test --features ssr
+        run: cargo test --no-default-features --features ssr
 
   clippy:
     name: Clippy
@@ -25,5 +27,7 @@ jobs:
         with:
           components: clippy
       - uses: Swatinem/rust-cache@v2
-      - name: Linting
-        run: cargo clippy -- -D warnings
+      - name: Linting csr
+        run: cargo clippy --no-default-features --lib --features hydrate -- -D warnings
+      - name: Linting ssr
+        run: cargo clippy --no-default-features --features ssr -- -D warnings
