@@ -13,14 +13,6 @@ use {
     sqlx::Postgres,
 };
 
-#[cfg(test)]
-use std::sync::OnceLock;
-
-#[cfg(test)]
-static STATIC_CONTAINER: OnceLock<
-    testcontainers::ContainerAsync<testcontainers_modules::postgres::Postgres>,
-> = OnceLock::new();
-
 #[cfg(feature = "ssr")]
 async fn get_db() -> Result<Pool<Postgres>, ServerFnError> {
     #[cfg(not(test))]
@@ -36,10 +28,8 @@ async fn get_db() -> Result<Pool<Postgres>, ServerFnError> {
 
     #[cfg(test)]
     let db = {
-        let container = STATIC_CONTAINER.get().unwrap();
-
-        let host_port = container.get_host_port_ipv4(5432).await.unwrap();
-        let host_ip = container.get_host().await.unwrap().to_string();
+        let host_port = postgres_test_container::get_postgres_node_port().await;
+        let host_ip = postgres_test_container::get_postgres_node_host().await;
 
         let options = PgConnectOptions::new()
             .username("postgres")
@@ -158,34 +148,166 @@ pub async fn delete_manga(
 }
 
 #[cfg(all(test, feature = "ssr"))]
-mod tests {
-    use testcontainers::{runners::AsyncRunner, ImageExt};
-    use testcontainers_modules::postgres;
+mod postgres_test_container {
+    // taken from https://github.com/lloydmeta/miniaturs/blob/d244760f5039a15450f5d4566ffe52d19d427771/server/src/test_utils/mod.rs
 
-    use super::*;
+    use std::thread;
+    use testcontainers::{runners::AsyncRunner, ContainerAsync, ImageExt};
+    use tokio::sync::mpsc;
+    use tokio::sync::{
+        mpsc::{Receiver, Sender},
+        Mutex, OnceCell,
+    };
 
-    async fn init_container() {
-        if STATIC_CONTAINER.get().is_none() {
-            let container = postgres::Postgres::default()
-                .with_tag("13-alpine")
-                .start()
-                .await
-                .unwrap();
+    use testcontainers_modules::postgres::Postgres;
 
-            let _ = STATIC_CONTAINER.set(container);
+    enum ContainerCommands {
+        Stop,
+    }
+
+    struct Channel<T> {
+        tx: Sender<T>,
+        rx: Mutex<Receiver<T>>,
+    }
+
+    fn channel<T>() -> Channel<T> {
+        let (tx, rx) = mpsc::channel(32);
+        Channel {
+            tx,
+            rx: Mutex::new(rx),
         }
     }
 
+    static POSTGRES_NODE: OnceCell<Mutex<Option<ContainerAsync<Postgres>>>> = OnceCell::const_new();
+
+    async fn postgres_node() -> &'static Mutex<Option<ContainerAsync<Postgres>>> {
+        POSTGRES_NODE
+            .get_or_init(|| async {
+                let container = Postgres::default()
+                    .with_tag("13-alpine")
+                    .start()
+                    .await
+                    .unwrap();
+
+                Mutex::new(Some(container))
+            })
+            .await
+    }
+
+    pub async fn get_postgres_node_port() -> u16 {
+        postgres_node()
+            .await
+            .lock()
+            .await
+            .as_ref()
+            .unwrap()
+            .get_host_port_ipv4(5432)
+            .await
+            .unwrap()
+    }
+
+    pub async fn get_postgres_node_host() -> String {
+        postgres_node()
+            .await
+            .lock()
+            .await
+            .as_ref()
+            .unwrap()
+            .get_host()
+            .await
+            .unwrap()
+            .to_string()
+    }
+
+    async fn drop_postgres_node() {
+        postgres_node()
+            .await
+            .lock()
+            .await
+            .take()
+            .unwrap()
+            .rm()
+            .await
+            .unwrap();
+    }
+
+    static POSTGRES_CHANNEL: std::sync::OnceLock<Channel<ContainerCommands>> =
+        std::sync::OnceLock::new();
+    fn postgres_channel() -> &'static Channel<ContainerCommands> {
+        POSTGRES_CHANNEL.get_or_init(channel)
+    }
+
+    static POSTGRES_SHUT_DOWN_NOTIFIER_CHANNEL: std::sync::OnceLock<Channel<()>> =
+        std::sync::OnceLock::new();
+    fn postgres_shut_down_notifier_channel() -> &'static Channel<()> {
+        POSTGRES_SHUT_DOWN_NOTIFIER_CHANNEL.get_or_init(channel)
+    }
+
+    static TOKIO_RUNTIME: std::sync::OnceLock<tokio::runtime::Runtime> = std::sync::OnceLock::new();
+    fn tokio_runtime() -> &'static tokio::runtime::Runtime {
+        TOKIO_RUNTIME.get_or_init(|| tokio::runtime::Runtime::new().unwrap())
+    }
+
+    async fn start_postgres() {
+        let mut rx = postgres_channel().rx.lock().await;
+        while let Some(command) = rx.recv().await {
+            match command {
+                ContainerCommands::Stop => {
+                    drop_postgres_node().await;
+                    rx.close();
+                }
+            }
+        }
+    }
+
+    fn shutdown_postgres() {
+        postgres_channel()
+            .tx
+            .blocking_send(ContainerCommands::Stop)
+            .unwrap();
+        postgres_shut_down_notifier_channel()
+            .rx
+            .blocking_lock()
+            .blocking_recv()
+            .unwrap();
+    }
+
+    fn setup_postgres() {
+        thread::spawn(|| {
+            tokio_runtime().block_on(start_postgres());
+            // This needs to be here otherwise the container did not call the drop function before the application stops
+            postgres_shut_down_notifier_channel()
+                .tx
+                .blocking_send(())
+                .unwrap();
+        });
+    }
+
+    // Setup hooks registration
+    #[ctor::ctor]
+    fn on_startup() {
+        setup_postgres();
+    }
+
+    // Shutdown hook registration
+    #[ctor::dtor]
+    fn on_shutdown() {
+        shutdown_postgres();
+    }
+}
+
+#[cfg(all(test, feature = "ssr"))]
+mod tests {
+    use super::*;
+
     #[tokio::test]
     async fn add_manga_success() {
-        init_container().await;
         let result = add_manga("c909ad9c5cd69".into(), Some(MangaSource::YoungAnimal)).await;
         result.unwrap();
     }
 
     #[tokio::test]
     async fn add_manga_error_not_found() {
-        init_container().await;
         if (add_manga("".into(), Some(MangaSource::YoungAnimal)).await).is_ok() {
             panic!("server fn should error")
         };
@@ -193,7 +315,6 @@ mod tests {
 
     #[tokio::test]
     async fn delete_manga_error_not_found() {
-        init_container().await;
         match delete_manga(vec![(MangaSource::TonariYoungJump, "1234".to_string())]).await {
             Ok(_) => panic!("server fn should error"),
             Err(err) => {
@@ -207,7 +328,6 @@ mod tests {
 
     #[tokio::test]
     async fn delete_manga_success() {
-        init_container().await;
         let id = "10834108156641784251";
 
         let _ = add_manga(id.to_string(), Some(MangaSource::ShounenJumpPlus))
