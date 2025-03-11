@@ -94,6 +94,9 @@ pub enum MangaSource {
 
     #[strum(to_string = "Young Champion")]
     YoungChampion,
+
+    #[strum(to_string = "Ichijin Plus")]
+    IchijinPlus,
 }
 
 #[derive(Deserialize, Serialize, Clone, Debug)]

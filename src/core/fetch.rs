@@ -7,7 +7,10 @@ use crate::core::parser::{
 };
 use http::header;
 
-use super::types::{Manga, MangaSource};
+use super::{
+    parser::ichijin_plus::fetch_ichijin_plus_data,
+    types::{Manga, MangaSource},
+};
 
 #[derive(Debug)]
 pub enum FetchError {
@@ -118,6 +121,7 @@ impl MangaSource {
                 )
                 .await
             }
+            MangaSource::IchijinPlus => fetch_ichijin_plus_data(client, manga_id).await,
         }
     }
 }
