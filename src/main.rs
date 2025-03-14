@@ -1,3 +1,5 @@
+use std::time::Duration;
+
 use axum::{
     extract::{Path, Request, State},
     response::IntoResponse,
@@ -48,6 +50,7 @@ async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
 
     let pool = PgPoolOptions::new()
         .min_connections(5)
+        .idle_timeout(Duration::from_secs(600))
         .connect_with(options)
         .await?;
 
