@@ -57,11 +57,7 @@ async fn selenium_node() -> &'static Mutex<Option<ContainerAsync<Selenium>>> {
     SELENIUM_NODE
         .get_or_init(|| async {
             let container = Selenium::default()
-                .with_cmd([
-                    "/opt/bin/entry_point.sh",
-                    "--add-host=host.docker.internal:172.17.0.1",
-                    r#"--shm-size="2g""#,
-                ])
+                .with_cmd(["/opt/bin/entry_point.sh", r#"--shm-size="2g""#])
                 .start()
                 .await
                 .unwrap();

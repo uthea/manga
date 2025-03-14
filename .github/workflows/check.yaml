@@ -6,8 +6,6 @@ on:
 name: check
 env:
   CARGO_TERM_COLOR: always
-  APP_ENV: e2e
-  LEPTOS_SITE_ADDR: 0.0.0.0:3000
 
 jobs:
   leptos-test:
@@ -26,6 +24,11 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/ekshore/cargo-leptos-runner-stable:v1.85.0
+      env:
+        APP_ENV: e2e
+        LEPTOS_SITE_ADDR: 0.0.0.0:3000
+      ports:
+        - 3000
     steps:
       - uses: actions/checkout@v3
       - uses: Swatinem/rust-cache@v2
