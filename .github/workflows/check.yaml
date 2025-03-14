@@ -31,7 +31,7 @@ jobs:
         - 3000
     steps:
       - name: Add hosts to /etc/hosts
-        run: sudo echo "127.0.0.1 host.docker.internal" | sudo tee -a /etc/hosts
+        run: echo "127.0.0.1 host.docker.internal" | tee -a /etc/hosts
       - uses: actions/checkout@v3
       - uses: Swatinem/rust-cache@v2
       - name: Run test
