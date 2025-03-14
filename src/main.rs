@@ -12,16 +12,34 @@ async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
 
     use sqlx::postgres::{PgConnectOptions, PgPoolOptions};
 
-    let username = env::var("DB_USERNAME").expect("DB_USERNAME is not set");
-    let password = env::var("DB_PASSWORD").expect("DB_PASSWORD is not set");
-    let host = env::var("DB_HOST").expect("DB_HOST is not set");
-    let db_name = env::var("DB_NAME").expect("DB_NAME is not set");
+    let options = {
+        let mut username = "postgres".to_string();
+        let mut password = "postgres".to_string();
+        let mut host = "localhost".to_string();
+        let mut db_name = "postgres".to_string();
 
-    let options = PgConnectOptions::new()
-        .host(&host)
-        .username(&username)
-        .password(&password)
-        .database(&db_name);
+        if env::var("E2E_TEST").is_err() {
+            username = env::var("DB_USERNAME").expect("DB_USERNAME is not set");
+            password = env::var("DB_PASSWORD").expect("DB_PASSWORD is not set");
+            host = env::var("DB_HOST").expect("DB_HOST is not set");
+            db_name = env::var("DB_NAME").expect("DB_NAME is not set");
+        }
+
+        if env::var("E2E_TEST").is_ok() {
+            PgConnectOptions::new()
+                .username(&username)
+                .password(&password)
+                .database(&db_name)
+                .port(1234)
+                .ssl_mode(sqlx::postgres::PgSslMode::Disable)
+        } else {
+            PgConnectOptions::new()
+                .host(&host)
+                .username(&username)
+                .password(&password)
+                .database(&db_name)
+        }
+    };
 
     let pool = PgPoolOptions::new()
         .min_connections(5)
