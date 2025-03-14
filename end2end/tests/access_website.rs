@@ -30,7 +30,7 @@ async fn access_website() -> color_eyre::eyre::Result<()> {
 
     // navigate to dashboard
     driver
-        .goto(format!("http://{}:{}", &selenium_host, selenium_port))
+        .goto("http://host.docker.internal:3000/dashboard")
         .await?;
 
     //check header
