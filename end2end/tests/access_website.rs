@@ -15,7 +15,7 @@ fn on_shutdown() {
 const WEBSITE_URL: &str = "http://host.docker.internal:3000/dashboard";
 
 #[cfg(not(target_arch = "aarch64"))]
-const WEBSITE_URL: &'static str = "http://localhost:3000/dashboard";
+const WEBSITE_URL: &'static str = "http://0.0.0.0:3000/dashboard";
 
 #[tokio::test]
 async fn access_website() -> color_eyre::eyre::Result<()> {
