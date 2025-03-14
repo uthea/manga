@@ -26,8 +26,8 @@ jobs:
       APP_ENV: e2e
       LEPTOS_SITE_ADDR: 0.0.0.0:3000
     steps:
-      - name: Install nightly Rust
-        uses: dtolnay/rust-toolchain@nightly
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
       - name: Add WASM target
         run: rustup target add wasm32-unknown-unknown
       - name: install bininstall
@@ -35,7 +35,6 @@ jobs:
       - name: install cargo leptos
         run: cargo binstall cargo-leptos -y
       - uses: actions/checkout@v3
-      - uses: Swatinem/rust-cache@v2
       - name: Run test
         run: cargo leptos end-to-end
 
