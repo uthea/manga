@@ -26,7 +26,12 @@ async fn access_website() -> color_eyre::eyre::Result<()> {
     let selenium_port = selenium_test_container::get_selenium_node_port().await;
     let _postgres_port = postgres_test_container::get_postgres_node_port().await;
     let caps = DesiredCapabilities::chrome();
-    let driver = WebDriver::new(format!("http://localhost:{}", selenium_port), caps).await?;
+
+    let driver = WebDriver::new(
+        format!("http://localhost:{}/wd/hub/session", selenium_port),
+        caps,
+    )
+    .await?;
 
     // navigate to dashboard
     driver.goto(WEBSITE_URL).await?;
