@@ -25,6 +25,10 @@ async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
             db_name = env::var("DB_NAME").expect("DB_NAME is not set");
         }
 
+        if env::var("GA").is_ok() {
+            host = "172.17.0.1".to_string();
+        }
+
         if env::var("E2E_TEST").is_ok() {
             PgConnectOptions::new()
                 .username(&username)
