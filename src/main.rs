@@ -6,7 +6,7 @@ use axum::{
 use leptos::{context::provide_context, logging::log};
 use leptos_axum::handle_server_fns_with_context;
 use manga_tracker::{app::shell, job::series::update_series, state::AppState};
-use testcontainers::{runners::AsyncRunner, ImageExt};
+use testcontainers::{runners::AsyncRunner, ContainerAsync, ImageExt};
 use testcontainers_modules::postgres::Postgres;
 use tokio::signal;
 
@@ -180,12 +180,18 @@ async fn main() {
     let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
 
     axum::serve(listener, app.into_make_service())
-        .with_graceful_shutdown(shutdown_signal())
+        .with_graceful_shutdown(shutdown_signal(postgres_container))
         .await
         .unwrap();
 }
 
-async fn shutdown_signal() {
+async fn remove_pg_container(container: Option<ContainerAsync<Postgres>>) {
+    if let Some(c) = container {
+        c.rm().await.unwrap();
+    }
+}
+
+async fn shutdown_signal(pg_container: Option<ContainerAsync<Postgres>>) {
     let ctrl_c = async {
         signal::ctrl_c()
             .await
@@ -204,7 +210,7 @@ async fn shutdown_signal() {
     let terminate = std::future::pending::<()>();
 
     tokio::select! {
-        _ = ctrl_c => (),
-        _ = terminate => (),
+        _ = ctrl_c => remove_pg_container(pg_container).await,
+        _ = terminate => remove_pg_container(pg_container).await,
     }
 }

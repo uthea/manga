@@ -33,7 +33,7 @@ jobs:
       - name: install bininstall
         run: curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
       - name: install cargo leptos
-        run: cargo binstall cargo-leptos -y
+        run: cargo install cargo-leptos --locked
       - uses: actions/checkout@v3
       - name: Run test
         run: cargo leptos end-to-end
