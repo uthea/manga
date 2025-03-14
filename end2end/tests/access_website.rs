@@ -11,12 +11,6 @@ fn on_shutdown() {
     selenium_test_container::shutdown_selenium();
 }
 
-#[cfg(target_arch = "aarch64")]
-const WEBSITE_URL: &str = "http://host.docker.internal:3000/dashboard";
-
-#[cfg(not(target_arch = "aarch64"))]
-const WEBSITE_URL: &'static str = "http://localhost:3000/dashboard";
-
 #[tokio::test]
 async fn access_website() -> color_eyre::eyre::Result<()> {
     color_eyre::install()?;
@@ -27,8 +21,14 @@ async fn access_website() -> color_eyre::eyre::Result<()> {
     let driver =
         WebDriver::new(format!("http://{}:{}", selenium_host, selenium_port), caps).await?;
 
+    #[cfg(target_arch = "aarch64")]
+    let website_url = "http://host.docker.internal:3000/dashboard";
+
+    #[cfg(not(target_arch = "aarch64"))]
+    let website_url = format!("http://{}:3000/dashboard", selenium_host);
+
     // navigate to dashboard
-    driver.goto(WEBSITE_URL).await?;
+    driver.goto(website_url).await?;
 
     //check header
     let header = driver.find(By::Css("body > div:nth-child(1) > main > div > div > div.thaw-scrollbar__container > div > div > div.thaw-layout-header > p")).await?;
