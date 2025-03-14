@@ -59,7 +59,7 @@ async fn selenium_node() -> &'static Mutex<Option<ContainerAsync<Selenium>>> {
             let container = Selenium::default()
                 .with_cmd([
                     "/opt/bin/entry_point.sh",
-                    "--add-host=host.docker.internal:host-gateway",
+                    "--add-host=host.docker.internal:172.17.0.1",
                     r#"--shm-size="2g""#,
                 ])
                 .start()
