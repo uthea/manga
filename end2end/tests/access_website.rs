@@ -29,9 +29,7 @@ async fn access_website() -> color_eyre::eyre::Result<()> {
         WebDriver::new(format!("http://{}:{}", &selenium_host, selenium_port), caps).await?;
 
     // navigate to dashboard
-    driver
-        .goto("http://host.docker.internal:3000/dashboard")
-        .await?;
+    driver.goto("http://172.17.0.1:3000/dashboard").await?;
 
     //check header
     let header = driver.find(By::Css("body > div:nth-child(1) > main > div > div > div.thaw-scrollbar__container > div > div > div.thaw-layout-header > p")).await?;
