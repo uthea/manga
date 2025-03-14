@@ -11,17 +11,8 @@ use tokio::sync::{
 
 use crate::tokio_runtime;
 
-#[cfg(target_arch = "aarch64")]
 const NAME: &str = "seleniarm/standalone-chromium";
-
-#[cfg(not(target_arch = "aarch64"))]
-const NAME: &str = "selenium/standalone-chromium";
-
-#[cfg(target_arch = "aarch64")]
 const TAG: &str = "124.0";
-
-#[cfg(not(target_arch = "aarch64"))]
-const TAG: &str = "133.0";
 
 #[derive(Debug, Clone, Default)]
 pub struct Selenium {}
