@@ -97,6 +97,7 @@ async fn main() {
 
     match env::var("APP_ENV") {
         Ok(e) if e == "prod" => (),
+        Ok(e) if e == "test" => (),
         _ => {
             dotenvy::dotenv().expect("can't load .env file");
         }
