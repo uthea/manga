@@ -48,11 +48,20 @@ async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
         }
     };
 
-    let pool = PgPoolOptions::new()
-        .min_connections(5)
-        .idle_timeout(Duration::from_secs(600))
-        .connect_with(options)
-        .await?;
+    let pool = {
+        if env::var("E2E_TEST").is_ok() {
+            PgPoolOptions::new()
+                .min_connections(5)
+                .idle_timeout(Duration::from_secs(600))
+                .connect_with(options)
+                .await?
+        } else {
+            PgPoolOptions::new()
+                .min_connections(5)
+                .connect_with(options)
+                .await?
+        }
+    };
 
     sqlx::migrate!("./migrations").run(&pool).await?;
 
