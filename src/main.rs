@@ -15,7 +15,7 @@ async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
     let options = {
         let mut username = "postgres".to_string();
         let mut password = "postgres".to_string();
-        let mut host = "0.0.0.0".to_string();
+        let mut host = "localhost".to_string();
         let mut db_name = "postgres".to_string();
 
         if env::var("E2E_TEST").is_err() {
@@ -30,6 +30,7 @@ async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
                 .username(&username)
                 .password(&password)
                 .database(&db_name)
+                .host(&host)
                 .port(1234)
                 .ssl_mode(sqlx::postgres::PgSslMode::Disable)
         } else {
