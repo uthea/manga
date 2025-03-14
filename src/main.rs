@@ -31,6 +31,7 @@ async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
                 .password(&password)
                 .database(&db_name)
                 .port(1234)
+                .host(&host)
                 .ssl_mode(sqlx::postgres::PgSslMode::Disable)
         } else {
             PgConnectOptions::new()
