@@ -1,5 +1,3 @@
-use std::time::Duration;
-
 use axum::{
     extract::{Path, Request, State},
     response::IntoResponse,
@@ -8,6 +6,9 @@ use axum::{
 use leptos::{context::provide_context, logging::log};
 use leptos_axum::handle_server_fns_with_context;
 use manga_tracker::{app::shell, job::series::update_series, state::AppState};
+use testcontainers::{runners::AsyncRunner, ImageExt};
+use testcontainers_modules::postgres::Postgres;
+use tokio::signal;
 
 async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
     use std::env;
@@ -48,20 +49,36 @@ async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
         }
     };
 
-    let pool = {
-        if env::var("E2E_TEST").is_ok() {
-            PgPoolOptions::new()
-                .min_connections(5)
-                .idle_timeout(Duration::from_secs(600))
-                .connect_with(options)
-                .await?
-        } else {
-            PgPoolOptions::new()
-                .min_connections(5)
-                .connect_with(options)
-                .await?
-        }
+    let pool = PgPoolOptions::new()
+        .min_connections(5)
+        .connect_with(options)
+        .await?;
+
+    sqlx::migrate!("./migrations").run(&pool).await?;
+
+    Ok(pool)
+}
+
+async fn load_db_test(host: String, port: u16) -> Result<sqlx::PgPool, sqlx::Error> {
+    use sqlx::postgres::{PgConnectOptions, PgPoolOptions};
+
+    let options = {
+        let username = "postgres".to_string();
+        let password = "postgres".to_string();
+        let db_name = "postgres".to_string();
+
+        PgConnectOptions::new()
+            .host(&host)
+            .username(&username)
+            .password(&password)
+            .database(&db_name)
+            .port(port)
     };
+
+    let pool = PgPoolOptions::new()
+        .min_connections(5)
+        .connect_with(options)
+        .await?;
 
     sqlx::migrate!("./migrations").run(&pool).await?;
 
@@ -112,20 +129,46 @@ async fn main() {
     use leptos_axum::{generate_route_list, LeptosRoutes};
     use manga_tracker::app::*;
 
+    let mut e2e_flag = false;
+
     match env::var("APP_ENV") {
         Ok(e) if e == "prod" => (),
-        Ok(e) if e == "test" => (),
+        Ok(e) if e == "e2e" => e2e_flag = true,
         _ => {
             dotenvy::dotenv().expect("can't load .env file");
         }
     };
 
-    let db_pool = load_db().await.expect("Fail loading db connection");
-    let webhook_url = env::var("WEBHOOK_URL").expect("WEBHOOK_URL is not set");
+    let postgres_container = {
+        if e2e_flag {
+            Some(
+                Postgres::default()
+                    .with_tag("13-alpine")
+                    .start()
+                    .await
+                    .unwrap(),
+            )
+        } else {
+            None
+        }
+    };
+
+    let db_pool = {
+        if let Some(container) = postgres_container.as_ref() {
+            let db_host = container.get_host().await.unwrap().to_string();
+            let db_port = container.get_host_port_ipv4(5432).await.unwrap();
+            load_db_test(db_host, db_port)
+                .await
+                .expect("Fail loading db connection")
+        } else {
+            load_db().await.expect("Fail loading db connection")
+        }
+    };
     let conf = get_configuration(None).unwrap();
     let addr = conf.leptos_options.site_addr;
 
     if let Some(arg) = env::args().nth(1) {
+        let webhook_url = env::var("WEBHOOK_URL").expect("WEBHOOK_URL is not set");
         if arg == "update" {
             println!("start updating series");
             update_series(webhook_url, &db_pool).await;
@@ -158,6 +201,31 @@ async fn main() {
     let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
 
     axum::serve(listener, app.into_make_service())
+        .with_graceful_shutdown(shutdown_signal())
         .await
         .unwrap();
+}
+
+async fn shutdown_signal() {
+    let ctrl_c = async {
+        signal::ctrl_c()
+            .await
+            .expect("failed to install Ctrl+C handler");
+    };
+
+    #[cfg(unix)]
+    let terminate = async {
+        signal::unix::signal(signal::unix::SignalKind::terminate())
+            .expect("failed to install signal handler")
+            .recv()
+            .await;
+    };
+
+    #[cfg(not(unix))]
+    let terminate = std::future::pending::<()>();
+
+    tokio::select! {
+        _ = ctrl_c => (),
+        _ = terminate => (),
+    }
 }

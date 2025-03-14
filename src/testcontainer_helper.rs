@@ -1,7 +1,7 @@
 // taken from https://github.com/lloydmeta/miniaturs/blob/d244760f5039a15450f5d4566ffe52d19d427771/server/src/test_utils/mod.rs
 
 use std::thread;
-use testcontainers::{core::IntoContainerPort, runners::AsyncRunner, ContainerAsync, ImageExt};
+use testcontainers::{runners::AsyncRunner, ContainerAsync, ImageExt};
 use tokio::sync::mpsc;
 use tokio::sync::{
     mpsc::{Receiver, Sender},
@@ -9,8 +9,6 @@ use tokio::sync::{
 };
 
 use testcontainers_modules::postgres::Postgres;
-
-use crate::tokio_runtime;
 
 enum ContainerCommands {
     Stop,
@@ -35,7 +33,6 @@ async fn postgres_node() -> &'static Mutex<Option<ContainerAsync<Postgres>>> {
     POSTGRES_NODE
         .get_or_init(|| async {
             let container = Postgres::default()
-                .with_mapped_port(1234, 5432.tcp())
                 .with_tag("13-alpine")
                 .start()
                 .await
@@ -93,6 +90,11 @@ static POSTGRES_SHUT_DOWN_NOTIFIER_CHANNEL: std::sync::OnceLock<Channel<()>> =
     std::sync::OnceLock::new();
 fn postgres_shut_down_notifier_channel() -> &'static Channel<()> {
     POSTGRES_SHUT_DOWN_NOTIFIER_CHANNEL.get_or_init(channel)
+}
+
+static TOKIO_RUNTIME: std::sync::OnceLock<tokio::runtime::Runtime> = std::sync::OnceLock::new();
+fn tokio_runtime() -> &'static tokio::runtime::Runtime {
+    TOKIO_RUNTIME.get_or_init(|| tokio::runtime::Runtime::new().unwrap())
 }
 
 async fn start_postgres() {

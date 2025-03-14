@@ -1,15 +1,13 @@
-use end2end::{postgres_test_container, selenium_test_container};
+use end2end::selenium_test_container;
 use thirtyfour::{By, DesiredCapabilities, WebDriver};
 
 #[ctor::ctor]
 fn on_startup() {
-    postgres_test_container::setup_postgres();
     selenium_test_container::setup_selenium();
 }
 
 #[ctor::dtor]
 fn on_shutdown() {
-    postgres_test_container::shutdown_postgres();
     selenium_test_container::shutdown_selenium();
 }
 
@@ -25,8 +23,6 @@ async fn access_website() -> color_eyre::eyre::Result<()> {
 
     let selenium_port = selenium_test_container::get_selenium_node_port().await;
     let selenium_host = selenium_test_container::get_selenium_node_host().await;
-    let _postgres_port = postgres_test_container::get_postgres_node_host().await;
-    dbg!(&selenium_host, _postgres_port);
     let caps = DesiredCapabilities::chrome();
     let driver =
         WebDriver::new(format!("http://{}:{}", selenium_host, selenium_port), caps).await?;
