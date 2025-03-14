@@ -6,9 +6,7 @@ on:
 name: check
 env:
   CARGO_TERM_COLOR: always
-  APP_ENV: test
-  E2E_TEST: 1
-  GA: 1
+  APP_ENV: e2e
 
 jobs:
   leptos-test:
