@@ -22,16 +22,18 @@ jobs:
   e2e:
     name: E2E Test
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/ekshore/cargo-leptos-runner-stable:v1.85.0
-      env:
-        APP_ENV: e2e
-        LEPTOS_SITE_ADDR: 0.0.0.0:3000
-      ports:
-        - 3000
+    env:
+      APP_ENV: e2e
+      LEPTOS_SITE_ADDR: 0.0.0.0:3000
     steps:
-      - name: Add hosts to /etc/hosts
-        run: echo "127.0.0.1 host.docker.internal" | tee -a /etc/hosts
+      - name: Install nightly Rust
+        uses: dtolnay/rust-toolchain@nightly
+      - name: Add WASM target
+        run: rustup target add wasm32-unknown-unknown
+      - name: install bininstall
+        run: curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
+      - name: install cargo leptos
+        run: cargo binstall cargo-leptos -y
       - uses: actions/checkout@v3
       - uses: Swatinem/rust-cache@v2
       - name: Run test
