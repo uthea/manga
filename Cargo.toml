@@ -13,7 +13,10 @@ leptos = { version = "0.7.0" }
 leptos_axum = { version = "0.7.0", optional = true }
 leptos_meta = { version = "0.7.0" }
 leptos_router = { version = "0.7.0" }
-tokio = { version = "1", features = ["rt-multi-thread"], optional = true }
+tokio = { version = "1", features = [
+    "rt-multi-thread",
+    "signal",
+], optional = true }
 tower = { version = "0.5", optional = true }
 tower-http = { version = "0.6", features = ["fs"], optional = true }
 wasm-bindgen = "=0.2.100"
@@ -47,10 +50,12 @@ xmlserde = { version = "0.10" }
 xmlserde_derives = { version = "0.10" }
 icondata = "0.5.0"
 leptos-use = "0.15"
+testcontainers = { version = "0.23.3", optional = true }
+testcontainers-modules = { version = "0.11.6", features = [
+    "postgres",
+], optional = true }
 
 [dev-dependencies]
-testcontainers = { version = "0.23.3" }
-testcontainers-modules = { version = "0.11.6", features = ["postgres"] }
 ctor = "0.2.8"
 
 [features]
@@ -73,6 +78,8 @@ ssr = [
     "dep:scraper",
     "dep:regex",
     "dep:serde_json",
+    "dep:testcontainers",
+    "dep:testcontainers-modules",
     "leptos-use/ssr",
 ]
 
@@ -104,7 +111,7 @@ style-file = "style/main.scss"
 assets-dir = "public"
 
 # The IP and port (ex: 127.0.0.1:3000) where the server serves the content. Use it in your server setup.
-site-addr = "127.0.0.1:3000"
+site-addr = "0.0.0.0:3000"
 
 # The port to use for automatic reload monitoring
 reload-port = 3001
@@ -112,7 +119,7 @@ reload-port = 3001
 # [Optional] Command to use when running end2end tests. It will run in the end2end dir.
 #   [Windows] for non-WSL use "npx.cmd playwright test"
 #   This binary name can be checked in Powershell with Get-Command npx
-end2end-cmd = "npx playwright test"
+end2end-cmd = "cargo test"
 end2end-dir = "end2end"
 
 #  The browserlist query used for optimizing the CSS.
