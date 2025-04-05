@@ -89,12 +89,16 @@ pub fn Dashboard() -> impl IntoView {
 fn FilterHeader(
     #[prop(into)] label: MaybeProp<String>,
     filter_value: RwSignal<String>,
+    #[prop(into)] id: MaybeProp<String>,
 ) -> impl IntoView {
     view! {
         <TableHeaderCell>
             <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
                 <MenuTrigger slot>
-                    <Flex align=FlexAlign::Center>
+                    <Flex
+                        align=FlexAlign::Center
+                        attr:id=id.get().map(|v| format!("{}-trigger", v))
+                    >
                         <p>{label.get()}</p>
                         <Icon icon=AiCaretDownOutlined width="1.5em" height="1.5em" />
                     </Flex>
@@ -102,7 +106,10 @@ fn FilterHeader(
 
                 <MenuItem value="no_icon" disabled=true>
                     <Field label=label.get().map(|v| format!("Filter {}", v))>
-                        <Input value=filter_value />
+                        <Input
+                            value=filter_value
+                            attr:id=id.get().map(|v| format!("{}-input", v))
+                        />
                     </Field>
                 </MenuItem>
             </Menu>
@@ -187,7 +194,7 @@ fn MangaTable(
                     <TableHeaderCell>
                         <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
                             <MenuTrigger slot>
-                                <Flex align=FlexAlign::Center>
+                                <Flex align=FlexAlign::Center attr:id="source-filter-trigger">
                                     <p>"Source"</p>
                                     <Icon icon=AiCaretDownOutlined width="1.5em" height="1.5em" />
                                 </Flex>
@@ -199,6 +206,7 @@ fn MangaTable(
                                         selected_options=source_filter
                                         placeholder="Select a source"
                                         clearable=true
+                                        attr:id="source-filter-select"
                                     >
                                         {move || {
                                             MangaSource::iter()
@@ -215,9 +223,9 @@ fn MangaTable(
                             </MenuItem>
                         </Menu>
                     </TableHeaderCell>
-                    <FilterHeader label="Title" filter_value=title_filter />
-                    <FilterHeader label="Author" filter_value=author_filter />
-                    <FilterHeader label="Chapter" filter_value=chapter_filter />
+                    <FilterHeader label="Title" filter_value=title_filter id="title-filter" />
+                    <FilterHeader label="Author" filter_value=author_filter id="author-filter" />
+                    <FilterHeader label="Chapter" filter_value=chapter_filter id="chapter-filter" />
                 </TableRow>
             </TableHeader>
             <TableBody>
