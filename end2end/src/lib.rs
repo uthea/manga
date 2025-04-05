@@ -13,3 +13,10 @@ pub fn get_website_url() -> String {
 
     website_url
 }
+
+pub async fn get_selenium_driver_url() -> String {
+    let selenium_port = selenium_test_container::get_selenium_node_port().await;
+    let selenium_host = selenium_test_container::get_selenium_node_host().await;
+
+    format!("http://{}:{}", &selenium_host, selenium_port)
+}
