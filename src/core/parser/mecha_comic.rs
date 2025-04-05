@@ -40,7 +40,7 @@ fn parse_mecha_comic_from_html(html: String) -> Result<Manga, FetchError> {
         .ok_or(FetchError::PageNotFound(Some("author not found".into())))?
         .inner_html();
 
-    if let Some(latest_chapter_element) = document.select(&chapter_section_selector).last() {
+    if let Some(latest_chapter_element) = document.select(&chapter_section_selector).next_back() {
         let chapter_num = latest_chapter_element
             .select(&chapter_num_selector)
             .next()

@@ -6,6 +6,7 @@ use axum::{
 use leptos::{context::provide_context, logging::log};
 use leptos_axum::handle_server_fns_with_context;
 use manga_tracker::{app::shell, job::series::update_series, state::AppState};
+use sqlx::Executor;
 use testcontainers::{runners::AsyncRunner, ContainerAsync, ImageExt};
 use testcontainers_modules::postgres::Postgres;
 use tokio::signal;
@@ -60,6 +61,8 @@ async fn load_db_test(host: String, port: u16) -> Result<sqlx::PgPool, sqlx::Err
         .await?;
 
     sqlx::migrate!("./migrations").run(&pool).await?;
+    pool.execute(include_str!("../end2end/migrations/01_init_data.sql"))
+        .await?;
 
     Ok(pool)
 }
