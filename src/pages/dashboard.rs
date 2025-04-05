@@ -37,14 +37,14 @@ pub fn Dashboard() -> impl IntoView {
             <Flex justify=FlexJustify::SpaceBetween>
                 <Flex justify=FlexJustify::SpaceBetween gap=FlexGap::Large>
                     <Button
-                        attr:id="add-btn"
+                        attr:id="trigger-add-dialog-btn"
                         appearance=ButtonAppearance::Primary
                         on_click=move |_| show_add_dialog.set(true)
                     >
                         "Add"
                     </Button>
                     <Button
-                        attr:id="delete-btn"
+                        attr:id="trigger-delete-dialog-btn"
                         appearance=ButtonAppearance::Primary
                         on_click=move |_| show_delete_dialog.set(true)
                         disabled=is_select_empty
@@ -60,6 +60,7 @@ pub fn Dashboard() -> impl IntoView {
         </Flex>
 
         <AddMangaDialog
+            id="add-dialog"
             open=show_add_dialog
             on_add=move || {
                 refetch_counter
@@ -70,6 +71,7 @@ pub fn Dashboard() -> impl IntoView {
         />
 
         <DeleteMangaDialog
+            id="delete-dialog"
             open=show_delete_dialog
             selected_rows=selected_rows.read_only()
             on_delete=move || {
@@ -80,6 +82,31 @@ pub fn Dashboard() -> impl IntoView {
                     });
             }
         />
+    }
+}
+
+#[component]
+fn FilterHeader(
+    #[prop(into)] label: MaybeProp<String>,
+    filter_value: RwSignal<String>,
+) -> impl IntoView {
+    view! {
+        <TableHeaderCell>
+            <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
+                <MenuTrigger slot>
+                    <Flex align=FlexAlign::Center>
+                        <p>{label.get()}</p>
+                        <Icon icon=AiCaretDownOutlined width="1.5em" height="1.5em" />
+                    </Flex>
+                </MenuTrigger>
+
+                <MenuItem value="no_icon" disabled=true>
+                    <Field label=label.get().map(|v| format!("Filter {}", v))>
+                        <Input value=filter_value />
+                    </Field>
+                </MenuItem>
+            </Menu>
+        </TableHeaderCell>
     }
 }
 
@@ -132,7 +159,7 @@ fn MangaTable(
 
             retrieve_manga(
                 current_page as i64,
-                2,
+                10,
                 MangaQuery {
                     source: source.map(|s| MangaSource::from_str(&s).unwrap()),
                     title,
@@ -188,54 +215,9 @@ fn MangaTable(
                             </MenuItem>
                         </Menu>
                     </TableHeaderCell>
-                    <TableHeaderCell>
-                        <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
-                            <MenuTrigger slot>
-                                <Flex align=FlexAlign::Center>
-                                    <p>"Title"</p>
-                                    <Icon icon=AiCaretDownOutlined width="1.5em" height="1.5em" />
-                                </Flex>
-                            </MenuTrigger>
-
-                            <MenuItem value="no_icon" disabled=true>
-                                <Field label="Filter Title">
-                                    <Input value=title_filter />
-                                </Field>
-                            </MenuItem>
-                        </Menu>
-                    </TableHeaderCell>
-                    <TableHeaderCell>
-                        <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
-                            <MenuTrigger slot>
-                                <Flex align=FlexAlign::Center>
-                                    <p>"Author"</p>
-                                    <Icon icon=AiCaretDownOutlined width="1.5em" height="1.5em" />
-                                </Flex>
-                            </MenuTrigger>
-
-                            <MenuItem value="no_icon" disabled=true>
-                                <Field label="Filter Author">
-                                    <Input value=author_filter />
-                                </Field>
-                            </MenuItem>
-                        </Menu>
-                    </TableHeaderCell>
-                    <TableHeaderCell>
-                        <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
-                            <MenuTrigger slot>
-                                <Flex align=FlexAlign::Center>
-                                    <p>"Chapter Name"</p>
-                                    <Icon icon=AiCaretDownOutlined width="1.5em" height="1.5em" />
-                                </Flex>
-                            </MenuTrigger>
-
-                            <MenuItem value="no_icon" disabled=true>
-                                <Field label="Filter Chapter">
-                                    <Input value=chapter_filter />
-                                </Field>
-                            </MenuItem>
-                        </Menu>
-                    </TableHeaderCell>
+                    <FilterHeader label="Title" filter_value=title_filter />
+                    <FilterHeader label="Author" filter_value=author_filter />
+                    <FilterHeader label="Chapter" filter_value=chapter_filter />
                 </TableRow>
             </TableHeader>
             <TableBody>
@@ -255,12 +237,15 @@ fn MangaTable(
                                 let src = source.clone();
                                 let src_check = source.clone();
                                 let id_check = manga_id.clone();
+                                let row_id = format!("row-{}-{}", &src, &manga_id);
+                                let cbox_id = format!("del-{}-{}", &src, &manga_id);
                                 view! {
-                                    <TableRow>
+                                    <TableRow attr:id=row_id>
                                         <TableCell>
                                             <input
                                                 type="checkbox"
                                                 style="transform: scale(1.3)"
+                                                id=cbox_id
                                                 on:change:target=move |ev| {
                                                     match ev.target().checked() {
                                                         true => {
@@ -310,7 +295,11 @@ fn MangaTable(
 }
 
 #[component]
-fn AddMangaDialog(open: RwSignal<bool>, #[prop(into)] on_add: Callback<()>) -> impl IntoView {
+fn AddMangaDialog(
+    #[prop(into, optional)] id: MaybeProp<String>,
+    open: RwSignal<bool>,
+    #[prop(into)] on_add: Callback<()>,
+) -> impl IntoView {
     use crate::server::add_manga;
 
     // state
@@ -349,7 +338,7 @@ fn AddMangaDialog(open: RwSignal<bool>, #[prop(into)] on_add: Callback<()>) -> i
                 Err(e) => toaster.dispatch_toast(
                     move || {
                         view! {
-                            <Toast>
+                            <Toast attr:id="toast-add-error">
                                 <ToastTitle>"Error"</ToastTitle>
                                 <ToastBody>{e.to_string()}</ToastBody>
                             </Toast>
@@ -366,18 +355,22 @@ fn AddMangaDialog(open: RwSignal<bool>, #[prop(into)] on_add: Callback<()>) -> i
     view! {
         <Dialog open>
             <DialogSurface>
-                <DialogBody>
+                <DialogBody attr:id=id.get().map(|v| format!("{}-body", v))>
                     <DialogTitle>"Add new Manga"</DialogTitle>
                     <DialogContent>
                         <Flex vertical=true gap=FlexGap::Large style="margin-bottom: 10px">
                             <Field label="Manga ID">
-                                <Input value=manga_id />
+                                <Input
+                                    value=manga_id
+                                    attr:id=id.get().map(|v| format!("{}-manga-id", v))
+                                />
                             </Field>
 
                             <Field label="Source">
                                 <Combobox
                                     selected_options=selected_source
                                     placeholder="Select a source"
+                                    attr:id=id.get().map(|v| format!("{}-source", v))
                                 >
                                     {move || {
                                         MangaSource::iter()
@@ -396,6 +389,7 @@ fn AddMangaDialog(open: RwSignal<bool>, #[prop(into)] on_add: Callback<()>) -> i
 
                     <DialogActions>
                         <Button
+                            attr:id=id.get().map(|v| format!("{}-add-btn", v))
                             appearance=ButtonAppearance::Primary
                             on_click=handle_add
                             disabled=is_submitting
@@ -416,6 +410,7 @@ fn AddMangaDialog(open: RwSignal<bool>, #[prop(into)] on_add: Callback<()>) -> i
 
 #[component]
 fn DeleteMangaDialog(
+    #[prop(into, optional)] id: MaybeProp<String>,
     open: RwSignal<bool>,
     selected_rows: ReadSignal<HashSet<(MangaSource, String)>>,
     #[prop(into)] on_delete: Callback<()>,
@@ -470,7 +465,7 @@ fn DeleteMangaDialog(
     view! {
         <Dialog open>
             <DialogSurface>
-                <DialogBody>
+                <DialogBody attr:id=id.get().map(|v| format!("{}-body", v))>
                     <DialogTitle>"Delete Manga"</DialogTitle>
                     <DialogContent>
                         <p>"Are you sure to delete selected manga ?"</p>
@@ -478,6 +473,7 @@ fn DeleteMangaDialog(
 
                     <DialogActions>
                         <Button
+                            attr:id=id.get().map(|v| format!("{}-delete-btn", v))
                             appearance=ButtonAppearance::Primary
                             on_click=handle_delete
                             disabled=is_submitting
@@ -490,6 +486,7 @@ fn DeleteMangaDialog(
                             "Yes"
                         </Button>
                         <Button
+                            attr:id=id.get().map(|v| format!("{}-cancel-btn", v))
                             appearance=ButtonAppearance::Primary
                             on_click=move |_| open.set(false)
                         >
