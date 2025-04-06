@@ -1,0 +1,381 @@
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:webfeeds="http://webfeeds.org/rss/1.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title>&#x50d5;&#x306e;&#x3044;&#x3051;&#x305a;&#x306a;&#x5a5a;&#x7d04;&#x8005;</title>
+        <description><div>
+ <p><span><span>御幸さんは京都生まれのお嬢様。そんな彼女との関係は良好とは言い難い。何故なら…「えらいお世辞がお上手やわぁ」今の言葉は本心？それとも建前？想い合っているのにすれ違う、もどかしい恋の物語。 </span><br /><span>【更新予定】第12話-①：4/14(月)｜第12話-②：4/28(月)｜第13話-①：5/12(月) </span></span></p>
+</div></description>
+        <link>https://comic-growl.com/series/fd9075d41e98f</link>
+        <atom:link rel="self" type="application/rss+xml" href="https://comic-growl.com/series/fd9075d41e98f/rss" />
+        <copyright>&#x50d5;&#x306e;&#x3044;&#x3051;&#x305a;&#x306a;&#x5a5a;&#x7d04;&#x8005;</copyright>
+        <webfeeds:icon>https://cdn-public.comici.jp/series/1646812/20250217121357404E379BA33C6440DDABAE2A8B424A89056.png</webfeeds:icon>
+        <webfeeds:logo>https://cdn-public.comici.jp/series/1646812/20250217121357404E379BA33C6440DDABAE2A8B424A89056.png</webfeeds:logo>
+        <webfeeds:accentColor>D80C24</webfeeds:accentColor>
+        <webfeeds:related layout="card" target="browser" />
+        <webfeeds:analytics id="UA-114502607-1" engine="GoogleAnalytics" />
+        <language>ja</language>
+        <pubDate>Sun, 06 Apr 2025 18:57:37 +0900</pubDate>
+        <lastBuildDate>Sun, 06 Apr 2025 18:57:37 +0900</lastBuildDate>
+
+        <item>
+            <title><![CDATA[11-②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/1913397/default/20250314162158367C491BF53A7450725DDF1CF76E7B0F2B1-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/690390c3e4b50/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>300854</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[11-①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/1913397/default/2025031416204850244AFEC945F0231B21381D91A2DAF88B5-sm.png</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/5e4dcbe2a3fcc/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>300621</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[10-②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338078010_ikezuna_19.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/bf7eba6c36616/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286883</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[10-①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338071513_ikezuna_18.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/d42020c130607/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286882</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[9-②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338065494_ikezuna_17.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/cce2bcea0ad47/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286881</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[9-①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338060046_ikezuna_16.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/cd8b4e1778893/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286880</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[8-②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338054600_ikezuna_15.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/f7ab8409c6c09/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286879</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[8-①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338049169_ikezuna_14.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/c0448686a75f7/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286878</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[7-②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338043688_ikezuna_13.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/c1e499ebade57/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286877</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[7-①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338037924_ikezuna_12.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/9559b630a4002/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286876</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[6-②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338032561_ikezuna_11.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/21610d5a2157d/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286875</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[6-①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338028517_ikezuna_10.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/e284439147d2f/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286874</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[5-②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338024526_ikezuna_09.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/79c83c71453be/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>300627</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[5-①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338020662_ikezuna_08.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/9aea5d4ee55e0/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>300609</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[4-②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338016845_ikezuna_07.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/7ed0c11a43516/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>300623</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[4-①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338012671_ikezuna_06.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/b708708aa364d/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>300606</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[3-②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338008728_ikezuna_05.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/285bd0fe53799/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286869</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[3-①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338004466_ikezuna_04.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/0df355861cb1a/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286868</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[2-②]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739338000132_ikezuna_03.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/d5aa594925d0f/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286867</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[2-①]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739337995669_ikezuna_02.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/a1ef5c83aea24/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>286866</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+
+        <item>
+            <title><![CDATA[1]]></title>
+            <media:thumbnail>https://cdn-public.comici.jp/articlevisual/13288/1739337987222_ikezuna_01.jpg</media:thumbnail>
+            <content:encoded><![CDATA[				 
+				 
+			 ]]></content:encoded>
+            <pubDate>Mon, 31 Mar 2025 00:00:00 +0900</pubDate>
+            <link>https://comic-growl.com/episodes/de360924d71eb/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid>289254</guid>
+            
+            
+                <category>マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料</category>
+            
+            <dc:creator>コミックグロウル</dc:creator>
+            <dc:language></dc:language>
+        </item>
+    </channel>
+</rss>

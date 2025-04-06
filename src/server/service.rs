@@ -153,6 +153,14 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn add_manga_success_comic_growl() {
+        let db = get_test_db("add_manga_comic_growl").await.unwrap();
+        let result =
+            add_manga_service("fd9075d41e98f".into(), Some(MangaSource::ComicGrowl), db).await;
+        result.unwrap();
+    }
+
+    #[tokio::test]
     async fn add_manga_error_not_found() {
         let db = get_test_db("add_manga_404").await.unwrap();
         if (add_manga_service("".into(), Some(MangaSource::YoungAnimal), db).await).is_ok() {

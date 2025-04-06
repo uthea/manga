@@ -56,9 +56,9 @@ impl MangaSource {
                 .await
             }
             MangaSource::ComicGrowl => {
-                fetch_generic_rss(
+                fetch_cdata_rss(
                     client,
-                    format!("https://comic-growl.com/rss/series/{}", manga_id),
+                    format!("https://comic-growl.com/series/{}/rss", manga_id),
                 )
                 .await
             }
