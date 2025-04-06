@@ -6,7 +6,7 @@ use crate::core::{fetch::FetchError, types::Manga};
 
 pub fn parse_ganma_from_html(html: String) -> Result<Manga, FetchError> {
     let title_selector =
-        Selector::parse(r#"h2[class="text-lg font-semibold leading-tight"]"#).unwrap();
+        Selector::parse(r#"h1[class="text-lg font-semibold leading-tight"]"#).unwrap();
     let author_selector = Selector::parse(r#"div[class="font-semibold"]"#).unwrap();
     let cover_selector = Selector::parse(r#"img[class="pointer-events-none"]"#).unwrap();
     let total_chapter_selector =
