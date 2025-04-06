@@ -144,12 +144,14 @@ pub async fn diff_update(
         )
         .await;
 
+    let source = data.source.clone();
+
     // for each mangarow retrieve latest update
     let latest_update = data
         .source
         .fetch(&data.manga_id)
         .await
-        .expect("Fail to fetch manga");
+        .unwrap_or_else(|e| panic!("Fail to fetch {}: {:?}", source, e));
 
     // generate diffing result
     // no change -> title and release status doesn't change
