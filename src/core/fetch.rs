@@ -90,6 +90,13 @@ impl MangaSource {
                 )
                 .await
             }
+            MangaSource::ComicAction => {
+                fetch_generic_rss(
+                    client,
+                    format!("https://comic-action.com/rss/series/{}", manga_id),
+                )
+                .await
+            }
 
             MangaSource::ComicPixiv => fetch_pixiv_data(client, manga_id).await,
             MangaSource::Urasunday => fetch_urasunday(client, manga_id).await,

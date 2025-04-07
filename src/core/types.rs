@@ -97,6 +97,9 @@ pub enum MangaSource {
 
     #[strum(to_string = "Ichijin Plus")]
     IchijinPlus,
+
+    #[strum(to_string = "Comic Action")]
+    ComicAction,
 }
 
 #[derive(Deserialize, Serialize, Clone, Debug)]

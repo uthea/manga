@@ -1,0 +1,242 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:giga="https://gigaviewer.com">
+    <channel>
+        <title>webアクション｜双葉社発のマンガサイト（かくして！マキナさん!!）</title>
+        <pubDate>Tue, 01 Apr 2025 03:00:00 +0000</pubDate>
+        <link>https://comic-action.com/episode/11341664176554994143</link>
+        <description>陰キャメカオタクの栄太は、学校のアイドル・我妻マキナと同居することに。ところが、彼女はエッチのために作られたハニトラロボットだったのです！</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <item>
+            <title>第29話 かくして、阿久津栄太は拉致される。</title>
+            <link>https://comic-action.com/episode/2550912965341559536</link>
+            <guid isPermalink="false">action:episode:2550912965341559536</guid>
+            <pubDate>Tue, 01 Apr 2025 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550912965341559536-e98a3a5485ef3c4edda0b2c5ca19abc8?1742952498" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第28話 かくして、その兵器は崩れ落ちる。</title>
+            <link>https://comic-action.com/episode/2550912965204614605</link>
+            <guid isPermalink="false">action:episode:2550912965204614605</guid>
+            <pubDate>Tue, 04 Mar 2025 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Tue, 01 Apr 2025 03:00:00 +0000</giga:freeTermStartDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550912965204614605-f747a03d7c2635a6b134680974c9a581?1740568284" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第27話 かくして、みんなはからだを洗う。</title>
+            <link>https://comic-action.com/episode/2550912965056027414</link>
+            <guid isPermalink="false">action:episode:2550912965056027414</guid>
+            <pubDate>Tue, 04 Feb 2025 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Tue, 04 Mar 2025 03:00:00 +0000</giga:freeTermStartDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550912965056027414-5f91fe064142b1d48ebf2e27af720d39?1738126007" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第26話 かくして、マキナさんたちはデジタる。</title>
+            <link>https://comic-action.com/episode/2550912964940547540</link>
+            <guid isPermalink="false">action:episode:2550912964940547540</guid>
+            <pubDate>Tue, 07 Jan 2025 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550912964940547540-e2fc3f194d790e3532881740b93c7f21?1735178458" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第25話 かくして、怪現象は目撃される。</title>
+            <link>https://comic-action.com/episode/2550912964940547535</link>
+            <guid isPermalink="false">action:episode:2550912964940547535</guid>
+            <pubDate>Tue, 03 Dec 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550912964940547535-e9c3d9221f35bb2f6632f309ba43925b?1732616885" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第24話 かくして、マキナさんはいなくなる。</title>
+            <link>https://comic-action.com/episode/2550912964940683137</link>
+            <guid isPermalink="false">action:episode:2550912964940683137</guid>
+            <pubDate>Tue, 03 Dec 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550912964940683137-14152bd69b848315aa03833b1b65274e?1732616876" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第23話 かくして、その怪現象は名状しがたい。</title>
+            <link>https://comic-action.com/episode/2550912964668507966</link>
+            <guid isPermalink="false">action:episode:2550912964668507966</guid>
+            <pubDate>Tue, 05 Nov 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550912964668507966-58de56f2353715eda48aec13895e02bb?1730265857" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第22話 かくして、おケツは決壊する。</title>
+            <link>https://comic-action.com/episode/2550689798901721943</link>
+            <guid isPermalink="false">action:episode:2550689798901721943</guid>
+            <pubDate>Tue, 01 Oct 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798901721943-c7f48b4bc4e73d3dabcf285230b8e315?1727239361" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第21話 かくして、兵器ロボは元気になる。</title>
+            <link>https://comic-action.com/episode/2550689798758364633</link>
+            <guid isPermalink="false">action:episode:2550689798758364633</guid>
+            <pubDate>Tue, 06 Aug 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798758364633-732341b10a379efc7f263ac766689466?1722402808" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第20話 かくして、その姉妹は遭遇する。</title>
+            <link>https://comic-action.com/episode/2550689798635584333</link>
+            <guid isPermalink="false">action:episode:2550689798635584333</guid>
+            <pubDate>Tue, 02 Jul 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798635584333-c7b16a054574375d908f12a91c4c5f37?1719373142" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第19話 かくして、若さは掃除機の用法を違わせる。</title>
+            <link>https://comic-action.com/episode/2550689798505651742</link>
+            <guid isPermalink="false">action:episode:2550689798505651742</guid>
+            <pubDate>Tue, 04 Jun 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798505651742-adad41e004cfcb10edab5cc53bb3416f?1716953316" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第18話 かくして、マキナさんはクッキングる。</title>
+            <link>https://comic-action.com/episode/2550689798352196433</link>
+            <guid isPermalink="false">action:episode:2550689798352196433</guid>
+            <pubDate>Tue, 07 May 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798352196433-a5b0a311cafdba5c576598fcdd71c207?1714461427" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第17話 かくして、みみかちゃんは手下を得る。</title>
+            <link>https://comic-action.com/episode/2550689798352196428</link>
+            <guid isPermalink="false">action:episode:2550689798352196428</guid>
+            <pubDate>Tue, 02 Apr 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798352196428-f2b97331bb46f20b22ff7de00ea9fce3?1711614270" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第16話 かくして、そのAIたちはクリエイティブる。</title>
+            <link>https://comic-action.com/episode/2550689798349114163</link>
+            <guid isPermalink="false">action:episode:2550689798349114163</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114163-56c3796d4593102f75963d671430cb9e?1711431508" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第15話 かくして、マキナさんは体育館で吸われる。</title>
+            <link>https://comic-action.com/episode/2550689798349114159</link>
+            <guid isPermalink="false">action:episode:2550689798349114159</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114159-39e1428d96e59314ac3ee32395ada010?1711431500" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第14話 かくして、マキナさんはHな運動をする。</title>
+            <link>https://comic-action.com/episode/2550689798349114155</link>
+            <guid isPermalink="false">action:episode:2550689798349114155</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114155-683fb03737938ef197dd6f24ae9faed3?1711431495" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第13話 かくして、マキナさんはデビューしない。</title>
+            <link>https://comic-action.com/episode/2550689798349114151</link>
+            <guid isPermalink="false">action:episode:2550689798349114151</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114151-7181ca185d043d418499938f43a84714?1711431439" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第12話 かくして、マキナさんはオナモミる。</title>
+            <link>https://comic-action.com/episode/2550689798349114147</link>
+            <guid isPermalink="false">action:episode:2550689798349114147</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114147-07ba0376533c9f03fa02d6b3fe6cbbfe?1711431432" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第11話 かくして、マキナさんはその兵器は動き出す。</title>
+            <link>https://comic-action.com/episode/2550689798349114143</link>
+            <guid isPermalink="false">action:episode:2550689798349114143</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114143-d627d98dc59bb46958463cf9df5bdabb?1711431424" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第10話 かくして、マキナさんは実家に戻る。</title>
+            <link>https://comic-action.com/episode/2550689798349114135</link>
+            <guid isPermalink="false">action:episode:2550689798349114135</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114135-2037e771bcd6356654db76f792df90e2?1711431417" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第9話 かくして、マキナさんはちゅーをする。</title>
+            <link>https://comic-action.com/episode/2550689798349114130</link>
+            <guid isPermalink="false">action:episode:2550689798349114130</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114130-2a4a12f46a894cece8305662c3c0d853?1711431411" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第8話 かくして、マキナさんは怪談となる。</title>
+            <link>https://comic-action.com/episode/2550689798349114126</link>
+            <guid isPermalink="false">action:episode:2550689798349114126</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114126-d476a86bedc6913bfe75aa0875a492be?1711431405" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第7話 かくして、マキナさんはとりもどす。</title>
+            <link>https://comic-action.com/episode/2550689798349114122</link>
+            <guid isPermalink="false">action:episode:2550689798349114122</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114122-4c600c26f3800dfcc31e661aa8006f6f?1711431400" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第6話 かくして、姉妹機たちは入れ替わる。</title>
+            <link>https://comic-action.com/episode/2550689798349114117</link>
+            <guid isPermalink="false">action:episode:2550689798349114117</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114117-da3d7d0b42baa3783e2c793a9566fd6e?1711431391" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第5話 かくして、マキナさんは奪われる。</title>
+            <link>https://comic-action.com/episode/2550689798349114112</link>
+            <guid isPermalink="false">action:episode:2550689798349114112</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Fri, 29 Mar 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114112-cb161ff8b7f2d137e654ac92e2cbcebb?1714627477" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第4話 かくして、マキナさんは隠しきれない。</title>
+            <link>https://comic-action.com/episode/2550689798349114105</link>
+            <guid isPermalink="false">action:episode:2550689798349114105</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Fri, 29 Mar 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/2550689798349114105-2bf9f076cc24e7e4fe62942a04a4858f?1711431378" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第3話 かくして、マキナさんは制服を得る。</title>
+            <link>https://comic-action.com/episode/11341664176554994151</link>
+            <guid isPermalink="false">action:episode:11341664176554994151</guid>
+            <pubDate>Tue, 06 Feb 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Tue, 06 Feb 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/11341664176554994151-55aeefaf03ae795ed36591deb8593c3c?1711429832" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第2話 かくして、マキナさんは部屋にいる。</title>
+            <link>https://comic-action.com/episode/11341664176554994147</link>
+            <guid isPermalink="false">action:episode:11341664176554994147</guid>
+            <pubDate>Tue, 06 Feb 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Tue, 06 Feb 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/11341664176554994147-c201f49216fd768553fec19d9ef993e3?1711429832" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+        <item>
+            <title>第1話 かくして、マキナさんはメカバレる。</title>
+            <link>https://comic-action.com/episode/11341664176554994143</link>
+            <guid isPermalink="false">action:episode:11341664176554994143</guid>
+            <pubDate>Tue, 06 Feb 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Tue, 06 Feb 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>かくして！マキナさん!!</description>
+            <enclosure url="https://cdn-img.comic-action.com/public/episode-thumbnail/11341664176554994143-6220c60e5e5384f4470c9632fcaf76be?1711429832" length="0" type="image/jpeg" />
+            <author>里好</author>
+        </item>
+    </channel>
+</rss>

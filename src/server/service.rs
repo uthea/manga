@@ -162,8 +162,20 @@ mod tests {
 
     #[tokio::test]
     async fn add_manga_success_ganma() {
-        let db = get_test_db("add_manga_comic_ganma").await.unwrap();
+        let db = get_test_db("add_manga_ganma").await.unwrap();
         let result = add_manga_service("galyome".into(), Some(MangaSource::GANMA), db).await;
+        result.unwrap();
+    }
+
+    #[tokio::test]
+    async fn add_manga_success_comic_action() {
+        let db = get_test_db("add_manga_comic_action").await.unwrap();
+        let result = add_manga_service(
+            "11341664176552309986".into(),
+            Some(MangaSource::ComicAction),
+            db,
+        )
+        .await;
         result.unwrap();
     }
 
