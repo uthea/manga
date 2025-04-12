@@ -100,7 +100,12 @@ fn FilterHeader(
                         attr:id=id.get().map(|v| format!("{}-trigger", v))
                     >
                         <p>{label.get()}</p>
-                        <Icon icon=AiCaretDownOutlined width="1.5em" height="1.5em" />
+                        <Icon
+                            icon=AiCaretDownOutlined
+                            width="1.5em"
+                            height="1.5em"
+                            class:filter-color=move || !filter_value.get().is_empty()
+                        />
                     </Flex>
                 </MenuTrigger>
 
@@ -196,7 +201,12 @@ fn MangaTable(
                             <MenuTrigger slot>
                                 <Flex align=FlexAlign::Center attr:id="source-filter-trigger">
                                     <p>"Source"</p>
-                                    <Icon icon=AiCaretDownOutlined width="1.5em" height="1.5em" />
+                                    <Icon
+                                        icon=AiCaretDownOutlined
+                                        width="1.5em"
+                                        height="1.5em"
+                                        class:filter-color=move || source_filter.get().is_some()
+                                    />
                                 </Flex>
                             </MenuTrigger>
 
