@@ -9,8 +9,6 @@ use crate::core::{fetch::FetchError, types::Manga};
 #[serde(rename_all = "camelCase")]
 pub struct IchijinPlusData {
     pub authors: Vec<Author>,
-    #[serde(rename = "latest_episode")]
-    pub latest_episode: LatestEpisode,
     pub title: String,
 }
 
@@ -25,16 +23,16 @@ pub struct Author {
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct LatestEpisode {
+pub struct EpisodeDetail {
+    pub resources: Vec<Episode>,
+}
+
+#[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct Episode {
     #[serde(rename = "comic_id")]
     pub comic_id: String,
-    #[serde(rename = "episode_order")]
-    pub episode_order: i64,
-    #[serde(rename = "episode_status")]
-    pub episode_status: String,
     pub id: String,
-    pub price: i64,
-    pub promotion: String,
     #[serde(rename = "published_at")]
     pub published_at: DateTime<Local>,
     #[serde(rename = "thumbnail_image_url")]
@@ -42,13 +40,13 @@ pub struct LatestEpisode {
     pub title: String,
 }
 
+const HEADER_KEY: &str = "x-api-environment-key";
+const HEADER_VALUE: &str = "GGXGejnSsZw-IxHKQp8OQKHH-NDItSbEq5PU0g2w1W4=";
+
 pub async fn fetch_ichijin_plus_data(client: Client, id: &str) -> Result<Manga, FetchError> {
     let data = client
         .get(format!("https://api.ichijin-plus.com/comics/{}", id))
-        .header(
-            "x-api-environment-key",
-            "GGXGejnSsZw-IxHKQp8OQKHH-NDItSbEq5PU0g2w1W4=",
-        )
+        .header(HEADER_KEY, HEADER_VALUE)
         .send()
         .await
         .map_err(FetchError::ReqwestError)?
@@ -56,7 +54,24 @@ pub async fn fetch_ichijin_plus_data(client: Client, id: &str) -> Result<Manga, 
         .await
         .map_err(FetchError::ReqwestError)?;
 
-    let latest_episode = data.latest_episode;
+    let episode_detail = client
+        .get(format!("https://api.ichijin-plus.com/episodes?comic_id={}&episode_status=free_viewing%2Con_sale&limit=5&order=desc&sort=episode_order", id))
+        .header(
+            HEADER_KEY,
+            HEADER_VALUE,
+        )
+        .send()
+        .await
+        .map_err(FetchError::ReqwestError)?
+        .json::<EpisodeDetail>()
+        .await
+        .map_err(FetchError::ReqwestError)?;
+
+    let latest_episode = episode_detail
+        .resources
+        .first()
+        .ok_or(FetchError::ChapterNotFound(Some("No episode found".into())))?;
+
     let author = data
         .authors
         .into_iter()
@@ -66,10 +81,10 @@ pub async fn fetch_ichijin_plus_data(client: Client, id: &str) -> Result<Manga, 
 
     Ok(Manga {
         title: data.title,
-        cover_url: latest_episode.thumbnail_image_url,
+        cover_url: latest_episode.thumbnail_image_url.clone(),
         author,
-        latest_chapter_title: latest_episode.title,
-        latest_chapter_url: format!("https://ichijin-plus.com/episodes/{}", latest_episode.id),
+        latest_chapter_title: latest_episode.title.clone(),
+        latest_chapter_url: format!("https://ichijin-plus.com/episodes/{}", &latest_episode.id),
         latest_chapter_release_date: latest_episode.published_at.fixed_offset(),
         latest_chapter_publish_day: latest_episode.published_at.with_timezone(&Japan).weekday(),
     })

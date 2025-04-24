@@ -180,6 +180,14 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn add_manga_success_ichijin_plus() {
+        let db = get_test_db("add_manga_ichijin_plus").await.unwrap();
+        let result =
+            add_manga_service("103086580629828".into(), Some(MangaSource::IchijinPlus), db).await;
+        result.unwrap();
+    }
+
+    #[tokio::test]
     async fn add_manga_error_not_found() {
         let db = get_test_db("add_manga_404").await.unwrap();
         if (add_manga_service("".into(), Some(MangaSource::YoungAnimal), db).await).is_ok() {
