@@ -32,7 +32,7 @@ impl MangaSource {
                 .unwrap()
         };
 
-        match self {
+        let manga = match self {
             MangaSource::Yanmaga => fetch_yanmaga(client, manga_id).await,
             MangaSource::ShounenJumpPlus => {
                 fetch_generic_rss(
@@ -129,6 +129,143 @@ impl MangaSource {
                 .await
             }
             MangaSource::IchijinPlus => fetch_ichijin_plus_data(client, manga_id).await,
-        }
+        }?;
+
+        Ok(self.postprocess(manga))
+    }
+
+    fn postprocess(&self, mut manga: Manga) -> Manga {
+        let title = &manga.title;
+        manga.title = self.cleanup_title(title);
+        manga
+    }
+
+    pub fn cleanup_title(&self, title: &str) -> String {
+        let mut removed_suffix = match self {
+            MangaSource::ShounenJumpPlus => title.replace("少年ジャンプ＋", "").trim().to_owned(),
+            MangaSource::ComicEarthStar => title.replace("コミック アース・スター｜毎週木曜・最新話更新！無料で漫画が読めるWEBコミック誌", "").trim().to_owned(),
+            MangaSource::KurageBunch => title.replace("くらげバンチ", "").trim().to_owned(),
+            MangaSource::ComicDays => title.replace("コミックDAYS", "").trim().to_owned(),
+            MangaSource::MagazinePocket => title.replace("マガポケ", "").trim().to_owned(),
+            MangaSource::TonariYoungJump => title.replace("となりのヤングジャンプ", "").trim().to_owned(),
+            MangaSource::SundayWebry => title.replace("サンデーうぇぶり", "").trim().to_owned(),
+            MangaSource::ComicAction => title.replace("webアクション｜双葉社発のマンガサイト", "").trim().to_owned(),
+            _ => title.to_owned()
+,
+        };
+
+        match self {
+            MangaSource::ShounenJumpPlus
+            | MangaSource::ComicEarthStar
+            | MangaSource::KurageBunch
+            | MangaSource::ComicDays
+            | MangaSource::MagazinePocket
+            | MangaSource::TonariYoungJump
+            | MangaSource::SundayWebry
+            | MangaSource::ComicAction => {
+                removed_suffix.pop();
+                removed_suffix.remove(0);
+            }
+            _ => {}
+        };
+
+        removed_suffix
+    }
+}
+
+#[cfg(test)]
+mod tests {
+
+    use super::*;
+
+    #[test]
+    fn test_cleanup_shounen_jump_plus() {
+        let title = "少年ジャンプ＋（魔都精兵のスレイブ）";
+        let expected = "魔都精兵のスレイブ";
+
+        let source = MangaSource::ShounenJumpPlus;
+        let got = source.cleanup_title(title);
+        assert_eq!(got, expected);
+    }
+
+    #[test]
+    fn test_cleanup_comic_earth_star() {
+        let title = "コミック アース・スター｜毎週木曜・最新話更新！無料で漫画が読めるWEBコミック誌（願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～）";
+        let expected =
+            "願いを叶えてもらおうと悪魔を召喚したけど、可愛かったので結婚しました　～悪魔の新妻～";
+
+        let source = MangaSource::ComicEarthStar;
+        let got = source.cleanup_title(title);
+        assert_eq!(got, expected);
+    }
+
+    #[test]
+    fn test_cleanup_kurage_bunch() {
+        let title = "くらげバンチ（三咲くんは攻略キャラじゃない）";
+        let expected = "三咲くんは攻略キャラじゃない";
+
+        let source = MangaSource::KurageBunch;
+        let got = source.cleanup_title(title);
+        assert_eq!(got, expected);
+    }
+
+    #[test]
+    fn test_cleanup_comic_days() {
+        let title = "コミックDAYS（外れスキル《木の実マスター》　～スキルの実（食べたら死ぬ）を無限に食べられるようになった件について～）";
+        let expected = "外れスキル《木の実マスター》　～スキルの実（食べたら死ぬ）を無限に食べられるようになった件について～";
+
+        let source = MangaSource::ComicDays;
+        let got = source.cleanup_title(title);
+        assert_eq!(got, expected);
+    }
+
+    #[test]
+    fn test_cleanup_magazine_pocket() {
+        let title =
+            "マガポケ（不遇職【鑑定士】が実は最強だった～奈落で鍛えた最強の【神眼】で無双する～）";
+        let expected = "不遇職【鑑定士】が実は最強だった～奈落で鍛えた最強の【神眼】で無双する～";
+
+        let source = MangaSource::MagazinePocket;
+        let got = source.cleanup_title(title);
+        assert_eq!(got, expected);
+    }
+
+    #[test]
+    fn test_cleanup_tonari_young_jump() {
+        let title = "となりのヤングジャンプ（つれないほど青くて あざといくらいに赤い）";
+        let expected = "つれないほど青くて あざといくらいに赤い";
+
+        let source = MangaSource::TonariYoungJump;
+        let got = source.cleanup_title(title);
+        assert_eq!(got, expected);
+    }
+
+    #[test]
+    fn test_cleanup_sunday_webry() {
+        let title = "サンデーうぇぶり（となりの席のヤツがそういう目で見てくる）";
+        let expected = "となりの席のヤツがそういう目で見てくる";
+
+        let source = MangaSource::SundayWebry;
+        let got = source.cleanup_title(title);
+        assert_eq!(got, expected);
+    }
+
+    #[test]
+    fn test_cleanup_comic_action() {
+        let title = "webアクション｜双葉社発のマンガサイト（かくして！マキナさん!!）";
+        let expected = "かくして！マキナさん!!";
+
+        let source = MangaSource::ComicAction;
+        let got = source.cleanup_title(title);
+        assert_eq!(got, expected);
+    }
+
+    #[test]
+    fn test_cleanup_do_nothing() {
+        let title = "恋する(おとめ)の作り方";
+
+        let source = MangaSource::ComicPixiv;
+        let got = source.cleanup_title(title);
+        assert_eq!(got, title);
     }
 }
