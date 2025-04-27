@@ -14,6 +14,7 @@ pub async fn update_manga_batch(
         create temp table update_table (
             source MangaSource not null, 
             manga_id text not null,
+            title text not null,
             cover_url text not null,
             latest_chapter_title text not null,
             latest_chapter_url text not null,
@@ -30,13 +31,14 @@ pub async fn update_manga_batch(
     let mut query_builder = QueryBuilder::new(
         r#" 
         insert into update_table 
-        (source, manga_id, cover_url, latest_chapter_title, latest_chapter_url, latest_chapter_release_date, latest_chapter_publish_day, latest_chapter_released, last_update) 
+        (source, manga_id, title, cover_url, latest_chapter_title, latest_chapter_url, latest_chapter_release_date, latest_chapter_publish_day, latest_chapter_released, last_update) 
         "#,
     );
 
     query_builder.push_values(latest_data, |mut b, row| {
         b.push_bind(row.source.clone())
             .push_bind(row.manga_id.clone())
+            .push_bind(row.title.clone())
             .push_bind(row.cover_url.clone())
             .push_bind(row.latest_chapter_title.clone())
             .push_bind(row.latest_chapter_url.clone())
@@ -52,6 +54,7 @@ pub async fn update_manga_batch(
         r#"
          update series as s
             set
+            title = u.title,
             cover_url = u.cover_url,
             latest_chapter_title = u.latest_chapter_title,
             latest_chapter_url = u.latest_chapter_url,

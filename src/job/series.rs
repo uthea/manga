@@ -154,13 +154,10 @@ pub async fn diff_update(
         .unwrap_or_else(|e| panic!("Fail to fetch {}: {:?}", source, e));
 
     // generate diffing result
-    // no change -> title and release status doesn't change
-    // upcoming -> release status change from released to not released and title change
+    // no change -> chapter title and release status doesn't change
+    // upcoming -> release status change from released to not released and chapter title change
     // released -> release status change from not released to released
-    // let current_dt = chrono::offset::Local::now().naive_local();
-    // let update_dt = latest_update.latest_chapter_release_date.naive_local();
-    // let released = Japan.from_local_datetime(&current_dt).unwrap()
-    //     >= Japan.from_local_datetime(&update_dt).unwrap();
+
     let update_manga_row = MangaRow::from_manga(data.manga_id, data.source, latest_update);
 
     if (data
