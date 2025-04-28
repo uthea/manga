@@ -41,7 +41,7 @@ pub async fn update_series(webhook_url: String, pool: &PgPool) {
 
     // generate diff state
     let lim: Arc<DefaultKeyedRateLimiter<MangaSource>> = Arc::new(RateLimiter::keyed(
-        Quota::per_second(NonZeroU32::new(2).unwrap()),
+        Quota::per_second(NonZeroU32::new(1).unwrap()),
     ));
     let mut tasks = vec![];
     let mut task_output = vec![];
@@ -140,7 +140,7 @@ pub async fn diff_update(
     limiter
         .until_key_ready_with_jitter(
             &data.source,
-            Jitter::new(Duration::from_secs(1), Duration::from_secs(1)),
+            Jitter::new(Duration::from_secs(3), Duration::from_secs(1)),
         )
         .await;
 
