@@ -37,19 +37,19 @@ pub async fn get_manga_paginated(
     }
 
     if let Some(title) = &query_option.title {
-        query.push(" AND title like concat('%', ");
+        query.push(" AND title ilike concat('%', ");
         query.push_bind(title.to_lowercase());
         query.push(", '%')");
     }
 
     if let Some(author) = &query_option.author {
-        query.push(" AND author like concat('%', ");
+        query.push(" AND author ilike concat('%', ");
         query.push_bind(author.to_lowercase());
         query.push(", '%')");
     }
 
     if let Some(chapter_title) = &query_option.chapter_title {
-        query.push(" AND latest_chapter_title like concat('%', ");
+        query.push(" AND latest_chapter_title ilike concat('%', ");
         query.push_bind(chapter_title.to_lowercase());
         query.push(", '%')");
     }
@@ -84,7 +84,7 @@ pub async fn get_manga_paginated(
         } else if total_rows < page_size {
             1
         } else {
-            total_rows / page_size
+            (total_rows + page_size - 1) / page_size
         },
     })
 }
