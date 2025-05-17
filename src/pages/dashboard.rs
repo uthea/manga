@@ -90,6 +90,7 @@ fn FilterHeader(
     #[prop(into)] label: MaybeProp<String>,
     filter_value: RwSignal<String>,
     #[prop(into)] id: MaybeProp<String>,
+    #[prop(into)] on_change: Callback<()>,
 ) -> impl IntoView {
     view! {
         <TableHeaderCell>
@@ -114,6 +115,7 @@ fn FilterHeader(
                         <Input
                             value=filter_value
                             attr:id=id.get().map(|v| format!("{}-input", v))
+                            on:change=move |_| on_change.run(())
                         />
                     </Field>
                 </MenuItem>
@@ -141,6 +143,8 @@ fn MangaTable(
     let author_filter_debounce: Signal<String> = signal_debounced(author_filter.read_only(), 250.0);
     let chapter_filter_debounce: Signal<String> =
         signal_debounced(chapter_filter.read_only(), 250.0);
+
+    let on_filter_change = move || current_page.set(0);
 
     let data_source = Resource::new(
         move || {
@@ -191,6 +195,12 @@ fn MangaTable(
         total_page.set(current_total);
     });
 
+    // also reset current page when source filter change
+    Effect::new(move |_| {
+        let _ = source_filter.get();
+        current_page.set(0);
+    });
+
     view! {
         <Table>
             <TableHeader>
@@ -233,9 +243,24 @@ fn MangaTable(
                             </MenuItem>
                         </Menu>
                     </TableHeaderCell>
-                    <FilterHeader label="Title" filter_value=title_filter id="title-filter" />
-                    <FilterHeader label="Author" filter_value=author_filter id="author-filter" />
-                    <FilterHeader label="Chapter" filter_value=chapter_filter id="chapter-filter" />
+                    <FilterHeader
+                        label="Title"
+                        filter_value=title_filter
+                        id="title-filter"
+                        on_change=on_filter_change
+                    />
+                    <FilterHeader
+                        label="Author"
+                        filter_value=author_filter
+                        id="author-filter"
+                        on_change=on_filter_change
+                    />
+                    <FilterHeader
+                        label="Chapter"
+                        filter_value=chapter_filter
+                        id="chapter-filter"
+                        on_change=on_filter_change
+                    />
                 </TableRow>
             </TableHeader>
             <TableBody>
