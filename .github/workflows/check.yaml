@@ -19,23 +19,23 @@ jobs:
       - name: Run test
         run: cargo leptos test
 
-e2e:
-  name: E2E Test
-  runs-on: ubuntu-latest
-  env:
-    APP_ENV: e2e
-    LEPTOS_SITE_ADDR: 0.0.0.0:3000
-  steps:
-    - uses: dtolnay/rust-toolchain@stable
-    - uses: cargo-bins/cargo-binstall@main
-    - uses: actions/checkout@v3
-    - uses: Swatinem/rust-cache@v2
-    - name: Add WASM target
-      run: rustup target add wasm32-unknown-unknown
-    - name: install cargo leptos
-      run: cargo binstall cargo-leptos
-    - name: Run test
-      run: cargo leptos end-to-end
+  e2e:
+    name: E2E Test
+    runs-on: ubuntu-latest
+    env:
+      APP_ENV: e2e
+      LEPTOS_SITE_ADDR: 0.0.0.0:3000
+    steps:
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: cargo-bins/cargo-binstall@main
+      - uses: actions/checkout@v3
+      - uses: Swatinem/rust-cache@v2
+      - name: Add WASM target
+        run: rustup target add wasm32-unknown-unknown
+      - name: install cargo leptos
+        run: cargo binstall cargo-leptos
+      - name: Run test
+        run: cargo leptos end-to-end
 
   clippy:
     name: Clippy
