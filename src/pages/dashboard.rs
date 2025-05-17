@@ -410,22 +410,35 @@ fn AddMangaDialog(
                             </Field>
 
                             <Field label="Source">
-                                <Combobox
-                                    selected_options=selected_source
-                                    placeholder="Select a source"
-                                    attr:id=id.get().map(|v| format!("{}-source", v))
+                                <Show
+                                    when=move || open.get()
+                                    fallback=|| {
+                                        view! {
+                                            <Combobox>
+                                                <ComboboxOption text="" />
+                                            </Combobox>
+                                        }
+                                    }
                                 >
-                                    {move || {
-                                        MangaSource::iter()
-                                            .map(|s| {
-                                                view! {
-                                                    <ComboboxOption value=s.to_string() text=s.to_string() />
-                                                }
-                                            })
-                                            .collect_view()
-                                    }}
+                                    <Combobox
+                                        clearable=true
+                                        selected_options=selected_source
+                                        value=selected_source.get().map_or("".into(), |v| v)
+                                        placeholder="Select a source"
+                                        attr:id=id.get().map(|v| format!("{}-source", v))
+                                    >
+                                        {move || {
+                                            MangaSource::iter()
+                                                .map(|s| {
+                                                    view! {
+                                                        <ComboboxOption value=s.to_string() text=s.to_string() />
+                                                    }
+                                                })
+                                                .collect_view()
+                                        }}
 
-                                </Combobox>
+                                    </Combobox>
+                                </Show>
                             </Field>
                         </Flex>
                     </DialogContent>
