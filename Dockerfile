@@ -16,8 +16,9 @@ RUN cargo chef prepare --recipe-path recipe.json
 FROM prereq as cacher
 WORKDIR /app
 COPY --from=planner /app/recipe.json recipe.json
-RUN cargo chef cook --release --package=manga-tracker --bin=manga-tracker --target-dir=target/    --recipe-path recipe.json
-RUN cargo chef cook --release --package=manga-tracker --target-dir=target/front --target=wasm32-unknown-unknown    --recipe-path recipe.json
+RUN cargo chef cook --release --package=manga-tracker --target-dir=/app/target --recipe-path recipe.json
+RUN cargo chef cook --package=manga-tracker --lib --target-dir=/app/target/front --target=wasm32-unknown-unknown --no-default-features --features=hydrate --profile=wasm-release --recipe-path recipe.json
+
 
 FROM prereq as builder
 COPY . /app
