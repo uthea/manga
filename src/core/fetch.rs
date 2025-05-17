@@ -74,7 +74,10 @@ impl MangaSource {
             MangaSource::MagazinePocket => {
                 fetch_generic_rss(
                     client,
-                    format!("https://pocket.shonenmagazine.com/rss/series/{}", manga_id),
+                    format!(
+                        "https://mgpk-cdn.magazinepocket.com/static/rss/{}/feed.xml",
+                        manga_id
+                    ),
                 )
                 .await
             }
@@ -137,8 +140,8 @@ impl MangaSource {
     }
 
     fn postprocess(&self, mut manga: Manga) -> Manga {
-        let title = &manga.title;
-        manga.title = self.cleanup_title(title);
+        manga.title = self.cleanup_title(&manga.title);
+        manga.latest_chapter_url = self.replace_episode_url(&manga.latest_chapter_url);
         manga
     }
 
@@ -172,6 +175,16 @@ impl MangaSource {
         };
 
         removed_suffix
+    }
+
+    pub fn replace_episode_url(&self, url: &str) -> String {
+        // for now this is for megazine pocket since the new url is not working yet
+        match self {
+            MangaSource::MagazinePocket => url
+                .replace("mgpk-web.magazinepocket.com", "pocket.shonenmagazine.com")
+                .to_owned(),
+            _ => url.to_owned(),
+        }
     }
 }
 
@@ -229,6 +242,15 @@ mod tests {
 
         let source = MangaSource::MagazinePocket;
         let got = source.cleanup_title(title);
+        assert_eq!(got, expected);
+    }
+
+    #[test]
+    fn test_replace_episode_url_magazine_pocket() {
+        let episode_url = "https://mgpk-web.magazinepocket.com/title/02174/episode/381450";
+        let expected = "https://pocket.shonenmagazine.com/title/02174/episode/381450";
+        let source = MangaSource::MagazinePocket;
+        let got = source.replace_episode_url(episode_url);
         assert_eq!(got, expected);
     }
 

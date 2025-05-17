@@ -188,6 +188,13 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn add_manga_success_pocket_megazine() {
+        let db = get_test_db("add_manga_pocket_megazine").await.unwrap();
+        let result = add_manga_service("2790".into(), Some(MangaSource::MagazinePocket), db).await;
+        result.unwrap();
+    }
+
+    #[tokio::test]
     async fn add_manga_error_not_found() {
         let db = get_test_db("add_manga_404").await.unwrap();
         if (add_manga_service("".into(), Some(MangaSource::YoungAnimal), db).await).is_ok() {
