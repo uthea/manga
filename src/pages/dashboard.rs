@@ -144,7 +144,7 @@ fn MangaTable(
     let chapter_filter_debounce: Signal<String> =
         signal_debounced(chapter_filter.read_only(), 250.0);
 
-    let on_filter_change = move || current_page.set(0);
+    let on_filter_change = move || current_page.set(1);
 
     let data_source = Resource::new(
         move || {
@@ -198,7 +198,7 @@ fn MangaTable(
     // also reset current page when source filter change
     Effect::new(move |_| {
         let _ = source_filter.get();
-        current_page.set(0);
+        current_page.set(1);
     });
 
     view! {
