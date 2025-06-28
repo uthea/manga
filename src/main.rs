@@ -170,7 +170,7 @@ async fn main() {
     let app = Router::new()
         .route("/health", get(health))
         .route(
-            "/api/*fn_name",
+            "/api/{*fn_name}",
             get(server_fn_handler).post(server_fn_handler),
         )
         .leptos_routes_with_handler(routes, get(leptos_routes_handler))

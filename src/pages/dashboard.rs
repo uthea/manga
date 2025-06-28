@@ -94,7 +94,7 @@ fn FilterHeader(
 ) -> impl IntoView {
     view! {
         <TableHeaderCell>
-            <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
+            <Menu on_select=move |_: ()| {} position=MenuPosition::RightEnd>
                 <MenuTrigger slot>
                     <Flex
                         align=FlexAlign::Center
@@ -207,7 +207,7 @@ fn MangaTable(
                 <TableRow>
                     <TableHeaderCell>"Action"</TableHeaderCell>
                     <TableHeaderCell>
-                        <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
+                        <Menu on_select=move |_: ()| {} position=MenuPosition::RightEnd>
                             <MenuTrigger slot>
                                 <Flex align=FlexAlign::Center attr:id="source-filter-trigger">
                                     <p>"Source"</p>
