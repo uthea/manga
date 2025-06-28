@@ -78,8 +78,7 @@ pub struct Internal {
 pub async fn fetch_comic_walker_data(client: Client, id: &str) -> Result<Manga, FetchError> {
     let data = client
         .get(format!(
-            "https://comic-walker.com/api/contents/details/work?workCode={}",
-            id
+            "https://comic-walker.com/api/contents/details/work?workCode={id}"
         ))
 /*         .header("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36") */
         .send()

@@ -34,7 +34,7 @@ pub async fn add_manga_service(
         .fetch(&manga_id)
         .await
         .map_err(|e| {
-            println!("Fetch error: {:?}", e);
+            println!("Fetch error: {e:?}");
 
             match e {
                 FetchError::ReqwestError(err) => err.to_string(),
@@ -134,7 +134,7 @@ mod tests {
             .connect_with(options.clone())
             .await?;
 
-        sqlx::query(format!(r#"create database "{}""#, db_name).as_str())
+        sqlx::query(format!(r#"create database "{db_name}""#).as_str())
             .execute(&pool)
             .await?;
 

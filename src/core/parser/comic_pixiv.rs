@@ -77,7 +77,7 @@ pub struct EpisodeDetail {
 
 pub async fn fetch_pixiv_data(client: Client, id: &str) -> Result<Manga, FetchError> {
     let metadata = client
-        .get(format!("https://comic.pixiv.net/api/app/works/v5/{}", id))
+        .get(format!("https://comic.pixiv.net/api/app/works/v5/{id}"))
         .header("x-requested-with", "pixivcomic")
         .send()
         .await
@@ -88,8 +88,7 @@ pub async fn fetch_pixiv_data(client: Client, id: &str) -> Result<Manga, FetchEr
 
     let details = client
         .get(format!(
-            "https://comic.pixiv.net/api/app/works/{}/episodes/v2?order=desc",
-            id
+            "https://comic.pixiv.net/api/app/works/{id}/episodes/v2?order=desc"
         ))
         .header("x-requested-with", "pixivcomic")
         .send()

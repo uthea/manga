@@ -83,7 +83,7 @@ fn parse_mecha_comic_from_html(html: String) -> Result<Manga, FetchError> {
             cover_url: cover_url.to_owned(),
             author,
             latest_chapter_title: format!("{} {}", chapter_num, chapter_title.trim()),
-            latest_chapter_url: format!("https://mechacomic.jp{}", chapter_url),
+            latest_chapter_url: format!("https://mechacomic.jp{chapter_url}"),
             latest_chapter_release_date: Local::now().fixed_offset(),
             latest_chapter_publish_day: Local::now().weekday(),
         });
@@ -108,11 +108,11 @@ fn find_latest_chapter_number(html: String) -> Result<i32, FetchError> {
         .replace("／", "")
         .replace("話へ", "")
         .parse()
-        .map_err(|e| FetchError::PageNotFound(Some(format!("Page number parse error: {}", e))))
+        .map_err(|e| FetchError::PageNotFound(Some(format!("Page number parse error: {e}"))))
 }
 
 pub async fn fetch_mecha_comic(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
-    let url = format!("https://mechacomic.jp/books/{}", manga_id);
+    let url = format!("https://mechacomic.jp/books/{manga_id}");
 
     let html = client
         .get(&url)

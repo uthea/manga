@@ -94,12 +94,9 @@ fn FilterHeader(
 ) -> impl IntoView {
     view! {
         <TableHeaderCell>
-            <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
+            <Menu on_select=move |_: &str| {} position=MenuPosition::RightEnd>
                 <MenuTrigger slot>
-                    <Flex
-                        align=FlexAlign::Center
-                        attr:id=id.get().map(|v| format!("{}-trigger", v))
-                    >
+                    <Flex align=FlexAlign::Center attr:id=id.get().map(|v| format!("{v}-trigger"))>
                         <p>{label.get()}</p>
                         <Icon
                             icon=AiCaretDownOutlined
@@ -111,10 +108,10 @@ fn FilterHeader(
                 </MenuTrigger>
 
                 <MenuItem value="no_icon" disabled=true>
-                    <Field label=label.get().map(|v| format!("Filter {}", v))>
+                    <Field label=label.get().map(|v| format!("Filter {v}"))>
                         <Input
                             value=filter_value
-                            attr:id=id.get().map(|v| format!("{}-input", v))
+                            attr:id=id.get().map(|v| format!("{v}-input"))
                             on:change=move |_| on_change.run(())
                         />
                     </Field>
@@ -207,7 +204,7 @@ fn MangaTable(
                 <TableRow>
                     <TableHeaderCell>"Action"</TableHeaderCell>
                     <TableHeaderCell>
-                        <Menu on_select=move |_| {} position=MenuPosition::RightEnd>
+                        <Menu on_select=move |_: &str| {} position=MenuPosition::RightEnd>
                             <MenuTrigger slot>
                                 <Flex align=FlexAlign::Center attr:id="source-filter-trigger">
                                     <p>"Source"</p>
@@ -398,14 +395,14 @@ fn AddMangaDialog(
     view! {
         <Dialog open>
             <DialogSurface>
-                <DialogBody attr:id=id.get().map(|v| format!("{}-body", v))>
+                <DialogBody attr:id=id.get().map(|v| format!("{v}-body"))>
                     <DialogTitle>"Add new Manga"</DialogTitle>
                     <DialogContent>
                         <Flex vertical=true gap=FlexGap::Large style="margin-bottom: 10px">
                             <Field label="Manga ID">
                                 <Input
                                     value=manga_id
-                                    attr:id=id.get().map(|v| format!("{}-manga-id", v))
+                                    attr:id=id.get().map(|v| format!("{v}-manga-id"))
                                 />
                             </Field>
 
@@ -425,7 +422,7 @@ fn AddMangaDialog(
                                         selected_options=selected_source
                                         value=selected_source.get().map_or("".into(), |v| v)
                                         placeholder="Select a source"
-                                        attr:id=id.get().map(|v| format!("{}-source", v))
+                                        attr:id=id.get().map(|v| format!("{v}-source"))
                                     >
                                         {move || {
                                             MangaSource::iter()
@@ -445,7 +442,7 @@ fn AddMangaDialog(
 
                     <DialogActions>
                         <Button
-                            attr:id=id.get().map(|v| format!("{}-add-btn", v))
+                            attr:id=id.get().map(|v| format!("{v}-add-btn"))
                             appearance=ButtonAppearance::Primary
                             on_click=handle_add
                             disabled=is_submitting
@@ -477,51 +474,52 @@ fn DeleteMangaDialog(
     let is_submitting = RwSignal::new(false);
 
     let toaster = ToasterInjection::expect_context();
-    let handle_delete =
-        move |_| {
-            spawn_local(async move {
-                is_submitting.set(true);
-                let values = selected_rows
-                    .get_untracked()
-                    .into_iter()
-                    .collect::<Vec<_>>();
-                let result = delete_manga(values).await;
+    let handle_delete = move |_| {
+        spawn_local(async move {
+            is_submitting.set(true);
+            let values = selected_rows
+                .get_untracked()
+                .into_iter()
+                .collect::<Vec<_>>();
+            let result = delete_manga(values).await;
 
-                match result {
-                    Ok(num_rows) => {
-                        toaster.dispatch_toast(
-                        move || view! {
-                            <Toast>
-                                <ToastTitle>"Delete Success"</ToastTitle>
-                                <ToastBody>{format!("{} manga deleted", num_rows)}</ToastBody>
-                            </Toast>
-                        },
-                        ToastOptions::default().with_intent(ToastIntent::Success),
-                    );
-                        on_delete.run(());
-                    }
-                    Err(e) => toaster.dispatch_toast(
+            match result {
+                Ok(num_rows) => {
+                    toaster.dispatch_toast(
                         move || {
                             view! {
                                 <Toast>
-                                    <ToastTitle>"Error"</ToastTitle>
-                                    <ToastBody>{e.to_string()}</ToastBody>
+                                    <ToastTitle>"Delete Success"</ToastTitle>
+                                    <ToastBody>{format!("{num_rows} manga deleted")}</ToastBody>
                                 </Toast>
                             }
                         },
-                        ToastOptions::default().with_intent(ToastIntent::Error),
-                    ),
+                        ToastOptions::default().with_intent(ToastIntent::Success),
+                    );
+                    on_delete.run(());
                 }
+                Err(e) => toaster.dispatch_toast(
+                    move || {
+                        view! {
+                            <Toast>
+                                <ToastTitle>"Error"</ToastTitle>
+                                <ToastBody>{e.to_string()}</ToastBody>
+                            </Toast>
+                        }
+                    },
+                    ToastOptions::default().with_intent(ToastIntent::Error),
+                ),
+            }
 
-                is_submitting.set(false);
-                open.set(false);
-            })
-        };
+            is_submitting.set(false);
+            open.set(false);
+        })
+    };
 
     view! {
         <Dialog open>
             <DialogSurface>
-                <DialogBody attr:id=id.get().map(|v| format!("{}-body", v))>
+                <DialogBody attr:id=id.get().map(|v| format!("{v}-body"))>
                     <DialogTitle>"Delete Manga"</DialogTitle>
                     <DialogContent>
                         <p>"Are you sure to delete selected manga ?"</p>
@@ -529,7 +527,7 @@ fn DeleteMangaDialog(
 
                     <DialogActions>
                         <Button
-                            attr:id=id.get().map(|v| format!("{}-delete-btn", v))
+                            attr:id=id.get().map(|v| format!("{v}-delete-btn"))
                             appearance=ButtonAppearance::Primary
                             on_click=handle_delete
                             disabled=is_submitting
@@ -542,7 +540,7 @@ fn DeleteMangaDialog(
                             "Yes"
                         </Button>
                         <Button
-                            attr:id=id.get().map(|v| format!("{}-cancel-btn", v))
+                            attr:id=id.get().map(|v| format!("{v}-cancel-btn"))
                             appearance=ButtonAppearance::Primary
                             on_click=move |_| open.set(false)
                         >

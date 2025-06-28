@@ -96,7 +96,7 @@ pub fn parse_manga_up_from_html(html: String) -> Result<Manga, FetchError> {
 }
 
 pub async fn fetch_mangaup(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
-    let url = format!("https://www.manga-up.com/titles/{}", manga_id);
+    let url = format!("https://www.manga-up.com/titles/{manga_id}");
 
     let html = client
         .get(url)
