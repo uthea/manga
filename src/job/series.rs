@@ -23,7 +23,7 @@ pub async fn update_series(webhook_url: String, pool: &PgPool) {
     let mut all_series: Vec<MangaRow> = Vec::new();
 
     loop {
-        println!("fetching series from db: page {}", page_counter);
+        println!("fetching series from db: page {page_counter}");
         let series = get_manga_paginated(page_counter, 10, MangaQuery::default(), pool).await;
 
         if let Ok(mut result) = series {
@@ -33,7 +33,7 @@ pub async fn update_series(webhook_url: String, pool: &PgPool) {
 
             all_series.append(&mut result.data);
         } else {
-            panic!("Error retriving series from db {:?}", series);
+            panic!("Error retriving series from db {series:?}");
         }
 
         page_counter += 1;
@@ -58,7 +58,7 @@ pub async fn update_series(webhook_url: String, pool: &PgPool) {
                 task_output.push(diff);
             }
             Err(e) => {
-                println!("Error : {}", e);
+                println!("Error : {e}");
             }
         }
     }
@@ -151,7 +151,7 @@ pub async fn diff_update(
         .source
         .fetch(&data.manga_id)
         .await
-        .unwrap_or_else(|e| panic!("Fail to fetch {}: {:?}", source, e));
+        .unwrap_or_else(|e| panic!("Fail to fetch {source}: {e:?}"));
 
     // generate diffing result
     // no change -> chapter title and release status doesn't change

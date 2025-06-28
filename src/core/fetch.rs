@@ -39,35 +39,35 @@ impl MangaSource {
             MangaSource::ShounenJumpPlus => {
                 fetch_generic_rss(
                     client,
-                    format!("https://shonenjumpplus.com/rss/series/{}", manga_id),
+                    format!("https://shonenjumpplus.com/rss/series/{manga_id}"),
                 )
                 .await
             }
             MangaSource::ComicEarthStar => {
                 fetch_generic_rss(
                     client,
-                    format!("https://comic-earthstar.com/rss/series/{}", manga_id),
+                    format!("https://comic-earthstar.com/rss/series/{manga_id}"),
                 )
                 .await
             }
             MangaSource::KurageBunch => {
                 fetch_generic_rss(
                     client,
-                    format!("https://kuragebunch.com/rss/series/{}", manga_id),
+                    format!("https://kuragebunch.com/rss/series/{manga_id}"),
                 )
                 .await
             }
             MangaSource::ComicGrowl => {
                 fetch_cdata_rss(
                     client,
-                    format!("https://comic-growl.com/series/{}/rss", manga_id),
+                    format!("https://comic-growl.com/series/{manga_id}/rss"),
                 )
                 .await
             }
             MangaSource::ComicDays => {
                 fetch_generic_rss(
                     client,
-                    format!("https://comic-days.com/rss/series/{}", manga_id),
+                    format!("https://comic-days.com/rss/series/{manga_id}"),
                 )
                 .await
             }
@@ -75,8 +75,7 @@ impl MangaSource {
                 fetch_generic_rss(
                     client,
                     format!(
-                        "https://mgpk-cdn.magazinepocket.com/static/rss/{}/feed.xml",
-                        manga_id
+                        "https://mgpk-cdn.magazinepocket.com/static/rss/{manga_id}/feed.xml"
                     ),
                 )
                 .await
@@ -84,21 +83,21 @@ impl MangaSource {
             MangaSource::TonariYoungJump => {
                 fetch_generic_rss(
                     client,
-                    format!("https://tonarinoyj.jp/rss/series/{}", manga_id),
+                    format!("https://tonarinoyj.jp/rss/series/{manga_id}"),
                 )
                 .await
             }
             MangaSource::SundayWebry => {
                 fetch_generic_rss(
                     client,
-                    format!("https://www.sunday-webry.com/rss/series/{}", manga_id),
+                    format!("https://www.sunday-webry.com/rss/series/{manga_id}"),
                 )
                 .await
             }
             MangaSource::ComicAction => {
                 fetch_generic_rss(
                     client,
-                    format!("https://comic-action.com/rss/series/{}", manga_id),
+                    format!("https://comic-action.com/rss/series/{manga_id}"),
                 )
                 .await
             }
@@ -113,7 +112,7 @@ impl MangaSource {
             MangaSource::ChampionCross => {
                 fetch_cdata_rss(
                     client,
-                    format!("https://championcross.jp/series/{}/rss", manga_id),
+                    format!("https://championcross.jp/series/{manga_id}/rss"),
                 )
                 .await
             }
@@ -121,7 +120,7 @@ impl MangaSource {
             MangaSource::YoungAnimal => {
                 fetch_cdata_rss(
                     client,
-                    format!("https://younganimal.com/series/{}/rss", manga_id),
+                    format!("https://younganimal.com/series/{manga_id}/rss"),
                 )
                 .await
             }
@@ -129,7 +128,7 @@ impl MangaSource {
             MangaSource::YoungChampion => {
                 fetch_cdata_rss(
                     client,
-                    format!("https://youngchampion.jp/series/{}/rss", manga_id),
+                    format!("https://youngchampion.jp/series/{manga_id}/rss"),
                 )
                 .await
             }

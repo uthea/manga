@@ -128,7 +128,7 @@ pub fn parse_comic_fuz_from_html(html: String) -> Result<Manga, FetchError> {
 }
 
 pub async fn fetch_comic_fuz(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
-    let url = format!("https://comic-fuz.com/manga/{}", manga_id);
+    let url = format!("https://comic-fuz.com/manga/{manga_id}");
 
     let html = client
         .get(url)

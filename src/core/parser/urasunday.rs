@@ -61,7 +61,7 @@ pub fn parse_urasunday_from_html(html: String) -> Result<Manga, FetchError> {
                 )))?
                 .inner_html();
 
-            format!("{} {}", first_title, second_title)
+            format!("{first_title} {second_title}")
         };
 
         let chapter_release_date = {
@@ -86,7 +86,7 @@ pub fn parse_urasunday_from_html(html: String) -> Result<Manga, FetchError> {
             cover_url: chapter_img.into(),
             author: author.trim().into(),
             latest_chapter_title: chapter_title,
-            latest_chapter_url: format!("https://urasunday.com{}", chapter_url),
+            latest_chapter_url: format!("https://urasunday.com{chapter_url}"),
             latest_chapter_release_date: chapter_release_date.fixed_offset(),
             latest_chapter_publish_day: chapter_release_date.with_timezone(&Japan).weekday(),
         });
@@ -96,7 +96,7 @@ pub fn parse_urasunday_from_html(html: String) -> Result<Manga, FetchError> {
 }
 
 pub async fn fetch_urasunday(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
-    let url = format!("https://urasunday.com/title/{}", manga_id);
+    let url = format!("https://urasunday.com/title/{manga_id}");
 
     let html = client
         .get(url)

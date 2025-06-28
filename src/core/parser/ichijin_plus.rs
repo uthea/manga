@@ -45,7 +45,7 @@ const HEADER_VALUE: &str = "GGXGejnSsZw-IxHKQp8OQKHH-NDItSbEq5PU0g2w1W4=";
 
 pub async fn fetch_ichijin_plus_data(client: Client, id: &str) -> Result<Manga, FetchError> {
     let data = client
-        .get(format!("https://api.ichijin-plus.com/comics/{}", id))
+        .get(format!("https://api.ichijin-plus.com/comics/{id}"))
         .header(HEADER_KEY, HEADER_VALUE)
         .send()
         .await
@@ -55,7 +55,7 @@ pub async fn fetch_ichijin_plus_data(client: Client, id: &str) -> Result<Manga, 
         .map_err(FetchError::ReqwestError)?;
 
     let episode_detail = client
-        .get(format!("https://api.ichijin-plus.com/episodes?comic_id={}&episode_status=free_viewing%2Con_sale&limit=5&order=desc&sort=episode_order", id))
+        .get(format!("https://api.ichijin-plus.com/episodes?comic_id={id}&episode_status=free_viewing%2Con_sale&limit=5&order=desc&sort=episode_order"))
         .header(
             HEADER_KEY,
             HEADER_VALUE,

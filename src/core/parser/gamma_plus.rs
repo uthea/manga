@@ -96,7 +96,7 @@ pub fn parse_gamma_plus_from_html(html: String) -> Result<Manga, FetchError> {
 }
 
 pub async fn fetch_gamma_plus(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
-    let url = format!("https://gammaplus.takeshobo.co.jp/manga/{}", manga_id);
+    let url = format!("https://gammaplus.takeshobo.co.jp/manga/{manga_id}");
 
     let html = client
         .get(url)

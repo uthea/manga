@@ -70,8 +70,7 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, FetchError> {
                 ))))?;
             let naive_date = NaiveDate::parse_from_str(date_only, "%Y/%m/%d").map_err(|e| {
                 FetchError::ChapterNotFound(Some(format!(
-                    "{}, error parsing date : {}",
-                    e, date_only
+                    "{e}, error parsing date : {date_only}"
                 )))
             })?;
 
@@ -116,7 +115,7 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, FetchError> {
                 .as_str(),
             "%Y/%m/%d",
         )
-        .map_err(|e| FetchError::ChapterNotFound(Some(format!("error parsing date : {}", e))))?;
+        .map_err(|e| FetchError::ChapterNotFound(Some(format!("error parsing date : {e}"))))?;
 
         let chapter_release_date = Local
             .from_local_datetime(&chapter_release_date.and_time(NaiveTime::default()))
@@ -145,7 +144,7 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, FetchError> {
             cover_url: cover_url.to_string(),
             author,
             latest_chapter_title: chapter_title,
-            latest_chapter_url: format!("https://yanmaga.jp{}", chapter_url),
+            latest_chapter_url: format!("https://yanmaga.jp{chapter_url}"),
             latest_chapter_release_date: chapter_release_date.into(),
             latest_chapter_publish_day: chapter_release_date.with_timezone(&Japan).weekday(),
         })
@@ -153,7 +152,7 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, FetchError> {
 }
 
 pub async fn fetch_yanmaga(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
-    let url = format!("https://yanmaga.jp/comics/{}", manga_id);
+    let url = format!("https://yanmaga.jp/comics/{manga_id}");
 
     let html = client
         .get(url)
