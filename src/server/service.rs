@@ -153,6 +153,13 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn add_manga_success_manga_up() {
+        let db = get_test_db("add_manga_mangaup").await.unwrap();
+        let result = add_manga_service("395".into(), Some(MangaSource::MangaUp), db).await;
+        result.unwrap();
+    }
+
+    #[tokio::test]
     async fn add_manga_success_comic_growl() {
         let db = get_test_db("add_manga_comic_growl").await.unwrap();
         let result =
