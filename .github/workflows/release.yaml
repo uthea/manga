@@ -133,7 +133,7 @@ jobs:
         with:
           find: "{ webdriver_url }"
           replace: ${{ secrets.WEBDRIVER_URL }}
-          include: "**values.yaml
+          include: "**values.yaml"
 
       - name: Authorize tailscale
         uses: tailscale/github-action@v1
