@@ -5,6 +5,7 @@ use crate::core::parser::{
     mecha_comic::fetch_mecha_comic, rss_manga::fetch_generic_rss, urasunday::fetch_urasunday,
     yanmaga::fetch_yanmaga,
 };
+use fantoccini::error::{CmdError, NewSessionError};
 use http::header;
 
 use super::{
@@ -19,12 +20,14 @@ pub enum FetchError {
     XmlDeserializeError(Option<String>),
     ChapterNotFound(Option<String>),
     PageNotFound(Option<String>),
+    WebDriverSessionError(NewSessionError),
+    WebDriverCmdError(CmdError),
 }
 
 const USER_AGENT: &str = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36";
 
 impl MangaSource {
-    pub async fn fetch(&self, manga_id: &str) -> Result<Manga, FetchError> {
+    pub async fn fetch(&self, webdriver_url: &str, manga_id: &str) -> Result<Manga, FetchError> {
         let client = {
             let mut headers = header::HeaderMap::new();
             headers.insert("User-Agent", header::HeaderValue::from_static(USER_AGENT));
@@ -74,9 +77,7 @@ impl MangaSource {
             MangaSource::MagazinePocket => {
                 fetch_generic_rss(
                     client,
-                    format!(
-                        "https://mgpk-cdn.magazinepocket.com/static/rss/{manga_id}/feed.xml"
-                    ),
+                    format!("https://mgpk-cdn.magazinepocket.com/static/rss/{manga_id}/feed.xml"),
                 )
                 .await
             }
@@ -103,7 +104,7 @@ impl MangaSource {
             }
 
             MangaSource::ComicPixiv => fetch_pixiv_data(client, manga_id).await,
-            MangaSource::Urasunday => fetch_urasunday(client, manga_id).await,
+            MangaSource::Urasunday => fetch_urasunday(webdriver_url, manga_id).await,
             MangaSource::ComicWalker => fetch_comic_walker_data(client, manga_id).await,
             MangaSource::MangaUp => fetch_mangaup(client, manga_id).await,
             MangaSource::ComicFuz => fetch_comic_fuz(client, manga_id).await,

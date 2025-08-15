@@ -13,6 +13,7 @@ use crate::{
 pub async fn add_manga_service(
     manga_id: String,
     source: Option<MangaSource>,
+    web_driver_url: String,
     pool: sqlx::PgPool,
 ) -> Result<Manga, String> {
     if source.is_none() {
@@ -31,7 +32,7 @@ pub async fn add_manga_service(
     let manga = source
         .as_ref()
         .unwrap()
-        .fetch(&manga_id)
+        .fetch(&web_driver_url, &manga_id)
         .await
         .map_err(|e| {
             println!("Fetch error: {e:?}");
@@ -44,6 +45,8 @@ pub async fn add_manga_service(
                 }
                 FetchError::ChapterNotFound(err) => err.unwrap_or("Chapter Not Found".to_string()),
                 FetchError::PageNotFound(err) => err.unwrap_or("Page Not Found".to_string()),
+                FetchError::WebDriverSessionError(err) => err.to_string(),
+                FetchError::WebDriverCmdError(err) => err.to_string(),
             }
         })?;
 
@@ -102,25 +105,28 @@ pub async fn delete_manga_service(
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::testcontainer_helper;
+    use crate::testcontainer::{postgres_container, selenium_container};
     use sqlx::postgres::{PgConnectOptions, PgPoolOptions};
     use sqlx::{Pool, Postgres};
+    use tracing::dispatcher::get_default;
 
     // Setup hooks registration
     #[ctor::ctor]
     fn on_startup() {
-        testcontainer_helper::setup_postgres();
+        postgres_container::setup_postgres();
+        selenium_container::setup_selenium();
     }
 
     // Shutdown hook registration
     #[ctor::dtor]
     fn on_shutdown() {
-        testcontainer_helper::shutdown_postgres();
+        postgres_container::shutdown_postgres();
+        selenium_container::shutdown_selenium();
     }
 
     async fn get_test_db(db_name: &str) -> Result<Pool<Postgres>, sqlx::Error> {
-        let host_port = testcontainer_helper::get_postgres_node_port().await;
-        let host_ip = testcontainer_helper::get_postgres_node_host().await;
+        let host_port = postgres_container::get_postgres_node_port().await;
+        let host_ip = postgres_container::get_postgres_node_host().await;
 
         let options = PgConnectOptions::new()
             .username("postgres")
@@ -144,33 +150,52 @@ mod tests {
         Ok(pool)
     }
 
+    pub async fn get_selenium_driver_url() -> String {
+        let selenium_port = selenium_container::get_selenium_node_port().await;
+        let selenium_host = selenium_container::get_selenium_node_host().await;
+
+        format!("http://{}:{}", &selenium_host, selenium_port)
+    }
+
     #[tokio::test]
     async fn add_manga_success() {
         let db = get_test_db("add_manga").await.unwrap();
-        let result =
-            add_manga_service("c909ad9c5cd69".into(), Some(MangaSource::YoungAnimal), db).await;
+        let result = add_manga_service(
+            "c909ad9c5cd69".into(),
+            Some(MangaSource::YoungAnimal),
+            "".into(),
+            db,
+        )
+        .await;
         result.unwrap();
     }
 
     #[tokio::test]
     async fn add_manga_success_manga_up() {
         let db = get_test_db("add_manga_mangaup").await.unwrap();
-        let result = add_manga_service("395".into(), Some(MangaSource::MangaUp), db).await;
+        let result =
+            add_manga_service("395".into(), Some(MangaSource::MangaUp), "".into(), db).await;
         result.unwrap();
     }
 
     #[tokio::test]
     async fn add_manga_success_comic_growl() {
         let db = get_test_db("add_manga_comic_growl").await.unwrap();
-        let result =
-            add_manga_service("fd9075d41e98f".into(), Some(MangaSource::ComicGrowl), db).await;
+        let result = add_manga_service(
+            "fd9075d41e98f".into(),
+            Some(MangaSource::ComicGrowl),
+            "".into(),
+            db,
+        )
+        .await;
         result.unwrap();
     }
 
     #[tokio::test]
     async fn add_manga_success_ganma() {
         let db = get_test_db("add_manga_ganma").await.unwrap();
-        let result = add_manga_service("galyome".into(), Some(MangaSource::GANMA), db).await;
+        let result =
+            add_manga_service("galyome".into(), Some(MangaSource::GANMA), "".into(), db).await;
         result.unwrap();
     }
 
@@ -180,6 +205,7 @@ mod tests {
         let result = add_manga_service(
             "11341664176552309986".into(),
             Some(MangaSource::ComicAction),
+            "".into(),
             db,
         )
         .await;
@@ -189,22 +215,48 @@ mod tests {
     #[tokio::test]
     async fn add_manga_success_ichijin_plus() {
         let db = get_test_db("add_manga_ichijin_plus").await.unwrap();
-        let result =
-            add_manga_service("103086580629828".into(), Some(MangaSource::IchijinPlus), db).await;
+        let result = add_manga_service(
+            "103086580629828".into(),
+            Some(MangaSource::IchijinPlus),
+            "".into(),
+            db,
+        )
+        .await;
         result.unwrap();
     }
 
     #[tokio::test]
     async fn add_manga_success_pocket_megazine() {
         let db = get_test_db("add_manga_pocket_megazine").await.unwrap();
-        let result = add_manga_service("2790".into(), Some(MangaSource::MagazinePocket), db).await;
+        let result = add_manga_service(
+            "2790".into(),
+            Some(MangaSource::MagazinePocket),
+            "".into(),
+            db,
+        )
+        .await;
+        result.unwrap();
+    }
+
+    #[tokio::test]
+    async fn add_manga_success_urasunday() {
+        let db = get_test_db("add_manga_urasunday").await.unwrap();
+        let result = add_manga_service(
+            "1707".into(),
+            Some(MangaSource::MagazinePocket),
+            get_selenium_driver_url().await,
+            db,
+        )
+        .await;
         result.unwrap();
     }
 
     #[tokio::test]
     async fn add_manga_error_not_found() {
         let db = get_test_db("add_manga_404").await.unwrap();
-        if (add_manga_service("".into(), Some(MangaSource::YoungAnimal), db).await).is_ok() {
+        if (add_manga_service("".into(), Some(MangaSource::YoungAnimal), "".into(), db).await)
+            .is_ok()
+        {
             panic!("server fn should error")
         };
     }
@@ -230,6 +282,7 @@ mod tests {
         let _ = add_manga_service(
             id.to_string(),
             Some(MangaSource::ShounenJumpPlus),
+            "".into(),
             db.clone(),
         )
         .await

@@ -5,7 +5,10 @@ use axum::{
 };
 use leptos::{context::provide_context, logging::log};
 use leptos_axum::handle_server_fns_with_context;
-use manga_tracker::{app::shell, job::series::update_series, state::AppState};
+use manga_tracker::{
+    app::shell, job::series::update_series, state::AppState,
+    testcontainer::selenium_container::Selenium,
+};
 use sqlx::Executor;
 use testcontainers::{runners::AsyncRunner, ContainerAsync, ImageExt};
 use testcontainers_modules::postgres::Postgres;
@@ -135,6 +138,30 @@ async fn main() {
         }
     };
 
+    let selenium_container = {
+        if e2e_flag {
+            Some(
+                Selenium::default()
+                    .with_cmd(["/opt/bin/entry_point.sh", r#"--shm-size="2g""#])
+                    .start()
+                    .await
+                    .unwrap(),
+            )
+        } else {
+            None
+        }
+    };
+
+    let selenium_webdriver_url = {
+        if let Some(container) = selenium_container.as_ref() {
+            let selenium_host = container.get_host().await.unwrap().to_string();
+            let selenium_port = container.get_host_port_ipv4(4444).await.unwrap();
+            format!("http://{}:{}", &selenium_host, selenium_port)
+        } else {
+            env::var("WEBDRIVER_URL").expect("WEBDRIVER_URL is not set")
+        }
+    };
+
     let db_pool = {
         if let Some(container) = postgres_container.as_ref() {
             let db_host = container.get_host().await.unwrap().to_string();
@@ -153,7 +180,7 @@ async fn main() {
         let webhook_url = env::var("WEBHOOK_URL").expect("WEBHOOK_URL is not set");
         if arg == "update" {
             println!("start updating series");
-            update_series(webhook_url, &db_pool).await;
+            update_series(webhook_url, selenium_webdriver_url, &db_pool).await;
             return;
         }
     }
@@ -165,6 +192,7 @@ async fn main() {
     let app_state = AppState {
         leptos_options,
         pool: db_pool.clone(),
+        webdriver_url: selenium_webdriver_url,
     };
 
     let app = Router::new()

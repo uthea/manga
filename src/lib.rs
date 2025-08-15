@@ -10,7 +10,7 @@ pub mod server;
 pub mod state;
 
 #[cfg(feature = "ssr")]
-pub mod testcontainer_helper;
+pub mod testcontainer;
 
 #[cfg(feature = "hydrate")]
 #[wasm_bindgen::prelude::wasm_bindgen]

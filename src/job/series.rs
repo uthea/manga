@@ -16,7 +16,7 @@ pub enum DiffingResult {
     Released(MangaRow),
 }
 
-pub async fn update_series(webhook_url: String, pool: &PgPool) {
+pub async fn update_series(webhook_url: String, webdriver_url: String, pool: &PgPool) {
     // retrieve series from db (paginated) based on the current day
     // for each series check for latest update
     let mut page_counter = 1;
@@ -47,7 +47,11 @@ pub async fn update_series(webhook_url: String, pool: &PgPool) {
     let mut task_output = vec![];
 
     for series in all_series {
-        tasks.push(tokio::spawn(diff_update(series, lim.clone())));
+        tasks.push(tokio::spawn(diff_update(
+            series,
+            lim.clone(),
+            webdriver_url.clone(),
+        )));
     }
 
     for task in tasks {
@@ -136,6 +140,7 @@ pub async fn broadcast_diff(webhook_url: &str, diffs: Vec<DiffingResult>) {
 pub async fn diff_update(
     data: MangaRow,
     limiter: Arc<DefaultKeyedRateLimiter<MangaSource>>,
+    webdriver_url: String,
 ) -> DiffingResult {
     limiter
         .until_key_ready_with_jitter(
@@ -149,7 +154,7 @@ pub async fn diff_update(
     // for each mangarow retrieve latest update
     let latest_update = data
         .source
-        .fetch(&data.manga_id)
+        .fetch(&webdriver_url, &data.manga_id)
         .await
         .unwrap_or_else(|e| panic!("Fail to fetch {source}: {e:?}"));
 

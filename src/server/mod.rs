@@ -14,7 +14,7 @@ use {
 };
 
 #[cfg(feature = "ssr")]
-async fn get_db() -> Result<Pool<Postgres>, ServerFnError> {
+fn get_db() -> Result<Pool<Postgres>, ServerFnError> {
     use crate::state::AppState;
     use leptos::prelude::use_context;
 
@@ -25,14 +25,27 @@ async fn get_db() -> Result<Pool<Postgres>, ServerFnError> {
     Ok(db)
 }
 
+#[cfg(feature = "ssr")]
+fn get_webdriver_url() -> Result<String, ServerFnError> {
+    use crate::state::AppState;
+    use leptos::prelude::use_context;
+
+    let url = use_context::<AppState>()
+        .ok_or(ServerFnError::new("AppState not found from context"))?
+        .webdriver_url;
+
+    Ok(url)
+}
+
 #[server]
 pub async fn add_manga(
     manga_id: String,
     source: Option<MangaSource>,
 ) -> Result<Manga, ServerFnError> {
-    let db = get_db().await?;
+    let db = get_db()?;
+    let webdriver_url = get_webdriver_url()?;
 
-    add_manga_service(manga_id, source, db)
+    add_manga_service(manga_id, source, webdriver_url, db)
         .await
         .map_err(ServerFnError::new)
 }
@@ -43,7 +56,7 @@ pub async fn retrieve_manga(
     page_size: i64,
     #[server(default)] query_option: MangaQuery,
 ) -> Result<Paginated<Vec<(MangaSource, String, Manga)>>, ServerFnError> {
-    let db = get_db().await?;
+    let db = get_db()?;
 
     retrieve_manga_service(page_number, page_size, query_option, db)
         .await
@@ -54,7 +67,7 @@ pub async fn retrieve_manga(
 pub async fn delete_manga(
     #[server(default)] manga_list: Vec<(MangaSource, String)>,
 ) -> Result<u64, ServerFnError> {
-    let db = get_db().await?;
+    let db = get_db()?;
 
     delete_manga_service(manga_list, db)
         .await

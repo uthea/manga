@@ -6,4 +6,5 @@ use sqlx::PgPool;
 pub struct AppState {
     pub leptos_options: LeptosOptions,
     pub pool: PgPool,
+    pub webdriver_url: String,
 }
