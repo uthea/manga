@@ -31,7 +31,7 @@ pub fn parse_urasunday_from_html(html: String, manga_id: &str) -> Result<Manga, 
         .inner_html();
 
     let mut latest_chapter_iter = document.select(&chapter_selector);
-    latest_chapter_iter.next();
+    //latest_chapter_iter.next();
 
     if let Some(lastest_chapter_fragment) = latest_chapter_iter.next() {
         let chapter_title = lastest_chapter_fragment
