@@ -108,7 +108,6 @@ mod tests {
     use crate::testcontainer::{postgres_container, selenium_container};
     use sqlx::postgres::{PgConnectOptions, PgPoolOptions};
     use sqlx::{Pool, Postgres};
-    use tracing::dispatcher::get_default;
 
     // Setup hooks registration
     #[ctor::ctor]

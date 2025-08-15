@@ -2,7 +2,6 @@ use crate::core::{fetch::FetchError, types::Manga};
 use chrono::{Datelike, Days, Local, NaiveDate, NaiveTime, TimeZone};
 use chrono_tz::Japan;
 use fantoccini::ClientBuilder;
-use reqwest::Client;
 use scraper::{Html, Selector};
 
 pub fn parse_urasunday_from_html(html: String, manga_id: &str) -> Result<Manga, FetchError> {
