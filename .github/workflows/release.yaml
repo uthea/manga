@@ -128,6 +128,13 @@ jobs:
           replace: ${{ secrets.INGRESS_HOST }}
           include: "**values.yaml"
 
+      - name: Find and Replace 11
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ webdriver_url }"
+          replace: ${{ secrets.WEBDRIVER_URL }}
+          include: "**values.yaml
+
       - name: Authorize tailscale
         uses: tailscale/github-action@v1
         with:

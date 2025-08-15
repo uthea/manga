@@ -9,6 +9,7 @@ db_username: { db_username }
 db_host: { db_host }
 db_name: { db_name }
 webhook_url: { webhook_url }
+webdriver_url: { webdriver_url }
 schedule: { cron }
 
 imageCredentials:

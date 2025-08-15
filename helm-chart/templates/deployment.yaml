@@ -60,6 +60,11 @@ spec:
               secretKeyRef:
                 key:  webhook_url
                 name: {{ .Release.Name }}-config
+          - name: WEBDRIVER_URL
+            valueFrom:
+              secretKeyRef:
+                key:  webdriver_url
+                name: {{ .Release.Name }}-config
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
