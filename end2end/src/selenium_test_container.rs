@@ -11,8 +11,8 @@ use tokio::sync::{
 
 use crate::tokio_runtime;
 
-const NAME: &str = "seleniarm/standalone-chromium";
-const TAG: &str = "124.0";
+const NAME: &str = "selenium/standalone-chromium";
+const TAG: &str = "138.0";
 
 #[derive(Debug, Clone, Default)]
 pub struct Selenium {}
