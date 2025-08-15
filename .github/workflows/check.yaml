@@ -33,7 +33,7 @@ jobs:
       - name: Add WASM target
         run: rustup target add wasm32-unknown-unknown
       - name: install cargo leptos
-        run: cargo binstall cargo-leptos
+        run: cargo binstall cargo-leptos --force
       - name: Run test
         run: cargo leptos end-to-end
 
