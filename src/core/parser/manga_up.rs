@@ -123,7 +123,7 @@ pub async fn fetch_mangaup(client: Client, manga_id: &str) -> Result<Manga, Fetc
 
         counter += 1;
         println!("MANGA UP return empty html, retry attempt: {counter}");
-        tokio::time::sleep(Duration::from_millis(500))
+        tokio::time::sleep(Duration::from_millis(500)).await;
     }
 }
 
