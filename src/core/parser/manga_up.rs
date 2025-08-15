@@ -4,7 +4,7 @@ use regex::{Regex, RegexBuilder};
 use reqwest::Client;
 use scraper::{Html, Selector};
 use serde::Deserialize;
-use std::sync::LazyLock;
+use std::{sync::LazyLock, time::Duration};
 
 static CHAPTER_REGEX: LazyLock<Regex> = LazyLock::new(|| {
     RegexBuilder::new(r#"\{\\"titleName\\.*currentChapter.*\],\[\\"\$\\",\\"\$L6f"#)
@@ -98,18 +98,33 @@ pub fn parse_manga_up_from_html(html: String) -> Result<Manga, FetchError> {
 pub async fn fetch_mangaup(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
     let url = format!("https://www.manga-up.com/titles/{manga_id}");
 
-    let html = client
-        .get(url)
-        .send()
-        .await
-        .map_err(FetchError::ReqwestError)?
-        .error_for_status()
-        .map_err(FetchError::ReqwestError)?
-        .text()
-        .await
-        .map_err(FetchError::ReqwestError)?;
+    let mut counter = 0;
 
-    parse_manga_up_from_html(html)
+    // retry until counter or html is not empty
+    loop {
+        let html = client
+            .get(&url)
+            .send()
+            .await
+            .map_err(FetchError::ReqwestError)?
+            .error_for_status()
+            .map_err(FetchError::ReqwestError)?
+            .text()
+            .await
+            .map_err(FetchError::ReqwestError)?;
+
+        if !html.is_empty() || counter > 10 {
+            if html.is_empty() {
+                println!("MANGA UP: retry exceed max retry and still return empty html")
+            }
+            let result = parse_manga_up_from_html(html);
+            return result;
+        }
+
+        counter += 1;
+        println!("MANGA UP return empty html, retry attempt: {counter}");
+        tokio::time::sleep(Duration::from_millis(500)).await;
+    }
 }
 
 #[cfg(test)]

@@ -5,12 +5,10 @@ use crate::core::parser::{
     mecha_comic::fetch_mecha_comic, rss_manga::fetch_generic_rss, urasunday::fetch_urasunday,
     yanmaga::fetch_yanmaga,
 };
+use fantoccini::error::{CmdError, NewSessionError};
 use http::header;
 
-use super::{
-    parser::ichijin_plus::fetch_ichijin_plus_data,
-    types::{Manga, MangaSource},
-};
+use super::types::{Manga, MangaSource};
 
 #[derive(Debug)]
 pub enum FetchError {
@@ -19,12 +17,14 @@ pub enum FetchError {
     XmlDeserializeError(Option<String>),
     ChapterNotFound(Option<String>),
     PageNotFound(Option<String>),
+    WebDriverSessionError(NewSessionError),
+    WebDriverCmdError(CmdError),
 }
 
 const USER_AGENT: &str = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36";
 
 impl MangaSource {
-    pub async fn fetch(&self, manga_id: &str) -> Result<Manga, FetchError> {
+    pub async fn fetch(&self, webdriver_url: &str, manga_id: &str) -> Result<Manga, FetchError> {
         let client = {
             let mut headers = header::HeaderMap::new();
             headers.insert("User-Agent", header::HeaderValue::from_static(USER_AGENT));
@@ -74,9 +74,7 @@ impl MangaSource {
             MangaSource::MagazinePocket => {
                 fetch_generic_rss(
                     client,
-                    format!(
-                        "https://mgpk-cdn.magazinepocket.com/static/rss/{manga_id}/feed.xml"
-                    ),
+                    format!("https://mgpk-cdn.magazinepocket.com/static/rss/{manga_id}/feed.xml"),
                 )
                 .await
             }
@@ -103,7 +101,7 @@ impl MangaSource {
             }
 
             MangaSource::ComicPixiv => fetch_pixiv_data(client, manga_id).await,
-            MangaSource::Urasunday => fetch_urasunday(client, manga_id).await,
+            MangaSource::Urasunday => fetch_urasunday(webdriver_url, manga_id).await,
             MangaSource::ComicWalker => fetch_comic_walker_data(client, manga_id).await,
             MangaSource::MangaUp => fetch_mangaup(client, manga_id).await,
             MangaSource::ComicFuz => fetch_comic_fuz(client, manga_id).await,
@@ -132,7 +130,13 @@ impl MangaSource {
                 )
                 .await
             }
-            MangaSource::IchijinPlus => fetch_ichijin_plus_data(client, manga_id).await,
+            MangaSource::IchijinPlus => {
+                fetch_generic_rss(
+                    client,
+                    format!("https://ichicomi.com/rss/series/{manga_id}"),
+                )
+                .await
+            }
         }?;
 
         Ok(self.postprocess(manga))
@@ -154,6 +158,7 @@ impl MangaSource {
             MangaSource::TonariYoungJump => title.replace("となりのヤングジャンプ", "").trim().to_owned(),
             MangaSource::SundayWebry => title.replace("サンデーうぇぶり", "").trim().to_owned(),
             MangaSource::ComicAction => title.replace("webアクション｜双葉社発のマンガサイト", "").trim().to_owned(),
+            MangaSource::IchijinPlus => title.replace("一迅プラス", "").trim().to_owned(),
             _ => title.to_owned()
 ,
         };
@@ -166,6 +171,7 @@ impl MangaSource {
             | MangaSource::MagazinePocket
             | MangaSource::TonariYoungJump
             | MangaSource::SundayWebry
+            | MangaSource::IchijinPlus
             | MangaSource::ComicAction => {
                 removed_suffix.pop();
                 removed_suffix.remove(0);
@@ -279,6 +285,16 @@ mod tests {
         let expected = "かくして！マキナさん!!";
 
         let source = MangaSource::ComicAction;
+        let got = source.cleanup_title(title);
+        assert_eq!(got, expected);
+    }
+
+    #[test]
+    fn test_cleanup_ichijin_plus() {
+        let title = "一迅プラス（映しちゃダメな顔）";
+        let expected = "映しちゃダメな顔";
+
+        let source = MangaSource::IchijinPlus;
         let got = source.cleanup_title(title);
         assert_eq!(got, expected);
     }

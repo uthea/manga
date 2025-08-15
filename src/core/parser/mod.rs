@@ -5,7 +5,6 @@ pub mod comic_walker;
 pub mod gamma_plus;
 pub mod gangan_online;
 pub mod ganma;
-pub mod ichijin_plus;
 pub mod manga_up;
 pub mod mecha_comic;
 pub mod rss_manga;

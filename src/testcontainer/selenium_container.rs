@@ -9,8 +9,6 @@ use tokio::sync::{
     Mutex, OnceCell,
 };
 
-use crate::tokio_runtime;
-
 const NAME: &str = "selenium/standalone-chromium";
 const TAG: &str = "138.0";
 
@@ -114,6 +112,11 @@ static SELENIUM_SHUT_DOWN_NOTIFIER_CHANNEL: std::sync::OnceLock<Channel<()>> =
     std::sync::OnceLock::new();
 fn selenium_shut_down_notifier_channel() -> &'static Channel<()> {
     SELENIUM_SHUT_DOWN_NOTIFIER_CHANNEL.get_or_init(channel)
+}
+
+static TOKIO_RUNTIME: std::sync::OnceLock<tokio::runtime::Runtime> = std::sync::OnceLock::new();
+fn tokio_runtime() -> &'static tokio::runtime::Runtime {
+    TOKIO_RUNTIME.get_or_init(|| tokio::runtime::Runtime::new().unwrap())
 }
 
 async fn start_selenium() {

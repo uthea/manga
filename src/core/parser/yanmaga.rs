@@ -69,9 +69,7 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, FetchError> {
                     &raw_date
                 ))))?;
             let naive_date = NaiveDate::parse_from_str(date_only, "%Y/%m/%d").map_err(|e| {
-                FetchError::ChapterNotFound(Some(format!(
-                    "{e}, error parsing date : {date_only}"
-                )))
+                FetchError::ChapterNotFound(Some(format!("{e}, error parsing date : {date_only}")))
             })?;
 
             Local

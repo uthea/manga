@@ -55,6 +55,8 @@ testcontainers-modules = { version = "0.11.6", features = [
     "postgres",
 ], optional = true }
 
+fantoccini = { version = "0.21.5", optional = true }
+
 [dev-dependencies]
 ctor = "0.2.8"
 
@@ -80,6 +82,7 @@ ssr = [
     "dep:serde_json",
     "dep:testcontainers",
     "dep:testcontainers-modules",
+    "dep:fantoccini",
     "leptos-use/ssr",
 ]
 
