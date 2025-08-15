@@ -4,7 +4,7 @@ use regex::{Regex, RegexBuilder};
 use reqwest::Client;
 use scraper::{Html, Selector};
 use serde::Deserialize;
-use std::sync::LazyLock;
+use std::{sync::LazyLock, time::Duration};
 
 static CHAPTER_REGEX: LazyLock<Regex> = LazyLock::new(|| {
     RegexBuilder::new(r#"\{\\"titleName\\.*currentChapter.*\],\[\\"\$\\",\\"\$L6f"#)
@@ -113,7 +113,7 @@ pub async fn fetch_mangaup(client: Client, manga_id: &str) -> Result<Manga, Fetc
             .await
             .map_err(FetchError::ReqwestError)?;
 
-        if !html.is_empty() || counter > 4 {
+        if !html.is_empty() || counter > 10 {
             if html.is_empty() {
                 println!("MANGA UP: retry exceed max retry and still return empty html")
             }
@@ -123,6 +123,7 @@ pub async fn fetch_mangaup(client: Client, manga_id: &str) -> Result<Manga, Fetc
 
         counter += 1;
         println!("MANGA UP return empty html, retry attempt: {counter}");
+        tokio::time::sleep(Duration::from_millis(500))
     }
 }
 
