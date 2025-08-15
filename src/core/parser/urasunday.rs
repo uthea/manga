@@ -127,8 +127,20 @@ pub async fn fetch_urasunday(webdriver_url: &str, manga_id: &str) -> Result<Mang
         .goto(&url)
         .await
         .map_err(FetchError::WebDriverCmdError)?;
+
+    wv_client
+        .wait()
+        .for_element(fantoccini::Locator::Css(
+            r#"div[class = "rounded-lg shadow-small"]"#,
+        ))
+        .await
+        .map_err(FetchError::WebDriverCmdError)?;
+
     let html = wv_client
-        .source()
+        .find(fantoccini::Locator::Css("html"))
+        .await
+        .map_err(FetchError::WebDriverCmdError)?
+        .html(false)
         .await
         .map_err(FetchError::WebDriverCmdError)?;
 
@@ -174,23 +186,5 @@ mod tests {
         let result = parse_chapter_id_from_url(url).unwrap();
 
         assert_eq!(expected, result);
-    }
-
-    #[ignore]
-    #[tokio::test]
-    async fn fetch_urasunday_test() {
-        let url = "https://urasunday.com/title/939/chapter/1234";
-        let selenium_port = selenium_container::get_selenium_node_port().await;
-        let selenium_host = selenium_container::get_selenium_node_host().await;
-
-        let wv_client = ClientBuilder::native()
-            .connect(format!("http://{}:{}", &selenium_host, selenium_port).as_ref())
-            .await
-            .unwrap();
-
-        wv_client.goto(url).await.unwrap();
-        let html = wv_client.source().await.unwrap();
-
-        parse_urasunday_from_html(html, "939").unwrap();
     }
 }

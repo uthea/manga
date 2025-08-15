@@ -225,6 +225,19 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn add_manga_success_mecha_comic() {
+        let db = get_test_db("add_manga_mecha_comic").await.unwrap();
+        let result = add_manga_service(
+            "192830".into(),
+            Some(MangaSource::MechaComic),
+            "".into(),
+            db,
+        )
+        .await;
+        result.unwrap();
+    }
+
+    #[tokio::test]
     async fn add_manga_success_pocket_megazine() {
         let db = get_test_db("add_manga_pocket_megazine").await.unwrap();
         let result = add_manga_service(
