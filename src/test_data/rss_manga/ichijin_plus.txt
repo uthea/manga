@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:giga="https://gigaviewer.com">
+    <channel>
+        <title>一迅プラス（映しちゃダメな顔）</title>
+        <pubDate>Thu, 14 Aug 2025 02:00:00 +0000</pubDate>
+        <link>https://ichicomi.com/episode/2550912965919401763</link>
+        <description>夜に始まり夜に終わる、そんな街の片隅にある雑居ビルで売り出し中の新人女優伊緒とNo.1キャバ嬢の美紗は出会ってしまった。　予定調和のハプニングが起きる、女だけのワンナイトを楽しむ店で自分自身も知らなかった性癖を暴かれた伊緒。　美紗が働く店の前でひらすら待ち続けたり、「命令してほしい」と頼んだり、二人の関係性はどんどん歪な方向へ──…。</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <item>
+            <title>第12話</title>
+            <link>https://ichicomi.com/episode/2550912966094708939</link>
+            <guid isPermalink="false">ichijinsha:episode:2550912966094708939</guid>
+            <pubDate>Thu, 14 Aug 2025 02:00:00 +0000</pubDate>            <description>映しちゃダメな顔</description>
+            <enclosure url="https://cdn-img.ichicomi.com/public/episode-thumbnail/2550912966094708939-6cf7e696220f805ce726292e290a7ed8?1755051410" length="0" type="image/jpeg" />
+            <author>FLOWERCHILD</author>
+        </item>
+        <item>
+            <title>第11話</title>
+            <link>https://ichicomi.com/episode/2550912966094708932</link>
+            <guid isPermalink="false">ichijinsha:episode:2550912966094708932</guid>
+            <pubDate>Thu, 14 Aug 2025 02:00:00 +0000</pubDate>                <giga:freeTermStartDate>Thu, 14 Aug 2025 02:00:00 +0000</giga:freeTermStartDate>            <description>映しちゃダメな顔</description>
+            <enclosure url="https://cdn-img.ichicomi.com/public/episode-thumbnail/2550912966094708932-a4c0b668cd78b99ff1d9a194813607dc?1755051393" length="0" type="image/jpeg" />
+            <author>FLOWERCHILD</author>
+        </item>
+        <item>
+            <title>第10話</title>
+            <link>https://ichicomi.com/episode/2550912965919402982</link>
+            <guid isPermalink="false">ichijinsha:episode:2550912965919402982</guid>
+            <pubDate>Fri, 08 Aug 2025 02:00:00 +0000</pubDate>            <description>映しちゃダメな顔</description>
+            <enclosure url="https://cdn-img.ichicomi.com/public/episode-thumbnail/2550912965919402982-6e0408258916193d1880e5dd93d8e11f?1753252720" length="0" type="image/jpeg" />
+            <author>FLOWERCHILD</author>
+        </item>
+        <item>
+            <title>第9話</title>
+            <link>https://ichicomi.com/episode/2550912965919402887</link>
+            <guid isPermalink="false">ichijinsha:episode:2550912965919402887</guid>
+            <pubDate>Fri, 08 Aug 2025 02:00:00 +0000</pubDate>            <description>映しちゃダメな顔</description>
+            <enclosure url="https://cdn-img.ichicomi.com/public/episode-thumbnail/2550912965919402887-41d1e18ce3e185481c4d10c530a740e7?1753252720" length="0" type="image/jpeg" />
+            <author>FLOWERCHILD</author>
+        </item>
+        <item>
+            <title>第8話</title>
+            <link>https://ichicomi.com/episode/2550912965919402788</link>
+            <guid isPermalink="false">ichijinsha:episode:2550912965919402788</guid>
+            <pubDate>Fri, 08 Aug 2025 02:00:00 +0000</pubDate>            <description>映しちゃダメな顔</description>
+            <enclosure url="https://cdn-img.ichicomi.com/public/episode-thumbnail/2550912965919402788-a56099a1453208f27b426ac9dd960c5c?1753252720" length="0" type="image/jpeg" />
+            <author>FLOWERCHILD</author>
+        </item>
+        <item>
+            <title>第7話</title>
+            <link>https://ichicomi.com/episode/2550912965919402624</link>
+            <guid isPermalink="false">ichijinsha:episode:2550912965919402624</guid>
+            <pubDate>Fri, 08 Aug 2025 02:00:00 +0000</pubDate>            <description>映しちゃダメな顔</description>
+            <enclosure url="https://cdn-img.ichicomi.com/public/episode-thumbnail/2550912965919402624-fa9b4bbee6a0a6e1bcb1631110dfc6d7?1753252720" length="0" type="image/jpeg" />
+            <author>FLOWERCHILD</author>
+        </item>
+        <item>
+            <title>第6話</title>
+            <link>https://ichicomi.com/episode/2550912965919402558</link>
+            <guid isPermalink="false">ichijinsha:episode:2550912965919402558</guid>
+            <pubDate>Fri, 08 Aug 2025 02:00:00 +0000</pubDate>            <description>映しちゃダメな顔</description>
+            <enclosure url="https://cdn-img.ichicomi.com/public/episode-thumbnail/2550912965919402558-4f1ec360974fa3df619f9dbd4c5f7d9a?1753252720" length="0" type="image/jpeg" />
+            <author>FLOWERCHILD</author>
+        </item>
+        <item>
+            <title>第5話</title>
+            <link>https://ichicomi.com/episode/2550912965919402420</link>
+            <guid isPermalink="false">ichijinsha:episode:2550912965919402420</guid>
+            <pubDate>Fri, 08 Aug 2025 02:00:00 +0000</pubDate>            <description>映しちゃダメな顔</description>
+            <enclosure url="https://cdn-img.ichicomi.com/public/episode-thumbnail/2550912965919402420-aa52460ba7788125f31e70d6287f89f9?1753252720" length="0" type="image/jpeg" />
+            <author>FLOWERCHILD</author>
+        </item>
+        <item>
+            <title>第4話</title>
+            <link>https://ichicomi.com/episode/2550912965919402261</link>
+            <guid isPermalink="false">ichijinsha:episode:2550912965919402261</guid>
+            <pubDate>Fri, 08 Aug 2025 02:00:00 +0000</pubDate>            <description>映しちゃダメな顔</description>
+            <enclosure url="https://cdn-img.ichicomi.com/public/episode-thumbnail/2550912965919402261-21c5fd2c6c42a4525a050abee17bfbe5?1753252720" length="0" type="image/jpeg" />
+            <author>FLOWERCHILD</author>
+        </item>
+        <item>
+            <title>第3話</title>
+            <link>https://ichicomi.com/episode/2550912965919402073</link>
+            <guid isPermalink="false">ichijinsha:episode:2550912965919402073</guid>
+            <pubDate>Fri, 08 Aug 2025 02:00:00 +0000</pubDate>            <description>映しちゃダメな顔</description>
+            <enclosure url="https://cdn-img.ichicomi.com/public/episode-thumbnail/2550912965919402073-c75f77ae67cff03fa8072381a47e3baa?1753252720" length="0" type="image/jpeg" />
+            <author>FLOWERCHILD</author>
+        </item>
+        <item>
+            <title>第2話</title>
+            <link>https://ichicomi.com/episode/2550912965919401951</link>
+            <guid isPermalink="false">ichijinsha:episode:2550912965919401951</guid>
+            <pubDate>Fri, 08 Aug 2025 02:00:00 +0000</pubDate>                <giga:freeTermStartDate>Fri, 08 Aug 2025 02:00:00 +0000</giga:freeTermStartDate>            <description>映しちゃダメな顔</description>
+            <enclosure url="https://cdn-img.ichicomi.com/public/episode-thumbnail/2550912965919401951-e286c49d2476b4b4d074203ca5fbdc87?1753252720" length="0" type="image/jpeg" />
+            <author>FLOWERCHILD</author>
+        </item>
+        <item>
+            <title>第1話</title>
+            <link>https://ichicomi.com/episode/2550912965919401763</link>
+            <guid isPermalink="false">ichijinsha:episode:2550912965919401763</guid>
+            <pubDate>Fri, 08 Aug 2025 02:00:00 +0000</pubDate>                <giga:freeTermStartDate>Fri, 08 Aug 2025 02:00:00 +0000</giga:freeTermStartDate>            <description>映しちゃダメな顔</description>
+            <enclosure url="https://cdn-img.ichicomi.com/public/episode-thumbnail/2550912965919401763-71d5a4b9c2f3e9ab53b638710a583529?1753252720" length="0" type="image/jpeg" />
+            <author>FLOWERCHILD</author>
+        </item>
+    </channel>
+</rss>

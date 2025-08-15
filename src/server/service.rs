@@ -216,7 +216,7 @@ mod tests {
     async fn add_manga_success_ichijin_plus() {
         let db = get_test_db("add_manga_ichijin_plus").await.unwrap();
         let result = add_manga_service(
-            "103086580629828".into(),
+            "2550912965919360561".into(),
             Some(MangaSource::IchijinPlus),
             "".into(),
             db,

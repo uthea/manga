@@ -8,10 +8,7 @@ use crate::core::parser::{
 use fantoccini::error::{CmdError, NewSessionError};
 use http::header;
 
-use super::{
-    parser::ichijin_plus::fetch_ichijin_plus_data,
-    types::{Manga, MangaSource},
-};
+use super::types::{Manga, MangaSource};
 
 #[derive(Debug)]
 pub enum FetchError {
@@ -133,7 +130,13 @@ impl MangaSource {
                 )
                 .await
             }
-            MangaSource::IchijinPlus => fetch_ichijin_plus_data(client, manga_id).await,
+            MangaSource::IchijinPlus => {
+                fetch_generic_rss(
+                    client,
+                    format!("https://ichicomi.com/rss/series/{manga_id}"),
+                )
+                .await
+            }
         }?;
 
         Ok(self.postprocess(manga))
@@ -155,6 +158,7 @@ impl MangaSource {
             MangaSource::TonariYoungJump => title.replace("となりのヤングジャンプ", "").trim().to_owned(),
             MangaSource::SundayWebry => title.replace("サンデーうぇぶり", "").trim().to_owned(),
             MangaSource::ComicAction => title.replace("webアクション｜双葉社発のマンガサイト", "").trim().to_owned(),
+            MangaSource::IchijinPlus => title.replace("一迅プラス", "").trim().to_owned(),
             _ => title.to_owned()
 ,
         };
@@ -167,6 +171,7 @@ impl MangaSource {
             | MangaSource::MagazinePocket
             | MangaSource::TonariYoungJump
             | MangaSource::SundayWebry
+            | MangaSource::IchijinPlus
             | MangaSource::ComicAction => {
                 removed_suffix.pop();
                 removed_suffix.remove(0);
@@ -280,6 +285,16 @@ mod tests {
         let expected = "かくして！マキナさん!!";
 
         let source = MangaSource::ComicAction;
+        let got = source.cleanup_title(title);
+        assert_eq!(got, expected);
+    }
+
+    #[test]
+    fn test_cleanup_ichijin_plus() {
+        let title = "一迅プラス（映しちゃダメな顔）";
+        let expected = "映しちゃダメな顔";
+
+        let source = MangaSource::IchijinPlus;
         let got = source.cleanup_title(title);
         assert_eq!(got, expected);
     }
