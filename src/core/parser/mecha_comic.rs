@@ -11,7 +11,7 @@ fn parse_mecha_comic_from_html(html: String) -> Result<Manga, FetchError> {
     let author_selector =
         Selector::parse(r#"span[class="p-sepList_item p-sepList_item-thrash"] > a"#).unwrap();
     let chapter_section_selector =
-        Selector::parse(r#"div[class="p-chapterInfo p-chapterInfo-comic u-clearfix"]"#).unwrap();
+        Selector::parse(r#"div[class="p-chapterInfo p-chapterInfo-comic"]"#).unwrap();
     let chapter_num_selector = Selector::parse(r#"dt[class="p-chapterList_no"]"#).unwrap();
     let chapter_title_selector = Selector::parse(r#"dd[class="p-chapterList_name"]"#).unwrap();
     let chapter_url_selector =

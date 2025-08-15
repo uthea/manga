@@ -112,15 +112,16 @@ mod tests {
     // Setup hooks registration
     #[ctor::ctor]
     fn on_startup() {
-        postgres_container::setup_postgres();
         selenium_container::setup_selenium();
+        postgres_container::setup_postgres();
     }
 
     // Shutdown hook registration
     #[ctor::dtor]
     fn on_shutdown() {
+        // note : stopping selenium container manually panic
+        // but stopping postgres container will also stop selenium
         postgres_container::shutdown_postgres();
-        selenium_container::shutdown_selenium();
     }
 
     async fn get_test_db(db_name: &str) -> Result<Pool<Postgres>, sqlx::Error> {
@@ -255,7 +256,7 @@ mod tests {
         let db = get_test_db("add_manga_urasunday").await.unwrap();
         let result = add_manga_service(
             "1707".into(),
-            Some(MangaSource::MagazinePocket),
+            Some(MangaSource::Urasunday),
             get_selenium_driver_url().await,
             db,
         )
