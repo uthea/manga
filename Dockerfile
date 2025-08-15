@@ -1,4 +1,4 @@
-FROM rustlang/rust:nightly AS prereq
+FROM rust:latest AS prereq
 RUN curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
 RUN cargo binstall cargo-chef -y
 RUN cargo binstall cargo-leptos -y 
@@ -31,7 +31,7 @@ COPY --from=cacher /usr/local/cargo /usr/local/cargo
 RUN cargo leptos build --release
 
 
-FROM rustlang/rust:nightly as runner
+FROM rust:latest as runner
 
 WORKDIR /app
 
