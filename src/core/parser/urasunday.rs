@@ -82,7 +82,7 @@ pub fn parse_urasunday_from_html(html: String, manga_id: &str) -> Result<Manga, 
                 "cover not found in src attribute".into(),
             )))?;
 
-        let chapter_id = "TODO";
+        let chapter_id = parse_chapter_id_from_url(chapter_img)?;
 
         return Ok(Manga {
             title: title.trim().into(),
