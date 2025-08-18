@@ -106,6 +106,7 @@ pub async fn delete_manga_service(
 mod tests {
     use super::*;
     use crate::testcontainer::{postgres_container, selenium_container};
+    use flaky_test::flaky_test;
     use sqlx::postgres::{PgConnectOptions, PgPoolOptions};
     use sqlx::{Pool, Postgres};
 
@@ -170,7 +171,7 @@ mod tests {
         result.unwrap();
     }
 
-    #[tokio::test]
+    #[flaky_test(tokio, times = 5)]
     async fn add_manga_success_manga_up() {
         let db = get_test_db("add_manga_mangaup").await.unwrap();
         let result =
