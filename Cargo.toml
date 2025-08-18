@@ -59,6 +59,7 @@ fantoccini = { version = "0.21.5", optional = true }
 
 [dev-dependencies]
 ctor = "0.2.8"
+flaky_test = "0.2.2"
 
 [features]
 hydrate = ["leptos/hydrate", "thaw/hydrate"]
