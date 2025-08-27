@@ -214,6 +214,19 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn add_manga_success_comic_gardo() {
+        let db = get_test_db("add_manga_comic_gardo").await.unwrap();
+        let result = add_manga_service(
+            "11341664176591845633".into(),
+            Some(MangaSource::ComicGardo),
+            "".into(),
+            db,
+        )
+        .await;
+        result.unwrap();
+    }
+
+    #[tokio::test]
     async fn add_manga_success_ichijin_plus() {
         let db = get_test_db("add_manga_ichijin_plus").await.unwrap();
         let result = add_manga_service(
