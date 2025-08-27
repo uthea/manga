@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:giga="https://gigaviewer.com">
+    <channel>
+        <title>コミックガルド（××しないで！月峰さん。）</title>
+        <pubDate>Fri, 28 Mar 2025 03:00:00 +0000</pubDate>
+        <link>https://comic-gardo.com/episode/11341664176612525178</link>
+        <description>孤独を愛する高校生・陽高旭。教室の喧騒を避けて一人ぼっちメシを決め込む彼の平穏を侵す者がいた。クラスのカーストの頂点・絶対美少女・月峰千夜である。月峰は旭に声をかけ、「いつもの行為」を要求する。服をはだけてするその行為の名は…？</description>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <item>
+            <title>第16話「…なんでもいいの？」</title>
+            <link>https://comic-gardo.com/episode/2550912965480376786</link>
+            <guid isPermalink="false">gardo:episode:2550912965480376786</guid>
+            <pubDate>Fri, 28 Mar 2025 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550912965480376786-2f4fff65056829fdb37db391633a37f2?1747715438" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第15話「思いっきり噛んでみてよ」</title>
+            <link>https://comic-gardo.com/episode/2550912965350886932</link>
+            <guid isPermalink="false">gardo:episode:2550912965350886932</guid>
+            <pubDate>Fri, 28 Feb 2025 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Fri, 28 Mar 2025 03:00:00 +0000</giga:freeTermStartDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550912965350886932-b85950ad639066d5362901b1f846444c?1740645929" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第14話「…なら陽高くんがやってよ」</title>
+            <link>https://comic-gardo.com/episode/2550912965183186970</link>
+            <guid isPermalink="false">gardo:episode:2550912965183186970</guid>
+            <pubDate>Fri, 24 Jan 2025 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Fri, 28 Feb 2025 03:00:00 +0000</giga:freeTermStartDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550912965183186970-311a1b56f7cf97bf7a2066de99c3b115?1737608263" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第13話「千夜のことどう思ってんの？」</title>
+            <link>https://comic-gardo.com/episode/2550912965058240383</link>
+            <guid isPermalink="false">gardo:episode:2550912965058240383</guid>
+            <pubDate>Fri, 27 Dec 2024 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550912965058240383-475d8d8d9291fe7b34cbd020a813a999?1735182334" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第12話「ほんとにその答えでいいの…？」</title>
+            <link>https://comic-gardo.com/episode/2550912964676886526</link>
+            <guid isPermalink="false">gardo:episode:2550912964676886526</guid>
+            <pubDate>Fri, 27 Sep 2024 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550912964676886526-1d3c639915270e8ebca73573e9902ef5?1728027108" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第11話「ご褒美！！！」</title>
+            <link>https://comic-gardo.com/episode/2550912964550947961</link>
+            <guid isPermalink="false">gardo:episode:2550912964550947961</guid>
+            <pubDate>Fri, 30 Aug 2024 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550912964550947961-c8852f361ad0433a43625b05daac1728?1725519396" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第10話「これが初めてだもん…」</title>
+            <link>https://comic-gardo.com/episode/2550689798883942557</link>
+            <guid isPermalink="false">gardo:episode:2550689798883942557</guid>
+            <pubDate>Fri, 26 Jul 2024 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550689798883942557-ca75cb249bd7cefb53cdfec422e44b5f?1722586597" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第9話「二人きり──!!?」</title>
+            <link>https://comic-gardo.com/episode/2550689798789533144</link>
+            <guid isPermalink="false">gardo:episode:2550689798789533144</guid>
+            <pubDate>Fri, 05 Jul 2024 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550689798789533144-967edd9a4d1ff9e27043825e3ce8c692?1720683105" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第8話「もしかしてエッチなやつだったり！？」</title>
+            <link>https://comic-gardo.com/episode/2550689798643048133</link>
+            <guid isPermalink="false">gardo:episode:2550689798643048133</guid>
+            <pubDate>Fri, 31 May 2024 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550689798643048133-a7f122ed643609a5a67e1a74f44481b6?1717648901" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第7話「告白みたいじゃない！？」</title>
+            <link>https://comic-gardo.com/episode/2550689798548875045</link>
+            <guid isPermalink="false">gardo:episode:2550689798548875045</guid>
+            <pubDate>Fri, 10 May 2024 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550689798548875045-4d2e4cb0a34c3af498268f8dad86fa0c?1715844688" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第6話「彼女…いるのかな…」</title>
+            <link>https://comic-gardo.com/episode/2550689798402126226</link>
+            <guid isPermalink="false">gardo:episode:2550689798402126226</guid>
+            <pubDate>Fri, 12 Apr 2024 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550689798402126226-5dcf52558ced597ee8dcb1a649b7c39e?1713412596" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第5話「いつにも増して静かだね」</title>
+            <link>https://comic-gardo.com/episode/2550689798352411124</link>
+            <guid isPermalink="false">gardo:episode:2550689798352411124</guid>
+            <pubDate>Fri, 29 Mar 2024 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550689798352411124-8e3d406a5fbac68ff1e6c8872f1c910c?1711601211" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第4話「わたしの時間だから」</title>
+            <link>https://comic-gardo.com/episode/2550689798308811983</link>
+            <guid isPermalink="false">gardo:episode:2550689798308811983</guid>
+            <pubDate>Fri, 15 Mar 2024 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/2550689798308811983-2a1511a49455db418241321847a60d36?1710386258" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第3話「そんなに卑しく見えるかな…」</title>
+            <link>https://comic-gardo.com/episode/11341664176612525189</link>
+            <guid isPermalink="false">gardo:episode:11341664176612525189</guid>
+            <pubDate>Fri, 01 Mar 2024 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/11341664176612525189-4044bcfb1fb11d2a869db64af0274777?1709194773" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第2話「…もしかして私のこと」</title>
+            <link>https://comic-gardo.com/episode/11341664176612525184</link>
+            <guid isPermalink="false">gardo:episode:11341664176612525184</guid>
+            <pubDate>Fri, 16 Feb 2024 03:00:00 +0000</pubDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/11341664176612525184-a3145d5db7781223328bf34ac17d2eb0?1707964192" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+        <item>
+            <title>第1話「ごちそうさま」</title>
+            <link>https://comic-gardo.com/episode/11341664176612525178</link>
+            <guid isPermalink="false">gardo:episode:11341664176612525178</guid>
+            <pubDate>Fri, 16 Feb 2024 03:00:00 +0000</pubDate>                <giga:freeTermStartDate>Fri, 16 Feb 2024 03:00:00 +0000</giga:freeTermStartDate>            <description>××しないで！月峰さん。</description>
+            <enclosure url="https://cdn-img.comic-gardo.com/public/episode-thumbnail/11341664176612525178-de35ef7f24c4e4e695a0918476cc795c?1707964120" length="0" type="image/jpeg" />
+            <author>夜墨リョウ</author>
+        </item>
+    </channel>
+</rss>

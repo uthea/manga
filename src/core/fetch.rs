@@ -99,6 +99,13 @@ impl MangaSource {
                 )
                 .await
             }
+            MangaSource::ComicGardo => {
+                fetch_generic_rss(
+                    client,
+                    format!("https://comic-gardo.com/rss/series/{manga_id}"),
+                )
+                .await
+            }
 
             MangaSource::ComicPixiv => fetch_pixiv_data(client, manga_id).await,
             MangaSource::Urasunday => fetch_urasunday(webdriver_url, manga_id).await,
@@ -159,6 +166,7 @@ impl MangaSource {
             MangaSource::SundayWebry => title.replace("サンデーうぇぶり", "").trim().to_owned(),
             MangaSource::ComicAction => title.replace("webアクション｜双葉社発のマンガサイト", "").trim().to_owned(),
             MangaSource::IchijinPlus => title.replace("一迅プラス", "").trim().to_owned(),
+            MangaSource::ComicGardo => title.replace("コミックガルド", "").trim().to_owned(),
             _ => title.to_owned()
 ,
         };
@@ -172,7 +180,8 @@ impl MangaSource {
             | MangaSource::TonariYoungJump
             | MangaSource::SundayWebry
             | MangaSource::IchijinPlus
-            | MangaSource::ComicAction => {
+            | MangaSource::ComicAction
+            | MangaSource::ComicGardo => {
                 removed_suffix.pop();
                 removed_suffix.remove(0);
             }
@@ -295,6 +304,16 @@ mod tests {
         let expected = "映しちゃダメな顔";
 
         let source = MangaSource::IchijinPlus;
+        let got = source.cleanup_title(title);
+        assert_eq!(got, expected);
+    }
+
+    #[test]
+    fn test_cleanup_comic_gardo() {
+        let title = "コミックガルド（××しないで！月峰さん。）";
+        let expected = "××しないで！月峰さん。";
+
+        let source = MangaSource::ComicGardo;
         let got = source.cleanup_title(title);
         assert_eq!(got, expected);
     }
