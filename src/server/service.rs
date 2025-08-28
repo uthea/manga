@@ -266,6 +266,19 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn add_manga_success_comic_medu() {
+        let db = get_test_db("add_manga_comic_medu").await.unwrap();
+        let result = add_manga_service(
+            "ec10b3f00d2ee".into(),
+            Some(MangaSource::ComicMedu),
+            "".into(),
+            db,
+        )
+        .await;
+        result.unwrap();
+    }
+
+    #[tokio::test]
     async fn add_manga_success_urasunday() {
         let db = get_test_db("add_manga_urasunday").await.unwrap();
         let result = add_manga_service(
