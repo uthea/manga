@@ -103,6 +103,9 @@ pub enum MangaSource {
 
     #[strum(to_string = "Comic Gardo")]
     ComicGardo,
+
+    #[strum(to_string = "Comic Medu")]
+    ComicMedu,
 }
 
 #[derive(Deserialize, Serialize, Clone, Debug)]

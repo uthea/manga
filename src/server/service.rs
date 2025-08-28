@@ -106,7 +106,6 @@ pub async fn delete_manga_service(
 mod tests {
     use super::*;
     use crate::testcontainer::{postgres_container, selenium_container};
-    use flaky_test::flaky_test;
     use sqlx::postgres::{PgConnectOptions, PgPoolOptions};
     use sqlx::{Pool, Postgres};
 
@@ -171,12 +170,29 @@ mod tests {
         result.unwrap();
     }
 
-    #[flaky_test(tokio, times = 5)]
+    #[tokio::test]
     async fn add_manga_success_manga_up() {
         let db = get_test_db("add_manga_mangaup").await.unwrap();
-        let result =
-            add_manga_service("395".into(), Some(MangaSource::MangaUp), "".into(), db).await;
-        result.unwrap();
+        let mut success = false;
+
+        for _ in 0..10 {
+            let result = add_manga_service(
+                "395".into(),
+                Some(MangaSource::MangaUp),
+                "".into(),
+                db.clone(),
+            )
+            .await;
+
+            if result.is_ok() {
+                success = true;
+                break;
+            }
+        }
+
+        if !success {
+            panic!("test failed on all iteration");
+        }
     }
 
     #[tokio::test]
@@ -258,6 +274,19 @@ mod tests {
         let result = add_manga_service(
             "2790".into(),
             Some(MangaSource::MagazinePocket),
+            "".into(),
+            db,
+        )
+        .await;
+        result.unwrap();
+    }
+
+    #[tokio::test]
+    async fn add_manga_success_comic_medu() {
+        let db = get_test_db("add_manga_comic_medu").await.unwrap();
+        let result = add_manga_service(
+            "ec10b3f00d2ee".into(),
+            Some(MangaSource::ComicMedu),
             "".into(),
             db,
         )

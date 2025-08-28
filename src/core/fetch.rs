@@ -64,6 +64,13 @@ impl MangaSource {
                 )
                 .await
             }
+            MangaSource::ComicMedu => {
+                fetch_cdata_rss(
+                    client,
+                    format!("https://comic-medu.com/series/{manga_id}/rss"),
+                )
+                .await
+            }
             MangaSource::ComicDays => {
                 fetch_generic_rss(
                     client,
