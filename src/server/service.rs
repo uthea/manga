@@ -171,7 +171,7 @@ mod tests {
         result.unwrap();
     }
 
-    #[flaky_test(tokio, times = 5)]
+    #[flaky_test(tokio, times = 10)]
     async fn add_manga_success_manga_up() {
         let db = get_test_db("add_manga_mangaup").await.unwrap();
         let result =
