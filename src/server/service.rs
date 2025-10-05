@@ -222,7 +222,7 @@ mod tests {
             "ec10b3f00d2ee".into(),
             Some(MangaSource::ComicMedu),
             "".into(),
-            db,
+            db.0,
         )
         .await;
         result.unwrap();
