@@ -6,7 +6,7 @@ edition = "2021"
 [dependencies]
 testcontainers = { version = "0.23.3" }
 testcontainers-modules = { version = "0.11.6", features = ["postgres"] }
-ctor = "0.2.8"
 tokio = { version = "1", features = ["rt-multi-thread"] }
 color-eyre = { version = "0.6", default-features = false }
 fantoccini = "0.21.5"
+maybe-once = { version = "0.17.4", features = ["tokio"] }

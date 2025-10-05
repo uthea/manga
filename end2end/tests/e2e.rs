@@ -1,28 +1,17 @@
-use end2end::get_selenium_driver_url;
 use end2end::get_website_url;
-use end2end::selenium_test_container;
+use end2end::selenium_test_container::get_selenium_info;
 use fantoccini::ClientBuilder;
 use fantoccini::Locator;
 
-#[ctor::ctor]
-fn on_startup() {
-    selenium_test_container::setup_selenium();
-    color_eyre::install().unwrap();
-}
-
-#[ctor::dtor]
-fn on_shutdown() {
-    selenium_test_container::shutdown_selenium();
-}
-
 #[tokio::test]
 async fn access_website() -> color_eyre::eyre::Result<()> {
+    let selenium_info = get_selenium_info().await;
     let url = get_website_url();
-    let driver_url = get_selenium_driver_url().await;
+    let driver_url = selenium_info.0;
     let c = ClientBuilder::native().connect(driver_url.as_str()).await?;
 
     // navigate to dashboard
-    c.goto(format!("{}/dashboard", url).as_str()).await?;
+    c.goto(format!("{url}/dashboard").as_str()).await?;
 
     //check header
     let header = c.find(Locator::Css("body > div:nth-child(1) > main > div > div > div.thaw-scrollbar__container > div > div > div.thaw-layout-header > p")).await?;
@@ -36,23 +25,20 @@ async fn access_website() -> color_eyre::eyre::Result<()> {
 
 #[tokio::test]
 async fn delete_existing_source() -> color_eyre::eyre::Result<()> {
+    let selenium_info = get_selenium_info().await;
     let url = get_website_url();
-    let driver_url = get_selenium_driver_url().await;
+    let driver_url = selenium_info.0;
     let c = ClientBuilder::native().connect(driver_url.as_str()).await?;
 
     let id_1 = "Young Champion-856798df666ae";
     let id_2 = "YanMaga-彼女の友達";
 
     // navigate to dashboard
-    c.goto(format!("{}/dashboard", url).as_str()).await?;
+    c.goto(format!("{url}/dashboard").as_str()).await?;
 
     // select multiple source for delete
-    let cbox_1 = c
-        .find(Locator::Id(format!("del-{}", id_1).as_str()))
-        .await?;
-    let cbox_2 = c
-        .find(Locator::Id(format!("del-{}", id_2).as_str()))
-        .await?;
+    let cbox_1 = c.find(Locator::Id(format!("del-{id_1}").as_str())).await?;
+    let cbox_2 = c.find(Locator::Id(format!("del-{id_2}").as_str())).await?;
 
     cbox_1.click().await?;
     cbox_2.click().await?;
@@ -67,13 +53,13 @@ async fn delete_existing_source() -> color_eyre::eyre::Result<()> {
 
     // row should not exist
     while c
-        .find(Locator::Id(format!("row-{}", id_1).as_str()))
+        .find(Locator::Id(format!("row-{id_1}").as_str()))
         .await
         .is_ok()
     {}
 
     while c
-        .find(Locator::Id(format!("row-{}", id_2).as_str()))
+        .find(Locator::Id(format!("row-{id_2}").as_str()))
         .await
         .is_ok()
     {}
@@ -85,8 +71,9 @@ async fn delete_existing_source() -> color_eyre::eyre::Result<()> {
 
 #[tokio::test]
 async fn add_new_source() -> color_eyre::eyre::Result<()> {
+    let selenium_info = get_selenium_info().await;
     let url = get_website_url();
-    let driver_url = get_selenium_driver_url().await;
+    let driver_url = selenium_info.0;
     let c = ClientBuilder::native().connect(driver_url.as_str()).await?;
 
     let manga_id_selector = "#add-dialog-manga-id > input";
@@ -95,7 +82,7 @@ async fn add_new_source() -> color_eyre::eyre::Result<()> {
     let submit_btn_id = "add-dialog-add-btn";
 
     // navigate to dashboard
-    c.goto(format!("{}/dashboard", url).as_str()).await?;
+    c.goto(format!("{url}/dashboard").as_str()).await?;
 
     // pop up add dialog
     let add_btn = c.find(Locator::Id(add_btn_id)).await?;
@@ -126,8 +113,9 @@ async fn add_new_source() -> color_eyre::eyre::Result<()> {
 
 #[tokio::test]
 async fn add_duplicate_source_toast_error() -> color_eyre::eyre::Result<()> {
+    let selenium_info = get_selenium_info().await;
     let url = get_website_url();
-    let driver_url = get_selenium_driver_url().await;
+    let driver_url = selenium_info.0;
     let c = ClientBuilder::native().connect(driver_url.as_str()).await?;
 
     let manga_id_selector = "#add-dialog-manga-id > input";
@@ -136,7 +124,7 @@ async fn add_duplicate_source_toast_error() -> color_eyre::eyre::Result<()> {
     let submit_btn_id = "add-dialog-add-btn";
 
     // navigate to dashboard
-    c.goto(format!("{}/dashboard", url).as_str()).await?;
+    c.goto(format!("{url}/dashboard").as_str()).await?;
 
     // pop up add dialog
     let add_btn = c.find(Locator::Id(add_btn_id)).await?;
@@ -167,15 +155,16 @@ async fn add_duplicate_source_toast_error() -> color_eyre::eyre::Result<()> {
 
 #[tokio::test]
 async fn filter_by_source() -> color_eyre::eyre::Result<()> {
+    let selenium_info = get_selenium_info().await;
     let url = get_website_url();
-    let driver_url = get_selenium_driver_url().await;
+    let driver_url = selenium_info.0;
     let c = ClientBuilder::native().connect(driver_url.as_str()).await?;
 
     let source_filter_trigger_id = "source-filter-trigger";
     let manga_source_filter_selector = "#source-filter-select > input";
 
     // navigate to dashboard
-    c.goto(format!("{}/dashboard", url).as_str()).await?;
+    c.goto(format!("{url}/dashboard").as_str()).await?;
 
     // trigger menu dropwon
     c.find(Locator::Id(source_filter_trigger_id))
@@ -208,15 +197,16 @@ async fn filter_by_source() -> color_eyre::eyre::Result<()> {
 
 #[tokio::test]
 async fn filter_by_title() -> color_eyre::eyre::Result<()> {
+    let selenium_info = get_selenium_info().await;
     let url = get_website_url();
-    let driver_url = get_selenium_driver_url().await;
+    let driver_url = selenium_info.0;
     let c = ClientBuilder::native().connect(driver_url.as_str()).await?;
 
     let filter_trigger_id = "title-filter-trigger";
     let filter_input_selector = "#title-filter-input > input";
 
     // navigate to dashboard
-    c.goto(format!("{}/dashboard", url).as_str()).await?;
+    c.goto(format!("{url}/dashboard").as_str()).await?;
 
     // trigger menu dropdown
     c.find(Locator::Id(filter_trigger_id))
@@ -248,15 +238,16 @@ async fn filter_by_title() -> color_eyre::eyre::Result<()> {
 
 #[tokio::test]
 async fn filter_by_author() -> color_eyre::eyre::Result<()> {
+    let selenium_info = get_selenium_info().await;
     let url = get_website_url();
-    let driver_url = get_selenium_driver_url().await;
+    let driver_url = selenium_info.0;
     let c = ClientBuilder::native().connect(driver_url.as_str()).await?;
 
     let filter_trigger_id = "author-filter-trigger";
     let filter_input_selector = "#author-filter-input > input";
 
     // navigate to dashboard
-    c.goto(format!("{}/dashboard", url).as_str()).await?;
+    c.goto(format!("{url}/dashboard").as_str()).await?;
 
     // trigger menu dropdown
     c.find(Locator::Id(filter_trigger_id))
@@ -288,15 +279,16 @@ async fn filter_by_author() -> color_eyre::eyre::Result<()> {
 
 #[tokio::test]
 async fn filter_by_chapter_name() -> color_eyre::eyre::Result<()> {
+    let selenium_info = get_selenium_info().await;
     let url = get_website_url();
-    let driver_url = get_selenium_driver_url().await;
+    let driver_url = selenium_info.0;
     let c = ClientBuilder::native().connect(driver_url.as_str()).await?;
 
     let filter_trigger_id = "chapter-filter-trigger";
     let filter_input_selector = "#chapter-filter-input > input";
 
     // navigate to dashboard
-    c.goto(format!("{}/dashboard", url).as_str()).await?;
+    c.goto(format!("{url}/dashboard").as_str()).await?;
 
     // trigger menu dropdown
     c.find(Locator::Id(filter_trigger_id))

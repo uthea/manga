@@ -105,57 +105,8 @@ pub async fn delete_manga_service(
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::testcontainer::{postgres_container, selenium_container};
-    use sqlx::postgres::{PgConnectOptions, PgPoolOptions};
-    use sqlx::{Pool, Postgres};
-
-    // Setup hooks registration
-    #[ctor::ctor]
-    fn on_startup() {
-        selenium_container::setup_selenium();
-        postgres_container::setup_postgres();
-    }
-
-    // Shutdown hook registration
-    #[ctor::dtor]
-    fn on_shutdown() {
-        // note : stopping selenium container manually panic
-        // but stopping postgres container will also stop selenium
-        postgres_container::shutdown_postgres();
-    }
-
-    async fn get_test_db(db_name: &str) -> Result<Pool<Postgres>, sqlx::Error> {
-        let host_port = postgres_container::get_postgres_node_port().await;
-        let host_ip = postgres_container::get_postgres_node_host().await;
-
-        let options = PgConnectOptions::new()
-            .username("postgres")
-            .password("postgres")
-            .host(&host_ip)
-            .port(host_port)
-            .ssl_mode(sqlx::postgres::PgSslMode::Disable);
-
-        let pool = PgPoolOptions::new()
-            .min_connections(1)
-            .connect_with(options.clone())
-            .await?;
-
-        sqlx::query(format!(r#"create database "{db_name}""#).as_str())
-            .execute(&pool)
-            .await?;
-
-        sqlx::migrate!("./migrations").run(&pool).await?;
-
-        pool.set_connect_options(options.database(db_name));
-        Ok(pool)
-    }
-
-    pub async fn get_selenium_driver_url() -> String {
-        let selenium_port = selenium_container::get_selenium_node_port().await;
-        let selenium_host = selenium_container::get_selenium_node_host().await;
-
-        format!("http://{}:{}", &selenium_host, selenium_port)
-    }
+    use crate::testcontainer::postgres_container::get_test_db;
+    use crate::testcontainer::selenium_container;
 
     #[tokio::test]
     async fn add_manga_success() {
@@ -164,7 +115,7 @@ mod tests {
             "c909ad9c5cd69".into(),
             Some(MangaSource::YoungAnimal),
             "".into(),
-            db,
+            db.0,
         )
         .await;
         result.unwrap();
@@ -173,26 +124,9 @@ mod tests {
     #[tokio::test]
     async fn add_manga_success_manga_up() {
         let db = get_test_db("add_manga_mangaup").await.unwrap();
-        let mut success = false;
-
-        for _ in 0..10 {
-            let result = add_manga_service(
-                "395".into(),
-                Some(MangaSource::MangaUp),
-                "".into(),
-                db.clone(),
-            )
-            .await;
-
-            if result.is_ok() {
-                success = true;
-                break;
-            }
-        }
-
-        if !success {
-            panic!("test failed on all iteration");
-        }
+        let result =
+            add_manga_service("395".into(), Some(MangaSource::MangaUp), "".into(), db.0).await;
+        result.unwrap();
     }
 
     #[tokio::test]
@@ -202,7 +136,7 @@ mod tests {
             "fd9075d41e98f".into(),
             Some(MangaSource::ComicGrowl),
             "".into(),
-            db,
+            db.0,
         )
         .await;
         result.unwrap();
@@ -212,7 +146,7 @@ mod tests {
     async fn add_manga_success_ganma() {
         let db = get_test_db("add_manga_ganma").await.unwrap();
         let result =
-            add_manga_service("galyome".into(), Some(MangaSource::GANMA), "".into(), db).await;
+            add_manga_service("galyome".into(), Some(MangaSource::GANMA), "".into(), db.0).await;
         result.unwrap();
     }
 
@@ -223,7 +157,7 @@ mod tests {
             "11341664176552309986".into(),
             Some(MangaSource::ComicAction),
             "".into(),
-            db,
+            db.0,
         )
         .await;
         result.unwrap();
@@ -236,7 +170,7 @@ mod tests {
             "11341664176591845633".into(),
             Some(MangaSource::ComicGardo),
             "".into(),
-            db,
+            db.0,
         )
         .await;
         result.unwrap();
@@ -249,7 +183,7 @@ mod tests {
             "2550912965919360561".into(),
             Some(MangaSource::IchijinPlus),
             "".into(),
-            db,
+            db.0,
         )
         .await;
         result.unwrap();
@@ -262,7 +196,7 @@ mod tests {
             "192830".into(),
             Some(MangaSource::MechaComic),
             "".into(),
-            db,
+            db.0,
         )
         .await;
         result.unwrap();
@@ -275,7 +209,7 @@ mod tests {
             "2790".into(),
             Some(MangaSource::MagazinePocket),
             "".into(),
-            db,
+            db.0,
         )
         .await;
         result.unwrap();
@@ -297,11 +231,12 @@ mod tests {
     #[tokio::test]
     async fn add_manga_success_urasunday() {
         let db = get_test_db("add_manga_urasunday").await.unwrap();
+        let selenium_info = selenium_container::get_selenium_info().await;
         let result = add_manga_service(
             "1707".into(),
             Some(MangaSource::Urasunday),
-            get_selenium_driver_url().await,
-            db,
+            selenium_info.0,
+            db.0,
         )
         .await;
         result.unwrap();
@@ -310,7 +245,7 @@ mod tests {
     #[tokio::test]
     async fn add_manga_error_not_found() {
         let db = get_test_db("add_manga_404").await.unwrap();
-        if (add_manga_service("".into(), Some(MangaSource::YoungAnimal), "".into(), db).await)
+        if (add_manga_service("".into(), Some(MangaSource::YoungAnimal), "".into(), db.0).await)
             .is_ok()
         {
             panic!("server fn should error")
@@ -320,8 +255,11 @@ mod tests {
     #[tokio::test]
     async fn delete_manga_error_not_found() {
         let db = get_test_db("delete_manga_not_found").await.unwrap();
-        match delete_manga_service(vec![(MangaSource::TonariYoungJump, "1234".to_string())], db)
-            .await
+        match delete_manga_service(
+            vec![(MangaSource::TonariYoungJump, "1234".to_string())],
+            db.0,
+        )
+        .await
         {
             Ok(_) => panic!("server fn should error"),
             Err(err) => {
@@ -339,12 +277,12 @@ mod tests {
             id.to_string(),
             Some(MangaSource::ShounenJumpPlus),
             "".into(),
-            db.clone(),
+            db.0.clone(),
         )
         .await
         .unwrap();
 
-        delete_manga_service(vec![(MangaSource::ShounenJumpPlus, id.to_string())], db)
+        delete_manga_service(vec![(MangaSource::ShounenJumpPlus, id.to_string())], db.0)
             .await
             .unwrap();
     }

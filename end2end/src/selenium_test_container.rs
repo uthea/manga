@@ -1,15 +1,9 @@
+use maybe_once::tokio::{Data, MaybeOnceAsync};
 use testcontainers::ImageExt;
 use testcontainers::{core::WaitFor, Image};
 
-use std::thread;
+use std::sync::OnceLock;
 use testcontainers::{runners::AsyncRunner, ContainerAsync};
-use tokio::sync::mpsc;
-use tokio::sync::{
-    mpsc::{Receiver, Sender},
-    Mutex, OnceCell,
-};
-
-use crate::tokio_runtime;
 
 const NAME: &str = "selenium/standalone-chromium";
 const TAG: &str = "138.0";
@@ -34,119 +28,30 @@ impl Image for Selenium {
     }
 }
 
-enum ContainerCommands {
-    Stop,
-}
-
-struct Channel<T> {
-    tx: Sender<T>,
-    rx: Mutex<Receiver<T>>,
-}
-
-fn channel<T>() -> Channel<T> {
-    let (tx, rx) = mpsc::channel(32);
-    Channel {
-        tx,
-        rx: Mutex::new(rx),
-    }
-}
-
-static SELENIUM_NODE: OnceCell<Mutex<Option<ContainerAsync<Selenium>>>> = OnceCell::const_new();
-
-async fn selenium_node() -> &'static Mutex<Option<ContainerAsync<Selenium>>> {
-    SELENIUM_NODE
-        .get_or_init(|| async {
-            let container = Selenium::default()
-                .with_cmd(["/opt/bin/entry_point.sh", r#"--shm-size="2g""#])
-                .start()
-                .await
-                .unwrap();
-
-            Mutex::new(Some(container))
-        })
-        .await
-}
-
-pub async fn get_selenium_node_port() -> u16 {
-    selenium_node()
-        .await
-        .lock()
-        .await
-        .as_ref()
-        .unwrap()
-        .get_host_port_ipv4(4444)
+async fn init_selenium_container() -> ContainerAsync<Selenium> {
+    Selenium::default()
+        .with_cmd(["/opt/bin/entry_point.sh", r#"--shm-size="2g""#])
+        .start()
         .await
         .unwrap()
 }
 
-pub async fn get_selenium_node_host() -> String {
-    selenium_node()
+pub async fn get_selenium_container() -> Data<'static, ContainerAsync<Selenium>> {
+    static SELENIUM_CONTAINER: OnceLock<MaybeOnceAsync<ContainerAsync<Selenium>>> = OnceLock::new();
+    SELENIUM_CONTAINER
+        .get_or_init(|| MaybeOnceAsync::new(|| Box::pin(init_selenium_container())))
+        .data(false)
         .await
-        .lock()
-        .await
-        .as_ref()
-        .unwrap()
-        .get_host()
-        .await
-        .unwrap()
-        .to_string()
 }
 
-async fn drop_selenium_node() {
-    selenium_node()
-        .await
-        .lock()
-        .await
-        .take()
-        .unwrap()
-        .rm()
-        .await
-        .unwrap();
+pub async fn get_selenium_info() -> (String, Data<'static, ContainerAsync<Selenium>>) {
+    let selenium_ctr = get_selenium_container().await;
+    let selenium_port = selenium_ctr.get_host_port_ipv4(4444).await.unwrap();
+    let selenium_host = selenium_ctr.get_host().await.unwrap().to_string();
+
+    (
+        format!("http://{}:{}", &selenium_host, selenium_port),
+        selenium_ctr,
+    )
 }
 
-static SELENIUM_CHANNEL: std::sync::OnceLock<Channel<ContainerCommands>> =
-    std::sync::OnceLock::new();
-fn selenium_channel() -> &'static Channel<ContainerCommands> {
-    SELENIUM_CHANNEL.get_or_init(channel)
-}
-
-static SELENIUM_SHUT_DOWN_NOTIFIER_CHANNEL: std::sync::OnceLock<Channel<()>> =
-    std::sync::OnceLock::new();
-fn selenium_shut_down_notifier_channel() -> &'static Channel<()> {
-    SELENIUM_SHUT_DOWN_NOTIFIER_CHANNEL.get_or_init(channel)
-}
-
-async fn start_selenium() {
-    let mut rx = selenium_channel().rx.lock().await;
-    while let Some(command) = rx.recv().await {
-        match command {
-            ContainerCommands::Stop => {
-                drop_selenium_node().await;
-                rx.close();
-            }
-        }
-    }
-}
-
-pub fn shutdown_selenium() {
-    selenium_channel()
-        .tx
-        .blocking_send(ContainerCommands::Stop)
-        .unwrap();
-    selenium_shut_down_notifier_channel()
-        .rx
-        .blocking_lock()
-        .blocking_recv()
-        .unwrap();
-}
-
-pub fn setup_selenium() {
-    thread::spawn(|| {
-        tokio_runtime().block_on(start_selenium());
-        // This needs to be here otherwise the container did not call the drop function before the application stops
-        selenium_shut_down_notifier_channel()
-            .tx
-            .blocking_send(())
-            .unwrap();
-    });
-}

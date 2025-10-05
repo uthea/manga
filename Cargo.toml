@@ -54,11 +54,8 @@ testcontainers = { version = "0.23.3", optional = true }
 testcontainers-modules = { version = "0.11.6", features = [
     "postgres",
 ], optional = true }
-
 fantoccini = { version = "0.21.5", optional = true }
-
-[dev-dependencies]
-ctor = "0.2.8"
+maybe-once = { version = "0.17.4", features = ["tokio"], optional = true }
 
 [features]
 hydrate = ["leptos/hydrate", "thaw/hydrate"]
@@ -83,6 +80,7 @@ ssr = [
     "dep:testcontainers",
     "dep:testcontainers-modules",
     "dep:fantoccini",
+    "dep:maybe-once",
     "leptos-use/ssr",
 ]
 
