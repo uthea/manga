@@ -1,133 +1,59 @@
-// taken from https://github.com/lloydmeta/miniaturs/blob/d244760f5039a15450f5d4566ffe52d19d427771/server/src/test_utils/mod.rs
-
-use std::thread;
+use maybe_once::tokio::{Data, MaybeOnceAsync};
+use sqlx::postgres::{PgConnectOptions, PgPoolOptions};
+use sqlx::Pool;
+use std::sync::OnceLock;
 use testcontainers::{runners::AsyncRunner, ContainerAsync, ImageExt};
-use tokio::sync::mpsc;
-use tokio::sync::{
-    mpsc::{Receiver, Sender},
-    Mutex, OnceCell,
-};
-
 use testcontainers_modules::postgres::Postgres;
 
-enum ContainerCommands {
-    Stop,
-}
+use crate::testcontainer::postgres_container;
 
-struct Channel<T> {
-    tx: Sender<T>,
-    rx: Mutex<Receiver<T>>,
-}
-
-fn channel<T>() -> Channel<T> {
-    let (tx, rx) = mpsc::channel(32);
-    Channel {
-        tx,
-        rx: Mutex::new(rx),
-    }
-}
-
-static POSTGRES_NODE: OnceCell<Mutex<Option<ContainerAsync<Postgres>>>> = OnceCell::const_new();
-
-async fn postgres_node() -> &'static Mutex<Option<ContainerAsync<Postgres>>> {
-    POSTGRES_NODE
-        .get_or_init(|| async {
-            let container = Postgres::default()
-                .with_tag("13-alpine")
-                .start()
-                .await
-                .unwrap();
-
-            Mutex::new(Some(container))
-        })
-        .await
-}
-
-pub async fn get_postgres_node_port() -> u16 {
-    postgres_node()
-        .await
-        .lock()
-        .await
-        .as_ref()
-        .unwrap()
-        .get_host_port_ipv4(5432)
+async fn init_postgres_container() -> ContainerAsync<Postgres> {
+    Postgres::default()
+        .with_tag("13-alpine")
+        .start()
         .await
         .unwrap()
 }
 
-pub async fn get_postgres_node_host() -> String {
-    postgres_node()
+pub async fn get_postgres_container() -> Data<'static, ContainerAsync<Postgres>> {
+    static POSTGRES_CONTAINER: OnceLock<MaybeOnceAsync<ContainerAsync<Postgres>>> = OnceLock::new();
+    POSTGRES_CONTAINER
+        .get_or_init(|| MaybeOnceAsync::new(|| Box::pin(init_postgres_container())))
+        .data(false)
         .await
-        .lock()
-        .await
-        .as_ref()
-        .unwrap()
-        .get_host()
-        .await
-        .unwrap()
-        .to_string()
 }
 
-async fn drop_postgres_node() {
-    postgres_node()
-        .await
-        .lock()
-        .await
-        .take()
-        .unwrap()
-        .rm()
-        .await
-        .unwrap();
-}
+pub async fn get_test_db(
+    db_name: &str,
+) -> Result<
+    (
+        Pool<sqlx::Postgres>,
+        Data<'static, ContainerAsync<testcontainers_modules::postgres::Postgres>>,
+    ),
+    sqlx::Error,
+> {
+    let container = postgres_container::get_postgres_container().await;
+    let host_port = container.get_host_port_ipv4(5432).await.unwrap();
+    let host_ip = container.get_host().await.unwrap().to_string();
 
-static POSTGRES_CHANNEL: std::sync::OnceLock<Channel<ContainerCommands>> =
-    std::sync::OnceLock::new();
-fn postgres_channel() -> &'static Channel<ContainerCommands> {
-    POSTGRES_CHANNEL.get_or_init(channel)
-}
+    let options = PgConnectOptions::new()
+        .username("postgres")
+        .password("postgres")
+        .host(&host_ip)
+        .port(host_port)
+        .ssl_mode(sqlx::postgres::PgSslMode::Disable);
 
-static POSTGRES_SHUT_DOWN_NOTIFIER_CHANNEL: std::sync::OnceLock<Channel<()>> =
-    std::sync::OnceLock::new();
-fn postgres_shut_down_notifier_channel() -> &'static Channel<()> {
-    POSTGRES_SHUT_DOWN_NOTIFIER_CHANNEL.get_or_init(channel)
-}
+    let pool = PgPoolOptions::new()
+        .min_connections(1)
+        .connect_with(options.clone())
+        .await?;
 
-static TOKIO_RUNTIME: std::sync::OnceLock<tokio::runtime::Runtime> = std::sync::OnceLock::new();
-fn tokio_runtime() -> &'static tokio::runtime::Runtime {
-    TOKIO_RUNTIME.get_or_init(|| tokio::runtime::Runtime::new().unwrap())
-}
+    sqlx::query(format!(r#"create database "{db_name}""#).as_str())
+        .execute(&pool)
+        .await?;
 
-async fn start_postgres() {
-    let mut rx = postgres_channel().rx.lock().await;
-    while let Some(command) = rx.recv().await {
-        match command {
-            ContainerCommands::Stop => {
-                drop_postgres_node().await;
-                rx.close();
-            }
-        }
-    }
-}
+    sqlx::migrate!("./migrations").run(&pool).await?;
 
-pub fn shutdown_postgres() {
-    postgres_channel()
-        .tx
-        .blocking_send(ContainerCommands::Stop)
-        .unwrap();
-    postgres_shut_down_notifier_channel()
-        .rx
-        .blocking_lock()
-        .blocking_recv()
-        .unwrap();
-}
-
-pub fn setup_postgres() {
-    thread::spawn(|| {
-        tokio_runtime().block_on(start_postgres());
-        // This needs to be here otherwise the container did not call the drop function before the application stops
-        postgres_shut_down_notifier_channel()
-            .tx
-            .blocking_send(())
-            .unwrap();
-    });
+    pool.set_connect_options(options.database(db_name));
+    Ok((pool, container))
 }

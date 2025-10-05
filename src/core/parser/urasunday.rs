@@ -151,21 +151,7 @@ pub async fn fetch_urasunday(webdriver_url: &str, manga_id: &str) -> Result<Mang
 mod tests {
     use std::fs;
 
-    use crate::testcontainer::selenium_container;
-
     use super::*;
-
-    // Setup hooks registration
-    #[ctor::ctor]
-    fn on_startup() {
-        selenium_container::setup_selenium();
-    }
-
-    // Shutdown hook registration
-    #[ctor::dtor]
-    fn on_shutdown() {
-        selenium_container::shutdown_selenium();
-    }
 
     #[test]
     fn test_parse_urasunday_source() {
