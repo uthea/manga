@@ -6,8 +6,10 @@ use crate::core::{fetch::FetchError, types::Manga};
 
 fn parse_mecha_comic_from_html(html: String) -> Result<Manga, FetchError> {
     let title_selector = Selector::parse(r#"div[class="p-bookInfo_title"] > h1"#).unwrap();
-    let cover_selector =
-        Selector::parse(r#"div[class="p-bookInfo_jacket"] > img[class="jacket_image_l"]"#).unwrap();
+    let cover_selector = Selector::parse(
+        r#"div[class="p-bookInfo_jacket u-position-relative"] > img[class="jacket_image_l"]"#,
+    )
+    .unwrap();
     let author_selector =
         Selector::parse(r#"span[class="p-sepList_item p-sepList_item-thrash"] > a"#).unwrap();
     let chapter_section_selector =
