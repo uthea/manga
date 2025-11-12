@@ -150,7 +150,7 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, FetchError> {
 }
 
 pub async fn fetch_yanmaga(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
-    let url = format!("https://yanmaga.jp/comics/{manga_id}");
+    let url = format!("https://yanmaga.jp/comics/{manga_id}?sort=newer");
 
     let html = client
         .get(url)
