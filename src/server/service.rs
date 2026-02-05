@@ -229,6 +229,19 @@ mod tests {
     }
 
     #[tokio::test]
+    async fn add_manga_success_gamma_plus() {
+        let db = get_test_db("add_manga_gamma_plus").await.unwrap();
+        let result = add_manga_service(
+            "4e4bb1b935407".into(),
+            Some(MangaSource::GammaPlus),
+            "".into(),
+            db.0,
+        )
+        .await;
+        result.unwrap();
+    }
+
+    #[tokio::test]
     async fn add_manga_success_urasunday() {
         let db = get_test_db("add_manga_urasunday").await.unwrap();
         let selenium_info = selenium_container::get_selenium_info().await;
