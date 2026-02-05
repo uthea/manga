@@ -1,9 +1,8 @@
 use crate::core::parser::{
     cdata_rss::fetch_cdata_rss, comic_fuz::fetch_comic_fuz, comic_pixiv::fetch_pixiv_data,
-    comic_walker::fetch_comic_walker_data, gamma_plus::fetch_gamma_plus,
-    gangan_online::fetch_gangan_online, ganma::fetch_ganma, manga_up::fetch_mangaup,
-    mecha_comic::fetch_mecha_comic, rss_manga::fetch_generic_rss, urasunday::fetch_urasunday,
-    yanmaga::fetch_yanmaga,
+    comic_walker::fetch_comic_walker_data, gangan_online::fetch_gangan_online, ganma::fetch_ganma,
+    manga_up::fetch_mangaup, mecha_comic::fetch_mecha_comic, rss_manga::fetch_generic_rss,
+    urasunday::fetch_urasunday, yanmaga::fetch_yanmaga,
 };
 use fantoccini::error::{CmdError, NewSessionError};
 use http::header;
@@ -120,7 +119,13 @@ impl MangaSource {
             MangaSource::MangaUp => fetch_mangaup(client, manga_id).await,
             MangaSource::ComicFuz => fetch_comic_fuz(client, manga_id).await,
             MangaSource::GanganOnline => fetch_gangan_online(client, manga_id).await,
-            MangaSource::GammaPlus => fetch_gamma_plus(client, manga_id).await,
+            MangaSource::GammaPlus => {
+                fetch_cdata_rss(
+                    client,
+                    format!("https://takecomic.jp/series/{manga_id}/rss"),
+                )
+                .await
+            }
             MangaSource::ChampionCross => {
                 fetch_cdata_rss(
                     client,

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:webfeeds="http://webfeeds.org/rss/1.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title><![CDATA[ガールズゾンビパーティー]]></title>
+        <description><![CDATA[ある日突然、人類の半分――
+男たちがゾンビと化した。
+そんな世界で、普通に生きる高校生たちは
+襲い掛かる男どもを振り切って生き延びられるのか!?
+
+人類の半分が異形となりつつある世界で
+少女たちの決死のサバイバル、始まる!!]]></description>
+        <link>https://takecomic.jp/series/2ef2bc00bf52d</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Thu, 05 Feb 2026 11:11:42 GMT</lastBuildDate>
+        <atom:link href="https://takecomic.jp/series/2ef2bc00bf52d/rss" rel="self" type="application/rss+xml"/>
+        <pubDate>Fri, 16 Jan 2026 03:00:00 GMT</pubDate>
+        <copyright><![CDATA[ガールズゾンビパーティー]]></copyright>
+        <language><![CDATA[ja]]></language>
+        <atom:link rel="self" type="application/rss+xml" href="https://takecomic.jp/series/2ef2bc00bf52d/rss"/>
+        <webfeeds:icon>https://cdn-public.comici.jp/series/1646812/202509301349141234857C457657F6451DCF705ACC9292FCC.webp</webfeeds:icon>
+        <webfeeds:logo>https://cdn-public.comici.jp/series/1646812/202509301349141234857C457657F6451DCF705ACC9292FCC.webp</webfeeds:logo>
+        <webfeeds:accentColor>D80C24</webfeeds:accentColor>
+        <webfeeds:related layout="card" target="browser"/>
+        <webfeeds:analytics id="UA-114502607-1" engine="GoogleAnalytics"/>
+        <item>
+            <title><![CDATA[27話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 27話]]></description>
+            <link>https://takecomic.jp/episodes/cfea22f1240ae/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">cfea22f1240ae</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Fri, 16 Jan 2026 03:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/episode/405357/37513580929e2697.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[SIDE STORY①]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - SIDE STORY①]]></description>
+            <link>https://takecomic.jp/episodes/943673d256505/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">943673d256505</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Fri, 02 Jan 2026 03:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/965567/default/2025121818392358270A7DA948876A1577EF4FBCB3AE78325.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[26話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 26話]]></description>
+            <link>https://takecomic.jp/episodes/721cec23b9805/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">721cec23b9805</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Fri, 19 Dec 2025 03:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/episode/389607/5349fb1eef192478.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[イラストギャラリー⑥]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - イラストギャラリー⑥]]></description>
+            <link>https://takecomic.jp/episodes/7b21f2b58058d/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">7b21f2b58058d</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Fri, 05 Dec 2025 03:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/15117/1764313020276_zombi01.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[25話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 25話]]></description>
+            <link>https://takecomic.jp/episodes/2e77dd20e156b/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">2e77dd20e156b</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Fri, 21 Nov 2025 03:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/1604039/default/202511181140291316C69F595C6728376A4D9DA1BE428F303.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[24話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 24話]]></description>
+            <link>https://takecomic.jp/episodes/a9530967c2601/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">a9530967c2601</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Fri, 07 Nov 2025 03:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/episode/373397/86cadc6e49289ad7.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[23話②]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 23話②]]></description>
+            <link>https://takecomic.jp/episodes/cd0311b07e900/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">cd0311b07e900</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Fri, 24 Oct 2025 03:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/1646812/default/20251021122007767CDF1ADDF5BD2642AF752B49082280DBD.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[23話①]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 23話①]]></description>
+            <link>https://takecomic.jp/episodes/0834f905ca55e/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">0834f905ca55e</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/202510161739237840A9D415771CBABF59DA0FD77D0F2AD28.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[22話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 22話]]></description>
+            <link>https://takecomic.jp/episodes/5b6537824ff0a/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">5b6537824ff0a</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/20251016173827456E95EEB0C74BCA1F22EFCCCBFA88A110F.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[21話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 21話]]></description>
+            <link>https://takecomic.jp/episodes/bb80c5939cffc/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">bb80c5939cffc</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/202510081646499200A018C322373003CAB802F1EC3AE04CB.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[20話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 20話]]></description>
+            <link>https://takecomic.jp/episodes/927eade569301/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">927eade569301</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/202510081645106526BD6923F67A90CB20A1B835446D1412C.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[19話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 19話]]></description>
+            <link>https://takecomic.jp/episodes/1cbd46a4e7d02/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">1cbd46a4e7d02</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/202510081644109125DA43885FC4AEB01884CC0A412C382B2.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[18話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 18話]]></description>
+            <link>https://takecomic.jp/episodes/3524321506921/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">3524321506921</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/2025100816420227486EF25635DE8EB849D7D884C92A67E39.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[17話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 17話]]></description>
+            <link>https://takecomic.jp/episodes/fbe3910e40d24/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">fbe3910e40d24</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/2025100816405567635C92BE5B686609F1BF9F6764BEE261B.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[16話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 16話]]></description>
+            <link>https://takecomic.jp/episodes/53ca8be5b3915/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">53ca8be5b3915</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/2025100816392657974DF8CB31BF1F2CC47899471BD7FB475.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[15話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 15話]]></description>
+            <link>https://takecomic.jp/episodes/29bda01448407/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">29bda01448407</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/20251008163820046D6E43FA7BBDD9E306291682B2772CCE2.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[14話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 14話]]></description>
+            <link>https://takecomic.jp/episodes/0b1be2d1ef6d6/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">0b1be2d1ef6d6</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/20251008163537444CAF315528CD826540BB7ED4649CB7831.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[13話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 13話]]></description>
+            <link>https://takecomic.jp/episodes/f995ca3162e85/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">f995ca3162e85</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/202510081634389613B4D95391C7BF93241EA2291A5607E87.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[12話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 12話]]></description>
+            <link>https://takecomic.jp/episodes/25464b7a54beb/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">25464b7a54beb</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/202510081633261168BC9FE38BF55F8127C63DFB8C5122CBC.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[11話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 11話]]></description>
+            <link>https://takecomic.jp/episodes/2f2f2e6b6e4aa/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">2f2f2e6b6e4aa</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/20251008163222894D67CA7ADB39FF71F93520727868157B3.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[10話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 10話]]></description>
+            <link>https://takecomic.jp/episodes/31efe17be50e2/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">31efe17be50e2</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/20251008163101827968CCFCE7A08E0E0489CBEACCB25E188.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[9話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 9話]]></description>
+            <link>https://takecomic.jp/episodes/d9b03e0b84639/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">d9b03e0b84639</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/202510081629200426B31386EA1F2E89DECC47FD86E498E75.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[8話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 8話]]></description>
+            <link>https://takecomic.jp/episodes/155fe5ed4723d/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">155fe5ed4723d</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/202510081627523026FE51A814AE005136BFF1025BDCA6729.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[7話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 7話]]></description>
+            <link>https://takecomic.jp/episodes/a6dece921043f/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">a6dece921043f</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/202510081626359657C18C1DCA3968EC44A4DC9148541DE91.webp"/>
+        </item>
+        <item>
+            <title><![CDATA[6話]]></title>
+            <description><![CDATA[ガールズゾンビパーティー - 6話]]></description>
+            <link>https://takecomic.jp/episodes/c29e20680c8d9/?utm_source=rss&amp;utm_medium=referral</link>
+            <guid isPermaLink="false">c29e20680c8d9</guid>
+            <category><![CDATA[マンガ,漫画,コミック,comic,エンタメ,電子書籍,WEBマンガ,WEB漫画,無料]]></category>
+            <pubDate>Thu, 16 Oct 2025 15:00:00 GMT</pubDate>
+            <dc:creator></dc:creator>
+            <media:thumbnail url="https://cdn-public.comici.jp/articlevisual/2368778/default/202510081625191606B3DF31E36F30F8559C4A9C25E89E38D.webp"/>
+        </item>
+    </channel>
+</rss>

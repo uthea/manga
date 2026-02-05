@@ -32,10 +32,30 @@ impl TryFrom<Channel> for Manga {
             .ok_or(FetchError::ChapterNotFound(None))?;
         let release_date = &latest_chapter.pub_date.date.0.with_timezone(&Japan);
 
+        let thumbnail = {
+            let t = latest_chapter.thumbnail.inner.clone();
+            let u = latest_chapter.thumbnail.url.clone();
+
+            let mut res = "".into();
+
+            if let Some(val) = t {
+                res = val;
+            } else if let Some(url) = u {
+                res = url;
+            }
+
+            res
+        };
+
         Ok(Self {
             title: value.title.inner.trim().to_owned(),
-            cover_url: latest_chapter.thumbnail.inner.clone(),
-            author: latest_chapter.creator.inner.clone(),
+            cover_url: thumbnail,
+            author: latest_chapter
+                .creator
+                .inner
+                .clone()
+                .unwrap_or("".to_owned())
+                .clone(),
             latest_chapter_title: latest_chapter.title.inner.trim().to_owned(),
             latest_chapter_url: latest_chapter.link.inner.clone(),
             latest_chapter_release_date: latest_chapter.pub_date.date.0,
@@ -52,24 +72,36 @@ pub struct Item {
     #[xmlserde(name = b"link", ty = "child")]
     pub link: Value,
 
-    #[xmlserde(name = b"guid", ty = "child")]
-    pub guid: Value,
-
     #[xmlserde(name = b"pubDate", ty = "child")]
     pub pub_date: DateValue,
 
     #[xmlserde(name = b"media:thumbnail", ty = "child")]
-    pub thumbnail: Value,
+    pub thumbnail: ThumbnailValue,
 
-    // no author related information in the rss
+    // no author related information in the rss (in case of gamma plus)
     #[xmlserde(name = b"dc:creator", ty = "child")]
-    pub creator: Value,
+    pub creator: OptionalValue,
 }
 
-#[derive(Debug, XmlDeserialize)]
+#[derive(Debug, XmlDeserialize, Clone)]
 pub struct Value {
     #[xmlserde(ty = "text")]
     pub inner: String,
+}
+
+#[derive(Debug, XmlDeserialize, Clone)]
+pub struct OptionalValue {
+    #[xmlserde(ty = "text")]
+    pub inner: Option<String>,
+}
+
+#[derive(Debug, XmlDeserialize)]
+pub struct ThumbnailValue {
+    #[xmlserde(ty = "text")]
+    pub inner: Option<String>,
+
+    #[xmlserde(name = b"url", ty = "attr")] // gamma plus use url tag
+    pub url: Option<String>,
 }
 
 #[derive(Debug, XmlDeserialize)]
@@ -128,7 +160,13 @@ mod tests {
         for path in paths {
             let doc = fs::read_to_string(path.unwrap().path()).unwrap();
 
-            parse_cdata_xml(doc).unwrap();
+            let result = parse_cdata_xml(doc)
+                .inspect_err(|e| {
+                    dbg!(e);
+                })
+                .unwrap();
+
+            dbg!(result);
         }
     }
 }
