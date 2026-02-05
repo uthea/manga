@@ -3,6 +3,23 @@
     <img src="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_RGB.svg" alt="Leptos Logo">
 </picture>
 
+# Dashboard
+
+This is a screen where you can add, remove and filter list of saved manga series
+
+<img width="1502" height="686" alt="image" src="https://github.com/user-attachments/assets/3480f744-25c1-4fb0-be22-21be1a5256a6" />
+
+# Check Chapter Update
+
+This repo also include job service (cronjob) to check if tracked manga series have a new chapter availabe and notify it through discord webhook
+
+<img width="599" height="441" alt="image" src="https://github.com/user-attachments/assets/fa4010a7-6d6d-4602-b8bf-a74aaedd87a3" />
+<img width="330" height="245" alt="image" src="https://github.com/user-attachments/assets/65d7cf1a-964a-4651-b4be-d6c4bc106834" />
+
+# Manga Source
+
+For list of manga source that can be tracked, see [MangaSource](https://github.com/uthea/manga/blob/89c9b39b9291827edc1d6cb1c03dd62e19c2ba96/src/core/types.rs#L34)
+
 # Leptos Axum Starter Template
 
 This is a template for use with the [Leptos](https://github.com/leptos-rs/leptos) web framework and the [cargo-leptos](https://github.com/akesson/cargo-leptos) tool using [Axum](https://github.com/tokio-rs/axum).
