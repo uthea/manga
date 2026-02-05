@@ -143,6 +143,6 @@ jobs:
       - name: Deploy
         uses: WyriHaximus/github-action-helm3@v3
         with:
-          exec: helm upgrade manga-tracker ./helm-chart --install --wait --timeout=30m --atomic --namespace=default -f ./helm-chart/values.yaml
+          exec: helm upgrade manga-tracker ./helm-chart --install --wait --timeout=5h --atomic --namespace=default -f ./helm-chart/values.yaml
           kubeconfig: "${{ secrets.KUBECONFIG }}"
           overrule_existing_kubeconfig: "true"
