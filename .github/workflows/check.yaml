@@ -56,11 +56,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
       - name: Set up Helm v4
         uses: azure/setup-helm@v4
         with:
           version: 'v4.0.0'
-
       - name: Run Lint 
         run: helm lint ./helm-chart
