@@ -56,9 +56,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Lint Helm
-        uses: WyriHaximus/github-action-helm3@v4.0.2
+
+      - name: Set up Helm v4
+        uses: azure/setup-helm@v4
         with:
-          exec: helm lint ./helm-chart
-          kubeconfig: ''
-          overrule_existing_kubeconfig: "true"
+          version: 'v4.0.0'
+
+      - name: Run Lint 
+        run: helm lint ./helm-chart
