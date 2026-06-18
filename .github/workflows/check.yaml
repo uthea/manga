@@ -57,6 +57,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Lint Helm
-        uses: WyriHaximus/github-action-helm3@v3
+        uses: WyriHaximus/github-action-helm3@v4.0.2
         with:
           exec: helm lint ./helm-chart
