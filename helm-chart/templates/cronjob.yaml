@@ -12,8 +12,6 @@ spec:
       template:
         spec:
           restartPolicy: Never
-          imagePullSecrets:
-            - name: {{ .Release.Name }}-docker-cred
           containers:
             - name: {{ .Chart.Name }}-cron
               image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
