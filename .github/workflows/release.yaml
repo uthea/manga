@@ -103,32 +103,11 @@ jobs:
       - name: Find and Replace 7
         uses: jacobtomlinson/gha-find-replace@v3
         with:
-          find: "{ gh.REGISTRY }"
-          replace: ${{ env.REGISTRY }}
-          include: "**values.yaml"
-
-      - name: Find and Replace 8
-        uses: jacobtomlinson/gha-find-replace@v3
-        with:
-          find: "{ gh.USERNAME }"
-          replace: ${{ github.actor }}
-          include: "**values.yaml"
-
-      - name: Find and Replace 9
-        uses: jacobtomlinson/gha-find-replace@v3
-        with:
-          find: "{ gh.PASSWORD }"
-          replace: ${{ secrets.GITHUB_TOKEN }}
-          include: "**values.yaml"
-
-      - name: Find and Replace 10
-        uses: jacobtomlinson/gha-find-replace@v3
-        with:
           find: "{ INGRESS_HOST }"
           replace: ${{ secrets.INGRESS_HOST }}
           include: "**values.yaml"
 
-      - name: Find and Replace 11
+      - name: Find and Replace 8
         uses: jacobtomlinson/gha-find-replace@v3
         with:
           find: "{ webdriver_url }"
