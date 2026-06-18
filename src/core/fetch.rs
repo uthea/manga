@@ -156,6 +156,13 @@ impl MangaSource {
                 )
                 .await
             }
+            MangaSource::ComicPash => {
+                fetch_cdata_rss(
+                    client,
+                    format!("https://comicpash.jp/series/{manga_id}/rss"),
+                )
+                .await
+            }
         }?;
 
         Ok(self.postprocess(manga))
