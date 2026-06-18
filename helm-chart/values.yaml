@@ -12,12 +12,6 @@ webhook_url: { webhook_url }
 webdriver_url: { webdriver_url }
 schedule: { cron }
 
-imageCredentials:
-  registry: { gh.REGISTRY }
-  username: { gh.USERNAME }
-  password: { gh.PASSWORD }
-  email: test@deploy.com
-
 image:
   repository: ghcr.io/uthea/manga/manga-tracker
   pullPolicy: IfNotPresent
