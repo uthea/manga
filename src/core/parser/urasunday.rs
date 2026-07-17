@@ -61,7 +61,7 @@ pub fn parse_urasunday_from_html(html: String, manga_id: &str) -> Result<Manga, 
                 let naive_date = NaiveDate::parse_from_str(&raw, "%Y/%m/%d").map_err(|e| {
                     FetchError::ChapterNotFound(Some(format!(
                         "Error parsing date {} : {}",
-                        &raw, e
+                        raw, e
                     )))
                 })?;
 

@@ -50,7 +50,7 @@ pub async fn get_selenium_info() -> (String, Data<'static, ContainerAsync<Seleni
     let selenium_host = selenium_ctr.get_host().await.unwrap().to_string();
 
     (
-        format!("http://{}:{}", &selenium_host, selenium_port),
+        format!("http://{}:{}", selenium_host, selenium_port),
         selenium_ctr,
     )
 }

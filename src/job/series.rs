@@ -96,13 +96,13 @@ pub async fn broadcast_diff(webhook_url: &str, diffs: Vec<DiffingResult>) {
         DiffingResult::Upcoming(manga) => Some(
             CreateEmbed::new()
                 /*                 .url(&manga.latest_chapter_url) */
-                .title(format!("[UPCOMING] {}", &manga.latest_chapter_title))
+                .title(format!("[UPCOMING] {}", manga.latest_chapter_title))
                 .image(&manga.cover_url)
                 .field(
                     "release_date",
                     format!(
                         "{}",
-                        &manga
+                        manga
                             .latest_chapter_release_date
                             .format("%d-%m-%Y %H:%M:%S")
                     ),
@@ -115,7 +115,7 @@ pub async fn broadcast_diff(webhook_url: &str, diffs: Vec<DiffingResult>) {
         DiffingResult::Released(manga) => Some(
             CreateEmbed::new()
                 .url(&manga.latest_chapter_url)
-                .title(format!("[RELEASED] {}", &manga.latest_chapter_title))
+                .title(format!("[RELEASED] {}", manga.latest_chapter_title))
                 .image(&manga.cover_url)
                 .field("series_name", &manga.title, false)
                 .field("source", manga.source.to_string(), false)

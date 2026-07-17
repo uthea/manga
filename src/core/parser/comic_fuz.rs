@@ -103,7 +103,7 @@ pub fn parse_comic_fuz_from_html(html: String) -> Result<Manga, FetchError> {
     let release_date = match &latest_chapter.updated_date {
         Some(raw) => {
             let naive_date = NaiveDate::parse_from_str(raw, "%Y/%m/%d").map_err(|e| {
-                FetchError::ChapterNotFound(Some(format!("error on date parse {} : {}", &raw, e)))
+                FetchError::ChapterNotFound(Some(format!("error on date parse {} : {}", raw, e)))
             })?;
 
             Local

@@ -180,7 +180,7 @@ async fn main() {
         if let Some(container) = selenium_container.as_ref() {
             let selenium_host = container.get_host().await.unwrap().to_string();
             let selenium_port = container.get_host_port_ipv4(4444).await.unwrap();
-            format!("http://{}:{}", &selenium_host, selenium_port)
+            format!("http://{}:{}", selenium_host, selenium_port)
         } else {
             env::var("WEBDRIVER_URL").expect("WEBDRIVER_URL is not set")
         }
