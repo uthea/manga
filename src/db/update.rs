@@ -2,6 +2,7 @@ use sqlx::{PgPool, QueryBuilder};
 
 use super::model::MangaRow;
 
+#[tracing::instrument(skip(latest_data), err)]
 pub async fn update_manga_batch(
     latest_data: impl Iterator<Item = &MangaRow>,
     pool: &PgPool,

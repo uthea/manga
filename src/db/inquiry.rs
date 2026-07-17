@@ -2,6 +2,7 @@ use super::model::{DbWeekday, MangaRow};
 use crate::core::types::{MangaQuery, MangaSource, Paginated};
 use sqlx::{FromRow, PgPool, QueryBuilder, Row};
 
+#[tracing::instrument(err)]
 pub async fn get_manga(
     source: &MangaSource,
     manga_id: &str,
@@ -17,6 +18,7 @@ pub async fn get_manga(
     Ok(row)
 }
 
+#[tracing::instrument(err)]
 pub async fn get_manga_paginated(
     page_number: i64,
     page_size: i64,

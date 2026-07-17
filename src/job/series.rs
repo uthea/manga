@@ -16,6 +16,7 @@ pub enum DiffingResult {
     Released(MangaRow),
 }
 
+#[tracing::instrument]
 pub async fn update_series(webhook_url: String, webdriver_url: String, pool: &PgPool) {
     // retrieve series from db (paginated) based on the current day
     // for each series check for latest update

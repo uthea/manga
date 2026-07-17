@@ -1,18 +1,25 @@
 use axum::{
     extract::{Path, Request, State},
-    response::IntoResponse,
+    middleware::{self, Next},
+    response::{IntoResponse, Response},
     routing::get,
 };
+use axum_otel::{AxumOtelOnFailure, AxumOtelOnResponse, AxumOtelSpanCreator};
+use http::HeaderValue;
 use leptos::{context::provide_context, logging::log};
 use leptos_axum::handle_server_fns_with_context;
 use manga_tracker::{
     app::shell, job::series::update_series, state::AppState,
     testcontainer::selenium_container::Selenium,
 };
-use sqlx::Executor;
+use sqlx::{ConnectOptions, Executor};
 use testcontainers::{runners::AsyncRunner, ContainerAsync, ImageExt};
 use testcontainers_modules::postgres::Postgres;
 use tokio::signal;
+use tower::ServiceBuilder;
+use tower_http::trace::TraceLayer;
+use tracing::Level;
+use tracing_otel_extra::http::context::current_trace_id;
 
 async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
     use std::env;
@@ -30,6 +37,7 @@ async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
             .username(&username)
             .password(&password)
             .database(&db_name)
+            .log_statements(log::LevelFilter::Info)
     };
 
     let pool = PgPoolOptions::new()
@@ -68,6 +76,16 @@ async fn load_db_test(host: String, port: u16) -> Result<sqlx::PgPool, sqlx::Err
         .await?;
 
     Ok(pool)
+}
+
+async fn inject_trace_id_header(request: Request, next: Next) -> Response {
+    let mut response = next.run(request).await;
+    let trace_id = current_trace_id().to_string();
+    response
+        .headers_mut()
+        .insert("trace_id", HeaderValue::from_str(&trace_id).unwrap());
+
+    response
 }
 
 async fn server_fn_handler(
@@ -113,6 +131,12 @@ async fn main() {
     use leptos::prelude::*;
     use leptos_axum::{generate_route_list, LeptosRoutes};
     use manga_tracker::app::*;
+
+    // Initialize tracing
+    let _guard = tracing_otel_extra::Logger::new("manga-tracker")
+        .with_format(tracing_otel_extra::LogFormat::Json)
+        .init()
+        .expect("Failed to initialize tracing");
 
     let mut e2e_flag = false;
 
@@ -203,6 +227,16 @@ async fn main() {
         )
         .leptos_routes_with_handler(routes, get(leptos_routes_handler))
         .fallback(leptos_axum::file_and_error_handler::<AppState, _>(shell))
+        .layer(
+            ServiceBuilder::new()
+                .layer(
+                    TraceLayer::new_for_http()
+                        .make_span_with(AxumOtelSpanCreator::new().level(Level::INFO))
+                        .on_response(AxumOtelOnResponse::new().level(Level::INFO))
+                        .on_failure(AxumOtelOnFailure::new().level(Level::INFO)),
+                )
+                .layer(middleware::from_fn(inject_trace_id_header)),
+        )
         .with_state(app_state);
 
     // run our app with hyper

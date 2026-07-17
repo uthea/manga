@@ -2,6 +2,7 @@ use sqlx::{PgPool, QueryBuilder};
 
 use crate::core::types::MangaSource;
 
+#[tracing::instrument(skip(manga_list), err)]
 pub async fn delete_manga_bulk<I>(manga_list: I, pool: &PgPool) -> Result<u64, sqlx::Error>
 where
     I: IntoIterator<Item = (MangaSource, String)>,
