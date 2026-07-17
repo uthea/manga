@@ -11,11 +11,15 @@ jobs:
   leptos-test:
     name: Leptos Test
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/ekshore/cargo-leptos-runner-stable:latest
     steps:
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: cargo-bins/cargo-binstall@main
       - uses: actions/checkout@v3
       - uses: Swatinem/rust-cache@v2
+      - name: Add WASM target
+        run: rustup target add wasm32-unknown-unknown
+      - name: install cargo leptos
+        run: cargo binstall cargo-leptos --force
       - name: Run test
         run: cargo leptos test
 
