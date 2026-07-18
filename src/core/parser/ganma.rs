@@ -4,6 +4,7 @@ use scraper::{Html, Selector};
 
 use crate::core::{fetch::FetchError, types::Manga};
 
+#[tracing::instrument]
 pub fn parse_ganma_from_html(html: String) -> Result<Manga, FetchError> {
     let title_selector =
         Selector::parse(r#"h1[class="text-lg font-semibold leading-tight"]"#).unwrap();
@@ -63,6 +64,7 @@ pub fn parse_ganma_from_html(html: String) -> Result<Manga, FetchError> {
     })
 }
 
+#[tracing::instrument(err)]
 pub async fn fetch_ganma(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
     let url = format!("https://ganma.jp/web/magazine/{manga_id}");
 

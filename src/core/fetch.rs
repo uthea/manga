@@ -6,10 +6,11 @@ use crate::core::parser::{
 };
 use fantoccini::error::{CmdError, NewSessionError};
 use http::header;
+use strum_macros::Display;
 
 use super::types::{Manga, MangaSource};
 
-#[derive(Debug)]
+#[derive(Debug, Display)]
 pub enum FetchError {
     ReqwestError(reqwest::Error),
     JsonDeserializeError(serde_json::Error),
@@ -23,6 +24,7 @@ pub enum FetchError {
 const USER_AGENT: &str = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36";
 
 impl MangaSource {
+    #[tracing::instrument]
     pub async fn fetch(&self, webdriver_url: &str, manga_id: &str) -> Result<Manga, FetchError> {
         let client = {
             let mut headers = header::HeaderMap::new();

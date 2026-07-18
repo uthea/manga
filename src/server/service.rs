@@ -37,29 +37,22 @@ pub async fn add_manga_service(
         .unwrap()
         .fetch(&web_driver_url, &manga_id)
         .await
-        .map_err(|e| {
-            println!("Fetch error: {e:?}");
-
-            match e {
-                FetchError::ReqwestError(err) => err.to_string(),
-                FetchError::JsonDeserializeError(err) => err.to_string(),
-                FetchError::XmlDeserializeError(err) => {
-                    err.unwrap_or("Error on deserializing xml".to_string())
-                }
-                FetchError::ChapterNotFound(err) => err.unwrap_or("Chapter Not Found".to_string()),
-                FetchError::PageNotFound(err) => err.unwrap_or("Page Not Found".to_string()),
-                FetchError::WebDriverSessionError(err) => err.to_string(),
-                FetchError::WebDriverCmdError(err) => err.to_string(),
+        .map_err(|e| match e {
+            FetchError::ReqwestError(err) => err.to_string(),
+            FetchError::JsonDeserializeError(err) => err.to_string(),
+            FetchError::XmlDeserializeError(err) => {
+                err.unwrap_or("Error on deserializing xml".to_string())
             }
+            FetchError::ChapterNotFound(err) => err.unwrap_or("Chapter Not Found".to_string()),
+            FetchError::PageNotFound(err) => err.unwrap_or("Page Not Found".to_string()),
+            FetchError::WebDriverSessionError(err) => err.to_string(),
+            FetchError::WebDriverCmdError(err) => err.to_string(),
         })?;
 
     //insert to db
     insert_manga(source.unwrap(), manga_id, manga.clone(), &pool)
         .await
-        .map_err(|e| {
-            dbg!(&e);
-            "Error inserting manga to db".to_string()
-        })?;
+        .map_err(|e| "Error inserting manga to db".to_string())?;
 
     Ok(manga)
 }

@@ -61,6 +61,7 @@ pub struct MangaInfo {
     pub manga_name: String,
 }
 
+#[tracing::instrument]
 pub fn parse_comic_fuz_from_html(html: String) -> Result<Manga, FetchError> {
     let next_data_selector = Selector::parse(r#"script[id="__NEXT_DATA__"]"#).unwrap();
     let document = Html::parse_document(&html);
@@ -74,10 +75,8 @@ pub fn parse_comic_fuz_from_html(html: String) -> Result<Manga, FetchError> {
         .inner_html();
 
     let data = {
-        let obj: ComicFuz = serde_json::from_str(&next_data).map_err(|e| {
-            dbg!(&e);
-            FetchError::PageNotFound(Some(e.to_string()))
-        })?;
+        let obj: ComicFuz = serde_json::from_str(&next_data)
+            .map_err(|e| FetchError::PageNotFound(Some(e.to_string())))?;
         obj.props.page_props
     };
 
@@ -127,6 +126,7 @@ pub fn parse_comic_fuz_from_html(html: String) -> Result<Manga, FetchError> {
     })
 }
 
+#[tracing::instrument(err)]
 pub async fn fetch_comic_fuz(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
     let url = format!("https://comic-fuz.com/manga/{manga_id}");
 

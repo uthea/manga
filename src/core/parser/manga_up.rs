@@ -34,6 +34,7 @@ pub struct Chapter {
     pub days_to_change_status: String,
 }
 
+#[tracing::instrument]
 pub fn parse_manga_up_from_html(html: String) -> Result<Manga, FetchError> {
     let title_selector = Selector::parse(r#"h2[class*="pc:text-title-lg-pc"]"#).unwrap();
     let author_selector = Selector::parse(
@@ -95,6 +96,7 @@ pub fn parse_manga_up_from_html(html: String) -> Result<Manga, FetchError> {
     })
 }
 
+#[tracing::instrument(err)]
 pub async fn fetch_mangaup(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
     let url = format!("https://www.manga-up.com/titles/{manga_id}");
 
@@ -115,14 +117,14 @@ pub async fn fetch_mangaup(client: Client, manga_id: &str) -> Result<Manga, Fetc
 
         if !html.is_empty() || counter > 10 {
             if html.is_empty() {
-                println!("MANGA UP: retry exceed max retry and still return empty html")
+                tracing::error!("retry exceed max retry and still return empty html");
             }
             let result = parse_manga_up_from_html(html);
             return result;
         }
 
         counter += 1;
-        println!("MANGA UP return empty html, retry attempt: {counter}");
+        tracing::error!(retry_attempt = counter, "return empty html");
         tokio::time::sleep(Duration::from_millis(500)).await;
     }
 }

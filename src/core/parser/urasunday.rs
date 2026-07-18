@@ -4,6 +4,7 @@ use chrono_tz::Japan;
 use fantoccini::ClientBuilder;
 use scraper::{Html, Selector};
 
+#[tracing::instrument]
 pub fn parse_urasunday_from_html(html: String, manga_id: &str) -> Result<Manga, FetchError> {
     let document = Html::parse_document(&html);
 
@@ -59,10 +60,7 @@ pub fn parse_urasunday_from_html(html: String, manga_id: &str) -> Result<Manga, 
                     .inner_html();
 
                 let naive_date = NaiveDate::parse_from_str(&raw, "%Y/%m/%d").map_err(|e| {
-                    FetchError::ChapterNotFound(Some(format!(
-                        "Error parsing date {} : {}",
-                        raw, e
-                    )))
+                    FetchError::ChapterNotFound(Some(format!("Error parsing date {} : {}", raw, e)))
                 })?;
 
                 date = Local
@@ -116,6 +114,7 @@ pub fn parse_chapter_id_from_url(url: &str) -> Result<&str, FetchError> {
         )))
 }
 
+#[tracing::instrument(err)]
 pub async fn fetch_urasunday(webdriver_url: &str, manga_id: &str) -> Result<Manga, FetchError> {
     let url = format!("https://urasunday.com/title/{manga_id}/chapter/1234");
     let wv_client = ClientBuilder::native()

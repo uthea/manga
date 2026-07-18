@@ -4,6 +4,7 @@ use scraper::{selectable::Selectable, Html, Selector};
 
 use crate::core::{fetch::FetchError, types::Manga};
 
+#[tracing::instrument]
 fn parse_mecha_comic_from_html(html: String) -> Result<Manga, FetchError> {
     let title_selector = Selector::parse(r#"div[class="p-bookInfo_title"] > h1"#).unwrap();
     let cover_selector = Selector::parse(
@@ -113,6 +114,7 @@ fn find_latest_chapter_number(html: String) -> Result<i32, FetchError> {
         .map_err(|e| FetchError::PageNotFound(Some(format!("Page number parse error: {e}"))))
 }
 
+#[tracing::instrument(err)]
 pub async fn fetch_mecha_comic(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
     let url = format!("https://mechacomic.jp/books/{manga_id}");
 

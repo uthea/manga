@@ -5,8 +5,8 @@ use axum::{
     routing::get,
 };
 use axum_otel::{AxumOtelOnFailure, AxumOtelOnResponse, AxumOtelSpanCreator};
-use http::HeaderValue;
-use leptos::{context::provide_context, logging::log};
+use http::{HeaderMap, HeaderValue};
+use leptos::context::provide_context;
 use leptos_axum::handle_server_fns_with_context;
 use manga_tracker::{
     app::shell, job::series::update_series, state::AppState,
@@ -18,8 +18,8 @@ use testcontainers_modules::postgres::Postgres;
 use tokio::signal;
 use tower::ServiceBuilder;
 use tower_http::trace::TraceLayer;
-use tracing::Level;
-use tracing_otel_extra::http::context::current_trace_id;
+use tracing::{Instrument, Level};
+use tracing_otel_extra::http::context::{current_trace_id, set_otel_parent};
 
 async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
     use std::env;
@@ -203,8 +203,14 @@ async fn main() {
     if let Some(arg) = env::args().nth(1) {
         let webhook_url = env::var("WEBHOOK_URL").expect("WEBHOOK_URL is not set");
         if arg == "update" {
-            println!("start updating series");
-            update_series(webhook_url, selenium_webdriver_url, &db_pool).await;
+            let headers = HeaderMap::new();
+            let span = tracing::info_span!("start manga update job");
+            set_otel_parent(&headers, &span);
+
+            update_series(webhook_url, selenium_webdriver_url, &db_pool)
+                .instrument(span)
+                .await;
+
             return;
         }
     }
@@ -241,7 +247,7 @@ async fn main() {
 
     // run our app with hyper
     // `axum::Server` is a re-export of `hyper::Server`
-    log!("listening on http://{}", &addr);
+    tracing::info!("listening on http://{}", &addr);
     let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
 
     axum::serve(listener, app.into_make_service())

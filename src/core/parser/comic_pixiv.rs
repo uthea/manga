@@ -75,6 +75,7 @@ pub struct EpisodeDetail {
     pub state: String,
 }
 
+#[tracing::instrument]
 pub async fn fetch_pixiv_data(client: Client, id: &str) -> Result<Manga, FetchError> {
     let metadata = client
         .get(format!("https://comic.pixiv.net/api/app/works/v5/{id}"))
