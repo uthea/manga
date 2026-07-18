@@ -52,7 +52,7 @@ pub async fn add_manga_service(
     //insert to db
     insert_manga(source.unwrap(), manga_id, manga.clone(), &pool)
         .await
-        .map_err(|e| "Error inserting manga to db".to_string())?;
+        .map_err(|_| "Error inserting manga to db".to_string())?;
 
     Ok(manga)
 }
