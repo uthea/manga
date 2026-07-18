@@ -11,6 +11,8 @@ db_name: { db_name }
 webhook_url: { webhook_url }
 webdriver_url: { webdriver_url }
 schedule: { cron }
+otel_endpoint: { otel_endpoint }
+otel_protocol: { otel_protocol }
 
 image:
   repository: ghcr.io/uthea/manga/manga-tracker

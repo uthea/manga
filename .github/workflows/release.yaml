@@ -114,6 +114,20 @@ jobs:
           replace: ${{ secrets.WEBDRIVER_URL }}
           include: "**values.yaml"
 
+      - name: Find and Replace 9
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ otel_endpoint }"
+          replace: ${{ secrets.OTEL_ENDPOINT }}
+          include: "**values.yaml"
+
+      - name: Find and Replace 10
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "{ otel_protocol }"
+          replace: ${{ secrets.OTEL_PROTOCOL }}
+          include: "**values.yaml"
+
       - name: Authorize tailscale
         uses: tailscale/github-action@v3
         with:
