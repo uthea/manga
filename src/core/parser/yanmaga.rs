@@ -5,6 +5,7 @@ use scraper::{selectable::Selectable, Html, Selector};
 
 use crate::core::{fetch::FetchError, types::Manga};
 
+#[tracing::instrument]
 pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, FetchError> {
     let document = Html::parse_document(&html);
     let title_selector = Selector::parse(r#"h1[class="detailv2-outline-title"]"#).unwrap();
@@ -66,7 +67,7 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, FetchError> {
                 .next()
                 .ok_or(FetchError::ChapterNotFound(Some(format!(
                     "error extracting date from : {}",
-                    &raw_date
+                    raw_date
                 ))))?;
             let naive_date = NaiveDate::parse_from_str(date_only, "%Y/%m/%d").map_err(|e| {
                 FetchError::ChapterNotFound(Some(format!("{e}, error parsing date : {date_only}")))
@@ -149,6 +150,7 @@ pub fn parse_yanmaga_from_html(html: String) -> Result<Manga, FetchError> {
     }
 }
 
+#[tracing::instrument(err)]
 pub async fn fetch_yanmaga(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
     let url = format!("https://yanmaga.jp/comics/{manga_id}?sort=newer");
 

@@ -75,6 +75,7 @@ pub struct Internal {
     pub episodetype: String,
 }
 
+#[tracing::instrument]
 pub async fn fetch_comic_walker_data(client: Client, id: &str) -> Result<Manga, FetchError> {
     let data = client
         .get(format!(
@@ -116,7 +117,7 @@ pub async fn fetch_comic_walker_data(client: Client, id: &str) -> Result<Manga, 
         latest_chapter_title: latest_chapter.title.to_owned(),
         latest_chapter_url: format!(
             "https://comic-walker.com/detail/{}/episodes/{}",
-            id, &latest_chapter.code
+            id, latest_chapter.code
         ),
         latest_chapter_release_date: release_date.fixed_offset(),
         latest_chapter_publish_day: release_date.weekday(),

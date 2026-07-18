@@ -10,6 +10,9 @@ use crate::{
     },
 };
 
+type MangaPaginationView = Paginated<Vec<(MangaSource, String, Manga)>>;
+
+#[tracing::instrument(err)]
 pub async fn add_manga_service(
     manga_id: String,
     source: Option<MangaSource>,
@@ -34,39 +37,33 @@ pub async fn add_manga_service(
         .unwrap()
         .fetch(&web_driver_url, &manga_id)
         .await
-        .map_err(|e| {
-            println!("Fetch error: {e:?}");
-
-            match e {
-                FetchError::ReqwestError(err) => err.to_string(),
-                FetchError::JsonDeserializeError(err) => err.to_string(),
-                FetchError::XmlDeserializeError(err) => {
-                    err.unwrap_or("Error on deserializing xml".to_string())
-                }
-                FetchError::ChapterNotFound(err) => err.unwrap_or("Chapter Not Found".to_string()),
-                FetchError::PageNotFound(err) => err.unwrap_or("Page Not Found".to_string()),
-                FetchError::WebDriverSessionError(err) => err.to_string(),
-                FetchError::WebDriverCmdError(err) => err.to_string(),
+        .map_err(|e| match e {
+            FetchError::ReqwestError(err) => err.to_string(),
+            FetchError::JsonDeserializeError(err) => err.to_string(),
+            FetchError::XmlDeserializeError(err) => {
+                err.unwrap_or("Error on deserializing xml".to_string())
             }
+            FetchError::ChapterNotFound(err) => err.unwrap_or("Chapter Not Found".to_string()),
+            FetchError::PageNotFound(err) => err.unwrap_or("Page Not Found".to_string()),
+            FetchError::WebDriverSessionError(err) => err.to_string(),
+            FetchError::WebDriverCmdError(err) => err.to_string(),
         })?;
 
     //insert to db
     insert_manga(source.unwrap(), manga_id, manga.clone(), &pool)
         .await
-        .map_err(|e| {
-            dbg!(&e);
-            "Error inserting manga to db".to_string()
-        })?;
+        .map_err(|_| "Error inserting manga to db".to_string())?;
 
     Ok(manga)
 }
 
+#[tracing::instrument(err)]
 pub async fn retrieve_manga_service(
     page_number: i64,
     page_size: i64,
     query_option: MangaQuery,
     pool: sqlx::PgPool,
-) -> Result<Paginated<Vec<(MangaSource, String, Manga)>>, String> {
+) -> Result<MangaPaginationView, String> {
     let paginated_result = get_manga_paginated(page_number, page_size, query_option, &pool)
         .await
         .map_err(|_| "Error at querying manga")?;
@@ -83,6 +80,7 @@ pub async fn retrieve_manga_service(
     Ok(result)
 }
 
+#[tracing::instrument(err)]
 pub async fn delete_manga_service(
     manga_list: Vec<(MangaSource, String)>,
     pool: sqlx::PgPool,

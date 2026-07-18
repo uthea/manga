@@ -16,6 +16,7 @@ pub enum DiffingResult {
     Released(MangaRow),
 }
 
+#[tracing::instrument]
 pub async fn update_series(webhook_url: String, webdriver_url: String, pool: &PgPool) {
     // retrieve series from db (paginated) based on the current day
     // for each series check for latest update
@@ -23,17 +24,21 @@ pub async fn update_series(webhook_url: String, webdriver_url: String, pool: &Pg
     let mut all_series: Vec<MangaRow> = Vec::new();
 
     loop {
-        println!("fetching series from db: page {page_counter}");
+        tracing::info!(page = page_counter, "fetching series from db");
         let series = get_manga_paginated(page_counter, 10, MangaQuery::default(), pool).await;
 
-        if let Ok(mut result) = series {
-            if result.data.is_empty() {
-                break;
-            }
+        match series {
+            Ok(mut result) => {
+                if result.data.is_empty() {
+                    break;
+                }
 
-            all_series.append(&mut result.data);
-        } else {
-            panic!("Error retriving series from db {series:?}");
+                all_series.append(&mut result.data);
+            }
+            Err(err) => {
+                tracing::error!(error = %err, "Error retrieving series from db");
+                panic!("Error retrieving series from db, abort...");
+            }
         }
 
         page_counter += 1;
@@ -61,8 +66,8 @@ pub async fn update_series(webhook_url: String, webdriver_url: String, pool: &Pg
             Ok(diff) => {
                 task_output.push(diff);
             }
-            Err(e) => {
-                println!("Error : {e}");
+            Err(err) => {
+                tracing::error!(error = %err, "manga update task error");
             }
         }
     }
@@ -78,30 +83,38 @@ pub async fn update_series(webhook_url: String, webdriver_url: String, pool: &Pg
 
     // update table
     if !rows.is_empty() {
+        tracing::info!(batch_size = rows.len(), "update manga in batch");
         update_manga_batch(rows.into_iter(), pool)
             .await
             .expect("Error updating manga details");
 
         // broadcast diff change to webhook and update database
-        broadcast_diff(&webhook_url, task_output).await;
+        tracing::info!("broadcast update to waebhook");
+        broadcast_diff(&webhook_url, task_output)
+            .await
+            .expect("Error broadcast diffs");
     }
 
-    println!("Update series job finished")
+    tracing::info!("Update series job finished")
 }
 
-pub async fn broadcast_diff(webhook_url: &str, diffs: Vec<DiffingResult>) {
+#[tracing::instrument(err)]
+pub async fn broadcast_diff(
+    webhook_url: &str,
+    diffs: Vec<DiffingResult>,
+) -> Result<(), serenity::Error> {
     let embeds = diffs.iter().filter_map(|d| match d {
         DiffingResult::NoChange => None,
         DiffingResult::Upcoming(manga) => Some(
             CreateEmbed::new()
                 /*                 .url(&manga.latest_chapter_url) */
-                .title(format!("[UPCOMING] {}", &manga.latest_chapter_title))
+                .title(format!("[UPCOMING] {}", manga.latest_chapter_title))
                 .image(&manga.cover_url)
                 .field(
                     "release_date",
                     format!(
                         "{}",
-                        &manga
+                        manga
                             .latest_chapter_release_date
                             .format("%d-%m-%Y %H:%M:%S")
                     ),
@@ -114,7 +127,7 @@ pub async fn broadcast_diff(webhook_url: &str, diffs: Vec<DiffingResult>) {
         DiffingResult::Released(manga) => Some(
             CreateEmbed::new()
                 .url(&manga.latest_chapter_url)
-                .title(format!("[RELEASED] {}", &manga.latest_chapter_title))
+                .title(format!("[RELEASED] {}", manga.latest_chapter_title))
                 .image(&manga.cover_url)
                 .field("series_name", &manga.title, false)
                 .field("source", manga.source.to_string(), false)
@@ -123,20 +136,20 @@ pub async fn broadcast_diff(webhook_url: &str, diffs: Vec<DiffingResult>) {
     });
 
     let http = Http::new("");
-    let webhook = Webhook::from_url(&http, webhook_url)
-        .await
-        .expect("Invalid webhook url");
+    let webhook = Webhook::from_url(&http, webhook_url).await?;
 
     for embed in embeds {
         webhook
             .execute(&http, true, ExecuteWebhook::new().embed(embed))
-            .await
-            .expect("Error hitting webhook");
+            .await?;
 
         tokio::time::sleep(Duration::from_millis(500)).await;
     }
+
+    Ok(())
 }
 
+#[tracing::instrument]
 pub async fn diff_update(
     data: MangaRow,
     limiter: Arc<DefaultKeyedRateLimiter<MangaSource>>,

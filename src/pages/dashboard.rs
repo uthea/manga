@@ -277,8 +277,8 @@ fn MangaTable(
                                 let src = source.clone();
                                 let src_check = source.clone();
                                 let id_check = manga_id.clone();
-                                let row_id = format!("row-{}-{}", &src, &manga_id);
-                                let cbox_id = format!("del-{}-{}", &src, &manga_id);
+                                let row_id = format!("row-{}-{}", src, manga_id);
+                                let cbox_id = format!("del-{}-{}", src, manga_id);
                                 view! {
                                     <TableRow attr:id=row_id>
                                         <TableCell>

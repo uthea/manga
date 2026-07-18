@@ -102,6 +102,7 @@ pub mod rfc2822 {
     }
 }
 
+#[tracing::instrument]
 fn from_rss_xml(xml: &str) -> Result<Manga, FetchError> {
     let rss: Rss =
         from_str(xml).map_err(|e| FetchError::XmlDeserializeError(Some(e.to_string())))?;
@@ -109,6 +110,7 @@ fn from_rss_xml(xml: &str) -> Result<Manga, FetchError> {
     Manga::try_from(rss.channel)
 }
 
+#[tracing::instrument(err)]
 pub async fn fetch_generic_rss(client: Client, url: String) -> Result<Manga, FetchError> {
     let rss = client
         .get(url)

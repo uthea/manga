@@ -132,6 +132,7 @@ pub fn parse_cdata_xml(xml: String) -> Result<Manga, FetchError> {
     Manga::try_from(result.channel)
 }
 
+#[tracing::instrument(err)]
 pub async fn fetch_cdata_rss(client: Client, url: String) -> Result<Manga, FetchError> {
     let rss = client
         .get(url)

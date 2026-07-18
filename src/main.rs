@@ -1,18 +1,25 @@
 use axum::{
     extract::{Path, Request, State},
-    response::IntoResponse,
+    middleware::{self, Next},
+    response::{IntoResponse, Response},
     routing::get,
 };
-use leptos::{context::provide_context, logging::log};
+use axum_otel::{AxumOtelOnFailure, AxumOtelOnResponse, AxumOtelSpanCreator};
+use http::{HeaderMap, HeaderValue};
+use leptos::context::provide_context;
 use leptos_axum::handle_server_fns_with_context;
 use manga_tracker::{
     app::shell, job::series::update_series, state::AppState,
     testcontainer::selenium_container::Selenium,
 };
-use sqlx::Executor;
+use sqlx::{ConnectOptions, Executor};
 use testcontainers::{runners::AsyncRunner, ContainerAsync, ImageExt};
 use testcontainers_modules::postgres::Postgres;
 use tokio::signal;
+use tower::ServiceBuilder;
+use tower_http::trace::TraceLayer;
+use tracing::{Instrument, Level};
+use tracing_otel_extra::http::context::{current_trace_id, set_otel_parent};
 
 async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
     use std::env;
@@ -30,6 +37,7 @@ async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
             .username(&username)
             .password(&password)
             .database(&db_name)
+            .log_statements(log::LevelFilter::Info)
     };
 
     let pool = PgPoolOptions::new()
@@ -68,6 +76,16 @@ async fn load_db_test(host: String, port: u16) -> Result<sqlx::PgPool, sqlx::Err
         .await?;
 
     Ok(pool)
+}
+
+async fn inject_trace_id_header(request: Request, next: Next) -> Response {
+    let mut response = next.run(request).await;
+    let trace_id = current_trace_id().to_string();
+    response
+        .headers_mut()
+        .insert("trace_id", HeaderValue::from_str(&trace_id).unwrap());
+
+    response
 }
 
 async fn server_fn_handler(
@@ -114,6 +132,12 @@ async fn main() {
     use leptos_axum::{generate_route_list, LeptosRoutes};
     use manga_tracker::app::*;
 
+    // Initialize tracing
+    let _guard = tracing_otel_extra::Logger::new("manga-tracker")
+        .with_format(tracing_otel_extra::LogFormat::Json)
+        .init()
+        .expect("Failed to initialize tracing");
+
     let mut e2e_flag = false;
 
     match env::var("APP_ENV") {
@@ -156,7 +180,7 @@ async fn main() {
         if let Some(container) = selenium_container.as_ref() {
             let selenium_host = container.get_host().await.unwrap().to_string();
             let selenium_port = container.get_host_port_ipv4(4444).await.unwrap();
-            format!("http://{}:{}", &selenium_host, selenium_port)
+            format!("http://{}:{}", selenium_host, selenium_port)
         } else {
             env::var("WEBDRIVER_URL").expect("WEBDRIVER_URL is not set")
         }
@@ -179,8 +203,14 @@ async fn main() {
     if let Some(arg) = env::args().nth(1) {
         let webhook_url = env::var("WEBHOOK_URL").expect("WEBHOOK_URL is not set");
         if arg == "update" {
-            println!("start updating series");
-            update_series(webhook_url, selenium_webdriver_url, &db_pool).await;
+            let headers = HeaderMap::new();
+            let span = tracing::info_span!("start manga update job");
+            set_otel_parent(&headers, &span);
+
+            update_series(webhook_url, selenium_webdriver_url, &db_pool)
+                .instrument(span)
+                .await;
+
             return;
         }
     }
@@ -203,11 +233,21 @@ async fn main() {
         )
         .leptos_routes_with_handler(routes, get(leptos_routes_handler))
         .fallback(leptos_axum::file_and_error_handler::<AppState, _>(shell))
+        .layer(
+            ServiceBuilder::new()
+                .layer(
+                    TraceLayer::new_for_http()
+                        .make_span_with(AxumOtelSpanCreator::new().level(Level::INFO))
+                        .on_response(AxumOtelOnResponse::new().level(Level::INFO))
+                        .on_failure(AxumOtelOnFailure::new().level(Level::INFO)),
+                )
+                .layer(middleware::from_fn(inject_trace_id_header)),
+        )
         .with_state(app_state);
 
     // run our app with hyper
     // `axum::Server` is a re-export of `hyper::Server`
-    log!("listening on http://{}", &addr);
+    tracing::info!("listening on http://{}", &addr);
     let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
 
     axum::serve(listener, app.into_make_service())

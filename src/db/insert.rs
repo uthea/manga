@@ -4,6 +4,7 @@ use crate::core::{types::Manga, types::MangaSource};
 
 use super::model::MangaRow;
 
+#[tracing::instrument(err)]
 pub async fn insert_manga(
     source: MangaSource,
     manga_id: String,

@@ -54,6 +54,7 @@ pub struct Chapter {
     pub publishing_period: Option<String>,
 }
 
+#[tracing::instrument]
 pub fn parse_gangan_online_from_html(html: String) -> Result<Manga, FetchError> {
     let next_data_selector = Selector::parse(r#"script[id="__NEXT_DATA__"]"#).unwrap();
     let document = Html::parse_document(&html);
@@ -67,10 +68,8 @@ pub fn parse_gangan_online_from_html(html: String) -> Result<Manga, FetchError> 
         .inner_html();
 
     let data = {
-        let obj: GanganOnline = serde_json::from_str(&next_data).map_err(|e| {
-            dbg!(&e);
-            FetchError::JsonDeserializeError(e)
-        })?;
+        let obj: GanganOnline =
+            serde_json::from_str(&next_data).map_err(FetchError::JsonDeserializeError)?;
 
         obj.props.page_props.data.default
     };
@@ -103,6 +102,7 @@ pub fn parse_gangan_online_from_html(html: String) -> Result<Manga, FetchError> 
     })
 }
 
+#[tracing::instrument(err)]
 pub async fn fetch_gangan_online(client: Client, manga_id: &str) -> Result<Manga, FetchError> {
     let url = format!("https://www.ganganonline.com/title/{manga_id}");
 
