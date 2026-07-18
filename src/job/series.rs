@@ -3,6 +3,7 @@ use std::{num::NonZeroU32, sync::Arc, time::Duration};
 use governor::{DefaultKeyedRateLimiter, Jitter, Quota, RateLimiter};
 use serenity::all::{CreateEmbed, ExecuteWebhook, Http, Webhook};
 use sqlx::PgPool;
+use tracing::Instrument;
 
 use crate::{
     core::types::{MangaQuery, MangaSource},
@@ -52,11 +53,9 @@ pub async fn update_series(webhook_url: String, webdriver_url: String, pool: &Pg
     let mut task_output = vec![];
 
     for series in all_series {
-        tasks.push(tokio::spawn(diff_update(
-            series,
-            lim.clone(),
-            webdriver_url.clone(),
-        )));
+        tasks.push(tokio::spawn(
+            diff_update(series, lim.clone(), webdriver_url.clone()).in_current_span(),
+        ));
     }
 
     for task in tasks {
@@ -89,7 +88,7 @@ pub async fn update_series(webhook_url: String, webdriver_url: String, pool: &Pg
             .expect("Error updating manga details");
 
         // broadcast diff change to webhook and update database
-        tracing::info!("broadcast update to waebhook");
+        tracing::info!("broadcast update to webhook");
         broadcast_diff(&webhook_url, task_output)
             .await
             .expect("Error broadcast diffs");

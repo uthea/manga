@@ -18,7 +18,7 @@ use testcontainers_modules::postgres::Postgres;
 use tokio::signal;
 use tower::ServiceBuilder;
 use tower_http::trace::TraceLayer;
-use tracing::{Instrument, Level};
+use tracing::{field, Instrument, Level};
 use tracing_otel_extra::http::context::{current_trace_id, set_otel_parent};
 
 async fn load_db() -> Result<sqlx::PgPool, sqlx::Error> {
@@ -133,7 +133,7 @@ async fn main() {
     use manga_tracker::app::*;
 
     // Initialize tracing
-    let _guard = tracing_otel_extra::Logger::new("manga-tracker")
+    let guard = tracing_otel_extra::Logger::new("manga-tracker")
         .with_format(tracing_otel_extra::LogFormat::Json)
         .init()
         .expect("Failed to initialize tracing");
@@ -204,12 +204,14 @@ async fn main() {
         let webhook_url = env::var("WEBHOOK_URL").expect("WEBHOOK_URL is not set");
         if arg == "update" {
             let headers = HeaderMap::new();
-            let span = tracing::info_span!("start manga update job");
+            let span = tracing::info_span!("start manga update job", trace_id = field::Empty);
             set_otel_parent(&headers, &span);
 
             update_series(webhook_url, selenium_webdriver_url, &db_pool)
                 .instrument(span)
                 .await;
+
+            let _ = guard.shutdown();
 
             return;
         }
