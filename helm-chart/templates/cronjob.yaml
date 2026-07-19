@@ -49,4 +49,14 @@ spec:
                   secretKeyRef:
                     key:  webdriver_url
                     name: {{ .Release.Name }}-config
+              - name: OTEL_EXPORTER_OTLP_ENDPOINT
+                valueFrom:
+                  secretKeyRef:
+                    key:  otel_endpoint
+                    name: {{ .Release.Name }}-config
+              - name: OTEL_EXPORTER_OTLP_PROTOCOL
+                valueFrom:
+                  secretKeyRef:
+                    key:  otel_protocol
+                    name: {{ .Release.Name }}-config
 
