@@ -24,7 +24,7 @@ wasm-bindgen = "=0.2.108"
 thiserror = "2"
 tracing = { version = "0.1", optional = true }
 log = { version = "0.4", optional = true }
-tracing-otel-extra = { version = "0.31", features = [
+tracing-otel-extra = { git = 'https://github.com/uthea/tracing-otel-extra.git', branch = "main", features = [
     "logger",
     "context",
 ], optional = true }

@@ -211,7 +211,7 @@ async fn main() {
                 .instrument(span)
                 .await;
 
-            let _ = guard.shutdown();
+            let _ = guard.force_flush();
 
             return;
         }
