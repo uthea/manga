@@ -420,7 +420,7 @@ fn AddMangaDialog(
                                     <Combobox
                                         clearable=true
                                         selected_options=selected_source
-                                        value=selected_source.get().map_or("".into(), |v| v)
+                                        value=selected_source.get().unwrap_or("".into())
                                         placeholder="Select a source"
                                         attr:id=id.get().map(|v| format!("{v}-source"))
                                     >

@@ -97,6 +97,7 @@ pub async fn update_series(webhook_url: String, webdriver_url: String, pool: &Pg
     tracing::info!("Update series job finished")
 }
 
+#[allow(clippy::result_large_err)]
 #[tracing::instrument(err)]
 pub async fn broadcast_diff(
     webhook_url: &str,
