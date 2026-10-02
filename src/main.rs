@@ -132,9 +132,14 @@ async fn main() {
     use leptos_axum::{generate_route_list, LeptosRoutes};
     use manga_tracker::app::*;
 
+
     // Initialize tracing
-    let guard = tracing_otel_extra::Logger::new("manga-tracker")
-        .with_format(tracing_otel_extra::LogFormat::Json)
+    let mut otel = tracing_otel_extra::Logger::new("manga-tracker")
+        .with_format(tracing_otel_extra::LogFormat::Json);
+
+    otel.otel_logs_enabled = true;
+
+    let guard = otel 
         .init()
         .expect("Failed to initialize tracing");
 
