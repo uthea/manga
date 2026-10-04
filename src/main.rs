@@ -228,7 +228,6 @@ async fn main() {
     };
 
     let app = Router::new()
-        .route("/health", get(health))
         .route(
             "/api/{*fn_name}",
             get(server_fn_handler).post(server_fn_handler),
@@ -245,6 +244,7 @@ async fn main() {
                 )
                 .layer(middleware::from_fn(inject_trace_id_header)),
         )
+        .route("/health", get(health))
         .with_state(app_state);
 
     // run our app with hyper

@@ -13,7 +13,7 @@ spec:
         spec:
           restartPolicy: Never
           containers:
-            - name: {{ .Chart.Name }}-cron
+            - name: {{ .Chart.Name }}
               image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
               args: ["update"]
               command: ["./manga-tracker"]
