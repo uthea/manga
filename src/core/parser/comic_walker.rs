@@ -75,7 +75,7 @@ pub struct Internal {
     pub episodetype: String,
 }
 
-#[tracing::instrument]
+#[tracing::instrument(err)]
 pub async fn fetch_comic_walker_data(client: Client, id: &str) -> Result<Manga, FetchError> {
     let data = client
         .get(format!(
