@@ -7,7 +7,7 @@ use serde::Deserialize;
 use std::{sync::LazyLock, time::Duration};
 
 static CHAPTER_REGEX: LazyLock<Regex> = LazyLock::new(|| {
-    RegexBuilder::new(r#"\{\\"titleName\\.*currentChapter.*\],\[\\"\$\\",\\"\$L6f"#)
+    RegexBuilder::new(r#"\{\\"titleName\\".+\}\],\\"\$L"#)
         .multi_line(true)
         .build()
         .unwrap()
@@ -67,8 +67,10 @@ pub fn parse_manga_up_from_html(html: String) -> Result<Manga, FetchError> {
             "no result from regex capture".into(),
         )))?
         .as_str()
-        .replace(r#"],[\"$\",\"$L6f"#, "")
+        .replace(r#"],\"$L"#, "")
         .replace("\\", "");
+
+    dbg!(&chapter_data_json);
 
     let chapter_data: MangaUpData =
         serde_json::from_str(&chapter_data_json).map_err(FetchError::JsonDeserializeError)?;
