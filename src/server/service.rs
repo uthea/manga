@@ -241,6 +241,7 @@ mod tests {
     }
 
     #[tokio::test]
+    #[ignore = "403 when running on ci/cd"]
     async fn add_manga_success_comic_pash() {
         let db = get_test_db("add_manga_comic_pash").await.unwrap();
         let result = add_manga_service(
